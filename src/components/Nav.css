@@ -1,0 +1,20 @@
+/* Sticky navbar */
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff; /* Keep the navbar background white */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    animation: slideDown 0.3s ease-in-out;
+  }
+  
+  /* Animation for sliding down effect */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  

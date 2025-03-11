@@ -1,0 +1,81 @@
+body {
+  font-family: 'Noto Serif';
+  
+}
+body p {
+  font-size: 18px;
+  font-family: 'Noto Serif';
+
+}
+body li {
+  font-size: 18px;
+  font-family: 'Noto Serif';
+
+}
+body h1,h2,h3,h4,h5,h6 {
+  font-family: 'Noto Serif';
+
+}
+body button {
+  font-family: 'Noto Serif';
+
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.testimonial{
+  font-family: 'Noto Serif';
+  font-size: 35px;
+  font-weight: 600;
+  line-height: normal;
+}
+.testimonial .description{
+  font-family: 'Noto Serif';
+  font-size: 35px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.contact{
+  font-family: 'Noto Serif';
+  font-size: 30px;
+  font-weight: 600;
+  color: #890C25;
+}
+.contacts{
+  font-family: 'Noto Serif';
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+  align-items: center;
+  font-weight: 400;
+  color: #737477; /* Placeholder text color */
+}
+
+.contact .submit{
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  align-items: center;
+  font-weight: 400;
+}
+
+
+.footer {
+  font-family: 'Noto Serif', serif;
+}
+
+img.fill-white {
+  fill: #ffffff;
+}
