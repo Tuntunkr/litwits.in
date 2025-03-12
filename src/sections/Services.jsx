@@ -1,12 +1,10 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
-import studentimg from "../assets/images/litwitmentors.png";
-import bgimg from "../assets/images/Professionals.jpg"; // Import the background image
+import studentimg from "/assets/litwits-mentors.avif";
 
 const Services = () => {
   return (
     <section className="text-white bg-red-800 font-serif">
-      <Helmet>
+      {/* <Helmet>
         <title>Expert Mentorship - LITWITS</title>
         <meta name="description" content="Learn from professionals, PhDs, and postgraduates from top institutions worldwide with LITWITS." />
         <meta name="keywords" content="LITWITS, mentorship, education, debating, research, public speaking, expert guidance" />
@@ -15,7 +13,7 @@ const Services = () => {
         <meta property="og:image" content={studentimg} />
         <meta property="og:url" content="https://litwits.com/services" />
         <link rel="canonical" href="https://litwits.com/services" />
-      </Helmet>
+      </Helmet> */}
       
       <style>
         {`
@@ -41,11 +39,14 @@ const Services = () => {
         {/* Right Image */}
         <div className="relative">
           <div className="bg-gray-200 w-full h-72 md:w-[85%] md:h-96">
-            <img
-              src={studentimg}
-              alt="Student"
-              className="absolute bottom-0 right-0 w-full h-full object-cover shadow-lg"
-            />
+          <img
+            src={studentimg}
+            alt="LITWITS mentors guiding students for academic success."
+            title="LITWITS Mentors - Expert Guidance"
+            aria-label="LITWITS Mentors - Expert Guidance"
+            aria-describedby="Experienced mentors from Yale, Harvard, Oxford, and Cambridge provide expert coaching for students."
+            className="absolute bottom-0 right-0 w-full h-full object-cover shadow-lg"
+          />
           </div>
         </div>
       </div>

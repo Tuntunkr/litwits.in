@@ -2,7 +2,7 @@ import React from 'react'
 
 const index = () => {
   return (
-    <div><div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white p-4">
+    <div><div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 text-white p-4">
     {/* Animated Header */}
     <h1 className="text-4xl md:text-6xl font-extrabold mb-6 animate-bounce">
       Coming Soon

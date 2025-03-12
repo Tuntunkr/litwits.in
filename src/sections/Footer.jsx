@@ -36,9 +36,9 @@ const Footer = () => {
           <div className="flex-1 grid grid-cols-2 gap-8 lg:gap-16 lg:flex lg:justify-around mb-8 lg:mb-0">
             {footerLinks.map((section) => (
               <div key={section.title}>
-                <h4 className="text-lg footer font-medium mb-4">
+                {/* <h4 className="text-lg footer font-medium mb-4">
                   {section.title}
-                </h4>
+                </h4> */}
                 <ul>
                   {section.links.map((link) => (
                     <li

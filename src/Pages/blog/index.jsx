@@ -71,7 +71,7 @@ const Blog = () => {
           <Link
             to={`/BlogDetails/${blog.id}`}
             key={blog.id}
-            className="block group bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300"
+            className="block group bg-white shadow-xs rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300"
           >
             <div className="relative w-full h-56 overflow-hidden">
               <img

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet-async";
-import heroimage from "../assets/images/hero.jpg";
+import heroimage from "/assets/join-litwits.avif";
 import PopularProducts from "./PopularProducts";
 import AwardsSlider from "./Awoard";
 import GlobalImpactSlider from "./GlobalImpactSlider";
@@ -41,24 +40,6 @@ const Hero = React.forwardRef((props, ref) => {
 
   return (
     <>
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>LITWITS (in caps) & Litwits (w/o caps)</title>
-        <meta
-          name="description"
-          content="Join LITWITS to enhance debating, writing, research, and public speaking. Expert mentors prepare students for Ivy League admissions, World Scholar’s Cup, and more."
-        />
-        <meta name="keywords" content="Litwits, Litwits Preparation, Litwits Courses" />
-        <meta property="og:title" content="LITWITS (in caps) & Litwits (w/o caps)" />
-        <meta
-          property="og:description"
-          content="Join LITWITS to enhance debating, writing, research, and public speaking. Expert mentors prepare students for Ivy League admissions, World Scholar’s Cup, and more."
-        />
-        <meta property="og:image" content={heroimage} />
-        <meta property="og:url" content="https://litwits.com/" />
-        <link rel="canonical" href="https://litwits.com/" />
-      </Helmet>
-
       <section
         ref={ref}
         className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20"
@@ -67,12 +48,15 @@ const Hero = React.forwardRef((props, ref) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
+        role="img"
+        aria-label="Join LITWITS for Debate, Writing, AP Prep & World Scholar’s Cup!"
+        aria-describedby="hero-description"
       >
         {/* Left Side - Hero Content */}
         <div className="relative w-full lg:w-1/2 flex flex-col justify-center items-start text-white text-left space-y-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
+          <h2 className="text-4xl md:text-6xl font-extrabold leading-tight">
             DISCUSS. WRITE. DEBATE.
-          </h1>
+          </h2>
         </div>
 
         {/* Right Side - Contact Form */}
@@ -89,7 +73,7 @@ const Hero = React.forwardRef((props, ref) => {
                   placeholder="First Name"
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-red-300 text-black"
+                  className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-hidden focus:ring-2 focus:ring-red-300 text-black"
                   required
                 />
                 <input
@@ -98,7 +82,7 @@ const Hero = React.forwardRef((props, ref) => {
                   placeholder="Last Name"
                   value={formData.lastName}
                   onChange={handleChange}
-                  className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-red-300 text-black"
+                  className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-hidden focus:ring-2 focus:ring-red-300 text-black"
                   required
                 />
               </div>
@@ -108,7 +92,7 @@ const Hero = React.forwardRef((props, ref) => {
                 placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-red-300 text-black"
+                className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-hidden focus:ring-2 focus:ring-red-300 text-black"
                 required
               />
               <input
@@ -117,7 +101,7 @@ const Hero = React.forwardRef((props, ref) => {
                 placeholder="Phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-red-300 text-black"
+                className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-hidden focus:ring-2 focus:ring-red-300 text-black"
                 required
               />
               <textarea
@@ -125,7 +109,7 @@ const Hero = React.forwardRef((props, ref) => {
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={handleChange}
-                className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full h-28 focus:outline-none focus:ring-2 focus:ring-red-300 text-black"
+                className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full h-28 focus:outline-hidden focus:ring-2 focus:ring-red-300 text-black"
                 required
               />
               <button
@@ -137,6 +121,14 @@ const Hero = React.forwardRef((props, ref) => {
             </form>
           </div>
         </div> */}
+
+        {/* Descriptive Content for Accessibility */}
+        <p id="hero-description" className="sr-only">
+          Join LITWITS to enhance debating, writing, research, and public
+          speaking skills with expert mentors preparing students for Ivy League
+          admissions, World Scholar's Cup, and more.
+        </p>
+
       </section>
       <ToastContainer />
 

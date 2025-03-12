@@ -1,36 +1,127 @@
 import React, { useEffect, useState } from "react";
-import img1 from "../assets/images/img1.png";
-import img2 from "../assets/images/Harvard.png";
-import img3 from "../assets/images/img3.png";
-import img4 from "../assets/images/img4.png";
-import img5 from "../assets/images/img5.png";
-import img6 from "../assets/images/img6.png";
-import img7 from "../assets/images/img7.png";
-import img8 from "../assets/images/Stanford.png";
-import img9 from "../assets/images/img9.png";
-import img11 from "../assets/images/img11.png";
-import img12 from "../assets/images/Warwick.png";
-import img13 from "../assets/images/Columbia.png";
-import img15 from "../assets/images/Brown.png";
+import img1 from "/assets/world-scholars-cup.avif";
+import img2 from "/assets/harvard-crimson.avif";
+import img3 from "/assets/princeton-diplomatic-invitational.avif";
+import img4 from "/assets/harvard-international-review.avif";
+import img5 from "/assets/oxford-union-society.avif";
+import img6 from "/assets/yale-university.avif";
+import img7 from "/assets/queens-commonwealth.avif";
+import img8 from "/assets/stanford-university.avif";
+import img9 from "/assets/john-locke-institute.avif";
+import img11 from "/assets/oxford-summer-school.avif";
+import img12 from "/assets/warwick-university.avif";
+import img13 from "/assets/columbia-university.avif";
+import img15 from "/assets/brown-university.avif";
 
 const Glide3DSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(4);
 
   const items = [
-    { id: 1, image: img1 },
-    { id: 2, image: img2 },
-    { id: 3, image: img3 },
-    { id: 4, image: img4 },
-    { id: 5, image: img5 },
-    { id: 6, image: img6 },
-    { id: 7, image: img7 },
-    { id: 8, image: img8 },
-    { id: 9, image: img9 },
-    { id: 11, image: img11 },
-    { id: 12, image: img12 },
-    { id: 13, image: img13 },
-    { id: 15, image: img15 },
+    { 
+      id: 1, 
+      image: img1, 
+      alt: "World Scholar's Cup training for academic excellence and teamwork.",
+      title: "World Scholar's Cup (WSC) at Litwits",
+      ariaLabel: "World Scholar's Cup (WSC) at Litwits",
+      ariaDescribedBy: "Comprehensive coaching for the World Scholar's Cup, preparing students for debate, collaborative writing, and analytical challenges, fostering critical thinking and teamwork."
+    },
+    {
+      id: 2,
+      image: img2,
+      alt: "Harvard Crimson - Oldest Daily College Newspaper.",
+      title: "Harvard Crimson",
+      ariaLabel: "Harvard Crimson",
+      ariaDescribedBy: "Founded in 1873, Harvard Crimson is the oldest continuously published college newspaper, distributed across Harvard and beyond."
+    },
+    {
+      "id": 3,
+      "image": img3,
+      alt: "Princeton Diplomatic Invitational - International diplomacy experience.",
+      title: "Princeton Diplomatic Invitational (PDI)",
+      ariaLabel: "Princeton Diplomatic Invitational (PDI)",
+      ariaDescribedBy: "A renowned conference by Princeton University, fostering international diplomacy and crisis management skills."
+    },
+    {
+      "id": 4,
+      "image": img4,
+      alt: "Harvard International Review - Insights on global issues.",
+      title: "Harvard International Review - Global Affairs",
+      ariaLabel: "Harvard International Review - Global Affairs",
+      ariaDescribedBy: "A renowned journal covering global developments in politics, business, science, and culture."
+    },
+    {
+      "id": 5,
+      "image": img5,
+      alt: "The Oxford Union - Historic platform for debates and discussions.",
+      title: "The Oxford Union - Debate Society",
+      ariaLabel: "The Oxford Union - Debate Society",
+      ariaDescribedBy: "The Oxford Union is a prestigious debating society with a rich history of discussions and discourse."
+    },
+    {
+      "id": 6,
+      "image": img6,
+      alt: "Yale University - Leading institution for academic growth.",
+      title: "Yale University - Academic Excellence",
+      ariaLabel: "Yale University - Academic Excellence",
+      ariaDescribedBy: "Yale University provides top-tier education in various disciplines for aspiring global leaders."
+    },
+    {
+      "id": 7,
+      "image": img7,
+      alt: "Queen's Commonwealth Essay Competition - Writing excellence since 1883.",
+      title: "Queen's Commonwealth Essay Competition",
+      ariaLabel: "Queen's Commonwealth Essay Competition",
+      ariaDescribedBy: "The world's oldest international writing competition for school students."
+    },
+    {
+      "id": 8,
+      "image": img8,
+      alt: "Stanford University - A hub for global innovation and research.",
+      title: "Stanford University - Innovation Hub",
+      ariaLabel: "Stanford University - Innovation Hub",
+      ariaDescribedBy: "Stanford University is a globally recognized research institution known for innovation and academic excellence."
+    },
+    {
+      "id": 9,
+      "image": img9,
+      alt: "John Locke Institute - Academic growth through learning.",
+      title: "John Locke Institute - Academic Excellence",
+      ariaLabel: "John Locke Institute - Academic Excellence",
+      ariaDescribedBy: "The John Locke Institute empowers students through courses and competitions in Philosophy, Politics, and more."
+    },
+    {
+      "id": 11,
+      "image": img11,
+      alt: "Oxford Summer School - Inspired by elite universities.",
+      title: "Oxford Summer School - Global Student Hub",
+      ariaLabel: "Oxford Summer School - Global Student Hub",
+      ariaDescribedBy: "Welcoming students from 170+ countries for intensive learning inspired by Oxford and Cambridge."
+    },
+    {
+      "id": 12,
+      "image": img12,
+      alt: "University of Warwick - Leading UK university.",
+      title: "University of Warwick - Top UK University",
+      ariaLabel: "University of Warwick - Top UK University",
+      ariaDescribedBy: "Warwick University, part of the Russell Group, offers world-class degrees and a vibrant academic environment."
+    },
+    {
+      "id": 13,
+      "image": img13,
+      alt: "Columbia University - Leading research institution.",
+      title: "Columbia University - Ivy League Institution",
+      ariaLabel: "Columbia University - Ivy League Institution",
+      ariaDescribedBy: "Columbia University is a prestigious Ivy League research university in New York City."
+    },
+    {
+      "id": 15,
+      "image": img15,
+      alt: "Brown University - Renowned Ivy League institution.",
+      title: "Brown University - Ivy League Research Institution",
+      ariaLabel: "Brown University - Ivy League Research Institution",
+      ariaDescribedBy: "Highlighting Brown University as a prestigious Ivy League research university, renowned for its academic excellence."
+    },
   ];
 
   useEffect(() => {
@@ -85,7 +176,7 @@ const Glide3DSlider = () => {
             {items.map((item, index) => (
               <div
                 key={item.id}
-                className={`flex-shrink-0 px-2 transition-all duration-500 ease-in-out
+                className={`shrink-0 px-2 transition-all duration-500 ease-in-out
                   ${index === activeIndex ? "scale-100" : "scale-95"}
                   ${
                     itemsPerSlide === 1
@@ -109,10 +200,13 @@ const Glide3DSlider = () => {
     `}
                   >
                     <img
-                      src={item.image}
-                      alt={`Slide ${item.id}`}
-                      className="w-full h-full object-contain transform transition-transform duration-500 group-hover:scale-105"
-                    />
+                    src={item.image}
+                    alt={item.alt}
+                    title={item.title}
+                    aria-label={item.ariaLabel}
+                    aria-describedby={item.ariaDescribedBy}
+                    className="w-full h-full object-contain transform transition-transform duration-500 group-hover:scale-105"
+                  />
                     {index !== activeIndex && (
                       <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-300" />
                     )}

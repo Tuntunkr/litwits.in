@@ -1,21 +1,20 @@
 import { useRef, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import define from "/define.jpeg";
-import build from "/Build.jpg";
-import Craft from "/Craft.jpeg";
-import blueprint from "/blueprint.jpeg";
-import Tomeet from "/Tomeet.jpeg";
-import Mockinterviews from "/Mockinterviews.jpeg";
-import The from "../../assets/the.png";
-import Identifying from "/Identifying.jpeg";
-import Informed from "/Informed.jpg";
-import Fit from "/Fit.jpeg";
-import Strategic from "/Strategic.jpg";
-import session from "/session.png";
-import Personalized from "/Personalized.jpeg";
-import Navigating from "/Navigating.png";
+import define from "/assets/defining-identity.avif";
+import build from "/assets/impactful-profile.avif";
+import Craft from "/assets/authentic-applications.avif";
+import blueprint from "/assets/blueprint-success.avif";
+import Tomeet from "/assets/academic-excellence.avif";
+import Mockinterviews from "/assets/mock-interviews.avif";
+import The from "/assets/curated-college-list.avif";
+import Identifying from "/assets/identifying-goals.avif";
+import Informed from "/assets/informed-decision.avif";
+import Fit from "/assets/fit-analysis.avif";
+import Strategic from "/assets/strategic-plan.avif";
+import session from "/assets/book-a-consultation.avif";
+import Personalized from "/assets/personalized-feedback.avif";
+import Navigating from "/assets/navigating-decisions.avif";
 import "./Collage.css";
-import bgimg from "/Professionals.jpg";
 import AutoSliderSection from "./AutoSliderSection";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -27,30 +26,55 @@ const CollegeCounseling = () => {
       description:
         "We begin by understanding your personal, academic, and professional goals, considering factors like desired majors, career ambitions, campus culture, and extracurricular interests.",
       image: Identifying,
+      alt: "Identifying personal and academic goals for strategic college selection.",
+      imgTitle: "Identifying Your Goals with LITWITS",
+      ariaLabel: "Identifying Your Goals with LITWITS",
+      ariaDescribedby:
+        "Helping students outline academic and career ambitions to align with the right college choices.",
     },
     {
       title: "Curated College List",
       description:
         "Based on these insights, we curate a list of colleges that align with your values and interests, including top-tier institutions both in your home country and internationally.",
       image: The,
+      alt: "Curated College List for tailored university recommendations and academic alignment.",
+      imgTitle: "Curated College List- Litwits",
+      ariaLabel: "Curated College List- Litwits",
+      ariaDescribedby:
+        "Based on these insights, we curate a list of colleges that align with your values and interests, including top-tier institutions both in your home country and internationally.",
     },
     {
       title: "Fit Analysis",
       description:
-        "We analyze each college’s academic offerings, campus life, faculty expertise, and unique opportunities (internships, research, study abroad programs) to ensure they align with your profile and vision for the future.",
+        "We analyze each college's academic offerings, campus life, faculty expertise, and unique opportunities (internships, research, study abroad programs) to ensure they align with your profile and vision for the future.",
       image: Fit,
+      alt: "Fit analysis ensuring the perfect academic and personal alignment.",
+      imgTitle: "Fit Analysis with LITWITS",
+      ariaLabel: "Fit Analysis with LITWITS",
+      ariaDescribedby:
+        "Comprehensive evaluation of colleges' academic programs, campus life, and faculty expertise.",
     },
     {
       title: "Strategic Application Plan",
       description:
         "We help you prioritize colleges based on factors such as acceptance rates, program strengths, and financial aid options, making the application process more strategic and manageable.",
       image: Strategic,
+      alt: "Strategic application planning for manageable admissions steps.",
+      imgTitle: "Strategic Application Plan with LITWITS",
+      ariaLabel: "Strategic Application Plan with LITWITS",
+      ariaDescribedby:
+        "Prioritizing college applications based on acceptance rates, program strengths, and goals.",
     },
     {
       title: "Informed Decision-Making",
       description:
-        "Once you have your curated list, we assist you in evaluating each school’s fit for your long-term goals, ensuring your final decision is an informed one that aligns with both your academic and personal growth.",
+        "Once you have your curated list, we assist you in evaluating each school's fit for your long-term goals, ensuring your final decision is an informed one that aligns with both your academic and personal growth.",
       image: Informed,
+      alt: "Supporting informed decision-making for academic and career success.",
+      imgTitle: "Informed Decision-Making with LITWITS",
+      ariaLabel: "Informed Decision-Making with LITWITS",
+      ariaDescribedby:
+        "Helping students evaluate colleges to make informed decisions aligning with their long-term goals.",
     },
   ];
 
@@ -123,15 +147,24 @@ const CollegeCounseling = () => {
           id="home"
           className="bg-cover bg-center h-[40vh] flex items-center justify-center text-white"
           style={{
-            backgroundImage: "url('/frame-11.png')",
+            backgroundImage: "url('/assets/college-counseling.avif')",
             fontFamily: "'Noto Sans', sans-serif",
           }}
+          role="img"
+          aria-label="College Counseling at LITWITS"
+          aria-describedby="consultation-description"
         >
           <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
             <h1 className="text-[4vw] md:text-[3vw] lg:text-[50px] font-bold mb-4">
               COLLEGE COUNSELING
             </h1>
           </div>
+
+          {/* <!-- Descriptive Content for Accessibility --> */}
+          <p id="consultation-description" class="sr-only">
+            Comprehensive guidance starting from middle school to help students
+            navigate the college admissions process with a clear roadmap.
+          </p>
         </section>
 
         {/* 2 section  */}
@@ -196,8 +229,11 @@ const CollegeCounseling = () => {
 
               <img
                 src={define}
+                alt="Defining unique identity through passion, strengths, and potential."
+                title="Defining Your Unique Identity with LITWITS"
+                aria-label="Defining Your Unique Identity with LITWITS"
+                aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
                 style={{ height: "250px" }}
-                alt="Debate"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
@@ -214,6 +250,9 @@ const CollegeCounseling = () => {
             backgroundAttachment: "fixed",
             backgroundRepeat: "no-repeat",
           }}
+          role="img"
+          aria-label="Blueprint for Success with LITWITS"
+          aria-describedby="blueprint-description"
         >
           {/* Background Opacity Layer */}
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -243,27 +282,34 @@ const CollegeCounseling = () => {
               </p>
             </div>
           </div>
+          {/* Descriptive Content for Accessibility */}
+          <p id="blueprint-description" className="sr-only">
+            Personalized roadmap integrating strengths into an actionable plan
+            for consistent academic growth.
+          </p>
         </section>
 
         {/* SAT  end*/}
 
-        <AutoSliderSection bgimg={bgimg} cards={cards} />
+        <AutoSliderSection cards={cards} />
 
         {/* Mun section  */}
         <section
           id="individual-session"
           className="container-fluid mx-auto py-16 bg-white"
         >
-          <div className="max-w-screen-xl mx-auto">
+          <div className="max-w-(--breakpoint-xl) mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* Image Section */}
               <img
                 src={build}
-                alt="Debate"
+                alt="Profile-building for leadership, creativity, and impactful achievements."
+                title="Building a Cohesive and Impactful Profile with LITWITS"
+                aria-label="Building a Cohesive and Impactful Profile with LITWITS"
+                aria-describedby="Guidance in curating extracurriculars, building resumes, and crafting a strong academic narrative."
                 style={{ height: "630px" }}
                 className="rounded-lg shadow-lg w-full h-full object-cover"
               />
-
               {/* Text Section */}
               <div className="flex flex-col justify-center h-full">
                 <h2 className="text-[#890C25] uppercase text-start text-2xl md:text-3xl font-bold mb-4">
@@ -330,6 +376,9 @@ const CollegeCounseling = () => {
             backgroundAttachment: "fixed",
             backgroundRepeat: "no-repeat",
           }}
+          role="img"
+          aria-label="Achieving Academic Excellence with LITWITS"
+          aria-describedby="academic-excellence-description"
         >
           {/* Background Opacity Layer */}
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -345,26 +394,32 @@ const CollegeCounseling = () => {
                 <span className="font-semibold">Test Preparation:</span> Our
                 team offers comprehensive support for standardized tests like
                 SAT, ACT, AP exams, IELTS, and other assessments. Our focused
-                approach ensures you’re fully prepared to achieve your best
+                approach ensures you're fully prepared to achieve your best
                 possible scores.
               </p>
               <p>
                 <span className="font-semibold">
                   Advanced Coursework Guidance:
                 </span>{" "}
-                Whether it’s selecting the right AP courses or excelling in
+                Whether it's selecting the right AP courses or excelling in
                 advanced academic projects, we provide strategies for success in
                 challenging coursework.
               </p>
             </div>
           </div>
+
+          {/* Descriptive Content for Accessibility */}
+          <p id="academic-excellence-description" className="sr-only">
+            Tailored guidance for test preparation, advanced coursework, and
+            strong academic performance.
+          </p>
         </section>
         {/* Mun section  */}
         <section
           id="individual-session"
           className="container-fluid mx-auto py-16 bg-white"
         >
-          <div className="max-w-screen-xl mx-auto">
+          <div className="max-w-(--breakpoint-xl) mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
               {/* Text Section */}
               <div className="flex flex-col justify-center">
@@ -425,7 +480,10 @@ const CollegeCounseling = () => {
               <div className="flex">
                 <img
                   src={Craft}
-                  alt="Debate"
+                  alt="Crafting strong applications with essays and recommendations."
+                  title="Crafting Authentic and Impactful Applications with LITWITS"
+                  aria-label="Crafting Authentic and Impactful Applications with LITWITS"
+                  aria-describedby="Essay writing, LOR guidance, and application packaging for compelling submissions."
                   style={{ height: "550px" }}
                   className="rounded-lg shadow-lg w-full object-cover"
                 />
@@ -437,7 +495,7 @@ const CollegeCounseling = () => {
         {/*Presenting Your Best Self start */}
 
         <section className="bg-red-800 to-[#33000A] text-white py-16 px-4">
-          <div className="max-w-screen-lg mx-auto text-center">
+          <div className="max-w-(--breakpoint-lg) mx-auto text-center">
             <h5 className="text-3xl md:text-4xl font-bold mb-4">
               PRESENTING YOUR BEST SELF
             </h5>
@@ -450,7 +508,10 @@ const CollegeCounseling = () => {
               <div className=" text-white rounded-lg shadow-md overflow-hidden">
                 <img
                   src={Mockinterviews}
-                  alt="Debate"
+                  alt="Mock interviews refining communication and boosting confidence."
+                  title="Mock Interviews with LITWITS"
+                  aria-label="Mock Interviews with LITWITS"
+                  aria-describedby="Personalized interview coaching with practice sessions and feedback for admissions success."
                   style={{ height: "360px" }}
                   className="rounded-lg shadow-lg w-full h-full object-cover"
                 />
@@ -467,7 +528,10 @@ const CollegeCounseling = () => {
               <div className=" text-white rounded-lg shadow-md overflow-hidden">
                 <img
                   src={Personalized}
-                  alt="Debate"
+                  alt="Personalized interview feedback for improved performance."
+                  title="Personalized Feedback for Interview Success with LITWITS"
+                  aria-label="Personalized Feedback for Interview Success with LITWITS"
+                  aria-describedby="Customized feedback to help students present their best selves in interviews."
                   style={{ height: "360px" }}
                   className="rounded-lg shadow-lg w-full h-full object-cover"
                 />
@@ -500,7 +564,10 @@ const CollegeCounseling = () => {
               <div className="flex items-center justify-center">
                 <img
                   src={Navigating}
-                  alt="Debate"
+                  alt="Navigating college admissions decisions with personalized insights."
+                  title="Navigating Admissions Decisions with LITWITS"
+                  aria-label="Navigating Admissions Decisions with LITWITS"
+                  aria-describedby="Guidance in evaluating college offers, campus environments, and academic programs."
                   style={{ height: "360px" }}
                   className="rounded-lg shadow-lg w-full h-full object-cover"
                 />
@@ -516,7 +583,7 @@ const CollegeCounseling = () => {
 
                 <li className="list-none">
                   <p className="text-gray-600">
-                    Evaluating each college’s offerings, environment, and
+                    Evaluating each college's offerings, environment, and
                     opportunities to ensure the best fit for your long-term
                     goals.
                   </p>
@@ -544,6 +611,9 @@ const CollegeCounseling = () => {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
+            role="img"
+            aria-label="Take the Next Step Towards Your Dream University"
+            aria-describedby="consultation-description"
           >
             {/* Background Opacity Layer */}
             <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
@@ -562,7 +632,7 @@ const CollegeCounseling = () => {
                 <input
                   type="email"
                   placeholder="Enter Your Email"
-                  className="w-full px-4 py-3 text-gray-800 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                  className="w-full px-4 py-3 text-gray-800 bg-white border border-gray-300 rounded-lg focus:outline-hidden focus:ring-2 focus:ring-red-500"
                 />
                 <Link to={"/membership"}>
                   <button
@@ -573,6 +643,12 @@ const CollegeCounseling = () => {
                   </button>
                 </Link>
               </form>
+              {/* Descriptive Content for Accessibility */}
+              <p id="consultation-description" className="sr-only">
+                Schedule a personalized consultation to discuss your academic
+                aspirations, goals, and tailored strategies to excel in your
+                college application journey.
+              </p>
             </div>
           </div>
         </section>

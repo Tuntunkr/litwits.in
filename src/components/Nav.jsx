@@ -3,9 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./Nav.css";
-import ltlogo from "../assets/images/logo.png";
 
 // Navigation menu items
 const navLinks = [
@@ -40,7 +39,9 @@ function CollapsibleExample() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className={`bg-body-tertiary ${isSticky ? "sticky-navbar animate-navbar" : ""}`}
+      className={`bg-body-tertiary ${
+        isSticky ? "sticky-navbar animate-navbar" : ""
+      }`}
       style={{
         fontFamily: "Noto Serif, serif",
         padding: isSticky ? "10px 20px" : "20px 30px",
@@ -59,10 +60,9 @@ function CollapsibleExample() {
             fontSize: "1.7rem",
           }}
         >
-
-              <h4   className=" uppercase font-light text-[36px] font-noto-serif text-red-800">Litwits</h4>
-
-
+          <h1 className="uppercase font-light text-[36px] font-noto-serif text-red-800">
+            Litwits
+          </h1>
         </Navbar.Brand>
 
         {/* Hamburger Menu Toggle for Mobile */}
@@ -82,7 +82,8 @@ function CollapsibleExample() {
                   style={{
                     textDecoration: "none",
                     fontFamily: "Noto Serif, serif",
-                    color: location.pathname === link.href ? "#890C25" : "#262626",
+                    color:
+                      location.pathname === link.href ? "#890C25" : "#262626",
                     margin: "0 10px",
                     fontSize: "1rem",
                     padding: "10px 15px",
@@ -98,7 +99,8 @@ function CollapsibleExample() {
                   }}
                   onMouseLeave={(e) => {
                     // Reset text color on mouse leave
-                    e.currentTarget.style.color = location.pathname === link.href ? "#890C25" : "#262626";
+                    e.currentTarget.style.color =
+                      location.pathname === link.href ? "#890C25" : "#262626";
                   }}
                 >
                   {link.label}

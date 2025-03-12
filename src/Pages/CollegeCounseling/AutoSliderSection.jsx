@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import "./Collage.css"; // Ensure your CSS file has the necessary styles
 import bgimg from "/Professionals.jpg"; // Ensure the background image path is correct
 
-const AutoSliderSection = ({ bgimg, cards = [] }) => {
+const AutoSliderSection = ({ cards = [] }) => {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);
@@ -76,12 +76,15 @@ const AutoSliderSection = ({ bgimg, cards = [] }) => {
                     cards.map((card, idx) => (
                       <div
                         key={idx}
-                        className="flex-shrink-0 w-full sm:w-[75%] md:w-[50%] lg:w-[33%] bg-transparent rounded-lg shadow-lg p-4"
+                        className="shrink-0 w-full sm:w-[75%] md:w-[50%] lg:w-[33%] bg-transparent rounded-lg shadow-lg p-4"
                       >
                         <img
                           src={card.image}
-                          alt={card.title}
                           className="rounded-lg mb-4 w-full h-[200px] object-cover"
+                          alt={card.alt}
+                          title={card.imgTitle}
+                          aria-label={card.ariaLabel}
+                          aria-describedby={card.ariaDescribedby}
                         />
                         <h3 className="text-lg font-bold text-white mb-2">
                           {card.title}

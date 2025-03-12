@@ -2,11 +2,11 @@ import { useRef, useState } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./individualessions.css";
-import apworld from "/apworld.jpeg";
-import mdl from "/image-model.png";
-import social from "/social.png";
-import actsession from "/act-session.png";
-import Sat from "/Sat.png";
+import apworld from "/assets/advanced-placement-prep-session.avif";
+import mdl from "/assets/model-united-nations.avif";
+import social from "/assets/social-impact-program.avif";
+import actsession from "/assets/act-prep-session.avif";
+import Sat from "/assets/sat-prep-session.avif";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 const GroupSess = () => {
@@ -59,16 +59,23 @@ const GroupSess = () => {
 
   return (
     <section>
-    
-    {/* SEO Meta Tags */}
-    <Helmet>
-        <title>Individual Sessions for MUN, Debate, AP Prep & More | LITWITS </title>
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>
+          Individual Sessions for MUN, Debate, AP Prep & More | LITWITS{" "}
+        </title>
         <meta
           name="description"
           content="Unlock your potential with LITWITS' individual sessions in MUN, Debate, TED-Ed Talks, AP Prep, SAT/ACT, and more. Expert mentors guide you to success."
         />
-        <meta name="keywords" content="Individual sessions, MUN preparation, Debate coaching, AP Prep, TED-Ed training, Advanced Placement" />
-        <meta property="og:title" content="Individual Sessions for MUN, Debate, AP Prep & More | LITWITS" />
+        <meta
+          name="keywords"
+          content="Individual sessions, MUN preparation, Debate coaching, AP Prep, TED-Ed training, Advanced Placement"
+        />
+        <meta
+          property="og:title"
+          content="Individual Sessions for MUN, Debate, AP Prep & More | LITWITS"
+        />
         <meta
           property="og:description"
           content="Discover a platform where you can write, discuss, and engage in thought-provoking debates."
@@ -79,20 +86,28 @@ const GroupSess = () => {
 
       {/* Hero Section */}
 
-
       <section
         id="home"
         className="bg-cover bg-center h-[40vh] flex items-center justify-center text-white"
         style={{
-          backgroundImage: "url('/frame-11.png')",
+          backgroundImage: "url('/assets/individual-session.avif')",
           fontFamily: "'Noto Sans', sans-serif",
         }}
+        role="img"
+        aria-label="Individual Sessions for focused learning in key academic and leadership areas."
+        aria-describedby="individual-sessions-description"
       >
         <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
           <h1 className="text-[4vw] md:text-[3vw] uppercase lg:text-[50px] font-bold mb-4">
             Individual SESSIONS
           </h1>
         </div>
+        {/* Descriptive Content for Accessibility */}
+        <p id="individual-sessions-description" className="sr-only">
+          Customised one-on-one sessions in MUN, Debate, TED-Ed Talks, SAT/ACT,
+          and AP Prep, designed for personalised skill development and academic
+          success.
+        </p>
       </section>
       {/* 2 section  */}
 
@@ -123,9 +138,9 @@ const GroupSess = () => {
                   to="/contact-us"
                   className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                   Free Consultation
+                  Free Consultation
                 </Link>
-                
+
                 <Link
                   to="/membership"
                   className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
@@ -134,12 +149,14 @@ const GroupSess = () => {
                 </Link>
               </div>
             </div>
-
             <img
               src={mdl}
-              alt="Debate"
+              alt="Model United Nations training for diplomacy, negotiation, and leadership skills."
               style={{ height: "350px" }}
-              className="rounded-lg shadow-lg w-full"
+              className="rounded-lg shadow-lg w-full object-cover"
+              title="Model United Nations (MUN) at Litwits"
+              aria-label="Model United Nations (MUN) at Litwits"
+              aria-describedby="Immersive MUN training that prepares students for global diplomacy, impactful position papers, and confident public speaking at prestigious conferences."
             />
           </div>
         </div>
@@ -150,11 +167,14 @@ const GroupSess = () => {
         <div
           className="relative flex items-center justify-center h-[700px] bg-cover bg-center"
           style={{
-            backgroundImage: `url('/group-26695.png')`,
+            backgroundImage: `url('/assets/ted-ed-student-talk-program.avif')`,
             backgroundAttachment: "fixed", // Enables parallax effect
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
+          role="img"
+          aria-label="TED-Ed Student Talks Program with expert mentorship on social issues and storytelling."
+          aria-describedby="ted-ed-program-description"
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           {/* Dark overlay */}
@@ -178,7 +198,7 @@ const GroupSess = () => {
               gender justice, education, or healthcare. We work with them to
               understand the fundamentals, ideate sustainable solutions, craft
               narratives, think critically on the subject, and develop their
-              video presentations for the ‘TED-Ed Student Talk Program’
+              video presentations for the 'TED-Ed Student Talk Program'
               platform.
             </p>
 
@@ -189,21 +209,27 @@ const GroupSess = () => {
               audiences.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
-                <Link
-                  to="/contact-us"
-                  className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                >
-                   Free Consultation
-                </Link>
-                
-                <Link
-                  to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
-                >
-                  Enroll Now
-                </Link>
-              </div>
+              <Link
+                to="/contact-us"
+                className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+              >
+                Free Consultation
+              </Link>
+
+              <Link
+                to="/membership"
+                className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+              >
+                Enroll Now
+              </Link>
+            </div>
           </div>
+          {/* Descriptive Content for Accessibility */}
+          <p id="ted-ed-program-description" className="sr-only">
+            The TED-Ed Student Talks Program empowers students to explore
+            diverse perspectives, refine critical thinking skills, and transform
+            ideas into powerful narratives through expert mentorship.
+          </p>
         </div>
       </section>
 
@@ -216,9 +242,12 @@ const GroupSess = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <img
               src={social}
-              alt="Debate"
+              alt="Social Impact Program empowering students as changemakers."
               style={{ height: "450px" }}
               className="rounded-lg shadow-lg w-full"
+              title="Social Impact Program at Litwits"
+              aria-label="Social Impact Program at Litwits"
+              aria-describedby="The Social Impact Program empowers students to align personal values with global initiatives, fostering ethical leadership and impactful change in their communities."
             />
             <div>
               <h2 className="text-3xl text-start font-bold text-red-700 mb-4">
@@ -247,9 +276,9 @@ const GroupSess = () => {
                   to="/contact-us"
                   className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                   Free Consultation
+                  Free Consultation
                 </Link>
-                
+
                 <Link
                   to="/membership"
                   className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
@@ -258,7 +287,6 @@ const GroupSess = () => {
                 </Link>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -269,9 +297,12 @@ const GroupSess = () => {
         <div
           className="relative flex items-center justify-center h-[495px] bg-cover bg-center"
           style={{
-            backgroundImage: `url('/group-26696.png')`,
+            backgroundImage: `url('/assets/research-paper-guidance.avif')`,
             backgroundAttachment: "fixed", // Replace with a proper URL for the image
           }}
+          role="img"
+          aria-label="Research Paper Guidance for academic success and effective writing skills."
+          aria-describedby="research-paper-description"
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>{" "}
           {/* Dark overlay */}
@@ -299,21 +330,27 @@ const GroupSess = () => {
               works.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
-                <Link
-                  to="/contact-us"
-                  className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                >
-                   Free Consultation
-                </Link>
-                
-                <Link
-                  to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
-                >
-                  Enroll Now
-                </Link>
-              </div>
+              <Link
+                to="/contact-us"
+                className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+              >
+                Free Consultation
+              </Link>
+
+              <Link
+                to="/membership"
+                className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+              >
+                Enroll Now
+              </Link>
+            </div>
           </div>
+          {/* Descriptive Content for Accessibility */}
+          <p id="research-paper-description" className="sr-only">
+            Comprehensive research paper guidance from developing engaging
+            questions to crafting compelling narratives, ensuring students
+            produce high-quality academic work.
+          </p>
         </div>
       </section>
 
@@ -326,9 +363,12 @@ const GroupSess = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <img
               src={apworld}
-              alt="Debate"
+              alt="Advanced Placement Prep Session for comprehensive subject mastery and university readiness."
               style={{ height: "280px" }}
               className="rounded-lg shadow-lg w-full"
+              title="Advanced Placement (AP) Program at Litwits"
+              aria-label="Advanced Placement (AP) Program at Litwits"
+              aria-describedby="Personalised coaching in AP subjects like Calculus, Economics, and History, with tailored lessons to help students excel in college-level coursework and achieve top scores."
             />
             <div>
               <h2 className="text-3xl text-start font-bold text-red-700 mb-4">
@@ -349,9 +389,9 @@ const GroupSess = () => {
                   to="/contact-us"
                   className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                   Free Consultation
+                  Free Consultation
                 </Link>
-                
+
                 <Link
                   to="/membership"
                   className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
@@ -375,6 +415,9 @@ const GroupSess = () => {
             backgroundPosition: "center",
             backgroundAttachment: "fixed", // Enables parallax effect
           }}
+          role="img"
+          aria-label="SAT Prep Session with targeted strategies for improved test performance."
+          aria-describedby="sat-prep-session-description"
         >
           {/* Overlay for opacity */}
           <div
@@ -408,9 +451,9 @@ const GroupSess = () => {
                   to="/contact-us"
                   className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                   Free Consultation
+                  Free Consultation
                 </Link>
-                
+
                 <Link
                   to="/membership"
                   className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
@@ -420,6 +463,12 @@ const GroupSess = () => {
               </div>
             </div>
           </div>
+          {/* Descriptive Content for Accessibility */}
+          <p id="sat-prep-session-description" className="sr-only">
+            Expert-led SAT preparation covering Evidence-Based Reading, Writing,
+            and Math, with targeted strategies to improve timing, accuracy, and
+            confidence for optimal test performance.
+          </p>
         </div>
       </section>
 
@@ -431,9 +480,12 @@ const GroupSess = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <img
               src={actsession}
-              alt="Debate"
+              alt="ACT Prep Session for focused skill enhancement and test readiness."
               style={{ height: "380px" }}
               className="rounded-lg shadow-lg w-full"
+              title="ACT Prep Session with Litwits"
+              aria-label="ACT Prep Session with Litwits"
+              aria-describedby="Tailored ACT preparation with personalised lesson plans that build core skills in English, Math, Reading, and Science, ensuring students excel with confidence."
             />
             <div>
               <h2 className="text-3xl text-start font-bold text-red-700 mb-4">
@@ -459,9 +511,9 @@ const GroupSess = () => {
                   to="/contact-us"
                   className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                   Free Consultation
+                  Free Consultation
                 </Link>
-                
+
                 <Link
                   to="/membership"
                   className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"

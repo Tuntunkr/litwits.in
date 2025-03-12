@@ -66,7 +66,7 @@ const TestimonialCarousel = () => {
 
   return (
     <section className="bg-white py-16 font-noto relative">
-      <Helmet>
+      {/* <Helmet>
         <title>LITWITS</title>
         <meta name="description" content="Read what people say about LITWITS. Our students and parents share their experiences and testimonials." />
         <meta name="keywords" content="LITWITS reviews, Testimonials, Student feedback, Debate courses, Public speaking" />
@@ -75,7 +75,7 @@ const TestimonialCarousel = () => {
         <meta property="og:image" content={icons} />
         <meta property="og:url" content="https://litwits.com/testimonials" />
         <link rel="canonical" href="https://litwits.com/testimonials" />
-      </Helmet>
+      </Helmet> */}
 
       <h2 className="text-[30px] font-bold testimonial font-nato text-center text-[#890C25] uppercase mb-8">
         IN THEIR WORDS
