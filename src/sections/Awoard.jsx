@@ -18,6 +18,8 @@ const AwardsSlider = () => {
   const [transitionEnabled, setTransitionEnabled] = useState(true);
   const [itemsPerSlide, setItemsPerSlide] = useState(3);
 
+  // testing
+
   const items = [
     { 
       id: 1, 
