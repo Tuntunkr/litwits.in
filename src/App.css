@@ -42,6 +42,11 @@ body button {
   line-height: normal;
 }
 
+a {
+  color: inherit !important;
+  text-decoration: underline;
+}
+
 
 .contact{
   font-family: 'Noto Serif';

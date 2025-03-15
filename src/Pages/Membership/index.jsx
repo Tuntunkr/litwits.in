@@ -51,29 +51,29 @@ const index = () => {
           <tbody>
             <tr>
               <td>10</td>
-              <td>2 Months</td>
-              <td>₹10,030</td>
+              <td>2.5 Months</td>
+              <td>₹12,000</td>
               <td>
-                <Rozarpayment inrAmount={10030} className="choose-plan mt-4" />
+                <Rozarpayment inrAmount={12000} className="choose-plan mt-4" />
               </td>
             </tr>
             <tr>
               <td>20</td>
-              <td>3 Months</td>
-              <td>₹18,880</td>
+              <td>4 Months</td>
+              <td>₹18,000</td>
               <td>
-                <Rozarpayment inrAmount={18880}  className="choose-plan mt-4" />
+                <Rozarpayment inrAmount={18000}  className="choose-plan mt-4" />
               </td>
             </tr>
             <tr>
               <td>30</td>
-              <td>5 Months</td>
-              <td>₹26,550</td>
+              <td>6 Months</td>
+              <td>₹25,000</td>
               <td>
-              <Rozarpayment inrAmount={26550} />
+              <Rozarpayment inrAmount={25000} />
               </td>
             </tr>
-            <tr>
+            {/* <tr>
               <td>40</td>
               <td>6 Months</td>
               <td>₹33,040</td>
@@ -96,9 +96,9 @@ const index = () => {
               <td>
               <Rozarpayment inrAmount={42480} className="choose-plan mt-4" />
               </td>
-            </tr>
+            </tr> */}
             <tr>
-              <td>100</td>
+              <td>Unlimited</td>
               <td>12 Months</td>
               <td>₹59,000</td>
               <td>

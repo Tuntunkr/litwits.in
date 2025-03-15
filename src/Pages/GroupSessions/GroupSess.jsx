@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Group.css";
 import Entrepreneurship from "/assets/entrepreneurship-session.avif";
 import Debate from "/assets/debate-and-public-speaking.avif";
-import world from "/assets/world-scholars-cup.avif";
+import world from "/assets/wsc.jpg";
 import competition from "/assets/ivy-league-prep.avif";
 import financial from "/assets/financial-literacy-session.avif";
 import Writing from "/assets/academic-writing-session.avif";
@@ -152,16 +152,16 @@ const GroupSess = () => {
                 </p>
                 <br />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full  mx-auto">
-                  <Link
-                    to="/contact-us"
-                    className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                  >
-                    Free Consultation
-                  </Link>
+                 <Link
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                >
+                   Free Consultationss
+                </Link>
 
                   <Link
                     to="/membership"
-                    className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                    className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
                   >
                     Enroll Now
                   </Link>
@@ -219,11 +219,11 @@ const GroupSess = () => {
                 stage.
               </p>
               <div className=" gap-4 w-full max-md items-center  mx-auto mt-12">
-                <Link
-                  to="/membership"
-                  className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+              <Link
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultation
+                   Free Consultationss
                 </Link>
               </div>
             </div>
@@ -273,21 +273,21 @@ const GroupSess = () => {
                 </p>
 
                 <br />
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto">
-                  <Link
-                    to="/contact-us"
-                    className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                  >
-                    Free Consultation
-                  </Link>
-
-                  <Link
-                    to="/membership"
-                    className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
-                  >
-                    Enroll Now
-                  </Link>
-                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full   mx-auto">
+                <Link
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                >
+                   Free Consultationss
+                </Link>
+                
+                <Link
+                  to="/membership"
+                  className="text-white bg-black px-6 py-3 uppercase w-full  rounded-md text-base font-medium transition text-center"
+                >
+                  Enroll Now
+                </Link>
+              </div>
               </div>
             </div>
           </div>
@@ -334,16 +334,16 @@ const GroupSess = () => {
                   through their entrepreneurial ventures.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
-                  <Link
-                    to="/contact-us"
-                    className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                  >
-                    Free Consultation
-                  </Link>
+                 <Link
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                >
+                   Free Consultationss
+                </Link>
 
                   <Link
                     to="/membership"
-                    className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                    className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
                   >
                     Enroll Now
                   </Link>
@@ -430,7 +430,7 @@ const GroupSess = () => {
 
                     <Link
                       to="/membership"
-                      className="border border-red-700 text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                      className="border border-red-700 text-white uppercase bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
                     >
                       Enroll Now
                     </Link>
@@ -484,16 +484,16 @@ const GroupSess = () => {
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
-                  <Link
-                    to="/contact-us"
-                    className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                  >
-                    Free Consultation
-                  </Link>
+                 <Link
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                >
+                   Free Consultationss
+                </Link>
 
                   <Link
                     to="/membership"
-                    className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                    className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
                   >
                     Enroll Now
                   </Link>

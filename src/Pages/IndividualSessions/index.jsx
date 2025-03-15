@@ -135,15 +135,15 @@ const GroupSess = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
-                  to="/contact-us"
-                  className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultation
+                   Free Consultationss
                 </Link>
 
                 <Link
                   to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                  className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
                 >
                   Enroll Now
                 </Link>
@@ -210,15 +210,15 @@ const GroupSess = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
               <Link
-                to="/contact-us"
-                className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-              >
-                Free Consultation
-              </Link>
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                >
+                   Free Consultationss
+                </Link>
 
               <Link
                 to="/membership"
-                className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
               >
                 Enroll Now
               </Link>
@@ -273,15 +273,15 @@ const GroupSess = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
-                  to="/contact-us"
-                  className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultation
+                   Free Consultationss
                 </Link>
 
                 <Link
                   to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                  className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
                 >
                   Enroll Now
                 </Link>
@@ -331,15 +331,15 @@ const GroupSess = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
               <Link
-                to="/contact-us"
-                className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-              >
-                Free Consultation
-              </Link>
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                >
+                   Free Consultationss
+                </Link>
 
               <Link
                 to="/membership"
-                className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
               >
                 Enroll Now
               </Link>
@@ -386,15 +386,15 @@ const GroupSess = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
-                  to="/contact-us"
-                  className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultation
+                   Free Consultationss
                 </Link>
 
                 <Link
                   to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                  className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
                 >
                   Enroll Now
                 </Link>
@@ -433,11 +433,11 @@ const GroupSess = () => {
             style={{ height: "100%" }}
           >
             {/* Text Content */}
-            <div>
+            <div >
               <h1 className="font-nato font-bold text-center text-2xl text-white mb-4 lg:text-3xl">
                 SAT PREP SESSION
               </h1>
-              <p className="text-left font-nato text-sm text-white leading-relaxed lg:text-lg">
+              <p className=" text-center font-nato text-sm text-white leading-relaxed lg:text-lg">
                 Through expert instruction and targeted strategies, we focus on
                 all SAT sections: Evidence-Based Reading, Writing and Language,
                 and Math. <br />
@@ -448,15 +448,15 @@ const GroupSess = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
-                  to="/contact-us"
-                  className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultation
+                   Free Consultationss
                 </Link>
 
                 <Link
                   to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                  className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
                 >
                   Enroll Now
                 </Link>
@@ -508,15 +508,15 @@ const GroupSess = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
-                  to="/contact-us"
-                  className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  to="https://wa.me/7827098747?text=hello+123"
+                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultation
+                   Free Consultationss
                 </Link>
 
                 <Link
                   to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                  className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
                 >
                   Enroll Now
                 </Link>

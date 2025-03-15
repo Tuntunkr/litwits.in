@@ -40,96 +40,21 @@ const Hero = React.forwardRef((props, ref) => {
 
   return (
     <>
-      <section
-        ref={ref}
-        className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20"
-        style={{
-          backgroundImage: `linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.4)), url(${heroimage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        role="img"
-        aria-label="Join LITWITS for Debate, Writing, AP Prep & World Scholar’s Cup!"
-        aria-describedby="hero-description"
-      >
-        {/* Left Side - Hero Content */}
-        <div className="relative w-full lg:w-1/2 flex flex-col justify-center items-start text-white text-left space-y-6">
-          <h2 className="text-4xl md:text-6xl font-extrabold leading-tight">
-            DISCUSS. WRITE. DEBATE.
-          </h2>
-        </div>
-
-        {/* Right Side - Contact Form */}
-        {/* <div className="w-full lg:w-1/2 flex justify-center">
-          <div className="backdrop-blur-lg bg-white p-8 rounded-2xl shadow-lg w-full max-w-lg">
-            <h2 className="text-2xl font-bold text-center text-red-800 uppercase mb-6">
-              Contact Us
-            </h2>
-            <form className="space-y-5" onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First Name"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-hidden focus:ring-2 focus:ring-red-300 text-black"
-                  required
-                />
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-hidden focus:ring-2 focus:ring-red-300 text-black"
-                  required
-                />
-              </div>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-hidden focus:ring-2 focus:ring-red-300 text-black"
-                required
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full focus:outline-hidden focus:ring-2 focus:ring-red-300 text-black"
-                required
-              />
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                value={formData.message}
-                onChange={handleChange}
-                className="bg-white border border-gray-200 px-4 py-3 rounded-lg w-full h-28 focus:outline-hidden focus:ring-2 focus:ring-red-300 text-black"
-                required
-              />
-              <button
-                type="submit"
-                className="w-full bg-red-600 hover:bg-red-500 text-white uppercase py-3 px-6 rounded-lg text-lg font-semibold transition-all"
-              >
-                Book a Free Consultation
-              </button>
-            </form>
-          </div>
-        </div> */}
-
-        {/* Descriptive Content for Accessibility */}
-        <p id="hero-description" className="sr-only">
-          Join LITWITS to enhance debating, writing, research, and public
-          speaking skills with expert mentors preparing students for Ivy League
-          admissions, World Scholar's Cup, and more.
-        </p>
-
-      </section>
+        <section
+  ref={ref}
+  className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20"
+  style={{
+    backgroundImage: `linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.4)), url(${heroimage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="relative w-full lg:w-1/2 flex flex-col justify-center items-center text-white text-center space-y-6">
+    <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
+      DISCUSS. WRITE. DEBATE.
+    </h1>
+  </div>
+</section>
       <ToastContainer />
 
       <section>

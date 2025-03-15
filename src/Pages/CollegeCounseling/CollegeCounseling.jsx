@@ -501,7 +501,7 @@ const CollegeCounseling = () => {
             </h5>
             <p className="text-white text-lg md:text-xl mb-10">
               The college interview is a critical part of the admissions
-              process. We help you prepare with:
+              process.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Mock Interviews Card */}
@@ -516,7 +516,7 @@ const CollegeCounseling = () => {
                   className="rounded-lg shadow-lg w-full h-full object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-lg font-bold mb-2">Mock Interviews:</h3>
+                  <h3 className="text-lg font-bold mb-2">Mock Interviews</h3>
                   <p className="text-white text-start">
                     We conduct mock interviews to refine your communication
                     skills, boost your confidence, and help you practice answers
@@ -537,7 +537,7 @@ const CollegeCounseling = () => {
                 />
                 <div className="p-6">
                   <h3 className="text-lg font-bold mb-2">
-                    Personalized Feedback:
+                    Personalized Feedback
                   </h3>
                   <p className="text-white text-start">
                     Our feedback is designed to help you improve your interview
@@ -634,7 +634,7 @@ const CollegeCounseling = () => {
                   placeholder="Enter Your Email"
                   className="w-full px-4 py-3 text-gray-800 bg-white border border-gray-300 rounded-lg focus:outline-hidden focus:ring-2 focus:ring-red-500"
                 />
-                <Link to={"/membership"}>
+                <Link  to="https://wa.me/7827098747?text=hello+123">
                   <button
                     type="submit"
                     className="w-full font-noto bg-white text-red-800 px-6 py-3 font-medium rounded-lg hover:bg-gray-100 transition duration-200"

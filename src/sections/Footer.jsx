@@ -58,7 +58,7 @@ const Footer = () => {
             {/* <h4 className="text-lg font-medium">Quick Link</h4> */}
             <Link
               to="membership"
-              className="bg-white text-[#781C2D] px-6 py-2 rounded-lg uppercase font-medium text-sm shadow-lg"
+              className="border border-white px-6 py-2 rounded-lg uppercase font-medium text-sm shadow-lg"
             >
               Apply Now
             </Link>
@@ -67,6 +67,12 @@ const Footer = () => {
               className="border border-white px-6 py-2 rounded-lg text-sm uppercase font-medium hover:bg-white hover:text-[#781C2D]"
             >
               Contact
+            </Link>
+            <Link
+              to="tel:9811701747"
+              className="border border-white px-6 py-2 rounded-lg text-sm uppercase font-medium hover:bg-white hover:text-[#781C2D]"
+            >
+              Let's Contact
             </Link>
           </div>
         </div>
@@ -82,7 +88,7 @@ const Footer = () => {
                 height={16}
                 className="inline-block mr-2 text-white"
               />
-               Copyright © 2025. All Rights Reserved by{" "}
+              Copyright © 2025. All Rights Reserved by{" "}
               <span className="text-white">LITWITS</span>.
             </p>
           </div>

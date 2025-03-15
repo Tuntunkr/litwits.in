@@ -8,6 +8,16 @@ import APLogo from "/AP-Logo.jpg";
 
 // Dummy data (for demo purposes)
 const blogData = [
+  // {
+  //   id: 1,
+  //   title: "Introduction to the World Scholar's Cup 2025 Tournament ",
+  //   date: "March 7, 2025",
+  //   description:
+  //     "Feeling anxious about the AP Exam 2025? Well, that’s perfectly normal. This examination can make or break one’s college applications. So, let’s get to what really matters!",
+  //   image: APLogo, // High-quality image
+  //   link: "post-1.html",
+  // },
+  // Add more blog data as needed
   {
     id: 1,
     title: "Advanced Placement Exam 2025",
@@ -17,7 +27,6 @@ const blogData = [
     image: APLogo, // High-quality image
     link: "post-1.html",
   },
-  // Add more blog data as needed
 ];
 
 const BlogDetails = () => {

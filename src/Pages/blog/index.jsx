@@ -24,12 +24,10 @@ const Blog = () => {
       {/* Hero Section */}
       <section className="mb-12">
         <h1 className="text-4xl font-bold mb-4 text-center">Recent Blogs</h1>
-        {/* <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto">
-        Feeling anxious about the AP Exam 2025? Well, that’s perfectly normal. This examination can make or break one’s college applications
-        </p> */}
       </section>
 
       {/* First Blog Post - Large Horizontal Card */}
+     
       {firstPost && (
         <Link
           to={`/BlogDetails/${firstPost.id}`}
@@ -64,7 +62,7 @@ const Blog = () => {
           </div>
         </Link>
       )}
-
+      
       {/* Remaining Blog Posts in Grid Layout */}
       {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {otherPosts.map((blog) => (
