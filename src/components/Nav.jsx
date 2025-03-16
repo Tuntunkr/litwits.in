@@ -16,101 +16,94 @@ const navLinks = [
 ];
 
 function CollapsibleExample() {
-  const [isSticky, setIsSticky] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const location = useLocation();
 
-  // Add sticky effect on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Handle navigation link click
-  const handleLinkClick = () => {
-    setIsNavOpen(false);
-  };
-
   return (
-    <Navbar
-      collapseOnSelect
-      expand="lg"
-      className={`bg-body-tertiary ${
-        isSticky ? "sticky-navbar animate-navbar" : ""
-      }`}
-      style={{
-        fontFamily: "Noto Serif, serif",
-        padding: isSticky ? "10px 20px" : "20px 30px",
-        transition: "padding 0.3s ease",
-        zIndex: 1000,
-      }}
-    >
-      <Container>
-        {/* Logo */}
-        <Navbar.Brand
-          href="/"
-          style={{
-            fontFamily: "Noto Serif, serif",
-            fontWeight: 400,
-            color: "#890C25",
-            fontSize: "1.7rem",
-          }}
-        >
-          <h1 className="uppercase font-light text-[36px] font-noto-serif text-red-800">
-            Litwits
-          </h1>
-        </Navbar.Brand>
+    <>
+      <div style={{ height: "80px" }}></div> {/* Spacer div */}
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        className="bg-body-tertiary"
+        style={{
+          fontFamily: "Noto Serif, serif",
+          padding: "10px 20px",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          width: "100%",
+          zIndex: 1000,
+          backgroundColor: "rgba(255, 255, 255, 1)",
+          boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)"
+        }}
+      >
+        <Container fluid="lg">
+          {/* Logo */}
+          <Navbar.Brand
+            href="/"
+            style={{
+              fontFamily: "Noto Serif, serif",
+              fontWeight: 400,
+              color: "#890C25",
+              fontSize: "clamp(1.2rem, 4vw, 1.7rem)", // Responsive font size
+            }}
+          >
+            <span className="uppercase font-light font-noto-serif text-red-800" style={{ fontSize: "clamp(24px, 4vw, 36px)" }}>
+              Litwits
+            </span>
+          </Navbar.Brand>
 
-        {/* Hamburger Menu Toggle for Mobile */}
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => setIsNavOpen(!isNavOpen)}
-        />
+          {/* Hamburger Menu Toggle for Mobile */}
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => setIsNavOpen(!isNavOpen)}
+          />
 
-        {/* Collapsible Navigation Menu */}
-        <Navbar.Collapse id="responsive-navbar-nav" in={isNavOpen}>
-          <Nav className="ms-auto text-center">
-            {navLinks.map((link, index) => (
-              <Nav.Item key={index}>
-                <Link
-                  to={link.href}
-                  onClick={handleLinkClick}
-                  style={{
-                    textDecoration: "none",
-                    fontFamily: "Noto Serif, serif",
-                    color:
-                      location.pathname === link.href ? "#890C25" : "#262626",
-                    margin: "0 10px",
-                    fontSize: "1rem",
-                    padding: "10px 15px",
-                    display: "block",
-                    borderRadius: location.pathname === link.href ? "8px" : "0",
-                    backgroundColor: "transparent",
-                    transition: "color 0.3s, border-radius 0.3s",
-                    textTransform: "uppercase",
-                  }}
-                  onMouseEnter={(e) => {
-                    // Change text color on hover
-                    e.currentTarget.style.color = "#890C25";
-                  }}
-                  onMouseLeave={(e) => {
-                    // Reset text color on mouse leave
-                    e.currentTarget.style.color =
-                      location.pathname === link.href ? "#890C25" : "#262626";
-                  }}
+          {/* Collapsible Navigation Menu */}
+          <Navbar.Collapse id="responsive-navbar-nav" in={isNavOpen}>
+            <Nav className="ms-auto">
+              {navLinks.map((link, index) => (
+                <Nav.Item 
+                  key={index} 
+                  className="nav-item-responsive"
                 >
-                  {link.label}
-                </Link>
-              </Nav.Item>
-            ))}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+                  <Link
+                    to={link.href}
+                    style={{
+                      textDecoration: "none",
+                      fontFamily: "Noto Serif, serif",
+                      color:
+                        location.pathname === link.href ? "#890C25" : "#262626",
+                      fontSize: "clamp(0.8rem, 2vw, 1rem)",
+                      padding: "8px 12px",
+                      display: "block",
+                      borderRadius: location.pathname === link.href ? "8px" : "0",
+                      backgroundColor: "transparent",
+                      transition: "color 0.3s, border-radius 0.3s",
+                      textTransform: "uppercase",
+                      whiteSpace: "nowrap", // Prevent text wrapping
+                    }}
+                    onMouseEnter={(e) => {
+                      // Change text color on hover
+                      e.currentTarget.style.color = "#890C25";
+                    }}
+                    onMouseLeave={(e) => {
+                      // Reset text color on mouse leave
+                      e.currentTarget.style.color =
+                        location.pathname === link.href ? "#890C25" : "#262626";
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                </Nav.Item>
+              ))}
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 

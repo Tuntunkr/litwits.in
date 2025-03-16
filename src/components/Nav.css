@@ -18,3 +18,28 @@
     }
   }
   
+@media (max-width: 991px) {
+  .nav-item-responsive {
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .nav-item-responsive:last-child {
+    border-bottom: none;
+  }
+}
+
+/* For larger screens */
+@media (min-width: 992px) {
+  .nav-item-responsive {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+/* Navbar collapse animation */
+.navbar-collapse {
+  transition: height 0.3s ease;
+}
+  

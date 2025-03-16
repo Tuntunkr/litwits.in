@@ -1,12 +1,12 @@
-import React from 'react'
-import Contact from "../../sections/Contact"
+import React from "react";
+import Contact from "../../sections/Contact";
 
 const index = () => {
   return (
     <div>
-        <Contact />
+      <Contact />
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default index;

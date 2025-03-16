@@ -140,7 +140,125 @@ const CollegeCounseling = () => {
         />
         <meta property="og:url" content="https://litwits.com/" />
         <link rel="canonical" href="https://litwits.com/" />
+
+        {/* College counseling SESSIONS */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "Litwits",
+            url: "https://litwits.in/college-counseling",
+            logo: "https://litwits.in/assets/college-counseling.avif",
+            description:
+              "Navigate the college application journey with LITWITS' personalized counseling. Get expert guidance on college selection, essay writing, test prep, and more!",
+            sameAs: [
+              "https://www.facebook.com/litwits",
+              "https://www.instagram.com/litwits",
+              "https://www.linkedin.com/company/litwits",
+            ],
+            offers: {
+              "@type": "Offer",
+              name: "College Counseling Sessions",
+              description:
+                "Comprehensive one-on-one counseling sessions designed for personalized academic and admissions guidance.",
+              url: "https://litwits.in/college-counseling",
+              availability: "https://schema.org/InStock",
+              price: "Contact for pricing",
+              priceCurrency: "INR",
+            },
+            faqPage: {
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "What does the college counseling program cover?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Our counseling covers personalized academic guidance, application strategies, essay writing, SAT/ACT prep, and more.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "When should students start counseling sessions?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We recommend starting as early as middle school for strategic planning and profile building.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How can I book a consultation?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Visit our website to schedule a personalized consultation and discuss your academic aspirations.",
+                  },
+                },
+              ],
+            },
+            image: [
+              {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/strategic-plan.avif",
+                caption: "Strategic Application Plan with LITWITS",
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/impactful-profile.avif",
+                caption:
+                  "Building a Cohesive and Impactful Profile with LITWITS",
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/informed-decision.avif",
+                caption: "Informed Decision-Making with LITWITS",
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/identifying-goals.avif",
+                caption: "Identifying Your Goals with LITWITS",
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/blueprint-success.avif",
+                caption: "Blueprint for Success with LITWITS",
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/authentic-applications.avif",
+                caption:
+                  "Crafting Authentic and Impactful Applications with LITWITS",
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/curated-college-list.avif",
+                caption: "Curated College List- Litwits",
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/personalized-feedback.avif",
+                caption:
+                  "Personalized Feedback for Interview Success with LITWITS",
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/fit-analysis.avif",
+                caption: "Fit Analysis with LITWITS",
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/navigating-decisions.avif",
+                caption: "Navigating Admissions Decisions with LITWITS",
+              },
+            ],
+            publisher: {
+              "@type": "Organization",
+              name: "Litwits",
+              url: "https://litwits.in",
+            },
+          })}
+        </script>
       </Helmet>
+
       <section>
         {/* Hero Section */}
         <section
@@ -634,7 +752,7 @@ const CollegeCounseling = () => {
                   placeholder="Enter Your Email"
                   className="w-full px-4 py-3 text-gray-800 bg-white border border-gray-300 rounded-lg focus:outline-hidden focus:ring-2 focus:ring-red-500"
                 />
-                <Link  to="https://wa.me/7827098747?text=hello+123">
+                <Link to="https://wa.me/7827098747?text=hello+123">
                   <button
                     type="submit"
                     className="w-full font-noto bg-white text-red-800 px-6 py-3 font-medium rounded-lg hover:bg-gray-100 transition duration-200"

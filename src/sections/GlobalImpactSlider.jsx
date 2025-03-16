@@ -16,15 +16,17 @@ import img15 from "/assets/brown-university.avif";
 const Glide3DSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(4);
+  const [isTransitioning, setIsTransitioning] = useState(true);
 
   const items = [
-    { 
-      id: 1, 
-      image: img1, 
+    {
+      id: 1,
+      image: img1,
       alt: "World Scholar's Cup training for academic excellence and teamwork.",
       title: "World Scholar's Cup (WSC) at Litwits",
       ariaLabel: "World Scholar's Cup (WSC) at Litwits",
-      ariaDescribedBy: "Comprehensive coaching for the World Scholar's Cup, preparing students for debate, collaborative writing, and analytical challenges, fostering critical thinking and teamwork."
+      ariaDescribedBy:
+        "Comprehensive coaching for the World Scholar's Cup, preparing students for debate, collaborative writing, and analytical challenges, fostering critical thinking and teamwork.",
     },
     {
       id: 2,
@@ -32,97 +34,112 @@ const Glide3DSlider = () => {
       alt: "Harvard Crimson - Oldest Daily College Newspaper.",
       title: "Harvard Crimson",
       ariaLabel: "Harvard Crimson",
-      ariaDescribedBy: "Founded in 1873, Harvard Crimson is the oldest continuously published college newspaper, distributed across Harvard and beyond."
+      ariaDescribedBy:
+        "Founded in 1873, Harvard Crimson is the oldest continuously published college newspaper, distributed across Harvard and beyond.",
     },
     {
-      "id": 3,
-      "image": img3,
+      id: 3,
+      image: img3,
       alt: "Princeton Diplomatic Invitational - International diplomacy experience.",
       title: "Princeton Diplomatic Invitational (PDI)",
       ariaLabel: "Princeton Diplomatic Invitational (PDI)",
-      ariaDescribedBy: "A renowned conference by Princeton University, fostering international diplomacy and crisis management skills."
+      ariaDescribedBy:
+        "A renowned conference by Princeton University, fostering international diplomacy and crisis management skills.",
     },
     {
-      "id": 4,
-      "image": img4,
+      id: 4,
+      image: img4,
       alt: "Harvard International Review - Insights on global issues.",
       title: "Harvard International Review - Global Affairs",
       ariaLabel: "Harvard International Review - Global Affairs",
-      ariaDescribedBy: "A renowned journal covering global developments in politics, business, science, and culture."
+      ariaDescribedBy:
+        "A renowned journal covering global developments in politics, business, science, and culture.",
     },
     {
-      "id": 5,
-      "image": img5,
+      id: 5,
+      image: img5,
       alt: "The Oxford Union - Historic platform for debates and discussions.",
       title: "The Oxford Union - Debate Society",
       ariaLabel: "The Oxford Union - Debate Society",
-      ariaDescribedBy: "The Oxford Union is a prestigious debating society with a rich history of discussions and discourse."
+      ariaDescribedBy:
+        "The Oxford Union is a prestigious debating society with a rich history of discussions and discourse.",
     },
     {
-      "id": 6,
-      "image": img6,
+      id: 6,
+      image: img6,
       alt: "Yale University - Leading institution for academic growth.",
       title: "Yale University - Academic Excellence",
       ariaLabel: "Yale University - Academic Excellence",
-      ariaDescribedBy: "Yale University provides top-tier education in various disciplines for aspiring global leaders."
+      ariaDescribedBy:
+        "Yale University provides top-tier education in various disciplines for aspiring global leaders.",
     },
     {
-      "id": 7,
-      "image": img7,
+      id: 7,
+      image: img7,
       alt: "Queen's Commonwealth Essay Competition - Writing excellence since 1883.",
       title: "Queen's Commonwealth Essay Competition",
       ariaLabel: "Queen's Commonwealth Essay Competition",
-      ariaDescribedBy: "The world's oldest international writing competition for school students."
+      ariaDescribedBy:
+        "The world's oldest international writing competition for school students.",
     },
     {
-      "id": 8,
-      "image": img8,
+      id: 8,
+      image: img8,
       alt: "Stanford University - A hub for global innovation and research.",
       title: "Stanford University - Innovation Hub",
       ariaLabel: "Stanford University - Innovation Hub",
-      ariaDescribedBy: "Stanford University is a globally recognized research institution known for innovation and academic excellence."
+      ariaDescribedBy:
+        "Stanford University is a globally recognized research institution known for innovation and academic excellence.",
     },
     {
-      "id": 9,
-      "image": img9,
+      id: 9,
+      image: img9,
       alt: "John Locke Institute - Academic growth through learning.",
       title: "John Locke Institute - Academic Excellence",
       ariaLabel: "John Locke Institute - Academic Excellence",
-      ariaDescribedBy: "The John Locke Institute empowers students through courses and competitions in Philosophy, Politics, and more."
+      ariaDescribedBy:
+        "The John Locke Institute empowers students through courses and competitions in Philosophy, Politics, and more.",
     },
     {
-      "id": 11,
-      "image": img11,
+      id: 11,
+      image: img11,
       alt: "Oxford Summer School - Inspired by elite universities.",
       title: "Oxford Summer School - Global Student Hub",
       ariaLabel: "Oxford Summer School - Global Student Hub",
-      ariaDescribedBy: "Welcoming students from 170+ countries for intensive learning inspired by Oxford and Cambridge."
+      ariaDescribedBy:
+        "Welcoming students from 170+ countries for intensive learning inspired by Oxford and Cambridge.",
     },
     {
-      "id": 12,
-      "image": img12,
+      id: 12,
+      image: img12,
       alt: "University of Warwick - Leading UK university.",
       title: "University of Warwick - Top UK University",
       ariaLabel: "University of Warwick - Top UK University",
-      ariaDescribedBy: "Warwick University, part of the Russell Group, offers world-class degrees and a vibrant academic environment."
+      ariaDescribedBy:
+        "Warwick University, part of the Russell Group, offers world-class degrees and a vibrant academic environment.",
     },
     {
-      "id": 13,
-      "image": img13,
+      id: 13,
+      image: img13,
       alt: "Columbia University - Leading research institution.",
       title: "Columbia University - Ivy League Institution",
       ariaLabel: "Columbia University - Ivy League Institution",
-      ariaDescribedBy: "Columbia University is a prestigious Ivy League research university in New York City."
+      ariaDescribedBy:
+        "Columbia University is a prestigious Ivy League research university in New York City.",
     },
     {
-      "id": 15,
-      "image": img15,
+      id: 15,
+      image: img15,
       alt: "Brown University - Renowned Ivy League institution.",
       title: "Brown University - Ivy League Research Institution",
       ariaLabel: "Brown University - Ivy League Research Institution",
-      ariaDescribedBy: "Highlighting Brown University as a prestigious Ivy League research university, renowned for its academic excellence."
+      ariaDescribedBy:
+        "Highlighting Brown University as a prestigious Ivy League research university, renowned for its academic excellence.",
     },
   ];
+
+  // Create a triple set of items for infinite scroll
+  const tripleItems = [...items, ...items, ...items];
 
   useEffect(() => {
     const handleResize = () => {
@@ -139,15 +156,30 @@ const Glide3DSlider = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % items.length);
+      setActiveIndex(prev => prev + 1);
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [items.length]);
+  }, []);
+
+  useEffect(() => {
+    if (activeIndex >= items.length * 2) {
+      // If we've reached the third set, quickly reset to the second set
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setActiveIndex(activeIndex - items.length);
+        // Re-enable transitions after the reset
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            setIsTransitioning(true);
+          });
+        });
+      }, 1000); // Match this with your transition duration
+    }
+  }, [activeIndex, items.length]);
 
   const calculateTranslateX = () => {
-    const offset = Math.floor(itemsPerSlide / 2);
-    return (activeIndex - offset) * (100 / itemsPerSlide);
+    return -(activeIndex * (100 / itemsPerSlide));
   };
 
   return (
@@ -168,14 +200,14 @@ const Glide3DSlider = () => {
 
         <div className="relative overflow-hidden py-8">
           <div
-            className="flex transition-transform duration-1000 ease-in-out"
+            className={`flex ${isTransitioning ? 'transition-transform duration-1000 ease-in-out' : ''}`}
             style={{
-              transform: `translateX(-${calculateTranslateX()}%)`,
+              transform: `translateX(${calculateTranslateX()}%)`,
             }}
           >
-            {items.map((item, index) => (
+            {tripleItems.map((item, index) => (
               <div
-                key={item.id}
+                key={`${item.id}-${index}`}
                 className={`shrink-0 px-2 transition-all duration-500 ease-in-out
                   ${index === activeIndex ? "scale-100" : "scale-95"}
                   ${
@@ -200,13 +232,13 @@ const Glide3DSlider = () => {
     `}
                   >
                     <img
-                    src={item.image}
-                    alt={item.alt}
-                    title={item.title}
-                    aria-label={item.ariaLabel}
-                    aria-describedby={item.ariaDescribedBy}
-                    className="w-full h-full object-contain transform transition-transform duration-500 group-hover:scale-105"
-                  />
+                      src={item.image}
+                      alt={item.alt}
+                      title={item.title}
+                      aria-label={item.ariaLabel}
+                      aria-describedby={item.ariaDescribedBy}
+                      className="w-full h-full object-contain transform transition-transform duration-500 group-hover:scale-105"
+                    />
                     {index !== activeIndex && (
                       <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-300" />
                     )}
@@ -222,11 +254,11 @@ const Glide3DSlider = () => {
                 key={index}
                 className={`w-3 h-3 rounded-full transition-all duration-300 transform
                   ${
-                    index === activeIndex
+                    index === activeIndex % items.length
                       ? "bg-[#890C25] scale-125 ring-2 ring-[#890C25]/20"
                       : "bg-gray-300 hover:bg-gray-400"
                   }`}
-                onClick={() => setActiveIndex(index)}
+                onClick={() => setActiveIndex(index + items.length)}
               />
             ))}
           </div>
@@ -236,7 +268,6 @@ const Glide3DSlider = () => {
           <h2 className="text-2xl md:text-xl lg:text-2xl font-bold text-[#890C25] uppercase mb-6 text-center">
             Competitive Edge for College Admissions
           </h2>
-
           <p className="text-lg md:text-xl text-black leading-relaxed ">
             Our team of seasoned experts in academia, consulting, writing,
             research, and the arts provides personalized, one-on-one mentorship

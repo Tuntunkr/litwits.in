@@ -82,6 +82,511 @@ const GroupSess = () => {
         />
         <meta property="og:url" content="https://litwits.com/" />
         <link rel="canonical" href="https://litwits.com/" />
+
+        {/* Individual SESSIONS */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "Litwits",
+            url: "https://litwits.in/individual-session",
+            logo: "https://litwits.in/assets/individual-session.avif",
+            description:
+              "Unlock your potential with LITWITS' individual sessions in MUN, Debate, TED-Ed Talks, AP Prep, SAT/ACT, and more. Expert mentors guide you to success.",
+            sameAs: [
+              "https://www.facebook.com/litwits",
+              "https://www.instagram.com/litwits",
+              "https://www.linkedin.com/company/litwits",
+            ],
+            offers: {
+              "@type": "Offer",
+              name: "Individual Sessions for MUN, Debate, AP Prep & More",
+              description:
+                "Customised one-on-one sessions in MUN, Debate, TED-Ed Talks, SAT/ACT, and AP Prep, designed for personalised skill development and academic success.",
+              url: "https://litwits.in/individual-session",
+              availability: "https://schema.org/InStock",
+              price: "Contact for pricing",
+              priceCurrency: "INR",
+            },
+            faqPage: {
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "What subjects are covered in individual sessions?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Our individual sessions cover MUN, Debate, TED-Ed Talks, AP Prep, SAT/ACT preparation, and more.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How do individual sessions differ from group sessions?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Individual sessions are tailored to each student's learning pace and goals, providing a focused, personalized experience.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Can I switch from individual sessions to group sessions?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes, you can switch to group sessions if desired. Please contact support for details.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do you offer trial individual sessions?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes, we offer trial individual sessions to help students understand the format and benefits.",
+                  },
+                },
+              ],
+            },
+          })}
+        </script>
+
+        {/* MODEL UNITED NATIONS (MUN) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "Model United Nations (MUN) Guidance",
+            description:
+              "Immersive MUN training that prepares students for global diplomacy, impactful position papers, and confident public speaking at prestigious conferences.",
+            keywords:
+              "Model United Nations, MUN training, diplomacy skills, public speaking, global issues",
+            provider: {
+              "@type": "EducationalOrganization",
+              name: "Litwits",
+              url: "https://litwits.in",
+              logo: "https://litwits.in/assets/model-united-nations.avif",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91-9811701747",
+                contactType: "customer service",
+                email: "info@litwits.in",
+              },
+            },
+            offers: {
+              "@type": "Offer",
+              name: "MUN Guidance Package",
+              category: "Paid",
+              price: "17700",
+              priceCurrency: "INR",
+              validThrough: "2025-12-31",
+              availability: "https://schema.org/InStock",
+              url: "https://litwits.in/individual-session",
+            },
+            hasCourseInstance: [
+              {
+                "@type": "CourseInstance",
+                name: "Model United Nations (MUN) - Online Sessions",
+                courseMode: "Online",
+                startDate: "2025-04-01",
+                endDate: "2025-12-31",
+                location: {
+                  "@type": "VirtualLocation",
+                  url: "https://litwits.in/individual-session",
+                },
+                image: "https://litwits.in/assets/model-united-nations.avif",
+                instructor: {
+                  "@type": "Person",
+                  name: "Sudeep Kaur Kohli",
+                  jobTitle: "Founder and Academic Coach",
+                  affiliation: {
+                    "@type": "Organization",
+                    name: "Litwits",
+                  },
+                  url: "https://litwits.in/individual-session",
+                },
+                duration: "PT90M",
+                courseWorkload: "P5W",
+                offers: [
+                  {
+                    "@type": "Offer",
+                    name: "MUN Guidance Package",
+                    category: "Paid",
+                    price: "17700",
+                    priceCurrency: "INR",
+                    validThrough: "2025-12-31",
+                    availability: "https://schema.org/InStock",
+                    url: "https://litwits.in/individual-session",
+                  },
+                ],
+              },
+            ],
+          })}
+        </script>
+
+        {/* TED-Ed Student Talks Program */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "TED-Ed Student Talks Program",
+            description:
+              "Empowering students to transform ideas into powerful narratives, refine critical thinking, and gain recognition through the prestigious TED-Ed platform.",
+            keywords:
+              "TED-Ed Student Talks, storytelling, critical thinking, social issues, public speaking",
+            provider: {
+              "@type": "EducationalOrganization",
+              name: "Litwits",
+              url: "https://litwits.in",
+              logo: "https://litwits.in/assets/ted-ed-student-talk-program.avif",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91-9811701747",
+                contactType: "customer service",
+                email: "info@litwits.in",
+              },
+            },
+            offers: {
+              "@type": "Offer",
+              name: "TED-Ed Training",
+              category: "Paid",
+              price: "17700",
+              priceCurrency: "INR",
+              validThrough: "2025-12-31",
+              availability: "https://schema.org/InStock",
+              url: "https://litwits.in/individual-session",
+            },
+            hasCourseInstance: [
+              {
+                "@type": "CourseInstance",
+                name: "TED-Ed Student Talks - Online Sessions",
+                courseMode: "Online",
+                startDate: "2025-04-01",
+                endDate: "2025-12-31",
+                location: {
+                  "@type": "VirtualLocation",
+                  url: "https://litwits.in/individual-session",
+                },
+                image:
+                  "https://litwits.in/assets/ted-ed-student-talk-program.avif",
+                instructor: {
+                  "@type": "Person",
+                  name: "Sudeep Kaur Kohli",
+                  jobTitle: "Founder and Academic Coach",
+                  affiliation: {
+                    "@type": "Organization",
+                    name: "Litwits",
+                  },
+                  url: "https://litwits.in/individual-session",
+                },
+                duration: "PT90M",
+                courseWorkload: "P5W",
+                offers: [
+                  {
+                    "@type": "Offer",
+                    name: "TED-Ed Training",
+                    category: "Paid",
+                    price: "17700",
+                    priceCurrency: "INR",
+                    validThrough: "2025-12-31",
+                    availability: "https://schema.org/InStock",
+                    url: "https://litwits.in/individual-session",
+                  },
+                ],
+              },
+            ],
+          })}
+        </script>
+
+        {/* Research Paper Guidance */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "Research Paper Guidance",
+            description:
+              "Comprehensive guidance for students in developing engaging research questions, crafting compelling narratives, and producing high-quality academic work.",
+            keywords:
+              "Research Paper Guidance, academic writing, thesis development, research skills, citation styles",
+            provider: {
+              "@type": "EducationalOrganization",
+              name: "Litwits",
+              url: "https://litwits.in",
+              logo: "https://litwits.in/assets/research-paper-guidance.avif",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91-9811701747",
+                contactType: "customer service",
+                email: "info@litwits.in",
+              },
+            },
+            offers: {
+              "@type": "Offer",
+              name: "Research Paper Guidance",
+              category: "Paid",
+              price: "17700",
+              priceCurrency: "INR",
+              validThrough: "2025-12-31",
+              availability: "https://schema.org/InStock",
+              url: "https://litwits.in/individual-session",
+            },
+            hasCourseInstance: [
+              {
+                "@type": "CourseInstance",
+                name: "Research Paper Guidance - Online Sessions",
+                courseMode: "Online",
+                startDate: "2025-04-01",
+                endDate: "2025-12-31",
+                location: {
+                  "@type": "VirtualLocation",
+                  url: "https://litwits.in/individual-session",
+                },
+                image: "https://litwits.in/assets/research-paper-guidance.avif",
+                instructor: {
+                  "@type": "Person",
+                  name: "Sudeep Kaur Kohli",
+                  jobTitle: "Founder and Academic Coach",
+                  affiliation: {
+                    "@type": "Organization",
+                    name: "Litwits",
+                  },
+                  url: "https://litwits.in/individual-session",
+                },
+                duration: "PT90M",
+                courseWorkload: "P5W",
+                offers: [
+                  {
+                    "@type": "Offer",
+                    name: "Research Paper Guidance",
+                    category: "Paid",
+                    price: "17700",
+                    priceCurrency: "INR",
+                    validThrough: "2025-12-31",
+                    availability: "https://schema.org/InStock",
+                    url: "https://litwits.in/individual-session",
+                  },
+                ],
+              },
+            ],
+          })}
+        </script>
+
+        {/* ADVANCED PLACEMENT PREP SESSION */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "Advanced Placement (AP) Prep Session",
+            description:
+              "Personalised coaching for AP subjects like Calculus, Economics, and History to help students excel in college-level coursework and achieve top scores.",
+            keywords:
+              "Advanced Placement Prep, AP exam preparation, college readiness, subject mastery, test simulation",
+            provider: {
+              "@type": "EducationalOrganization",
+              name: "Litwits",
+              url: "https://litwits.in",
+              logo: "https://litwits.in/assets/advanced-placement-prep-session.avif",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91-9811701747",
+                contactType: "customer service",
+                email: "info@litwits.in",
+              },
+            },
+            offers: {
+              "@type": "Offer",
+              name: "AP Exam Preparation",
+              category: "Paid",
+              price: "17700",
+              priceCurrency: "INR",
+              validThrough: "2025-12-31",
+              availability: "https://schema.org/InStock",
+              url: "https://litwits.in/individual-session",
+            },
+            hasCourseInstance: [
+              {
+                "@type": "CourseInstance",
+                name: "Advanced Placement (AP) Prep - Online Sessions",
+                courseMode: "Online",
+                startDate: "2025-04-01",
+                endDate: "2025-12-31",
+                location: {
+                  "@type": "VirtualLocation",
+                  url: "https://litwits.in/individual-session",
+                },
+                image:
+                  "https://litwits.in/assets/advanced-placement-prep-session.avif",
+                instructor: {
+                  "@type": "Person",
+                  name: "Sudeep Kaur Kohli",
+                  jobTitle: "Founder and Academic Coach",
+                  affiliation: {
+                    "@type": "Organization",
+                    name: "Litwits",
+                  },
+                  url: "https://litwits.in/individual-session",
+                },
+                duration: "PT90M",
+                courseWorkload: "P30W",
+                offers: [
+                  {
+                    "@type": "Offer",
+                    name: "AP Exam Preparation",
+                    category: "Paid",
+                    price: "17700",
+                    priceCurrency: "INR",
+                    validThrough: "2025-12-31",
+                    availability: "https://schema.org/InStock",
+                    url: "https://litwits.in/individual-session",
+                  },
+                ],
+              },
+            ],
+          })}
+        </script>
+
+        {/* SAT PREP SESSION */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "SAT Prep Session",
+            description:
+              "Expert-led SAT preparation covering Evidence-Based Reading, Writing, and Math, with targeted strategies to improve timing, accuracy, and confidence for optimal test performance.",
+            keywords:
+              "SAT Prep, SAT coaching, SAT exam strategies, SAT test preparation, SAT math, SAT reading, SAT writing",
+            provider: {
+              "@type": "EducationalOrganization",
+              name: "Litwits",
+              url: "https://litwits.in",
+              logo: "https://litwits.in/assets/sat-prep-session.avif",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91-9811701747",
+                contactType: "customer service",
+                email: "info@litwits.in",
+              },
+            },
+            offers: {
+              "@type": "Offer",
+              name: "SAT Prep Session",
+              category: "Paid",
+              price: "17700",
+              priceCurrency: "INR",
+              validThrough: "2025-12-31",
+              availability: "https://schema.org/InStock",
+              url: "https://litwits.in/individual-session",
+            },
+            hasCourseInstance: [
+              {
+                "@type": "CourseInstance",
+                name: "SAT Prep Session - Online Sessions",
+                courseMode: "Online",
+                startDate: "2025-04-01",
+                endDate: "2025-12-31",
+                location: {
+                  "@type": "VirtualLocation",
+                  url: "https://litwits.in/individual-session",
+                },
+                image: "https://litwits.in/assets/sat-prep-session.avif",
+                instructor: {
+                  "@type": "Person",
+                  name: "Sudeep Kaur Kohli",
+                  jobTitle: "Founder and Academic Coach",
+                  affiliation: {
+                    "@type": "Organization",
+                    name: "Litwits",
+                  },
+                  url: "https://litwits.in/individual-session",
+                },
+                duration: "PT90M",
+                courseWorkload: "P40W",
+                offers: [
+                  {
+                    "@type": "Offer",
+                    name: "SAT Prep Session",
+                    category: "Paid",
+                    price: "17700",
+                    priceCurrency: "INR",
+                    validThrough: "2025-12-31",
+                    availability: "https://schema.org/InStock",
+                    url: "https://litwits.in/individual-session",
+                  },
+                ],
+              },
+            ],
+          })}
+        </script>
+
+        {/* ACT PREP SESSION */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "ACT Prep Session",
+            description:
+              "Tailored ACT preparation with personalised lesson plans that build core skills in English, Math, Reading, and Science, ensuring students excel with confidence.",
+            keywords:
+              "ACT Prep, ACT coaching, ACT exam strategies, ACT test preparation, ACT math, ACT reading, ACT writing, ACT science",
+            provider: {
+              "@type": "EducationalOrganization",
+              name: "Litwits",
+              url: "https://litwits.in",
+              logo: "https://litwits.in/assets/act-prep-session.avif",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91-9811701747",
+                contactType: "customer service",
+                email: "info@litwits.in",
+              },
+            },
+            offers: {
+              "@type": "Offer",
+              name: "ACT Prep Session",
+              category: "Paid",
+              price: "17700",
+              priceCurrency: "INR",
+              validThrough: "2025-12-31",
+              availability: "https://schema.org/InStock",
+              url: "https://litwits.in/individual-session",
+            },
+            hasCourseInstance: [
+              {
+                "@type": "CourseInstance",
+                name: "ACT Prep Session - Online Sessions",
+                courseMode: "Online",
+                startDate: "2025-04-01",
+                endDate: "2025-12-31",
+                location: {
+                  "@type": "VirtualLocation",
+                  url: "https://litwits.in/individual-session",
+                },
+                image: "https://litwits.in/assets/act-prep-session.avif",
+                instructor: {
+                  "@type": "Person",
+                  name: "Sudeep Kaur Kohli",
+                  jobTitle: "Founder and Academic Coach",
+                  affiliation: {
+                    "@type": "Organization",
+                    name: "Litwits",
+                  },
+                  url: "https://litwits.in/individual-session",
+                },
+                duration: "PT90M",
+                courseWorkload: "P30W",
+                offers: [
+                  {
+                    "@type": "Offer",
+                    name: "ACT Prep Session",
+                    category: "Paid",
+                    price: "17700",
+                    priceCurrency: "INR",
+                    validThrough: "2025-12-31",
+                    availability: "https://schema.org/InStock",
+                    url: "https://litwits.in/individual-session",
+                  },
+                ],
+              },
+            ],
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -138,7 +643,7 @@ const GroupSess = () => {
                   to="https://wa.me/7827098747?text=hello+123"
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                   Free Consultationss
+                  Free Consultationss
                 </Link>
 
                 <Link
@@ -210,11 +715,11 @@ const GroupSess = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
               <Link
-                  to="https://wa.me/7827098747?text=hello+123"
-                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                >
-                   Free Consultationss
-                </Link>
+                to="https://wa.me/7827098747?text=hello+123"
+                className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+              >
+                Free Consultationss
+              </Link>
 
               <Link
                 to="/membership"
@@ -276,7 +781,7 @@ const GroupSess = () => {
                   to="https://wa.me/7827098747?text=hello+123"
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                   Free Consultationss
+                  Free Consultationss
                 </Link>
 
                 <Link
@@ -331,11 +836,11 @@ const GroupSess = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
               <Link
-                  to="https://wa.me/7827098747?text=hello+123"
-                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                >
-                   Free Consultationss
-                </Link>
+                to="https://wa.me/7827098747?text=hello+123"
+                className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+              >
+                Free Consultationss
+              </Link>
 
               <Link
                 to="/membership"
@@ -389,7 +894,7 @@ const GroupSess = () => {
                   to="https://wa.me/7827098747?text=hello+123"
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                   Free Consultationss
+                  Free Consultationss
                 </Link>
 
                 <Link
@@ -433,7 +938,7 @@ const GroupSess = () => {
             style={{ height: "100%" }}
           >
             {/* Text Content */}
-            <div >
+            <div>
               <h1 className="font-nato font-bold text-center text-2xl text-white mb-4 lg:text-3xl">
                 SAT PREP SESSION
               </h1>
@@ -451,7 +956,7 @@ const GroupSess = () => {
                   to="https://wa.me/7827098747?text=hello+123"
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                   Free Consultationss
+                  Free Consultationss
                 </Link>
 
                 <Link
@@ -511,7 +1016,7 @@ const GroupSess = () => {
                   to="https://wa.me/7827098747?text=hello+123"
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                   Free Consultationss
+                  Free Consultationss
                 </Link>
 
                 <Link

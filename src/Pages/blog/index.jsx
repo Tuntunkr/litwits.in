@@ -12,7 +12,7 @@ const blogData = Array.from({ length: 10 }, (_, index) => ({
   description: `This is a short description of blog post ${
     index + 1
   }. Learn about product management, feature voting, and SaaS tools.`,
-  image:APLogo ,
+  image: APLogo,
 }));
 
 const Blog = () => {
@@ -20,51 +20,52 @@ const Blog = () => {
   const [firstPost, ...otherPosts] = blogData;
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      {/* Hero Section */}
-      <section className="mb-12">
-        <h1 className="text-4xl font-bold mb-4 text-center">Recent Blogs</h1>
-      </section>
+    <>
+      <div className="container mx-auto px-4 py-8">
+        {/* Hero Section */}
+        <section className="mb-12">
+          <h1 className="text-4xl font-bold mb-4 text-center">Recent Blogs</h1>
+        </section>
 
-      {/* First Blog Post - Large Horizontal Card */}
-     
-      {firstPost && (
-        <Link
-          to={`/BlogDetails/${firstPost.id}`}
-          className="block mb-8 md:flex items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-        >
-          {/* Image Section */}
-          <img
-            src={APLogo}
-            alt="14 Feature Voting Tools for SaaS Companies"
-            loading="lazy"
-            width="600"
-            height="200"
-            decoding="async"
-            class="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-          />
+        {/* First Blog Post - Large Horizontal Card */}
 
-          {/* Content Section */}
-          <div className="md:w-1/2 p-6">
-            <div className="flex items-center space-x-2 text-sm mb-2 text-gray-500">
-              <span>{firstPost.category}</span>
-              <span className="text-gray-300">|</span>
-              <span>{firstPost.date}</span>
+        {firstPost && (
+          <Link
+            to={`/BlogDetails/${firstPost.id}`}
+            className="block mb-8 md:flex items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+          >
+            {/* Image Section */}
+            <img
+              src={APLogo}
+              alt="14 Feature Voting Tools for SaaS Companies"
+              loading="lazy"
+              width="600"
+              height="200"
+              decoding="async"
+              class="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+            />
+
+            {/* Content Section */}
+            <div className="md:w-1/2 p-6">
+              <div className="flex items-center space-x-2 text-sm mb-2 text-gray-500">
+                <span>{firstPost.category}</span>
+                <span className="text-gray-300">|</span>
+                <span>{firstPost.date}</span>
+              </div>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                {firstPost.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{firstPost.description}</p>
+              <div className="flex items-center text-blue-600 font-medium">
+                <span>Read More</span>
+                <ChevronRight className="ml-1 w-5 h-5" />
+              </div>
             </div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-              {firstPost.title}
-            </h2>
-            <p className="text-gray-600 mb-4">{firstPost.description}</p>
-            <div className="flex items-center text-blue-600 font-medium">
-              <span>Read More</span>
-              <ChevronRight className="ml-1 w-5 h-5" />
-            </div>
-          </div>
-        </Link>
-      )}
-      
-      {/* Remaining Blog Posts in Grid Layout */}
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          </Link>
+        )}
+
+        {/* Remaining Blog Posts in Grid Layout */}
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {otherPosts.map((blog) => (
           <Link
             to={`/BlogDetails/${blog.id}`}
@@ -100,7 +101,8 @@ const Blog = () => {
           </Link>
         ))}
       </div> */}
-    </div>
+      </div>
+    </>
   );
 };
 

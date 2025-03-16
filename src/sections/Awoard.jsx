@@ -15,151 +15,205 @@ import award12 from "/assets/regional-toc-qualifier.avif";
 
 const AwardsSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [transitionEnabled, setTransitionEnabled] = useState(true);
   const [itemsPerSlide, setItemsPerSlide] = useState(3);
+  const [isTransitioning, setIsTransitioning] = useState(true);
 
   const items = [
-    { 
-      id: 1, 
-      image: award1, 
+    {
+      id: 1,
+      image: award1,
       alt: "Champion Team in World Scholar's Cup debate and team bowl.",
       title: "World Scholar's Cup - Champion Team in Debate and Bowl",
       ariaLabel: "World Scholar's Cup - Champion Team in Debate and Bowl",
-      ariaDescribedBy: "Outstanding team performance in the World Scholar's Cup, excelling in Team Debate and Team Bowl events."
+      ariaDescribedBy:
+        "Outstanding team performance in the World Scholar's Cup, excelling in Team Debate and Team Bowl events.",
     },
-    { 
-      id: 2, 
-      image: award2, 
+    {
+      id: 2,
+      image: award2,
       alt: "World Scholar's Cup 2022 Global Round participants and winners.",
       title: "World Scholar's Cup - Global Round 2022",
       ariaLabel: "World Scholar's Cup - Global Round 2022",
-      ariaDescribedBy: "Celebrating student achievements at the 2022 Global Round of the World Scholar's Cup."
+      ariaDescribedBy:
+        "Celebrating student achievements at the 2022 Global Round of the World Scholar's Cup.",
     },
-    { 
-      id: 3, 
-      image: award3, 
+    {
+      id: 3,
+      image: award3,
       alt: "Champion Scholar in Arts and Science at World Scholar's Cup.",
       title: "World Scholar's Cup - Champion Scholar in Arts and Science",
       ariaLabel: "World Scholar's Cup - Champion Scholar in Arts and Science",
-      ariaDescribedBy: "Celebrating the Champion Scholar title in Arts and Science at the World Scholar's Cup."
+      ariaDescribedBy:
+        "Celebrating the Champion Scholar title in Arts and Science at the World Scholar's Cup.",
     },
-    { 
-      id: 4, 
-      image: award4, 
+    {
+      id: 4,
+      image: award4,
       alt: "Tournament of Champions success in World Scholar's Cup.",
       title: "World Scholar's Cup - Tournament of Champions",
       ariaLabel: "World Scholar's Cup - Tournament of Champions",
-      ariaDescribedBy: "Honoring students who competed and excelled in the prestigious World Scholar's Cup Tournament of Champions."
+      ariaDescribedBy:
+        "Honoring students who competed and excelled in the prestigious World Scholar's Cup Tournament of Champions.",
     },
-    { 
-      id: 5, 
-      image: award5, 
+    {
+      id: 5,
+      image: award5,
       alt: "World Scholar's Cup Tournament of Champions qualifiers.",
       title: "World Scholar's Cup - Tournament of Champions Qualifier",
       ariaLabel: "World Scholar's Cup - Tournament of Champions Qualifier",
-      ariaDescribedBy: "Recognizing students who qualified for the prestigious Tournament of Champions through their outstanding performance."
+      ariaDescribedBy:
+        "Recognizing students who qualified for the prestigious Tournament of Champions through their outstanding performance.",
     },
-    { 
-      id: 6, 
-      image: award6, 
+    {
+      id: 6,
+      image: award6,
       alt: "World Scholar's Cup Global Round Champion Scholars.",
       title: "World Scholar's Cup - Global Round Champion Scholars",
       ariaLabel: "World Scholar's Cup - Global Round Champion Scholars",
-      ariaDescribedBy: "Recognizing Champion Scholars in the World Scholar's Cup Global Round for their outstanding achievements."
+      ariaDescribedBy:
+        "Recognizing Champion Scholars in the World Scholar's Cup Global Round for their outstanding achievements.",
     },
-    { 
-      id: 7, 
-      image: award7, 
+    {
+      id: 7,
+      image: award7,
       alt: "World Scholar's Cup Global Round Doha achievements.",
       title: "World Scholar's Cup - Global Round Doha",
       ariaLabel: "World Scholar's Cup - Global Round Doha",
-      ariaDescribedBy: "Celebrating achievements in the prestigious World Scholar's Cup Global Round held in Doha, where students showcased their knowledge and skills."
+      ariaDescribedBy:
+        "Celebrating achievements in the prestigious World Scholar's Cup Global Round held in Doha, where students showcased their knowledge and skills.",
     },
-    { 
-      id: 8, 
-      image: award8, 
+    {
+      id: 8,
+      image: award8,
       alt: "Da Vinci Award and Asimov Award winners at World Scholar's Cup.",
       title: "World Scholar's Cup - Da Vinci and Asimov Awards",
       ariaLabel: "World Scholar's Cup - Da Vinci and Asimov Awards",
-      ariaDescribedBy: "Celebrating students who earned the prestigious Da Vinci Award and Asimov Award for their exceptional skills and knowledge."
+      ariaDescribedBy:
+        "Celebrating students who earned the prestigious Da Vinci Award and Asimov Award for their exceptional skills and knowledge.",
     },
-    { 
-      id: 9, 
-      image: award9, 
+    {
+      id: 9,
+      image: award9,
       alt: "Team Debate achievers at World Scholar's Cup.",
       title: "World Scholar's Cup - Team Debate Recognition",
       ariaLabel: "World Scholar's Cup - Team Debate Recognition",
-      ariaDescribedBy: "Recognizing outstanding achievements in the World Scholar's Cup Team Debate event."
+      ariaDescribedBy:
+        "Recognizing outstanding achievements in the World Scholar's Cup Team Debate event.",
     },
-    { 
-      id: 10, 
-      image: award10, 
+    {
+      id: 10,
+      image: award10,
       alt: "Champion Scholars recognized for their excellence at World Scholar's Cup.",
       title: "World Scholar's Cup - Champion Scholars",
       ariaLabel: "World Scholar's Cup - Champion Scholars",
-      ariaDescribedBy: "Recognizing exceptional students who earned the prestigious Champion Scholars title."
+      ariaDescribedBy:
+        "Recognizing exceptional students who earned the prestigious Champion Scholars title.",
     },
-    { 
-      id: 11, 
-      image: award11, 
+    {
+      id: 11,
+      image: award11,
       alt: "Champion Team and Scholar's Bowl winners at World Scholar's Cup.",
       title: "World Scholar's Cup - Champion Team and Scholar's Bowl Winners",
-      ariaLabel: "World Scholar's Cup - Champion Team and Scholar's Bowl Winners",
-      ariaDescribedBy: "Recognizing the Champion Team and Scholar's Bowl winners for their exceptional academic performance."
+      ariaLabel:
+        "World Scholar's Cup - Champion Team and Scholar's Bowl Winners",
+      ariaDescribedBy:
+        "Recognizing the Champion Team and Scholar's Bowl winners for their exceptional academic performance.",
     },
-    { 
-      id: 12, 
-      image: award12, 
+    {
+      id: 12,
+      image: award12,
       alt: "Regional Round achievements and ToC qualification at World Scholar's Cup.",
       title: "World Scholar's Cup - Regional Round and ToC Qualifier",
       ariaLabel: "World Scholar's Cup - Regional Round and ToC Qualifier",
-      ariaDescribedBy: "Celebrating achievements in the Regional Round and qualification for the Tournament of Champions."
-    }
+      ariaDescribedBy:
+        "Celebrating achievements in the Regional Round and qualification for the Tournament of Champions.",
+    },
   ];
 
-  // Responsive behavior: adjust itemsPerSlide based on screen width
+  // Create triple items for infinite scroll
+  const tripleItems = [...items, ...items, ...items];
+
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 480) setItemsPerSlide(1); // Small screens
-      else if (window.innerWidth <= 768) setItemsPerSlide(2); // Medium screens
-      else setItemsPerSlide(3); // Large screens
+      if (window.innerWidth <= 480) setItemsPerSlide(1);
+      else if (window.innerWidth <= 768) setItemsPerSlide(2);
+      else setItemsPerSlide(3);
     };
 
-    handleResize(); // Set initial value
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Group items into slides
-  const slides = [];
-  for (let i = 0; i < items.length; i += itemsPerSlide) {
-    slides.push(items.slice(i, i + itemsPerSlide));
-  }
+  const createSlides = (items) => {
+    const slides = [];
+    for (let i = 0; i < items.length; i += itemsPerSlide) {
+      slides.push(items.slice(i, i + itemsPerSlide));
+    }
+    return slides;
+  };
 
-  // Autoplay functionality with smooth reset
+  const slides = createSlides(tripleItems);
+
+  // Calculate the actual slide position considering the triple set
+  const getAdjustedIndex = () => {
+    return activeIndex % Math.ceil(items.length / itemsPerSlide);
+  };
+
+  // Handle dot click with proper positioning
+  const handleDotClick = (index) => {
+    // Calculate the correct position in the middle set
+    const middleSetOffset = Math.ceil(items.length / itemsPerSlide);
+    setIsTransitioning(true);
+    setActiveIndex(middleSetOffset + index);
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
-      if (activeIndex === slides.length - 1) {
-        // Disable transition for snap-back to the first slide
-        setTimeout(() => {
-          setTransitionEnabled(false);
-          setActiveIndex(0);
-        }, 500); // Matches the transition duration
-      } else {
-        setActiveIndex((prev) => prev + 1);
-      }
-      setTransitionEnabled(true);
-    }, 5000); // Change every 5 seconds
+      setActiveIndex((prev) => prev + 1);
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, [activeIndex, slides.length]);
+  }, []);
+
+  useEffect(() => {
+    const totalSlides = Math.ceil(tripleItems.length / itemsPerSlide);
+    const middleSetEnd = Math.ceil((items.length * 2) / itemsPerSlide);
+    const middleSetStart = Math.ceil(items.length / itemsPerSlide);
+
+    if (activeIndex >= middleSetEnd) {
+      // If we've reached the end of the second set
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setActiveIndex(middleSetStart);
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            setIsTransitioning(true);
+          });
+        });
+      }, 1000);
+    } else if (activeIndex < middleSetStart) {
+      // If we've reached the start of the first set
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setActiveIndex(middleSetEnd - 1);
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            setIsTransitioning(true);
+          });
+        });
+      }, 1000);
+    }
+  }, [activeIndex, items.length, itemsPerSlide, tripleItems.length]);
 
   return (
     <div className="relative overflow-hidden py-8 bg-gray-100">
-      {/* Slider */}
       <div
-        className={`flex transition-transform ${
-          transitionEnabled ? "duration-1000 ease-in-out" : ""
+        className={`flex ${
+          isTransitioning
+            ? "transition-transform duration-1000 ease-in-out"
+            : ""
         }`}
         style={{
           transform: `translateX(-${activeIndex * 100}%)`,
@@ -167,12 +221,12 @@ const AwardsSlider = () => {
       >
         {slides.map((slide, slideIndex) => (
           <div
-            key={slideIndex}
+            key={`slide-${slideIndex}`}
             className="shrink-0 w-full flex justify-around"
           >
             {slide.map((item, index) => (
               <div
-                key={index}
+                key={`${item.id}-${slideIndex}-${index}`}
                 className="relative group px-2"
                 style={{
                   width: `${100 / itemsPerSlide}%`,
@@ -185,7 +239,7 @@ const AwardsSlider = () => {
                     alt={item.alt}
                     title={item.title}
                     aria-label={item.ariaLabel}
-                    aria-describedby={item.ariaDescribedby}
+                    aria-describedby={item.ariaDescribedBy}
                   />
                 </div>
               </div>
@@ -194,22 +248,21 @@ const AwardsSlider = () => {
         ))}
       </div>
 
-      {/* Pagination Dots */}
+      {/* Updated pagination dots */}
       <div className="flex justify-center gap-3 mt-8">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 rounded-full transition-all duration-300 transform ${
-              index === activeIndex
-                ? "bg-[#890C25] scale-125 ring-2 ring-[#890C25]/20"
-                : "bg-gray-300 hover:bg-gray-400"
-            }`}
-            onClick={() => {
-              setTransitionEnabled(true); // Enable smooth transitions on dot click
-              setActiveIndex(index);
-            }}
-          />
-        ))}
+        {Array.from({ length: Math.ceil(items.length / itemsPerSlide) }).map(
+          (_, index) => (
+            <button
+              key={index}
+              className={`w-3 h-3 rounded-full transition-all duration-300 transform ${
+                index === getAdjustedIndex()
+                  ? "bg-[#890C25] scale-125 ring-2 ring-[#890C25]/20"
+                  : "bg-gray-300 hover:bg-gray-400"
+              }`}
+              onClick={() => handleDotClick(index)}
+            />
+          )
+        )}
       </div>
     </div>
   );

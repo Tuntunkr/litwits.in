@@ -40,21 +40,23 @@ const Hero = React.forwardRef((props, ref) => {
 
   return (
     <>
-        <section
-  ref={ref}
-  className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20"
-  style={{
-    backgroundImage: `linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.4)), url(${heroimage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  <div className="relative w-full lg:w-1/2 flex flex-col justify-center items-center text-white text-center space-y-6">
-    <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-      DISCUSS. WRITE. DEBATE.
-    </h1>
-  </div>
-</section>
+      <section
+        ref={ref}
+        className="relative flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20"
+        style={{
+          backgroundImage: `linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.4)), url(${heroimage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "calc(100vh - 80px)",
+        }}
+      >
+        <div className="relative w-full lg:w-1/2 flex flex-col justify-center items-center text-white text-center space-y-6">
+          <h1 className="hidden">Litwits</h1>
+          <h2 className="text-4xl md:text-6xl font-extrabold leading-tight">
+            DISCUSS. WRITE. DEBATE.
+          </h2>
+        </div>
+      </section>
       <ToastContainer />
 
       <section>
