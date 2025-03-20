@@ -2,70 +2,121 @@ import React from "react";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import APLogo from "/AP-Logo.jpg";
+import world from "/worlds.jpeg";
 
 // Sample blog data with 10 entries
-const blogData = Array.from({ length: 10 }, (_, index) => ({
-  id: index + 1,
-  // category: "Product Management",
-  // date: `Jul ${6 + index}, 2024`,
-  title: `Advanced Placement Exam 2025`,
-  description: `This is a short description of blog post ${
-    index + 1
-  }. Learn about product management, feature voting, and SaaS tools.`,
-  image: APLogo,
-}));
+const blogData = [
+  {
+    id: 1,
+    title: "Advanced Placement Exam 2025",
+    description:
+      "This is a short description of blog post 1. Learn about product management, feature voting, and SaaS tools.",
+    image: APLogo,
+  },
+  {
+    id: 2,
+    title: "Introduction to the World Scholar's Cup 2025 Tournament",
+    description:
+      "Every year, students from all over the world gather for something that’s more than just a competition. ",
+    image: world,
+  },
+  ...Array.from({ length: 9 }, (_, index) => ({
+    id: index + 3, // Start from ID 3 to avoid duplicate IDs
+    title: `Advanced Placement Exam 2025`,
+    description: `This is a short description of blog post ${
+      index + 3
+    }. Learn about product management, feature voting, and SaaS tools.`,
+    image: APLogo,
+  })),
+];
 
 const Blog = () => {
-  // Extract first post and others
-  const [firstPost, ...otherPosts] = blogData;
+  // Fetch first and second blog posts
+  const firstPost = blogData.find((post) => post.id === 1);
+  const secondPost = blogData.find((post) => post.id === 2);
 
   return (
-    <>
-      <div className="container mx-auto px-4 py-8">
-        {/* Hero Section */}
-        <section className="mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-center">Recent Blogs</h1>
-        </section>
+    <div className="container mx-auto px-4 py-8">
+      {/* Hero Section */}
+      <section className="mb-12">
+        <h1 className="text-4xl font-bold mb-4 text-center">Recent Blogs</h1>
+      </section>
 
-        {/* First Blog Post - Large Horizontal Card */}
+      {/* First Blog Post */}
+      {firstPost && (
+        <Link
+          to={`/BlogDetails/${firstPost.id}/${firstPost.title
+            .replace(/\s+/g, "-")
+            .replace(/[^a-zA-Z0-9-]/g, "")
+            .toLowerCase()}`}
+          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+        >
+          {/* Image Section */}
+          <img
+            src={firstPost.image}
+            alt={firstPost.title}
+            loading="lazy"
+            width="600"
+            height="200"
+            decoding="async"
+            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+          />
 
-        {firstPost && (
-          <Link
-            to={`/BlogDetails/${firstPost.id}`}
-            className="block mb-8 md:flex items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-          >
-            {/* Image Section */}
-            <img
-              src={APLogo}
-              alt="14 Feature Voting Tools for SaaS Companies"
-              loading="lazy"
-              width="600"
-              height="200"
-              decoding="async"
-              class="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-            />
-
-            {/* Content Section */}
-            <div className="md:w-1/2 p-6">
-              <div className="flex items-center space-x-2 text-sm mb-2 text-gray-500">
-                <span>{firstPost.category}</span>
-                <span className="text-gray-300">|</span>
-                <span>{firstPost.date}</span>
-              </div>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-                {firstPost.title}
-              </h2>
-              <p className="text-gray-600 mb-4">{firstPost.description}</p>
-              <div className="flex items-center text-blue-600 font-medium">
-                <span>Read More</span>
-                <ChevronRight className="ml-1 w-5 h-5" />
-              </div>
+          {/* Content Section */}
+          <div className="md:w-1/2 p-6">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              {firstPost.title}
+            </h2>
+            <p className="text-gray-600 mb-4">{firstPost.description}</p>
+            <div className="flex items-center text-blue-600 font-medium">
+              <span>Read More</span>
+              <ChevronRight className="ml-1 w-5 h-5" />
             </div>
-          </Link>
-        )}
+          </div>
+        </Link>
+      )}
 
-        {/* Remaining Blog Posts in Grid Layout */}
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Second Blog Post */}
+      {secondPost && (
+        <Link
+          to={'/Introduction-to-the-World-Scholars-Cup-2025-Tournament'}
+          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+        >
+          {/* Image Section */}
+          <img
+            src={secondPost.image}
+            alt={secondPost.title}
+            loading="lazy"
+            width="600"
+            height="200"
+            decoding="async"
+            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+          />
+
+          {/* Content Section */}
+          <div className="md:w-1/2 p-6">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              {secondPost.title}
+            </h2>
+            <p className="text-gray-600 mb-4">{secondPost.description}</p>
+            <div className="flex items-center text-blue-600 font-medium">
+              <span>Read More</span>
+              <ChevronRight className="ml-1 w-5 h-5" />
+            </div>
+          </div>
+        </Link>
+      )}
+    </div>
+  );
+};
+
+export default Blog;
+
+{
+  /* Remaining Blog Posts in Grid Layout */
+}
+{
+  /* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {otherPosts.map((blog) => (
           <Link
             to={`/BlogDetails/${blog.id}`}
@@ -100,10 +151,5 @@ const Blog = () => {
             </div>
           </Link>
         ))}
-      </div> */}
-      </div>
-    </>
-  );
-};
-
-export default Blog;
+      </div> */
+}

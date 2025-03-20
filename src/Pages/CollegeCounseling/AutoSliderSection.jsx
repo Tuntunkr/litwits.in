@@ -80,7 +80,7 @@ const AutoSliderSection = ({ cards = [] }) => {
                       >
                         <img
                           src={card.image}
-                          className="rounded-lg mb-4 w-full h-[200px] object-cover"
+                          className="rounded-lg mb-4 w-full h-[300px] object-cover"
                           alt={card.alt}
                           title={card.imgTitle}
                           aria-label={card.ariaLabel}

@@ -858,10 +858,10 @@ const GroupSess = () => {
                 <br />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full  mx-auto">
                   <Link
-                    to="https://wa.me/7827098747?text=hello+123"
+                    to="https://wa.me/7827098747?text=Hi! I’m interested in your Academic Writing Course. Please share details about the program and I request a free consultation."
                     className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                   >
-                    Free Consultationss
+                    Free Consultations
                   </Link>
 
                   <Link
@@ -928,7 +928,7 @@ const GroupSess = () => {
                   to="https://wa.me/7827098747?text=hello+123"
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultationss
+                  Free Consultations
                 </Link>
               </div>
             </div>
@@ -980,10 +980,10 @@ const GroupSess = () => {
                 <br />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full   mx-auto">
                   <Link
-                    to="https://wa.me/7827098747?text=hello+123"
+                    to="https://wa.me/7827098747?text=Hi! I’m interested in your Debate and Public Speaking course. Please share details about the program and I request a free consultation."
                     className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                   >
-                    Free Consultationss
+                    Free Consultations
                   </Link>
 
                   <Link
@@ -1040,10 +1040,10 @@ const GroupSess = () => {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                   <Link
-                    to="https://wa.me/7827098747?text=hello+123"
+                    to="https://wa.me/7827098747?text=Hi! I’m interested in your Entrepreneurship Session. Please share details about the program and I request a free consultation."
                     className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                   >
-                    Free Consultationss
+                    Free Consultations
                   </Link>
 
                   <Link
@@ -1126,12 +1126,13 @@ const GroupSess = () => {
                     sense of accountability and responsibility in the students.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
-                    <Link
-                      to="/contact-us"
-                      className="bg-red-800 text-white px-6 py-3 w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                    >
-                      Free Consultation
-                    </Link>
+                  <Link
+                    to="https://wa.me/7827098747?text=Hi! I’m interested in your Financial Literacy Session.Please share details about the program and I request a free consultation."
+                    className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  >
+                    Free Consultations
+                  </Link>
+
 
                     <Link
                       to="/membership"
@@ -1192,10 +1193,10 @@ const GroupSess = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                   <Link
-                    to="https://wa.me/7827098747?text=hello+123"
+                    to="https://wa.me/7827098747?text=Hi! I’m interested in your Ivy League & Prestigious Competitions. Please share details about the program and I request a free consultation."
                     className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                   >
-                    Free Consultationss
+                    Free Consultations
                   </Link>
 
                   <Link
@@ -1282,8 +1283,12 @@ const GroupSess = () => {
           </div>
         </section>
       </section>
+
     </>
   );
 };
 
 export default GroupSess;
+
+
+// Hi! I’m interested in the WSC Program. Please share details about the program and I request a free consultation.

@@ -640,10 +640,10 @@ const GroupSess = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
-                  to="https://wa.me/7827098747?text=hello+123"
+                  to="https://wa.me/7827098747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultationss
+                  Free Consultations
                 </Link>
 
                 <Link
@@ -715,10 +715,10 @@ const GroupSess = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
               <Link
-                to="https://wa.me/7827098747?text=hello+123"
+                to="https://wa.me/7827098747?text=Hi! I’m interested in your TED-Ed Student Talks Program. Please share details about the program and I request a free consultation."
                 className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
               >
-                Free Consultationss
+                Free Consultations
               </Link>
 
               <Link
@@ -778,10 +778,10 @@ const GroupSess = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
-                  to="https://wa.me/7827098747?text=hello+123"
+                  to="https://wa.me/7827098747?text=Hi! I’m interested in your Social Impact Program. Please share details about the program and I request a free consultation."
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultationss
+                  Free Consultations
                 </Link>
 
                 <Link
@@ -836,10 +836,10 @@ const GroupSess = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
               <Link
-                to="https://wa.me/7827098747?text=hello+123"
+                to="https://wa.me/7827098747?text=Hi! I’m interested in your Research Paper Guidance Program. Please share details about the program and I request a free consultation."
                 className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
               >
-                Free Consultationss
+                Free Consultations
               </Link>
 
               <Link
@@ -891,10 +891,10 @@ const GroupSess = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
-                  to="https://wa.me/7827098747?text=hello+123"
+                  to="https://wa.me/7827098747?text=Hi! I’m interested in your Advanced Placement (AP) Prep Session. Please share details about the program and I request a free consultation."
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultationss
+                  Free Consultations
                 </Link>
 
                 <Link
@@ -934,29 +934,30 @@ const GroupSess = () => {
 
           {/* Content */}
           <div
-            className="relative z-10 w-full max-w-[1499px] mx-auto p-4 lg:p-8  flex flex-col justify-center"
+            className="relative z-10 w-full max-w-[1499px] mx-auto p-4 lg:p-8 flex flex-col items-center justify-center text-center"
             style={{ height: "100%" }}
           >
             {/* Text Content */}
-            <div>
-              <h1 className="font-nato font-bold text-center text-2xl text-white mb-4 lg:text-3xl">
+            <div className="max-w-3xl">
+              {" "}
+              {/* Restrict width for better readability */}
+              <h1 className="font-nato font-bold text-2xl text-white mb-4 lg:text-3xl">
                 SAT PREP SESSION
               </h1>
-              <p className=" text-center font-nato text-sm text-white leading-relaxed lg:text-lg">
+              <p className="font-nato text-sm text-white text-start leading-relaxed lg:text-lg">
                 Through expert instruction and targeted strategies, we focus on
                 all SAT sections: Evidence-Based Reading, Writing and Language,
-                and Math. <br />
-                By understanding the test format, mastering timing, and honing
+                and Math.By understanding the test format, mastering timing, and honing
                 question-handling techniques, students are equipped to approach
-                each section <br /> with precision, confidence, accuracy, and
+                each section with precision, confidence, accuracy, and
                 test-taking speed, giving students the needed edge.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
-                  to="https://wa.me/7827098747?text=hello+123"
+                  to="https://wa.me/7827098747?text=Hi! I’m interested in your SAT Prep Session. Please share details about the program and I request a free consultation."
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultationss
+                  Free Consultations
                 </Link>
 
                 <Link
@@ -968,6 +969,7 @@ const GroupSess = () => {
               </div>
             </div>
           </div>
+
           {/* Descriptive Content for Accessibility */}
           <p id="sat-prep-session-description" className="sr-only">
             Expert-led SAT preparation covering Evidence-Based Reading, Writing,
@@ -1013,10 +1015,10 @@ const GroupSess = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
-                  to="https://wa.me/7827098747?text=hello+123"
+                  to="https://wa.me/7827098747?text=Hi! I’m interested in your ACT Prep Session. Please share details about the program and I request a free consultation."
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultationss
+                  Free Consultations
                 </Link>
 
                 <Link

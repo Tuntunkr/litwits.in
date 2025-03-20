@@ -7,6 +7,7 @@ import "@fontsource/noto-serif";
 import WhatsAppButton from "./sections/WhatsAppButton";
 import { Helmet } from "react-helmet-async";
 import heroimage from "/assets/join-litwits.avif";
+import IntroductionToTheWorldScholarsCup2025Tournament from "./Pages/blog/IntroductionToTheWorldScholarsCup2025Tournament";
 
 // Lazy Loading Pages
 const Hero = lazy(() => import("./sections/Hero"));
@@ -26,6 +27,7 @@ const CollegeCounseling = lazy(() =>
 const PrivacyPolicy = lazy(() => import("./Pages/PrivacyPolicy"));
 const Blog = lazy(() => import("./Pages/blog"));
 const BlogDetails = lazy(() => import("./Pages/blog/BlogDetails"));
+const World = lazy(() => import("./Pages/blog/IntroductionToTheWorldScholarsCup2025Tournament"));
 const NotFound = lazy(() => import("./Pages/404"));
 
 const App = () => {
@@ -166,7 +168,9 @@ const App = () => {
             />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/BlogDetails/:id" element={<BlogDetails />} />
+            <Route path="/BlogDetails/:id/:title" element={<BlogDetails />} />
+            <Route path="/Introduction-to-the-World-Scholars-Cup-2025-Tournament" element={<IntroductionToTheWorldScholarsCup2025Tournament />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

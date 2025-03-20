@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import blogs from "/blog.jpeg";
 import BN from "/BN.jpg";
 import APLogo from "/AP-Logo.jpg";
+import world from "/World.jpeg";
 import { Helmet } from "react-helmet-async";
 // import FNOt from "/FNOt.jpegjpg";
 
@@ -17,10 +18,19 @@ const blogData = [
     image: APLogo, // High-quality image
     link: "post-1.html",
   },
+  {
+    id: 2,
+    title: "Introduction to the World Scholar's Cup 2025 Tournament",
+    date: "April 15, 2025",
+    description: "Every year, students from all over the world gather for something that's more than just a competition. They partake in the World Scholar's Cup not just to compete but also to learn, to share ideas, and to create friendships that will last a lifetime. It is an opportunity to look at things differently and face difficult challenges as a team while keeping the curiosity burning long after the challenge is over.",
+    image: world,
+    link: "post-2.html",
+  },
 ];
 
 const BlogDetails = () => {
-  const { id } = useParams();
+  const { id, title } = useParams();
+
   const blog = blogData.find((b) => b.id === parseInt(id));
 
   if (!blog) {
@@ -111,6 +121,88 @@ const BlogDetails = () => {
             ],
           })}
         </script>
+
+        {blog.id === 2 && (
+          <>
+            <meta
+              name="title"
+              content="World Scholar's Cup 2025: Global Academic Festival"
+            />
+            <meta
+              name="description"
+              content="Discover everything about the World Scholar's Cup 2025 - from registration to preparation tips. Learn about this unique academic competition that combines debate, writing, knowledge bowl, and scholar's challenge."
+            />
+            <meta
+              name="keywords"
+              content="World Scholar's Cup 2025, WSC 2025, Global Round, Tournament of Champions, Debate Competition, Academic Festival, Scholar's Challenge, International Competition"
+            />
+            <meta name="author" content="Litwits" />
+            <meta
+              property="og:title"
+              content="World Scholar's Cup 2025: Global Academic Festival"
+            />
+            <meta
+              property="og:description"
+              content="Join the World Scholar's Cup 2025 - A celebration of learning through debate, writing, and collaborative competition."
+            />
+            <meta property="og:image" content="https://litwits.in/World.jpeg" />
+            <meta
+              property="og:url"
+              content="https://litwits.in/blog/world-scholars-cup-2025"
+            />
+            <meta property="og:type" content="article" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta
+              name="twitter:title"
+              content="World Scholar's Cup 2025: Global Academic Festival"
+            />
+            <meta
+              name="twitter:description"
+              content="Experience the magic of learning at World Scholar's Cup 2025. Compete, collaborate, and connect with students worldwide."
+            />
+            <meta name="twitter:image" content="https://litwits.in/World.jpeg" />
+
+            <script type="application/ld+json">
+              {JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Article",
+                headline: "World Scholar's Cup 2025: Global Academic Festival",
+                description:
+                  "Join the World Scholar's Cup 2025 - A celebration of learning through debate, writing, and collaborative competition.",
+                author: {
+                  "@type": "Organization",
+                  name: "Litwits",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "Litwits",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://litwits.in/World.jpeg",
+                  },
+                },
+                datePublished: "2025-04-15",
+                dateModified: "2025-04-15",
+                mainEntityOfPage: {
+                  "@type": "WebPage",
+                  "@id": "https://litwits.in/blog/world-scholars-cup-2025",
+                },
+                image: "https://litwits.in/World.jpeg",
+                url: "https://litwits.in/blog/world-scholars-cup-2025",
+                keywords: [
+                  "World Scholar's Cup 2025",
+                  "WSC 2025",
+                  "Global Round",
+                  "Tournament of Champions",
+                  "Debate Competition",
+                  "Academic Festival",
+                  "Scholar's Challenge",
+                  "International Competition",
+                ],
+              })}
+            </script>
+          </>
+        )}
       </Helmet>
       <div className="container mx-auto p-4 font-sans">
         {/* Blog Title */}
@@ -131,9 +223,9 @@ const BlogDetails = () => {
         {/* Blog Content */}
         <div className="text-gray-700 text-lg leading-relaxed">
           <p className="mb-6 text-gray-900">
-            Feeling anxious about the AP Exam 2025? Well, that’s perfectly
+            Feeling anxious about the AP Exam 2025? Well, that's perfectly
             normal. Advanced Placements plays a significant role in shaping
-            one's collage application. So, let’s get to what really matters! You
+            one's collage application. So, let's get to what really matters! You
             must prepare for the exam extensively; it is a smart approach to
             drill on your part to achieve success.
           </p>
@@ -270,7 +362,7 @@ const BlogDetails = () => {
           <p className="mb-6 text-gray-900">
             With 38 AP subjects, undergraduate students have the flexibility to
             choose from subjects that they would like to study in relation to
-            their interests and careers. Each subject’s syllabus has a standard
+            their interests and careers. Each subject's syllabus has a standard
             curriculum according to the college courses so that students can
             easily undertake college-level work.
           </p>
@@ -335,14 +427,14 @@ const BlogDetails = () => {
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3">
               <strong className="text-gray-900">
-                College Board’s Official AP Classroom
+                College Board's Official AP Classroom
               </strong>
             </li>
             <li className="mb-3">
               <strong className="text-gray-900">YouTube Tutors</strong>
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">Review Books</strong> (Barron’s,
+              <strong className="text-gray-900">Review Books</strong> (Barron's,
               Princeton Review, 5 Steps to a 5)
             </li>
             <li className="mb-3">
@@ -412,6 +504,187 @@ const BlogDetails = () => {
               school GPA.
             </li>
           </ul>
+
+          {blog.id === 2 && (
+            <>
+              <p className="mb-6 text-gray-900">
+                Every year, students from all over the world gather for something that's more than just a competition. They partake in the World Scholar's Cup not just to compete but also to learn, to share ideas, and to create friendships that will last a lifetime. It is an opportunity to look at things differently and face difficult challenges as a team while keeping the curiosity burning long after the challenge is over.
+              </p>
+              
+              <p className="mb-6 text-gray-900">
+                This blog dives into the details of the World Scholar's Cup 2025, including its syllabus, subjects, schedule, registration process and much more.
+              </p>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                What is the World Scholar's Cup?
+              </h2>
+              <p className="mb-6 text-gray-900">
+                The World Scholar's Cup is an international academic competition that inspires school students from ages of 8 to 18 toward a passion for learning and collaboration. Established in 2007, currently in more than 60 nations, it invites thousands of scholars to participate in tournaments, team events, and cultural interaction. The World Scholar's Cup puts a high value on teamwork, problem-solving, and cross-disciplinary learning that yield a wholesome educational experience.
+              </p>
+              
+              <p className="mb-6 text-gray-900">
+                The competition hosts four major events: Team Debate, Scholar's Bowl, Collaborative Writing, and Scholar's Challenge, wherein scholars are judged on reasoning, problem-solving, and critical thinking skills, compelling them to delve into different topics in a fun yet competitive setup.
+              </p>
+              
+              <p className="mb-6 text-gray-900">
+                Unlike the more traditional competitions, the World Scholar's Cup encourages collaboration over competitive individualism. The emphasis is not on winning but on learning and self-improvement as a team. Competitors leave with improved communication skills and improved self-confidence.
+              </p>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                The World Scholar's Cup Advantage
+              </h2>
+              <p className="mb-6 text-gray-900">
+                Participating in the World Scholar's Cup is not merely an academic exercise—it's a self-discovery experience. Participants have the chance to enhance their creativity and problem-solving skills when exposed to global perspectives. The competition is meant to be entertaining and engaging in order to make learning less of a chore and more of an adventure.
+              </p>
+              
+              <ul className="list-disc list-inside mb-6 pl-5">
+                <li className="mb-3">
+                  <strong className="text-gray-900">Global Networking:</strong> By interacting with people all around the world, participants promote understanding between cultures.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Skill Development:</strong> Skills such as critical thinking, public speaking, writing, and teamwork skills are developed in the competition, which is essential for future academic and professional endeavors.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Confidence Building:</strong> Conquering diverse challenges builds self-confidence and adaptability.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Memorable Moments:</strong> From engaging in impassioned debate on challenging topics to participating in talent shows, the World Scholar's Cup provides memorable & enriching moments.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Road to Yale:</strong> In the invitation-only Tournament of Champions at Yale University the top performers in world rounds are invited, laying the road to prestigious academic institutions.
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                World Scholar's Cup 2025 Registration
+              </h2>
+              <p className="mb-6 text-gray-900">
+                World Scholar's Cup 2025 Registration is easy but advance planning is important. The timeline, the fees, and the procedures will enable participants to secure their positions and prepare suitably. Register early with no last-minute rushes. Here is what you will need to know:
+              </p>
+
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Schedule</h3>
+              <p className="mb-6 text-gray-900">
+                The Regional rounds in the World Scholar's Cup 2025 Schedule are arranged all throughout the year in different venues. The Regional rounds and Global rounds are held at Lusaka, Bangkok, Dubai, Doha, Delhi, Chennai, Mumbai, Bangalore, Hong Kong, Seoul, Nairobi, Houston, Maldives, Kuala Lumpur, Toronto, Singapore and the Paris-Chartres and many other locations. Generally, Global rounds take place during June, July, and August and conclude at Yale University with the Tournament of Champions in November.
+              </p>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                World Scholar's Cup Eligibility Criteria
+              </h2>
+              <p className="mb-6 text-gray-900">
+                The World Scholar's Cup welcomes students from different backgrounds. Whether you are a well-versed debater or are simply curious as to how academic competitions work, there's a place for you.
+              </p>
+
+              <p className="mb-6 text-gray-900">
+                The World Scholar's Cup is open to students between the ages of 8 to 18 years and offers a variety of educational backgrounds. Students are categorized into divisions according to their age groupings:
+              </p>
+
+              <ul className="list-disc list-inside mb-6 pl-5">
+                <li className="mb-3">
+                  <strong className="text-gray-900">Junior Division:</strong> Students aged 11 to 14 years are included.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Senior Division:</strong> It includes students aged 15 to 18 years.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Skittles Division:</strong> Students aged 8 - 10 years
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                How to Join the World Scholar's Cup?
+              </h2>
+              <p className="mb-6 text-gray-900">
+                It is easy to start the World Scholar's Cup journey:
+              </p>
+
+              <ul className="list-disc list-inside mb-6 pl-5">
+                <li className="mb-3">
+                  <strong className="text-gray-900">Team Formation:</strong> Build a team of three students in the same age group of the same school or different schools.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Choose a Round:</strong> Select a regional round that suits your location and schedule.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Register:</strong> Complete the World Scholar's Cup 2025 Registration on the website, submitting the required information and the registration fee.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Join In:</strong> Be there for the selected round, partake in the activities, and be a part of the World Scholar's Cup 2025 experience.
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                World Scholar's Cup Syllabus
+              </h2>
+              <p className="mb-6 text-gray-900">
+                The World Scholar's Cup syllabus is interdisciplinary, including various subjects in an integrated learning experience. Students are encouraged to explore connections between different fields, instead of the traditional memorization technique. Various topics across science, history, social studies, art, literature and many more are covered in the World Scholar's Cup 2025.
+              </p>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                World Scholar's Cup Subjects
+              </h2>
+              <p className="mb-6 text-gray-900">
+                The World Scholar's Cup 2025 Topics encompass a range of subjects that change annually to align with the overarching theme:
+              </p>
+
+              <ul className="list-disc list-inside mb-6 pl-5">
+                <li className="mb-3">
+                  <strong className="text-gray-900">Science & Technology:</strong> Investigating scientific principles and technological innovation
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">History:</strong> Investigating past events and their consequences
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Social Studies:</strong> Investigating social systems and problems
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Art & Music:</strong> Analyzing works of art and music
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Literature & Media:</strong> Interpreting texts and media
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">Special Area:</strong> A specific topic based on the year's theme
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                World Scholar's Cup 2025 Theme
+              </h2>
+              <p className="mb-6 text-gray-900">
+                For the 2025 season, the World Scholar's Cup has introduced the theme "World Scholar's Cup 2025 Theme: Reigniting the Future." This theme will guide the selection of topics across all subjects.
+              </p>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                Kickstarter World Scholar's Cup
+              </h2>
+              <p className="mb-6 text-gray-900">
+                Beginning your World Scholar's Cup experience is easy with the right mindset and the right training. The secret lies in taking things one step at a time—learning the competition format, reading through pertinent materials, and rehearsing with team members. Regular preparatory sessions are scheduled for WSC training throughout the year to train students in all the four events for excellent outcomes.
+              </p>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                Conclusion
+              </h2>
+              <p className="mb-6 text-gray-900">
+                The World Scholar's Cup provides one of the very few occasions for students: this is about broadening horizons, challenging themselves, and feeling part of an international community of scholars. Whatever you are into: science, art, history, or debate, inside the rich tapestry of scholars you will find your place. This is a life-changing opportunity; organize a team, register, and go on a journey that will kindle your future flame. Come join the World Scholar's Cup 2025 Tournament as a celebration of learning, collaboration, and discovery.
+              </p>
+
+              <h2 className="text-2xl font-bold mb-4 text-gray-900">FAQs</h2>
+              <ul className="list-disc list-inside mb-6 pl-5">
+                <li className="mb-3">
+                  <strong className="text-gray-900">Who can participate in the World Scholar's Cup 2025?</strong> School Students aged 8 to 18 from any educational background are welcome to participate, with no strict academic requirements—just a curiosity for learning and a willingness to collaborate.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">What are the different rounds in the World Scholar's Cup 2025?</strong> There are several phases to the tournament, starting with the Regional Rounds, which are held all around the world all year long. The teams who do the best in these stages move on to the Global stages, where they face off against other nations.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">How much does World Scholar's Cup 2025 registration cost?</strong> The World Scholar's Cup 2025 registration price varies depending on the location and round. The usual fee range for each participant is between $50 and $500.
+                </li>
+                <li className="mb-3">
+                  <strong className="text-gray-900">How can I prepare for the World Scholar's Cup 2025?</strong> You may sign up with LITWITS to prepare for the World Scholar's Cup. LITWITS is at the forefront of preparing young scholars for the World Scholar's Cup (WSC) and consistently holding top rankings in Regional Rounds, Global Rounds, and the finale.
+                </li>
+              </ul>
+            </>
+          )}
         </div>
       </div>
     </>
