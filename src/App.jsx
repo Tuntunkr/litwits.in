@@ -168,8 +168,8 @@ const App = () => {
             />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/BlogDetails/:id/:title" element={<BlogDetails />} />
-            <Route path="/Introduction-to-the-World-Scholars-Cup-2025-Tournament" element={<IntroductionToTheWorldScholarsCup2025Tournament />} />
+            <Route path="/blog/:id/:title" element={<BlogDetails />} />
+            <Route path="/blog/introduction-to-the-world-scholars-cup-2025-tournament" element={<IntroductionToTheWorldScholarsCup2025Tournament />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

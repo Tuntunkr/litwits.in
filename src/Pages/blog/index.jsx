@@ -45,7 +45,7 @@ const Blog = () => {
       {/* First Blog Post */}
       {firstPost && (
         <Link
-          to={`/BlogDetails/${firstPost.id}/${firstPost.title
+          to={`/blog/${firstPost.id}/${firstPost.title
             .replace(/\s+/g, "-")
             .replace(/[^a-zA-Z0-9-]/g, "")
             .toLowerCase()}`}
@@ -79,7 +79,7 @@ const Blog = () => {
       {/* Second Blog Post */}
       {secondPost && (
         <Link
-          to={'/Introduction-to-the-World-Scholars-Cup-2025-Tournament'}
+          to={'/blog/introduction-to-the-world-scholars-cup-2025-tournament'}
           className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
         >
           {/* Image Section */}
