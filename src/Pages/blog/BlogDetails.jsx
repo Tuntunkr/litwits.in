@@ -14,17 +14,9 @@ const blogData = [
     title: "Advanced Placement Exam 2025",
     date: "March 7, 2025",
     description:
-      "Feeling anxious about the AP Exam 2025? Well, that's perfectly normal. This examination can make or break one's college applications. So, let's get to what really matters!",
+      "Prepare effectively for the AP Exam 2025 with expert tips, exam dates, syllabus details, and preparation resources. Discover how AP exams can boost your college application and unlock scholarship opportunities.",
     image: APLogo, // High-quality image
     link: "post-1.html",
-  },
-  {
-    id: 2,
-    title: "Introduction to the World Scholar's Cup 2025 Tournament",
-    date: "April 15, 2025",
-    description: "Every year, students from all over the world gather for something that's more than just a competition. They partake in the World Scholar's Cup not just to compete but also to learn, to share ideas, and to create friendships that will last a lifetime. It is an opportunity to look at things differently and face difficult challenges as a team while keeping the curiosity burning long after the challenge is over.",
-    image: world,
-    link: "post-2.html",
   },
 ];
 
@@ -204,8 +196,9 @@ const BlogDetails = () => {
           </>
         )}
       </Helmet>
-      <div className="container mx-auto p-4 font-sans">
+      <div className="container  mx-auto p-4  pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
         {/* Blog Title */}
+
         <h1 className="text-4xl font-bold mb-2 text-gray-900">{blog.title}</h1>
         <div className="text-gray-600 text-sm mb-8">
           By Author Name - {blog.date}

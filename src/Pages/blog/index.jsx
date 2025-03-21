@@ -10,7 +10,7 @@ const blogData = [
     id: 1,
     title: "Advanced Placement Exam 2025",
     description:
-      "This is a short description of blog post 1. Learn about product management, feature voting, and SaaS tools.",
+      "Prepare effectively for the AP Exam 2025 with expert tips, exam dates, syllabus details, and preparation resources. Discover how AP exams can boost your college application and unlock scholarship opportunities.",
     image: APLogo,
   },
   {

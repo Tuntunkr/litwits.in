@@ -1037,73 +1037,74 @@ const GroupSess = () => {
 
       {/* FAQ Section */}
       <section id="faq" className="container mx-auto px-8 bg-gray-50">
-        <div className="container mx-auto ">
-          <h2 className="text-3xl font-nato pt-6 font-bold text-center text-red-700 mb-8">
-            FREQUENTLY ASKED QUESTIONS
-          </h2>
-        </div>
-        <div className="p-4">
-          {/* First Accordion */}
-          <Accordion defaultActiveKey="0" flush>
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>
-                As a member, which sessions can I attend?
-              </Accordion.Header>
-              <Accordion.Body className="bg-[#890C25] text-white">
-                All group sessions are open to all members.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>
-                How many sessions can I attend in a week?
-              </Accordion.Header>
-              <Accordion.Body className="bg-[#890C25] text-white">
-                Members can attend as many sessions as they wish, provided there
-                is availability.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="2">
-              <Accordion.Header>
-                What are the timings of the sessions?
-              </Accordion.Header>
-              <Accordion.Body className="bg-[#890C25] text-white">
-                Session timings vary. Please check the schedule for specific
-                details.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="3">
-              <Accordion.Header>
-                What would be the structure of the core sessions?
-              </Accordion.Header>
-              <Accordion.Body className="bg-[#890C25] text-white">
-                Core sessions include warm-ups, skill-building activities, and
-                group discussions.
-              </Accordion.Body>
-            </Accordion.Item>
+  <div className="container mx-auto ">
+    <h2 className="text-3xl font-nato pt-6 font-bold text-center text-red-700 mb-8">
+      FREQUENTLY ASKED QUESTIONS
+    </h2>
+  </div>
+  <div className="p-4">
+    {/* First Accordion */}
+    <Accordion defaultActiveKey="0" flush>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>
+          What would be the duration of each individual session?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          Each individual session is 90 minutes, ensuring ample time for in-depth learning, interactive discussions, and personalized guidance from our expert mentors.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>
+          Which are the Individual Sessions available?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          Our Individual Sessions are designed to cater to specific learning needs and personalized mentorship. Currently, we offer:
+          <ul className="list-disc pl-5">
+            <li>TED-Ed Training</li>
+            <li>MUN Guidance Package</li>
+            <li>College Essay Guidance</li>
+            <li>Research Paper Guidance</li>
+            <li>Social Impact</li>
+            <li>Tailor-made sessions as per the requirement of the student</li>
+          </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>
+          Do you also provide AP (Advanced Placement) courses?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          Yes, we offer Advanced Placement (AP) courses to help students prepare for AP exams. These courses are designed to provide comprehensive subject knowledge, practice tests, and exam strategies to ensure high scores.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3">
+        <Accordion.Header>
+          What are the timings of Individual Sessions?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          Since Individual Sessions offer personalized mentorship, they are scheduled at a mutually convenient time for both the student and the mentor. We ensure flexibility to accommodate different time zones and student schedules.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="4">
+        <Accordion.Header>
+          How much time do I have to complete the MUN Guidance Package?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          The MUN Guidance Package must be completed within two weeks from the start date. This structure ensures consistency in learning and allows students to fully grasp the key concepts and strategies needed for MUN success.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="5">
+        <Accordion.Header>
+          Can I convert my Group Session package to Individual Sessions?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          No. Group Sessions and Individual Sessions are structured and priced separately.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+  </div>
+</section>
 
-            {/* Second Accordion */}
-
-            <Accordion.Item eventKey="4">
-              <Accordion.Header>
-                Can I convert my Group Session package to Individual Sessions?
-              </Accordion.Header>
-              <Accordion.Body className="bg-[#890C25] text-white">
-                Yes, conversion is possible. Please contact support for more
-                details.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="5">
-              <Accordion.Header>
-                Do you offer trial sessions for the students?
-              </Accordion.Header>
-              <Accordion.Body className="bg-[#890C25] text-white">
-                Yes, we offer trial sessions to help students get familiar with
-                the program.
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </div>
-      </section>
     </section>
   );
 };

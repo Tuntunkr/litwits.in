@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import Rozarpayment from "../../Rozarpayment";
 import { Helmet } from "react-helmet-async";
+import CourseCurriculum from "./CourseCurriculum";
 
 const index = () => {
   return (
@@ -178,6 +179,8 @@ const index = () => {
         </script>
       </Helmet>
       <section className="p-11">
+
+        <CourseCurriculum/>
         <div>
           <h1 className="text-3xl font-nato pt-6 font-bold text-center mb-8">
             {" "}
@@ -231,30 +234,7 @@ const index = () => {
                   <Rozarpayment inrAmount={25000} />
                 </td>
               </tr>
-              {/* <tr>
-              <td>40</td>
-              <td>6 Months</td>
-              <td>₹33,040</td>
-              <td>
-              <Rozarpayment inrAmount={33040} className="choose-plan mt-4" />
-              </td>
-            </tr>
-            <tr>
-              <td>50</td>
-              <td>8 Months</td>
-              <td>₹38,350</td>
-              <td>
-              <Rozarpayment inrAmount={38350} className="choose-plan mt-4" />
-              </td>
-            </tr>
-            <tr>
-              <td>60</td>
-              <td>10 Months</td>
-              <td>₹42,480</td>
-              <td>
-              <Rozarpayment inrAmount={42480} className="choose-plan mt-4" />
-              </td>
-            </tr> */}
+             
               <tr>
                 <td>Unlimited</td>
                 <td>12 Months</td>

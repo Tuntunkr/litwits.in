@@ -723,7 +723,7 @@ const GroupSess = () => {
             sameAs: [
               "https://www.facebook.com/litwits",
               "https://www.instagram.com/litwits",
-              "https://www.linkedin.com/company/litwits"
+              "https://www.linkedin.com/company/litwits",
             ],
             offers: {
               "@type": "Offer",
@@ -737,12 +737,12 @@ const GroupSess = () => {
                 price: "10030",
                 priceCurrency: "INR",
                 minPrice: "10030",
-                maxPrice: "59000"
-              }
+                maxPrice: "59000",
+              },
             },
             address: {
               "@type": "PostalAddress",
-              addressCountry: "IN"
+              addressCountry: "IN",
             },
             faqPage: {
               "@type": "FAQPage",
@@ -752,51 +752,51 @@ const GroupSess = () => {
                   name: "As a member, which sessions can I attend?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "All group sessions are open to all members."
-                  }
+                    text: "All group sessions are open to all members.",
+                  },
                 },
                 {
                   "@type": "Question",
                   name: "How many sessions can I attend in a week?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Members can attend as many sessions as they wish, provided there is availability."
-                  }
+                    text: "Members can attend as many sessions as they wish, provided there is availability.",
+                  },
                 },
                 {
                   "@type": "Question",
                   name: "What are the timings of the sessions?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Session timings vary. Please check the schedule for specific details."
-                  }
+                    text: "Session timings vary. Please check the schedule for specific details.",
+                  },
                 },
                 {
                   "@type": "Question",
                   name: "What would be the structure of the core sessions?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Core sessions include warm-ups, skill-building activities, and group discussions."
-                  }
+                    text: "Core sessions include warm-ups, skill-building activities, and group discussions.",
+                  },
                 },
                 {
                   "@type": "Question",
                   name: "Can I convert my Group Session package to Individual Sessions?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Yes, conversion is possible. Please contact support for more details."
-                  }
+                    text: "Yes, conversion is possible. Please contact support for more details.",
+                  },
                 },
                 {
                   "@type": "Question",
                   name: "Do you offer trial sessions for the students?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Yes, we offer trial sessions to help students get familiar with the program."
-                  }
-                }
-              ]
-            }
+                    text: "Yes, we offer trial sessions to help students get familiar with the program.",
+                  },
+                },
+              ],
+            },
           })}
         </script>
       </Helmet>
@@ -909,11 +909,11 @@ const GroupSess = () => {
               <p className="font-nato text-sm md:text-lg leading-relaxed">
                 LITWITS is at the forefront of preparing young scholars for the
                 World Scholar's Cup (WSC) and consistently holding top rankings
-                in Regional Rounds, Global Rounds, and the
-                prestigious Tournament of Champions at Yale University. Our
-                comprehensive WSC program immerses students in a dynamic and
-                intellectually enriching environment, encompassing literature,
-                science, politics, history, and the arts.
+                in Regional Rounds, Global Rounds, and the prestigious
+                Tournament of Champions at Yale University. Our comprehensive
+                WSC program immerses students in a dynamic and intellectually
+                enriching environment, encompassing literature, science,
+                politics, history, and the arts.
               </p>
               <p className="font-nato text-sm md:text-lg leading-relaxed mt-3">
                 The journey involves preparing teams for the four events -
@@ -925,7 +925,7 @@ const GroupSess = () => {
               </p>
               <div className=" gap-4 w-full max-md items-center  mx-auto mt-12">
                 <Link
-                  to="https://wa.me/7827098747?text=hello+123"
+                  to="https://wa.me/7827098747?text=Hi! I’m interested in the WSC Program. Please share details about the program and I request a free consultation"
                   className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
                   Free Consultations
@@ -1126,13 +1126,12 @@ const GroupSess = () => {
                     sense of accountability and responsibility in the students.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
-                  <Link
-                    to="https://wa.me/7827098747?text=Hi! I’m interested in your Financial Literacy Session.Please share details about the program and I request a free consultation."
-                    className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                  >
-                    Free Consultations
-                  </Link>
-
+                    <Link
+                      to="https://wa.me/7827098747?text=Hi! I’m interested in your Financial Literacy Session.Please share details about the program and I request a free consultation."
+                      className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                    >
+                      Free Consultations
+                    </Link>
 
                     <Link
                       to="/membership"
@@ -1193,7 +1192,7 @@ const GroupSess = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                   <Link
-                    to="https://wa.me/7827098747?text=Hi! I’m interested in your Ivy League & Prestigious Competitions. Please share details about the program and I request a free consultation."
+                    to="https://wa.me/7827098747?text=Hi! I'm interested in your Ivy League & Prestigious Competitions program. Could you please share the details? I would also like to request a free consultation."
                     className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                   >
                     Free Consultations
@@ -1215,80 +1214,76 @@ const GroupSess = () => {
 
         {/* FAQ Section */}
         <section id="faq" className="container mx-auto px-8 bg-gray-50">
-          <div className="container mx-auto ">
-            <h2 className="text-3xl font-nato pt-6 font-bold text-center text-red-700 mb-8">
-              FREQUENTLY ASKED QUESTIONS
-            </h2>
-          </div>
-          <div className="p-4">
-            {/* First Accordion */}
-            <Accordion defaultActiveKey="0" flush>
-              <Accordion.Item eventKey="0">
-                <Accordion.Header>
-                  As a member, which sessions can I attend?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  All group sessions are open to all members.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="1">
-                <Accordion.Header>
-                  How many sessions can I attend in a week?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  Members can attend as many sessions as they wish, provided
-                  there is availability.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="2">
-                <Accordion.Header>
-                  What are the timings of the sessions?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  Session timings vary. Please check the schedule for specific
-                  details.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="3">
-                <Accordion.Header>
-                  What would be the structure of the core sessions?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  Core sessions include warm-ups, skill-building activities, and
-                  group discussions.
-                </Accordion.Body>
-              </Accordion.Item>
+  <div className="container mx-auto ">
+    <h2 className="text-3xl font-nato pt-6 font-bold text-center text-red-700 mb-8">
+      FREQUENTLY ASKED QUESTIONS 
+    </h2>
+  </div>
+  <div className="p-4">
+    {/* First Accordion */}
+    <Accordion defaultActiveKey="0" flush>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>
+          As a member, which sessions can I attend?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          All members of Group Sessions have access to all group sessions.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>
+          How many sessions can I attend in a week?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          Members may attend as many sessions as they prefer. Some sessions may overlap, so we recommend checking the schedule in advance to attend the sessions of their interest.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>
+          What are the timings of the sessions?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          Each individual session is 90 minutes, ensuring ample time for in-depth learning, interactive discussions, and personalized guidance from our expert mentors. <br />
+          Monday to Friday: 8:00 p.m. – 9:30 p.m. IST <br />
+          Saturday: 12:15 p.m. – 1:45 p.m. IST
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3">
+        <Accordion.Header>
+          What if I do not have a team member for a competition?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          No worries! We assist in forming competitive teams for excellent outcomes for all the competitions. If you don’t have a team, we will pair you with other participants of your skill level, ensuring that everyone has a chance to participate and collaborate effectively.
+        </Accordion.Body>
+      </Accordion.Item>
 
-              {/* Second Accordion */}
+      {/* Second Accordion */}
 
-              <Accordion.Item eventKey="4">
-                <Accordion.Header>
-                  Can I convert my Group Session package to Individual Sessions?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  Yes, conversion is possible. Please contact support for more
-                  details.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="5">
-                <Accordion.Header>
-                  Do you offer trial sessions for the students?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  Yes, we offer trial sessions to help students get familiar
-                  with the program.
-                </Accordion.Body>
-              </Accordion.Item>
-            </Accordion>
-          </div>
-        </section>
+      <Accordion.Item eventKey="4">
+        <Accordion.Header>
+          Can I convert my Group Session package to Individual Sessions?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          No. Group Sessions and Individual Sessions are structured and priced separately. Since individual sessions provide personalized mentorship, they require a different payment model from group-based learning.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="5">
+        <Accordion.Header>
+          Do you offer trial sessions for students?
+        </Accordion.Header>
+        <Accordion.Body className="bg-[#890C25] text-white">
+          We offer One-Time Sessions for a fee. These sessions allow students to discover our teaching style and session structure before committing to a full package.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+  </div>
+</section>
+
       </section>
-
     </>
   );
 };
 
 export default GroupSess;
-
 
 // Hi! I’m interested in the WSC Program. Please share details about the program and I request a free consultation.
