@@ -179,8 +179,7 @@ const index = () => {
         </script>
       </Helmet>
       <section className="p-11">
-
-        <CourseCurriculum/>
+        {/* <CourseCurriculum/> */}
         <div>
           <h1 className="text-3xl font-nato pt-6 font-bold text-center mb-8">
             {" "}
@@ -234,7 +233,7 @@ const index = () => {
                   <Rozarpayment inrAmount={25000} />
                 </td>
               </tr>
-             
+
               <tr>
                 <td>Unlimited</td>
                 <td>12 Months</td>
@@ -255,8 +254,8 @@ const index = () => {
           </h1>
           <hr class="mt-4 mb-4" />
 
-          <div className="pricing-plans">
-            <div className="plan">
+          {/* <div className="pricing-plans ">
+            <div className="plan outline outline-2 outline-transparent hover:outline-red-700 transition-all duration-300">
               <h3 className="uppercase">TED-ED Training</h3>
               <p className="price">₹17,700 </p>
               <p className="sessions">5 Sessions</p>
@@ -270,7 +269,7 @@ const index = () => {
               </ul>
               <Rozarpayment inrAmount={17700} className="choose-plan mt-4" />
             </div>
-            <div className="plan highlighted">
+            <div className="plan highlighted ">
               <h3 className="uppercase">
                 MUN Guidance <br />
                 Package
@@ -278,7 +277,6 @@ const index = () => {
               <p className="price">₹17,700 </p>
               <p className="sessions">5 Sessions</p>
               <ul>
-                <li>All Basic plan features, plus:</li>
                 <li>Research Material</li>
                 <li>Position Paper</li>
                 <li>GSL Speech</li>
@@ -286,9 +284,9 @@ const index = () => {
                 <li>Draft Resolution</li>
                 <li>Press Release / Working Paper</li>
               </ul>
-              <Rozarpayment inrAmount={17700} className="choose-plan mt-4" />
+              <Rozarpayment inrAmount={17700} className=" choose-plan mt-4" />
             </div>
-            <div className="plan">
+            <div className="plan plan outline outline-2 outline-transparent hover:outline-red-700 transition-all duration-300">
               <h3 className="uppercase">
                 College Essay <br /> Guidance
               </h3>
@@ -305,7 +303,7 @@ const index = () => {
               </ul>
               <Rozarpayment inrAmount={17700} className="choose-plan mt-4" />
             </div>
-            <div className="plan">
+            <div className="plan plan outline outline-2 outline-transparent hover:outline-red-700 transition-all duration-300">
               <h3 className="uppercase"> Research Paper Guidance</h3>
               <p className="price">₹17,700 </p>
               <p className="sessions">5 Sessions</p>
@@ -320,14 +318,121 @@ const index = () => {
               </ul>
               <Rozarpayment inrAmount={17700} className="choose-plan mt-4" />
             </div>
+          </div> */}
+
+          <div className="pricing-plans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: "TED-ED Training",
+                price: 17700,
+                sessions: "5 Sessions",
+                features: [
+                  "Understanding the Fundamentals",
+                  "Crafting the Narrative",
+                  "Delivery and Manner in Presentations.",
+                  "Identifying the Problem",
+                  "Developing Critical Thinking and Planning",
+                  "Recognition Through ‘TED-Ed Student Talk Program’",
+                ],
+              },
+              {
+                title: "MUN Guidance Package",
+                price: 17700,
+                sessions: "5 Sessions",
+                features: [
+                  "Research Material",
+                  "Position Paper",
+                  "GSL Speech",
+                  "Moderated Caucus",
+                  "Draft Resolution",
+                  "Press Release / Working Paper",
+                ],
+              },
+
+              {
+                title: "Research Paper Guidance",
+                price: 17700,
+                sessions: "5 Sessions",
+                features: [
+                  "Introduction to Research",
+                  "How to form a thesis",
+                  "Scientific Method",
+                  "Conducting an experiment",
+                  "Drawing conclusions",
+                  "Case Studies, Citations",
+                  "Formatting research papers",
+                ],
+              },
+            ].map((plan, index) => (
+              <div
+                key={index}
+                className="plan outline outline-2 outline-transparent hover:outline-red-700 transition-all duration-300 flex flex-col justify-between min-h-[400px] p-6 rounded-lg shadow-md bg-white"
+              >
+                <div>
+                  <h3 className="uppercase font-semibold text-lg">
+                    {plan.title}
+                  </h3>
+                  <p className="price text-xl font-bold">₹{plan.price}</p>
+                  <p className="sessions text-gray-600">{plan.sessions}</p>
+                  <ul className="mt-4 space-y-2">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="text-gray-700">
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <Rozarpayment
+                  inrAmount={plan.price}
+                  className="choose-plan mt-4 w-full bg-red-600 text-white py-2 rounded-md text-center"
+                />
+              </div>
+            ))}
+            <br></br>
+          <br></br>
+          <div className=" outline outline-2 outline-transparent hover:outline-red-700 transition-all duration-300 p-6 w-full max-w-lg bg-white rounded-lg shadow-lg">
+            <h2 className="text-gray-800 text-2xl font-bold text-center">
+              COLLEGE COUNSELING
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-x-6 mt-4 text-gray-700 text-sm">
+              <div className="space-y-2 text-left">
+                <p>Customed Roadmap</p>
+                <p>Candidacy Positioning</p>
+                <p>Essay Brainstorming & Development</p>
+                <p>Academic Analysis</p>
+                <p>University Selection</p>
+                <p>Application Development</p>
+              </div>
+
+              {/* Vertical Divider */}
+              <div className="hidden md:flex justify-center">
+                <div className="w-px bg-red-600 h-full"></div>
+              </div>
+
+              <div className="space-y-2 text-left">
+                <p>Standardized Testing Preparation and Strategy</p>
+                <p>Extracurricular Development</p>
+                <p>Letters of Recommendation</p>
+                <p>Matriculation</p>
+                <p>Interview Mentoring</p>
+              </div>
+            </div>
+
+            <button className="mt-6 w-full bg-red-700 text-white font-semibold py-2 rounded-md text-lg hover:bg-red-800 transition">
+              Book a Consultation
+            </button>
           </div>
+          </div>
+
+          
         </div>
-        <div class="pricing-section items-center justify-center py-16">
+        <div class="pricing-section items-center justify-center py-16 ">
           <h1 className="text-3xl font-bold font-nato">ACADEMIC SESSIONS</h1>
           <hr className="mt-4 mb-4" />
 
-          <div className="plans-container">
-            <div className="plan">
+          <div className="plans-container ">
+            <div className="plan plan outline outline-2 outline-transparent hover:outline-red-700 transition-all duration-300">
               <h3>AP EXAM PREPARATION</h3>
               {/* <div className="price">
                     <p>$211.24 </p>
@@ -342,7 +447,9 @@ const index = () => {
                 <li>Regular Feedback & Progress Tracking</li>
               </ul>
               <Link to={"/contact-us"}>
-                <button className="choose-plan">Book a Consultation</button>
+                <button className="choose-plan plan outline outline-2 outline-transparent hover:outline-red-700 transition-all duration-300">
+                  Book a Consultation
+                </button>
               </Link>
             </div>
 
@@ -365,7 +472,7 @@ const index = () => {
               </Link>
             </div>
 
-            <div className="plan">
+            <div className="plan  plan outline outline-2 outline-transparent hover:outline-red-700 transition-all duration-300">
               <h3>ACT PREP SESSION</h3>
               <p className="sessions">30 Sessions</p>
               <ul>

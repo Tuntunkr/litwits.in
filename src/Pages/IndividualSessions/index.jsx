@@ -641,14 +641,14 @@ const GroupSess = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
                   to="https://wa.me/7827098747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
-                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultations
+                  Free Consultation
                 </Link>
 
                 <Link
                   to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
+                  className="text-white bg-black px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center"
                 >
                   Enroll Now
                 </Link>
@@ -716,14 +716,14 @@ const GroupSess = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
               <Link
                 to="https://wa.me/7827098747?text=Hi! I’m interested in your TED-Ed Student Talks Program. Please share details about the program and I request a free consultation."
-                className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
               >
-                Free Consultations
+                Free Consultation
               </Link>
 
               <Link
                 to="/membership"
-                className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
+                className="text-white bg-black px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center"
               >
                 Enroll Now
               </Link>
@@ -779,14 +779,14 @@ const GroupSess = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
                   to="https://wa.me/7827098747?text=Hi! I’m interested in your Social Impact Program. Please share details about the program and I request a free consultation."
-                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultations
+                  Free Consultation
                 </Link>
 
                 <Link
                   to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
+                  className="text-white bg-black px-6 py-3 no-underline w-full uppercase rounded-md text-base font-medium transition text-center"
                 >
                   Enroll Now
                 </Link>
@@ -837,14 +837,14 @@ const GroupSess = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
               <Link
                 to="https://wa.me/7827098747?text=Hi! I’m interested in your Research Paper Guidance Program. Please share details about the program and I request a free consultation."
-                className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                className="bg-red-800 text-white px-6 py-3  no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
               >
-                Free Consultations
+                Free Consultation
               </Link>
 
               <Link
                 to="/membership"
-                className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
+                className="text-white bg-black px-6 py-3 w-full  no-underline uppercase rounded-md text-base font-medium transition text-center"
               >
                 Enroll Now
               </Link>
@@ -892,14 +892,14 @@ const GroupSess = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
                   to="https://wa.me/7827098747?text=Hi! I’m interested in your Advanced Placement (AP) Prep Session. Please share details about the program and I request a free consultation."
-                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  className="bg-red-800 text-white px-6 py-3  no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultations
+                  Free Consultation
                 </Link>
 
                 <Link
                   to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
+                  className="text-white bg-black px-6 py-3 w-full  no-underline uppercase rounded-md text-base font-medium transition text-center"
                 >
                   Enroll Now
                 </Link>
@@ -955,21 +955,21 @@ const GroupSess = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
                   to="https://wa.me/7827098747?text=Hi! I’m interested in your SAT Prep Session. Please share details about the program and I request a free consultation."
-                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  className="bg-red-800 text-white px-6 py-3  no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultations
+                  Free Consultation
                 </Link>
 
                 <Link
                   to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
+                  className="text-white bg-black px-6 py-3 w-full  no-underline uppercase rounded-md text-base font-medium transition text-center"
                 >
                   Enroll Now
                 </Link>
               </div>
             </div>
           </div>
-
+            
           {/* Descriptive Content for Accessibility */}
           <p id="sat-prep-session-description" className="sr-only">
             Expert-led SAT preparation covering Evidence-Based Reading, Writing,
@@ -1016,14 +1016,14 @@ const GroupSess = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
                   to="https://wa.me/7827098747?text=Hi! I’m interested in your ACT Prep Session. Please share details about the program and I request a free consultation."
-                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultations
+                  Free Consultation
                 </Link>
 
                 <Link
                   to="/membership"
-                  className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
+                  className="text-white bg-black px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center"
                 >
                   Enroll Now
                 </Link>

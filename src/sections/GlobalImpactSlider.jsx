@@ -189,8 +189,8 @@ const Glide3DSlider = () => {
           Building a Global Community of Leaders
         </h2>
 
-        <div className="mb-12 max-w-3xl mx-auto ">
-          <p className="text-base md:text-lg text-black leading-relaxed">
+        <div className="mb-12 mx-auto">
+          <p className="text-base md:text-lg text-black  leading-relaxed">
             LITWITS fosters a vibrant global community of students providing
             them with a compelling direction to collaborate, exchange
             perspectives, and forge lasting partnerships that enrich their

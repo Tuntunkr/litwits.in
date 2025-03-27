@@ -43,9 +43,13 @@ body button {
 }
 
 a {
-  color: #ffffff !important;
-  text-decoration: underline;
+  color: inherit !important;
+  text-decoration: none;
 }
+
+/* Link {
+  text-decoration: none !important;
+} */
 
 
 .contact{

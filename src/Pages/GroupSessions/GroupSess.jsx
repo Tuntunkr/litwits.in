@@ -856,17 +856,17 @@ const GroupSess = () => {
                   proficiency to craft captivating narratives.
                 </p>
                 <br />
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full  mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full  mx-auto no-underline">
                   <Link
                     to="https://wa.me/7827098747?text=Hi! I’m interested in your Academic Writing Course. Please share details about the program and I request a free consultation."
-                    className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                    className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                   >
-                    Free Consultations
+                    Free Consultation
                   </Link>
 
                   <Link
                     to="/membership"
-                    className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
+                    className="text-white bg-black px-6 py-3 w-full uppercase no-underline rounded-md text-base font-medium transition text-center"
                   >
                     Enroll Now
                   </Link>
@@ -926,9 +926,9 @@ const GroupSess = () => {
               <div className=" gap-4 w-full max-md items-center  mx-auto mt-12">
                 <Link
                   to="https://wa.me/7827098747?text=Hi! I’m interested in the WSC Program. Please share details about the program and I request a free consultation"
-                  className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                  className="bg-red-800 text-white px-6 py-3 uppercase no-underline w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                 >
-                  Free Consultations
+                  Free Consultation
                 </Link>
               </div>
             </div>
@@ -981,14 +981,14 @@ const GroupSess = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full   mx-auto">
                   <Link
                     to="https://wa.me/7827098747?text=Hi! I’m interested in your Debate and Public Speaking course. Please share details about the program and I request a free consultation."
-                    className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                    className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                   >
-                    Free Consultations
+                    Free Consultation
                   </Link>
 
                   <Link
                     to="/membership"
-                    className="text-white bg-black px-6 py-3 uppercase w-full  rounded-md text-base font-medium transition text-center"
+                    className="text-white bg-black px-6 py-3 no-underline uppercase w-full  rounded-md text-base font-medium transition text-center"
                   >
                     Enroll Now
                   </Link>
@@ -1041,14 +1041,14 @@ const GroupSess = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                   <Link
                     to="https://wa.me/7827098747?text=Hi! I’m interested in your Entrepreneurship Session. Please share details about the program and I request a free consultation."
-                    className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                    className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                   >
-                    Free Consultations
+                    Free Consultation
                   </Link>
 
                   <Link
                     to="/membership"
-                    className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
+                    className="text-white bg-black px-6 py-3 w-full no-underline uppercase no-underline rounded-md text-base font-medium transition text-center"
                   >
                     Enroll Now
                   </Link>
@@ -1128,14 +1128,14 @@ const GroupSess = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                     <Link
                       to="https://wa.me/7827098747?text=Hi! I’m interested in your Financial Literacy Session.Please share details about the program and I request a free consultation."
-                      className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                      className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                     >
-                      Free Consultations
+                      Free Consultation
                     </Link>
 
                     <Link
                       to="/membership"
-                      className="border border-red-700 text-white uppercase bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                      className="border border-red-700 text-white no-underline uppercase bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
                     >
                       Enroll Now
                     </Link>
@@ -1193,14 +1193,14 @@ const GroupSess = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                   <Link
                     to="https://wa.me/7827098747?text=Hi! I'm interested in your Ivy League & Prestigious Competitions program. Could you please share the details? I would also like to request a free consultation."
-                    className="bg-red-800 text-white px-6 py-3 uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                    className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                   >
-                    Free Consultations
+                    Free Consultation
                   </Link>
 
                   <Link
                     to="/membership"
-                    className="text-white bg-black px-6 py-3 w-full uppercase rounded-md text-base font-medium transition text-center"
+                    className="text-white bg-black px-6 py-3 w-full no-underline uppercase no-underline rounded-md text-base font-medium transition text-center"
                   >
                     Enroll Now
                   </Link>

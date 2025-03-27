@@ -317,6 +317,21 @@ const CollegeCounseling = () => {
             creativity, and a genuine passion for personal and intellectual
             growth.
           </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg  mt-4">
+                    <Link
+                      to="https://wa.me/7827098747?text=Hi! I’m interested in your Financial Literacy Session.Please share details about the program and I request a free consultation."
+                      className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                    >
+                      Free Consultation
+                    </Link>
+
+                    {/* <Link
+                      to="/membership"
+                      className="border border-red-700 text-white no-underline uppercase bg-black px-6 py-3 w-full rounded-md text-base font-medium transition text-center"
+                    >
+                      Enroll Now
+                    </Link> */}
+                  </div>
         </section>
 
         {/* description section */}
