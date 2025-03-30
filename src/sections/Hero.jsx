@@ -52,7 +52,7 @@ const Hero = React.forwardRef((props, ref) => {
       >
         <div className="relative w-full lg:w-1/2 flex flex-col justify-center items-center text-white text-center space-y-6">
           <h1 className="hidden">Litwits</h1>
-          <h2 className="text-[42px] md:text-6xl font-extrabold leading-tight">
+          <h2 className="text-[40px] md:text-6xl font-extrabold leading-tight">
             DISCUSS. WRITE. DEBATE.
           </h2>
         </div>

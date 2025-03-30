@@ -68,12 +68,7 @@ const Footer = () => {
             >
               Contact
             </Link>
-            <Link
-              to="tel:9811701747"
-              className="border border-white px-6 py-2 rounded-lg text-sm uppercase font-medium hover:bg-white hover:text-[#781C2D]"
-            >
-              Let's Contact
-            </Link>
+
           </div>
         </div>
 

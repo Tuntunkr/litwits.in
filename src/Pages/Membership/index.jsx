@@ -397,7 +397,7 @@ const index = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-x-6 mt-4 text-gray-700 text-sm">
               <div className="space-y-2 text-left">
-                <p>Customed Roadmap</p>
+                <p>Customised Roadmap</p>
                 <p>Candidacy Positioning</p>
                 <p>Essay Brainstorming & Development</p>
                 <p>Academic Analysis</p>
@@ -495,133 +495,6 @@ const index = () => {
               </Link>
             </div>
           </div>
-        </div>
-
-        <div className="container mx-auto px-8 bg-gray-50" id="faq">
-          <h2 className="text-3xl font-nato pt-6 font-bold text-center text-red-700 mb-8">
-            FREQUENTLY ASKED QUESTIONS
-          </h2>
-        </div>
-        <div className="p-4 bd">
-          {/* First Accordion */}
-          <Accordion defaultActiveKey="0" flush>
-            <Accordion.Item
-              eventKey="0"
-              itemscope="itemscope"
-              itemprop="mainEntity"
-              itemtype="https://schema.org/Question"
-            >
-              <Accordion.Header itemprop="name">
-                What would be the duration of each individual session?
-              </Accordion.Header>
-              <Accordion.Body
-                className="bg-[#890C25] text-white"
-                itemscope="itemscope"
-                itemprop="acceptedAnswer"
-                itemtype="https://schema.org/Answer"
-              >
-                 Each individual session will last 90 minutes.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item
-              eventKey="1"
-              itemscope="itemscope"
-              itemprop="mainEntity"
-              itemtype="https://schema.org/Question"
-            >
-              <Accordion.Header itemprop="name">
-                Can I convert my Group Session package to Individual Sessions?
-              </Accordion.Header>
-              <Accordion.Body
-                className="bg-[#890C25] text-white"
-                itemscope="itemscope"
-                itemprop="acceptedAnswer"
-                itemtype="https://schema.org/Answer"
-              >
-                Members can attend as many sessions as they wish, provided there
-                is availability.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item
-              eventKey="2"
-              itemscope="itemscope"
-              itemprop="mainEntity"
-              itemtype="https://schema.org/Question"
-            >
-              <Accordion.Header itemprop="name">
-                Which are the Individual sessions?
-              </Accordion.Header>
-              <Accordion.Body
-                className="bg-[#890C25] text-white"
-                itemscope="itemscope"
-                itemprop="acceptedAnswer"
-                itemtype="https://schema.org/Answer"
-              >
-                Session timings vary. Please check the schedule for specific
-                details.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item
-              eventKey="3"
-              itemscope="itemscope"
-              itemprop="mainEntity"
-              itemtype="https://schema.org/Question"
-            >
-              <Accordion.Header itemprop="name">
-                Do you also provide AP(Advanced Placement) courses?
-              </Accordion.Header>
-              <Accordion.Body
-                className="bg-[#890C25] text-white"
-                itemscope="itemscope"
-                itemprop="acceptedAnswer"
-                itemtype="https://schema.org/Answer"
-              >
-                Core sessions include warm-ups, skill-building activities, and
-                group discussions.
-              </Accordion.Body>
-            </Accordion.Item>
-
-            {/* Second Accordion */}
-
-            <Accordion.Item
-              eventKey="4"
-              itemscope="itemscope"
-              itemprop="mainEntity"
-              itemtype="https://schema.org/Question"
-            >
-              <Accordion.Header itemprop="name">
-                What are the timings of Individual Sessions?
-              </Accordion.Header>
-              <Accordion.Body
-                className="bg-[#890C25] text-white"
-                itemscope="itemscope"
-                itemprop="acceptedAnswer"
-                itemtype="https://schema.org/Answer"
-              >
-                Yes, conversion is possible. Please contact support for more
-                details.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item
-              eventKey="5"
-              itemscope="itemscope"
-              itemprop="mainEntity"
-              itemtype="https://schema.org/Question"
-            >
-              <Accordion.Header itemprop="name">
-                How much time do I have to complete the MUN Guidance Package?
-              </Accordion.Header>
-              <Accordion.Body
-                className="bg-[#890C25] text-white"
-                itemscope="itemscope"
-                itemprop="acceptedAnswer"
-                itemtype="https://schema.org/Answer"
-              >
-                Yes, we offer trial sessions to help students get familiar with
-                the program.
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
         </div>
       </section>
     </>

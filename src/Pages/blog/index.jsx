@@ -3,6 +3,7 @@ import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import APLogo from "/AP-Logo.jpg";
 import world from "/worlds.jpeg";
+import Satimg from "/Satimage.jpeg";
 
 // Sample blog data with 10 entries
 const blogData = [
@@ -20,13 +21,20 @@ const blogData = [
       "Every year, students from all over the world gather for something that’s more than just a competition. ",
     image: world,
   },
+  {
+    id: 3,
+    title: "SAT Preparation 2025: How to Prepare for SAT Exam",
+    description:
+      "Scholastic Assessment Test, often known as SAT, is an important standardized test that functions as the key admission criterion for college admissions, specifically for Indian students who aim to study abroad. ",
+    image: Satimg,
+  },
   ...Array.from({ length: 9 }, (_, index) => ({
     id: index + 3, // Start from ID 3 to avoid duplicate IDs
     title: `Advanced Placement Exam 2025`,
     description: `This is a short description of blog post ${
       index + 3
     }. Learn about product management, feature voting, and SaaS tools.`,
-    image: APLogo,
+    image: Satimg,
   })),
 ];
 
@@ -34,6 +42,7 @@ const Blog = () => {
   // Fetch first and second blog posts
   const firstPost = blogData.find((post) => post.id === 1);
   const secondPost = blogData.find((post) => post.id === 2);
+  const thirdPost = blogData.find((post) => post.id === 3);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -99,6 +108,37 @@ const Blog = () => {
               {secondPost.title}
             </h2>
             <p className="text-gray-600 mb-4">{secondPost.description}</p>
+            <div className="flex items-center text-blue-600 font-medium">
+              <span>Read More</span>
+              <ChevronRight className="ml-1 w-5 h-5" />
+            </div>
+          </div>
+        </Link>
+      )}
+
+       {/* Sat Blog Post */}
+       {thirdPost && (
+        <Link
+          to={'/blog/sat-preparation-2025-how-to-prepare-for-sat-exam'}
+          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+        >
+          {/* Image Section */}
+          <img
+            src={thirdPost.image}
+            alt={thirdPost.title}
+            loading="lazy"
+            width="600"
+            height="200"
+            decoding="async"
+            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+          />
+
+          {/* Content Section */}
+          <div className="md:w-1/2 p-6">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              {thirdPost.title}
+            </h2>
+            <p className="text-gray-600 mb-4">{thirdPost.description}</p>
             <div className="flex items-center text-blue-600 font-medium">
               <span>Read More</span>
               <ChevronRight className="ml-1 w-5 h-5" />
