@@ -11,8 +11,8 @@ const Services = () => {
         <meta property="og:title" content="Expert Mentorship - LITWITS" />
         <meta property="og:description" content="Our mentors bring expertise from Yale, Harvard, Oxford, and more to empower students with knowledge and skills." />
         <meta property="og:image" content={studentimg} />
-        <meta property="og:url" content="https://litwits.com/services" />
-        <link rel="canonical" href="https://litwits.com/services" />
+        <meta property="og:url" content="https://litwits.in/services" />
+        <link rel="canonical" href="https://litwits.in/services" />
       </Helmet> */}
       
       <style>

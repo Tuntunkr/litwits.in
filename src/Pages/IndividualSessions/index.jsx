@@ -80,8 +80,8 @@ const GroupSess = () => {
           property="og:description"
           content="Discover a platform where you can write, discuss, and engage in thought-provoking debates."
         />
-        <meta property="og:url" content="https://litwits.com/" />
-        <link rel="canonical" href="https://litwits.com/" />
+        <meta property="og:url" content="https://litwits.in/" />
+        <link rel="canonical" href="https://litwits.in/" />
 
         {/* Individual SESSIONS */}
         <script type="application/ld+json">

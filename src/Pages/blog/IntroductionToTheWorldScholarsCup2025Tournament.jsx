@@ -2,10 +2,96 @@ import React from "react";
 import world from "/World.jpeg";
 import wsc2 from "/wsc2.avif";
 import wscblog from "/wscblog.jpg";
+import { Helmet } from "react-helmet-async";
 
 const IntroductionToTheWorldScholarsCup2025Tournament = () => {
   return (
     <>
+      <Helmet prioritizeSeoTags>
+        <title>
+          Introduction to the World Scholar's Cup 2025 Tournament
+        </title>
+        <meta
+          name="title"
+          content="Introduction to the World Scholar's Cup 2025 Tournament"
+        />
+        <meta
+          name="description"
+          content="Introduction to the World Scholar's Cup Tournament. Learn about 2025 registration, eligibility, syllabus, subjects, and how to join this global academic event."
+        />
+        <meta
+          name="keywords"
+          content="World Scholar's Cup, World Scholar Cup, What is World Scholar's Cup, World Scholar Cup 2025 Registration, World Scholar Cup Eligibility, How to join World Scholar's Cup, World Scholar's Cup syllabus, World Scholar's Cup subjects, Scholar's Cup participation, World Scholar's Cup 2025 theme, Scholar's Cup registration process"
+        />
+        <meta name="author" content="LITWITS" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Introduction to the World Scholar's Cup 2025 Tournament"
+        />
+        <meta
+          property="og:description"
+          content="Introduction to the World Scholar's Cup Tournament. Learn about 2025 registration, eligibility, syllabus, subjects, and how to join this global academic event."
+        />
+        <meta
+          property="og:url"
+          content="https://litwits.in/blogs/Introduction-to-the-world-scholars-cup-2025-tournament"
+        />
+        <meta
+          property="og:image"
+          content="https://litwits.in/assets/litwits-logo.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Introduction to the World Scholar's Cup 2025 Tournament"
+        />
+        <meta
+          name="twitter:description"
+          content="Introduction to the World Scholar's Cup Tournament. Learn about 2025 registration, eligibility, syllabus, subjects, and how to join this global academic event."
+        />
+        <meta
+          name="twitter:image"
+          content="https://litwits.in/assets/litwits-logo.png"
+        />
+        {/* Schema.org JSON-LD */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id":
+                "https://litwits.in/blogs/Introduction-to-the-world-scholars-cup-2025-tournament",
+            },
+            headline: "Introduction to the World Scholar's Cup 2025 Tournament",
+            description:
+              "Introduction to the World Scholar's Cup Tournament. Learn about 2025 registration, eligibility, syllabus, subjects, and how to join this global academic event.",
+            image: "https://litwits.in/assets/litwits-logo.png",
+            author: {
+              "@type": "Organization",
+              name: "LITWITS",
+              url: "https://litwits.in",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "LITWITS",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://litwits.in/assets/litwits-logo.png",
+              },
+            },
+            datePublished: "2025-03-30T17:38:42.140208Z",
+            dateModified: "2025-03-30T17:38:42.140208Z",
+            keywords:
+              "World Scholar's Cup, World Scholar Cup, What is World Scholar's Cup, World Scholar Cup 2025 Registration, World Scholar Cup Eligibility, How to join World Scholar's Cup, World Scholar's Cup syllabus, World Scholar's Cup subjects, Scholar's Cup participation, World Scholar's Cup 2025 theme, Scholar's Cup registration process",
+            articleSection: "Education",
+            articleBody:
+              "Introduction to the World Scholar's Cup Tournament. Learn about 2025 registration, eligibility, syllabus, subjects, and how to join this global academic event.",
+          })}
+        </script>
+      </Helmet>
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
           <article className="mx-auto w-full  format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">

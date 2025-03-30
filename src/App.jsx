@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet-async";
 import heroimage from "/assets/join-litwits.avif";
 import IntroductionToTheWorldScholarsCup2025Tournament from "./Pages/blog/IntroductionToTheWorldScholarsCup2025Tournament";
 import SATPreparation2025 from "./Pages/blog/SatBlog";
+import BlogRedirect from "./components/BlogRedirect";
 
 // Lazy Loading Pages
 const Hero = lazy(() => import("./sections/Hero"));
@@ -27,7 +28,7 @@ const CollegeCounseling = lazy(() =>
 );
 const PrivacyPolicy = lazy(() => import("./Pages/PrivacyPolicy"));
 const Blog = lazy(() => import("./Pages/blog"));
-const BlogDetails = lazy(() => import("./Pages/blog/BlogDetails"));
+const BlogDetails = lazy(() => import("./Pages/blog/Advanced-Placement-Exam-2025"));
 const World = lazy(() => import("./Pages/blog/IntroductionToTheWorldScholarsCup2025Tournament"));
 const NotFound = lazy(() => import("./Pages/404"));
 
@@ -36,9 +37,7 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>
-          Join LITWITS for Debate, Writing, AP Prep & World Scholar's Cup!
-        </title>
+        <title>Join LITWITS for Debate, Writing, AP Prep & World Scholar's Cup!</title>
         <meta
           name="description"
           content="Join LITWITS to enhance debating, writing, research, and public speaking. Expert mentors prepare students for Ivy League admissions, World Scholar's Cup, and more."
@@ -56,8 +55,8 @@ const App = () => {
           content="Join LITWITS to enhance debating, writing, research, and public speaking. Expert mentors prepare students for Ivy League admissions, World Scholar's Cup, and more."
         />
         <meta property="og:image" content={heroimage} />
-        <meta property="og:url" content="https://litwits.com/" />
-        <link rel="canonical" href="https://litwits.com/" />
+        <meta property="og:url" content="https://litwits.in/" />
+        <link rel="canonical" href="https://litwits.in/" />
 
         {/* Schema.org JSON-LD for Educational Organization */}
         <script type="application/ld+json">
@@ -169,7 +168,8 @@ const App = () => {
             />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:id/:title" element={<BlogDetails />} />
+            <Route path="/blog/:id/:title" element={<BlogRedirect />} />
+            <Route path="/blog/:title" element={<BlogDetails />} />
             <Route path="/blog/introduction-to-the-world-scholars-cup-2025-tournament" element={<IntroductionToTheWorldScholarsCup2025Tournament />} />
             <Route path="/blog/sat-preparation-2025-how-to-prepare-for-sat-exam" element={<SATPreparation2025 />} />
 

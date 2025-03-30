@@ -73,8 +73,8 @@ const TestimonialCarousel = () => {
         <meta property="og:title" content="LITWITS Testimonials" />
         <meta property="og:description" content="Discover how LITWITS has positively impacted students and parents through our courses." />
         <meta property="og:image" content={icons} />
-        <meta property="og:url" content="https://litwits.com/testimonials" />
-        <link rel="canonical" href="https://litwits.com/testimonials" />
+        <meta property="og:url" content="https://litwits.in/testimonials" />
+        <link rel="canonical" href="https://litwits.in/testimonials" />
       </Helmet> */}
 
       <h2 className="text-[30px] font-bold testimonial font-nato text-center text-[#890C25] uppercase mb-8">

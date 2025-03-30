@@ -23,8 +23,8 @@ const RefundPolicy = () => {
           property="og:description"
           content="Review LITWITS’ refund policy for details on cancellations, refunds, and eligibility. We prioritize your satisfaction and transparency in services."
         />
-        <meta property="og:url" content="https://litwits.com/" />
-        <link rel="canonical" href="https://litwits.com/" />
+        <meta property="og:url" content="https://litwits.in/" />
+        <link rel="canonical" href="https://litwits.in/" />
 
         {/* schema.org JSON-LD for WebPage */}
         <script type="application/ld+json">
@@ -38,7 +38,7 @@ const RefundPolicy = () => {
             publisher: {
               "@type": "Organization",
               name: "Litwits",
-              url: "https://litwits.com/",
+              url: "https://litwits.in/",
               logo: {
                 "@type": "ImageObject",
                 url: "https://litwits.in/assets/litwits-logo.png",
@@ -59,7 +59,7 @@ const RefundPolicy = () => {
               author: {
                 "@type": "Organization",
                 name: "Litwits",
-                url: "https://litwits.com/",
+                url: "https://litwits.in/",
               },
             },
           })}

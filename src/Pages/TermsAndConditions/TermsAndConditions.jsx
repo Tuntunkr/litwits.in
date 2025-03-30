@@ -9,7 +9,7 @@ const TermsAndConditions = () => {
         <title>LITWITS Terms & Conditions: Policies and Guidelines</title>
         <meta
           name="description"
-          content="Read LITWITS’ terms and conditions to understand our services, policies, and user rights. Learn about the rules and regulations governing our platform."
+          content="Read LITWITS' terms and conditions to understand our services, policies, and user rights. Learn about the rules and regulations governing our platform."
         />
         <meta
           name="keywords"
@@ -21,10 +21,10 @@ const TermsAndConditions = () => {
         />
         <meta
           property="og:description"
-          content="Read LITWITS’ terms and conditions to understand our services, policies, and user rights. Learn about the rules and regulations governing our platform."
+          content="Read LITWITS' terms and conditions to understand our services, policies, and user rights. Learn about the rules and regulations governing our platform."
         />
-        <meta property="og:url" content="https://litwits.com/" />
-        <link rel="canonical" href="https://litwits.com/" />
+        <meta property="og:url" content="https://litwits.in/" />
+        <link rel="canonical" href="https://litwits.in/" />
 
         {/* schema.org JSON-LD for WebPage */}
         <script type="application/ld+json">
@@ -38,7 +38,7 @@ const TermsAndConditions = () => {
             publisher: {
               "@type": "Organization",
               name: "Litwits",
-              url: "https://litwits.com/",
+              url: "https://litwits.in/",
               logo: {
                 "@type": "ImageObject",
                 url: "https://litwits.in/assets/litwits-logo.png",
@@ -59,7 +59,7 @@ const TermsAndConditions = () => {
               author: {
                 "@type": "Organization",
                 name: "Litwits",
-                url: "https://litwits.com/",
+                url: "https://litwits.in/",
               },
             },
           })}

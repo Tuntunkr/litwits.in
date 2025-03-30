@@ -23,8 +23,8 @@ const PrivacyPolicy = () => {
           property="og:description"
           content="Learn how LITWITS protects your data and respects your privacy. Our privacy policy explains how we handle your information and ensure security."
         />
-        <meta property="og:url" content="https://litwits.com/" />
-        <link rel="canonical" href="https://litwits.com/" />
+        <meta property="og:url" content="https://litwits.in/" />
+        <link rel="canonical" href="https://litwits.in/" />
 
         {/* schema.org JSON-LD for WebPage */}
         <script type="application/ld+json">
@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
             publisher: {
               "@type": "Organization",
               name: "Litwits",
-              url: "https://litwits.com/",
+              url: "https://litwits.in/",
               logo: {
                 "@type": "ImageObject",
                 url: "https://litwits.in/assets/litwits-logo.png",
@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
               author: {
                 "@type": "Organization",
                 name: "Litwits",
-                url: "https://litwits.com/",
+                url: "https://litwits.in/",
               },
             },
           })}

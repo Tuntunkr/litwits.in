@@ -18,7 +18,7 @@ const blogData = [
     id: 2,
     title: "Introduction to the World Scholar's Cup 2025 Tournament",
     description:
-      "Every year, students from all over the world gather for something that’s more than just a competition. ",
+      "Every year, students from all over the world gather for something that's more than just a competition. ",
     image: world,
   },
   {
@@ -54,7 +54,7 @@ const Blog = () => {
       {/* First Blog Post */}
       {firstPost && (
         <Link
-          to={`/blog/${firstPost.id}/${firstPost.title
+          to={`/blog/${firstPost.title
             .replace(/\s+/g, "-")
             .replace(/[^a-zA-Z0-9-]/g, "")
             .toLowerCase()}`}
