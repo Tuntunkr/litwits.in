@@ -1,23 +1,22 @@
 import { Link } from "react-router-dom";
 import { copyrightSign } from "../assets/icons";
 import { footerLinks, socialMedia } from "../constants";
-import footerlogo from "../assets/images/litwitslogo.png";
-import ltlogo from "../assets/images/logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-red-800 text-white py-12">
-      <div className="container mx-auto px-4">
+      <div className="container-lg">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between flex-wrap gap-8 lg:gap-20">
           {/* Left Section */}
           <div className="flex-1 mb-8 lg:mb-0">
-            <Link
-              to="/"
-              className=" uppercase font-light text-[40px] font-noto-serif text-white"
-            >
-              <h4>Litwits</h4>
-            </Link>
+             <Link
+              to="/">
+
+             <span className="uppercase font-light font-noto-serif text-white" style={{ fontSize: "clamp(24px, 4vw, 36px)" }}>
+              Litwits
+            </span>
+              </Link>
 
             <div className="flex items-center gap-4 mt-6">
               {socialMedia.map((icon) => (
@@ -36,9 +35,6 @@ const Footer = () => {
           <div className="flex-1 grid grid-cols-2 gap-8 lg:gap-16 lg:flex lg:justify-around mb-8 lg:mb-0">
             {footerLinks.map((section) => (
               <div key={section.title}>
-                {/* <h4 className="text-lg footer font-medium mb-4">
-                  {section.title}
-                </h4> */}
                 <ul>
                   {section.links.map((link) => (
                     <li
@@ -55,7 +51,6 @@ const Footer = () => {
 
           {/* Quick Links Section */}
           <div className="flex flex-col mt-4 items-start gap-4">
-            {/* <h4 className="text-lg font-medium">Quick Link</h4> */}
             <Link
               to="membership"
               className="border border-white px-6 py-2 rounded-lg uppercase font-medium text-sm shadow-lg"

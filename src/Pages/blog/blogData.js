@@ -14,7 +14,7 @@ const blogData = [
       description: "Every year, students from all over the world gather for something that’s more than just a competition. They partake in the World Scholar's Cup not just to compete but also to learn, to share ideas, and to create friendships that will last a lifetime. It is an opportunity to look at things differently and face difficult challenges as a team while keeping the curiosity burning long after the challenge is over.",
       image: APLogo,
     },
-    // Add more blog data as needed
+    // Add more blog data as needed 
   ];
   
   export default blogData;

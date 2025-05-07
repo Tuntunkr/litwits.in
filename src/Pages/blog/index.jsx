@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import APLogo from "/AP-Logo.jpg";
 import world from "/worlds.jpeg";
 import Satimg from "/Satimage.jpeg";
+import blogimage1 from "/debate.png";
 
 // Sample blog data with 10 entries
 const blogData = [
@@ -25,8 +26,15 @@ const blogData = [
     id: 3,
     title: "SAT Preparation 2025: How to Prepare for SAT Exam",
     description:
-      "Scholastic Assessment Test, often known as SAT, is an important standardized test that functions as the key admission criterion for college admissions, specifically for Indian students who aim to study abroad. ",
+      "Scholastic Assessment Test, often known as SAT, is an important standardized test that functions as the key admission criterion for college admissions, specifically for Indian students who aim to study abroad.",
     image: Satimg,
+  },
+  {
+    id: 4,
+    title: "Learn All About Different Types of Debate",
+    description:
+      "Have you ever watched a passionate exchange of thoughts and ideas, and wondered, “I want to do that!”? Debating is not merely a formal argument. ",
+    image: blogimage1,
   },
   ...Array.from({ length: 9 }, (_, index) => ({
     id: index + 3, // Start from ID 3 to avoid duplicate IDs
@@ -43,6 +51,7 @@ const Blog = () => {
   const firstPost = blogData.find((post) => post.id === 1);
   const secondPost = blogData.find((post) => post.id === 2);
   const thirdPost = blogData.find((post) => post.id === 3);
+  const fourthPost = blogData.find((post) => post.id === 4);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -146,6 +155,37 @@ const Blog = () => {
           </div>
         </Link>
       )}
+
+      {/* fourth blog  */}
+      {fourthPost && (
+    <Link
+      to={'/blog/learn-all-about-different-types-of-debate'}
+      className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+    >
+      <img
+        src={fourthPost.image}
+        alt={fourthPost.title}
+        loading="lazy"
+        width="600"
+        height="200"
+        decoding="async"
+        className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+      />
+
+      <div className="md:w-1/2 p-6">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+          {fourthPost.title}
+        </h2>
+        <p className="text-gray-600 mb-4">{fourthPost.description}</p>
+        <div className="flex items-center text-blue-600 font-medium">
+          <span>Read More</span>
+          <ChevronRight className="ml-1 w-5 h-5" />
+        </div>
+      </div>
+    </Link>
+  )}
+      
+
     </div>
   );
 };
@@ -154,6 +194,34 @@ export default Blog;
 
 {
   /* Remaining Blog Posts in Grid Layout */
+
+  // {fourthPost && (
+  //   <Link
+  //     to={'/blog/learn-all-about-different-types-of-debate'}
+  //     className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+  //   >
+  //     <img
+  //       src={fourthPost.image}
+  //       alt={fourthPost.title}
+  //       loading="lazy"
+  //       width="600"
+  //       height="200"
+  //       decoding="async"
+  //       className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+  //     />
+
+  //     <div className="md:w-1/2 p-6">
+  //       <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+  //         {fourthPost.title}
+  //       </h2>
+  //       <p className="text-gray-600 mb-4">{fourthPost.description}</p>
+  //       <div className="flex items-center text-blue-600 font-medium">
+  //         <span>Read More</span>
+  //         <ChevronRight className="ml-1 w-5 h-5" />
+  //       </div>
+  //     </div>
+  //   </Link>
+  // )}
 }
 {
   /* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

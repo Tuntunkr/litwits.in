@@ -95,7 +95,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
           <article className="mx-auto w-full  format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-            <h1 className="mb-4 text-xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl ">
+            <h1 className="mb-4 text-[20px] font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-[43px] ">
               Introduction to the World Scholar's Cup 2025 Tournament
             </h1>
 
@@ -120,7 +120,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               including its syllabus, subjects, schedule, registration process,
               and much more.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               What is the World Scholar's Cup?
             </h2>
@@ -148,8 +148,9 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               a team. Competitors leave with improved communication skills and
               improved self-confidence.
             </p>
+            <br/>
 
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl mt2 font-bold mb-4 text-gray-900 dark:text-white">
               The World Scholar’s Cup Advantage
             </h2>
             <p>
@@ -196,7 +197,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               traditional curriculums. It’s an excellent way to develop a love
               for learning in a fun and dynamic environment.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               World Scholar’s Cup 2025 Registration
             </h2>
@@ -215,6 +216,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               suitably. Register early with no last-minute rushes. Here is what
               you will need to know:
             </p>
+            <br/>
             <ul className="list-disc list-inside mb-6 pl-5">
               <li className="mb-3">
                 <strong className="text-gray-900">Schedule:</strong> The
@@ -248,7 +250,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               preferred regional round, as early registration can often lead to
               discounted rates.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               World Scholar’s Cup Eligibility Criteria
             </h2>
@@ -286,7 +288,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               homeschooled students are eligible to participate, as long as they
               meet the age requirements.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               How to Join the World Scholar’s Cup?
             </h2>
@@ -317,7 +319,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               individuals can also register and get assigned to a mixed team
               when they sign up with LITWITS.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               World Scholar’s Cup Syllabus
             </h2>
@@ -329,7 +331,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               across science, history, social studies, art, literature, and many
               more are covered in the World Scholar’s Cup 2025.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               World Scholar's Cup Subjects
             </h2>
@@ -380,7 +382,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               with past papers and engaging in debates within their school or
               community.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               World Scholar’s Cup 2025 Materials
             </h2>
@@ -390,7 +392,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               quizzes, and suggested materials to help participants prepare for
               the different events.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               World Scholar’s Cup 2025 Theme
             </h2>
@@ -399,7 +401,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               theme "World Scholar’s Cup 2025 Theme: Reigniting the Future."
               This theme will guide the selection of topics across all subjects.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               Kickstarter World Scholar’s Cup
             </h2>
@@ -412,7 +414,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               throughout the year to train students in all the four events for
               excellent outcomes.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               Conclusion
             </h2>
@@ -427,7 +429,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               the World Scholar's Cup 2025 Tournament as a celebration of
               learning, collaboration, and discovery.
             </p>
-
+            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               FAQs
             </h2>

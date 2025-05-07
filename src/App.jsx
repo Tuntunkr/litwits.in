@@ -10,6 +10,8 @@ import heroimage from "/assets/join-litwits.avif";
 import IntroductionToTheWorldScholarsCup2025Tournament from "./Pages/blog/IntroductionToTheWorldScholarsCup2025Tournament";
 import SATPreparation2025 from "./Pages/blog/SatBlog";
 import BlogRedirect from "./components/BlogRedirect";
+import LearnAllAboutDifferentTypesOfDebate from "./Pages/blog/LearnAllAboutDifferentTypesofDebate";
+// import TypesOfDebate from "./Pages/blog/TypesOfDebate";
 
 // Lazy Loading Pages
 const Hero = lazy(() => import("./sections/Hero"));
@@ -172,6 +174,7 @@ const App = () => {
             <Route path="/blog/:title" element={<BlogDetails />} />
             <Route path="/blog/introduction-to-the-world-scholars-cup-2025-tournament" element={<IntroductionToTheWorldScholarsCup2025Tournament />} />
             <Route path="/blog/sat-preparation-2025-how-to-prepare-for-sat-exam" element={<SATPreparation2025 />} />
+            <Route path="blog/learn-all-about-different-types-of-debate" element={<LearnAllAboutDifferentTypesOfDebate />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

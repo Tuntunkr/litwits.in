@@ -196,7 +196,7 @@ const index = () => {
           <table>
             <thead>
               <tr>
-                <th>HOUR</th>
+                <th>SESSIONS</th>
                 <th>VALIDITY</th>
                 <th>TOTAL FEE IN INR</th>
                 <th>BUY</th>

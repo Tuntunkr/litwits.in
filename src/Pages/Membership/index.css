@@ -160,7 +160,7 @@ tbody tr:nth-child(even) {
     }
 }
 h2 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.5rem;
     color: #666;
     margin: 20px 0;
@@ -276,6 +276,7 @@ ul li {
     h2 {
         font-size: 1.2rem;
     }
+    
 }
 .bd{
     border: 1px solid #ddd;

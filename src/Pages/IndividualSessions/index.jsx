@@ -1059,7 +1059,7 @@ const GroupSess = () => {
         </Accordion.Header>
         <Accordion.Body className="bg-[#890C25] text-white">
           Our Individual Sessions are designed to cater to specific learning needs and personalized mentorship. Currently, we offer:
-          <ul className="list-disc pl-5">
+          <ul className="list-disc pl-5 text-white">
             <li>TED-Ed Training</li>
             <li>MUN Guidance Package</li>
             <li>College Essay Guidance</li>
