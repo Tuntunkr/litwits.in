@@ -5,6 +5,8 @@ import APLogo from "/AP-Logo.jpg";
 import world from "/worlds.jpeg";
 import Satimg from "/Satimage.jpeg";
 import blogimage1 from "/debate.png";
+import Explore from "/WomanSpeaking.jpeg";
+
 
 // Sample blog data with 10 entries
 const blogData = [
@@ -36,6 +38,13 @@ const blogData = [
       "Have you ever watched a passionate exchange of thoughts and ideas, and wondered, “I want to do that!”? Debating is not merely a formal argument. ",
     image: blogimage1,
   },
+  {
+    id: 5,
+    title: "Explore Different Types Of Writing Formats And How To Master Them",
+    description:
+      "Writing is a powerful tool. We use it all the time - in school, at work, and even in our personal lives. It allows us to express, explain, and relate. ",
+    image: Explore,
+  },
   ...Array.from({ length: 9 }, (_, index) => ({
     id: index + 3, // Start from ID 3 to avoid duplicate IDs
     title: `Advanced Placement Exam 2025`,
@@ -52,6 +61,7 @@ const Blog = () => {
   const secondPost = blogData.find((post) => post.id === 2);
   const thirdPost = blogData.find((post) => post.id === 3);
   const fourthPost = blogData.find((post) => post.id === 4);
+  const fifthPost = blogData.find((post) => post.id === 5);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -183,7 +193,36 @@ const Blog = () => {
         </div>
       </div>
     </Link>
-  )}
+     )}
+
+     {/* fifth blog */}
+      {fifthPost && (
+    <Link
+      to={'/blog/explore-different-types-of-writing-formats'}
+      className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+    >
+      <img
+        src={fifthPost.image}
+        alt={fifthPost.title}
+        loading="lazy"
+        width="600"
+        height="200"
+        decoding="async"
+        className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+      />
+
+      <div className="md:w-1/2 p-6">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+          {fifthPost.title}
+        </h2>
+        <p className="text-gray-600 mb-4">{fifthPost.description}</p>
+        <div className="flex items-center text-blue-600 font-medium">
+          <span>Read More</span>
+          <ChevronRight className="ml-1 w-5 h-5" />
+        </div>
+      </div>
+    </Link>
+     )}
       
 
     </div>

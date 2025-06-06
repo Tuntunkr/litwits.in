@@ -105,15 +105,17 @@ const SATPreparation2025 = () => {
                   className="rounded-lg w-full md:w-[41%] h-72 object-contain shadow-lg"
                 />
               </div>
-              Scholastic Assessment Test, often known as SAT, is an important
+
+            </p>
+            <p> Scholastic Assessment Test, often known as SAT, is an important
               standardized test that functions as the key admission criterion
               for college admissions, specifically for Indian students who aim
               to study abroad. High scores on the SAT increase the possibility
               of admission to leading universities in Canada, USA, UK, Italy,
               etc. However, for effective SAT preparation, you are required to
               integrate reliable resources with organized study plans and
-              consistent practice testing.
-            </p>
+              consistent practice testing.</p>
+            <br />
             <p>
               With the SAT prep 2025 evolving landscape, you are required to
               stay updated on the updates on the best preparation strategies.

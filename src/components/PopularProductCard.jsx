@@ -27,14 +27,6 @@ const PopularProductCard = () => {
               className="absolute bottom-0 right-0 w-[85%] md:w-[100%] object-cover rounded-lg shadow-lg"
             />
           </div>
-
-          {/* Circular Text Element */}
-          <div className="absolute -top-10 -left-10 bg-red-800 text-white rounded-full w-20 h-20 flex items-center justify-center border-4 border-gray-200">
-            <span className="rotate-90 text-sm font-semibold tracking-wide">
-              lorem <br />
-              ipsum
-            </span>
-          </div>
         </div>
       </div>
     </section>

@@ -177,7 +177,7 @@ function RazorpayPayment({ inrAmount }) {
   // ✅ Auto-Capture Payment via Backend
   const capturePayment = async (paymentId, amount) => {
     try {
-      const response = await fetch("http://localhost:5000/capture-payment", {
+      const response = await fetch("http://localhost:3000/capture-payment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -203,7 +203,7 @@ function RazorpayPayment({ inrAmount }) {
     const amountToPay = currency === "INR" ? Math.round(inrAmount * 100) : Math.round(usdAmount * 100);
 
     const options = {
-      key: "rzp_live_rm0yFSFebZswtT",  // ✅ Replace with your Live Razorpay Key
+      key: "rzp_live_GuYOHuksgzwklB",  // ✅ Replace with your Live Razorpay Key
       amount: amountToPay,
       currency: currency,
       name: "Litwits",

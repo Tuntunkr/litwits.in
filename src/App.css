@@ -14,7 +14,6 @@ body li {
 }
 body h1,h2,h3,h4,h5,h6 {
   font-family: 'Noto Serif';
-
 }
 body button {
   font-family: 'Noto Serif';
@@ -87,4 +86,8 @@ a {
 
 img.fill-white {
   fill: #ffffff;
+}
+
+ li{
+  color: #ffffff;
 }

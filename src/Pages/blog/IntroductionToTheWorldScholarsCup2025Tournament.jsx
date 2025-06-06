@@ -95,7 +95,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
           <article className="mx-auto w-full  format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-            <h1 className="mb-4 text-[20px] font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-[43px] ">
+            <h1 className="mb-4 text-[20px] font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-[40px] ">
               Introduction to the World Scholar's Cup 2025 Tournament
             </h1>
 
@@ -107,7 +107,11 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
                   className="rounded-lg w-full md:w-1/2 h-72 object-contain shadow-lg"
                 />
               </div>
-              Every year, students from all over the world gather for something
+
+             
+            </p>
+            <p>
+            Every year, students from all over the world gather for something
               that’s more than just a competition. They partake in the World
               Scholar's Cup not just to compete but also to learn, to share
               ideas, and to create friendships that will last a lifetime. It is
@@ -115,6 +119,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               challenges as a team while keeping the curiosity burning long
               after the challenge is over.
             </p>
+            <br />
             <p>
               This blog dives into the details of the World Scholar's Cup 2025,
               including its syllabus, subjects, schedule, registration process,

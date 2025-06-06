@@ -10,15 +10,32 @@ const PopularProducts = () => {
             {/* Text Content */}
             <div className="text-center lg:text-left">
               <p className="text-lg text-white leading-relaxed text-left lg:text-xl mb-6">
-                Driven by a mission to build leaders, LITWITS has transformed
-                the educational landscape by empowering students with a rigorous
-                commitment to intellectual exploration and critical thinking.
+                Driven by a mission to build leaders, LITWITS has redefined the
+                education landscape by fostering critical thinking, and the
+                power of inquiry.
               </p>
-              <p className="text-lg text-white leading-relaxed text-left lg:text-xl">
+              <p className="text-lg text-white leading-relaxed text-left lg:text-xl mb-6">
+                For over a decade, LITWITS has empowered more than 10,000
+                students to engage in reflective inquiry, deepen their
+                perspectives and become catalysts for meaningful change.
+              </p>
+              <p className="text-lg text-white leading-relaxed text-left mb-4 lg:text-xl">
                 LITWITS students' ability to think critically, formulate deep
                 and effective questions has led to LITWITS being home to the
                 best speakers, debaters, and writers who become leaders with a
                 conscience.
+              </p>
+              <p className="text-lg text-white leading-relaxed text-left lg:text-xl">
+                With a legacy of excellence, LITWITS students have consistently
+                excelled at leading global competitions, including the Harvard
+                Online Debate, Harvard International Review, Edinburgh BP World
+                Cup, Yale University, and the Stanford Invitational. At the
+                World Scholar’s Cup, our delegations have repeatedly ranked
+                among the top, with notable performances across India, Beijing,
+                Dubai, Doha, Melbourne, The Hague, Bangkok, Vietnam, Kuala
+                Lumpur, and Yale. Students from around the world turn to the
+                LITWITS platform as they shape themselves into the next
+                generation of thoughtful, visionary leaders.
               </p>
             </div>
             {/* Image */}

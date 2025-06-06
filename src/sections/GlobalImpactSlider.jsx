@@ -185,7 +185,7 @@ const Glide3DSlider = () => {
   return (
     <div className="w-full bg-gray-50">
       <div className="max-w-[1440px] mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-xl lg:text-2xl font-bold text-[#890C25] uppercase mb-6 text-center">
+        <h2 className="text-3xl text-start font-bold text-red-700 mb-4 text-center">
           Building a Global Community of Leaders
         </h2>
 
@@ -265,7 +265,7 @@ const Glide3DSlider = () => {
         </div>
 
         <div className="mt-16 max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-xl lg:text-2xl font-bold text-[#890C25] uppercase mb-6 text-center">
+          <h2 className="text-3xl font-bold text-red-700  uppercase mb-6 text-center">
             Competitive Edge for College Admissions
           </h2>
           <p className="text-lg md:text-xl text-black leading-relaxed ">

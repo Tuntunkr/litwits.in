@@ -145,7 +145,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
               </ul> */}
               {/* list */}
               <div>
-                <h6>1. Public Forum Debate</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">1. Public Forum Debate</h6>
                 <p className="mt-2 mb-4">
                   Public Forum is a very popular team format for discussion of
                   current affairs and real-world matters. Two teams (usually two
@@ -159,7 +159,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6>2. Asian and American Parliamentary Debate</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">2. Asian and American Parliamentary Debate</h6>
                 <p className="mt-2 mb-4">
                   The Asian format has three speakers to a team, but the
                   American typically contains only two. Debaters respond to
@@ -171,7 +171,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6>3. British Parliamentary Debate</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">3. British Parliamentary Debate</h6>
                 <p className="mt-2 mb-4">
                   In a single round of British Parliamentary Debate, there are
                   four teams. Two on the proposition and two on the opposition.
@@ -185,7 +185,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6>4. World Schools Debate Format</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">4. World Schools Debate Format</h6>
                 <p className="mt-2 mb-4">
                   In World Schools Debate, you need to combine prepared and
                   impromptu speeches, making it a hybrid model particularly
@@ -200,7 +200,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6>5. Policy Debate</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">5. Policy Debate</h6>
                 <p className="mt-2 mb-4">
                   Policy Debate consists of two-person teams debating for or
                   against a particular policy solution. It is extremely
@@ -224,7 +224,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6>6. Lincoln Douglas Debate</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">6. Lincoln Douglas Debate</h6>
                 <p className="mt-2 mb-4">
                   This individual debate style focuses on moral, ethical, and
                   philosophical issues. Lincoln Douglas Debate demands a sound
@@ -238,7 +238,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6>7. Debate Congress</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">7. Debate Congress</h6>
                 <p className="mt-2 mb-4">
                   Also known as Student Congress, this version mimics
                   legislative sessions. Student participants bring up bills and
@@ -252,7 +252,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6>8. Extempore Debates </h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">8. Extempore Debates </h6>
                 <p className="mt-2 mb-4">
                   Extempore debates challenge your thinking and speaking skills
                   on the spot. You are assigned a topic mere minutes before you
@@ -265,7 +265,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6>9. Declamation</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">9. Declamation</h6>
                 <p className="mt-2 mb-4">
                   Declamation involves presenting a well-known speech in your
                   own voice and style. Although not an argumentative format, it
@@ -285,7 +285,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6>10. Model United Nations (MUN) </h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">10. Model United Nations (MUN) </h6>
                 <p className="mt-2 mb-4">
                   MUN is an imitation of United Nations meetings in which
                   members act as nations, debate international issues, and
@@ -299,7 +299,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6>11. Impromptu </h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">11. Impromptu </h6>
                 <p className="mt-2 mb-4">
                   Impromptu debating allows you to speak with minimal
                   preparation, often on lighthearted or abstract subjects. You

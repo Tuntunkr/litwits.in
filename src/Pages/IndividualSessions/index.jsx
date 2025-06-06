@@ -630,13 +630,15 @@ const GroupSess = () => {
               </h2>
               <p className="text-gray-700">
                 Model United Nations offers students an immersive experience in
-                global diplomacy, negotiation, and international relations.
-                Through personalised coaching, students understand the dynamics
-                of real UN committees, allowing students to navigate complex
-                global issues, and draft impactful position papers and
-                resolutions.  The guidance and training at LITWITS has empowered
-                students to succeed at prestigious MUN conferences, reflecting
-                their preparedness and confidence on the global stage.
+                global diplomacy and international relations. Through
+                personalised coaching, students understand the dynamics of real
+                UN committees and hone their diplomacy, negotiation, and public
+                policy skills through simulations of the workings of the United
+                Nations. These sessions prepare students to navigate complex
+                global issues, draft impactful position papers and resolutions
+                offering students the opportunity to engage in conflict
+                resolution and building effective strategies to tackle pressing
+                global issues.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
                 <Link
@@ -698,21 +700,26 @@ const GroupSess = () => {
             </p>
 
             <p className="text-left font-nato text-sm sm:text-base md:text-lg leading-6 md:leading-7 text-white mb-4">
-              Guided by experienced mentors, students identify a problem or a
+              Shaping passion for social responsibility and guided by
+              experienced mentors, our students embark on an enriching journey
+              exploring diverse perspectives, thinking critically about issues
+              in their community or around the globe to identify a problem or a
               gap in the field that interests them—such as social justice,
-              gender justice, education, or healthcare. We work with them to
-              understand the fundamentals, ideate sustainable solutions, craft
-              narratives, think critically on the subject, and develop their
-              video presentations for the 'TED-Ed Student Talk Program'
-              platform.
+              gender justice, education, or healthcare and others. The mentors
+              work with the students to understand the issues critically, ideate
+              sustainable solutions, conceptualize and craft powerful narratives
+              culminating in an impactful video presentation for the 'TED-Ed
+              Student Talk Program' platform. The platform helps students gain
+              recognition through the prestigious TED-Ed platform, and leave a
+              lasting impact on global audiences.
             </p>
 
-            <p className="text-left font-nato text-sm sm:text-base md:text-lg leading-6 md:leading-7 text-white">
+            {/* <p className="text-left font-nato text-sm sm:text-base md:text-lg leading-6 md:leading-7 text-white">
               The TED-Ed Student Talks Program empowers students to transform
               their ideas into powerful narratives, gain recognition through the
               prestigious TED-Ed platform, and leave a lasting impact on global
               audiences.
-            </p>
+            </p> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
               <Link
                 to="https://wa.me/7827098747?text=Hi! I’m interested in your TED-Ed Student Talks Program. Please share details about the program and I request a free consultation."
@@ -947,9 +954,9 @@ const GroupSess = () => {
               <p className="font-nato text-sm text-white text-start leading-relaxed lg:text-lg">
                 Through expert instruction and targeted strategies, we focus on
                 all SAT sections: Evidence-Based Reading, Writing and Language,
-                and Math.By understanding the test format, mastering timing, and honing
-                question-handling techniques, students are equipped to approach
-                each section with precision, confidence, accuracy, and
+                and Math.By understanding the test format, mastering timing, and
+                honing question-handling techniques, students are equipped to
+                approach each section with precision, confidence, accuracy, and
                 test-taking speed, giving students the needed edge.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-12">
@@ -969,7 +976,7 @@ const GroupSess = () => {
               </div>
             </div>
           </div>
-            
+
           {/* Descriptive Content for Accessibility */}
           <p id="sat-prep-session-description" className="sr-only">
             Expert-led SAT preparation covering Evidence-Based Reading, Writing,
@@ -1037,74 +1044,88 @@ const GroupSess = () => {
 
       {/* FAQ Section */}
       <section id="faq" className="container mx-auto px-8 bg-gray-50">
-  <div className="container mx-auto ">
-    <h2 className="text-3xl font-nato pt-6 font-bold text-center text-red-700 mb-8">
-      FREQUENTLY ASKED QUESTIONS
-    </h2>
-  </div>
-  <div className="p-4">
-    {/* First Accordion */}
-    <Accordion defaultActiveKey="0" flush>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>
-          What would be the duration of each individual session?
-        </Accordion.Header>
-        <Accordion.Body className="bg-[#890C25] text-white">
-          Each individual session is 90 minutes, ensuring ample time for in-depth learning, interactive discussions, and personalized guidance from our expert mentors.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>
-          Which are the Individual Sessions available?
-        </Accordion.Header>
-        <Accordion.Body className="bg-[#890C25] text-white">
-          Our Individual Sessions are designed to cater to specific learning needs and personalized mentorship. Currently, we offer:
-          <ul className="list-disc pl-5 text-white">
-            <li>TED-Ed Training</li>
-            <li>MUN Guidance Package</li>
-            <li>College Essay Guidance</li>
-            <li>Research Paper Guidance</li>
-            <li>Social Impact</li>
-            <li>Tailor-made sessions as per the requirement of the student</li>
-          </ul>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>
-          Do you also provide AP (Advanced Placement) courses?
-        </Accordion.Header>
-        <Accordion.Body className="bg-[#890C25] text-white">
-          Yes, we offer Advanced Placement (AP) courses to help students prepare for AP exams. These courses are designed to provide comprehensive subject knowledge, practice tests, and exam strategies to ensure high scores.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <Accordion.Header>
-          What are the timings of Individual Sessions?
-        </Accordion.Header>
-        <Accordion.Body className="bg-[#890C25] text-white">
-          Since Individual Sessions offer personalized mentorship, they are scheduled at a mutually convenient time for both the student and the mentor. We ensure flexibility to accommodate different time zones and student schedules.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>
-          How much time do I have to complete the MUN Guidance Package?
-        </Accordion.Header>
-        <Accordion.Body className="bg-[#890C25] text-white">
-          The MUN Guidance Package must be completed within two weeks from the start date. This structure ensures consistency in learning and allows students to fully grasp the key concepts and strategies needed for MUN success.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="5">
-        <Accordion.Header>
-          Can I convert my Group Session package to Individual Sessions?
-        </Accordion.Header>
-        <Accordion.Body className="bg-[#890C25] text-white">
-          No. Group Sessions and Individual Sessions are structured and priced separately.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-  </div>
-</section>
-
+        <div className="container mx-auto ">
+          <h2 className="text-3xl font-nato pt-6 font-bold text-center text-red-700 mb-8">
+            FREQUENTLY ASKED QUESTIONS
+          </h2>
+        </div>
+        <div className="p-4">
+          {/* First Accordion */}
+          <Accordion defaultActiveKey="0" flush>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>
+                What would be the duration of each individual session?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Each individual session is 90 minutes, ensuring ample time for
+                in-depth learning, interactive discussions, and personalized
+                guidance from our expert mentors.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>
+                Which are the Individual Sessions available?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Our Individual Sessions are designed to cater to specific
+                learning needs and personalized mentorship. Currently, we offer:
+                <ul className="list-disc pl-5 text-white">
+                  <li>TED-Ed Training</li>
+                  <li>MUN Guidance Package</li>
+                  <li>College Essay Guidance</li>
+                  <li>Research Paper Guidance</li>
+                  <li>Social Impact</li>
+                  <li>
+                    Tailor-made sessions as per the requirement of the student
+                  </li>
+                </ul>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>
+                Do you also provide AP (Advanced Placement) courses?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Yes, we offer Advanced Placement (AP) courses to help students
+                prepare for AP exams. These courses are designed to provide
+                comprehensive subject knowledge, practice tests, and exam
+                strategies to ensure high scores.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>
+                What are the timings of Individual Sessions?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Since Individual Sessions offer personalized mentorship, they
+                are scheduled at a mutually convenient time for both the student
+                and the mentor. We ensure flexibility to accommodate different
+                time zones and student schedules.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="4">
+              <Accordion.Header>
+                How much time do I have to complete the MUN Guidance Package?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                The MUN Guidance Package must be completed within two weeks from
+                the start date. This structure ensures consistency in learning
+                and allows students to fully grasp the key concepts and
+                strategies needed for MUN success.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="5">
+              <Accordion.Header>
+                Can I convert my Group Session package to Individual Sessions?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                No. Group Sessions and Individual Sessions are structured and
+                priced separately.
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </div>
+      </section>
     </section>
   );
 };

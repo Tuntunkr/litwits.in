@@ -59,6 +59,16 @@
   }
 }
 
+a {
+  @apply no-underline;
+}
+
+@layer base {
+  a {
+    @apply no-underline;
+  }
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #890C25; /* Custom arrow color */

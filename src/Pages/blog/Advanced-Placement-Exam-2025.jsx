@@ -757,9 +757,9 @@ const AdvancedPlacementExam2025 = () => {
                 events for excellent outcomes.
               </p>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+              <p className="text-2xl font-bold mb-4 text-gray-700">
                 Conclusion
-              </h2>
+              </p>
               <p className="mb-6 text-gray-900">
                 The World Scholar's Cup provides one of the very few occasions
                 for students: this is about broadening horizons, challenging
@@ -768,8 +768,7 @@ const AdvancedPlacementExam2025 = () => {
                 debate, inside the rich tapestry of scholars you will find your
                 place. This is a life-changing opportunity; organize a team,
                 register, and go on a journey that will kindle your future
-                flame. Come join the World Scholar's Cup 2025 Tournament as a
-                celebration of learning, collaboration, and discovery.
+                flame. Register, train and team up with LITWITS for World Scholar's Cup.
               </p>
 
               <h2 className="text-2xl font-bold mb-4 text-gray-900">FAQs</h2>
