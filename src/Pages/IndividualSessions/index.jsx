@@ -9,6 +9,8 @@ import actsession from "/assets/act-prep-session.avif";
 import Sat from "/assets/sat-prep-session.avif";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import  Contact from "../../sections/Contact"
+
 const GroupSess = () => {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -1125,6 +1127,9 @@ const GroupSess = () => {
             </Accordion.Item>
           </Accordion>
         </div>
+      </section>
+      <section>
+        <Contact />
       </section>
     </section>
   );

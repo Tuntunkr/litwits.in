@@ -6,6 +6,7 @@ import world from "/worlds.jpeg";
 import Satimg from "/Satimage.jpeg";
 import blogimage1 from "/debate.png";
 import Explore from "/WomanSpeaking.jpeg";
+import Ultimate from "/ultimate.png";
 
 
 // Sample blog data with 10 entries
@@ -45,6 +46,13 @@ const blogData = [
       "Writing is a powerful tool. We use it all the time - in school, at work, and even in our personal lives. It allows us to express, explain, and relate. ",
     image: Explore,
   },
+  {
+    id: 6,
+    title: "Ultimate Guide to Debate Training: Courses, Tips & Competitions",
+    description:
+      "Debate training is a powerful way to foster confidence, critical thinking, and communication skills in students of all ages. ",
+    image: Ultimate,
+  },
   ...Array.from({ length: 9 }, (_, index) => ({
     id: index + 3, // Start from ID 3 to avoid duplicate IDs
     title: `Advanced Placement Exam 2025`,
@@ -62,6 +70,9 @@ const Blog = () => {
   const thirdPost = blogData.find((post) => post.id === 3);
   const fourthPost = blogData.find((post) => post.id === 4);
   const fifthPost = blogData.find((post) => post.id === 5);
+  const sixPost = blogData.find((post) => post.id === 6);
+
+  
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -107,7 +118,7 @@ const Blog = () => {
       {/* Second Blog Post */}
       {secondPost && (
         <Link
-          to={'/blog/introduction-to-the-world-scholars-cup-2025-tournament'}
+          to={"/blog/introduction-to-the-world-scholars-cup-2025-tournament"}
           className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
         >
           {/* Image Section */}
@@ -135,10 +146,10 @@ const Blog = () => {
         </Link>
       )}
 
-       {/* Sat Blog Post */}
-       {thirdPost && (
+      {/* Sat Blog Post */}
+      {thirdPost && (
         <Link
-          to={'/blog/sat-preparation-2025-how-to-prepare-for-sat-exam'}
+          to={"/blog/sat-preparation-2025-how-to-prepare-for-sat-exam"}
           className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
         >
           {/* Image Section */}
@@ -168,63 +179,90 @@ const Blog = () => {
 
       {/* fourth blog  */}
       {fourthPost && (
-    <Link
-      to={'/blog/learn-all-about-different-types-of-debate'}
-      className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-    >
-      <img
-        src={fourthPost.image}
-        alt={fourthPost.title}
-        loading="lazy"
-        width="600"
-        height="200"
-        decoding="async"
-        className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-      />
+        <Link
+          to={"/blog/learn-all-about-different-types-of-debate"}
+          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+        >
+          <img
+            src={fourthPost.image}
+            alt={fourthPost.title}
+            loading="lazy"
+            width="600"
+            height="200"
+            decoding="async"
+            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+          />
 
-      <div className="md:w-1/2 p-6">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-          {fourthPost.title}
-        </h2>
-        <p className="text-gray-600 mb-4">{fourthPost.description}</p>
-        <div className="flex items-center text-blue-600 font-medium">
-          <span>Read More</span>
-          <ChevronRight className="ml-1 w-5 h-5" />
-        </div>
-      </div>
-    </Link>
-     )}
+          <div className="md:w-1/2 p-6">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              {fourthPost.title}
+            </h2>
+            <p className="text-gray-600 mb-4">{fourthPost.description}</p>
+            <div className="flex items-center text-blue-600 font-medium">
+              <span>Read More</span>
+              <ChevronRight className="ml-1 w-5 h-5" />
+            </div>
+          </div>
+        </Link>
+      )}
 
-     {/* fifth blog */}
+      {/* fifth blog */}
       {fifthPost && (
-    <Link
-      to={'/blog/explore-different-types-of-writing-formats'}
-      className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-    >
-      <img
-        src={fifthPost.image}
-        alt={fifthPost.title}
-        loading="lazy"
-        width="600"
-        height="200"
-        decoding="async"
-        className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-      />
+        <Link
+          to={"/blog/explore-different-types-of-writing-formats"}
+          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+        >
+          <img
+            src={fifthPost.image}
+            alt={fifthPost.title}
+            loading="lazy"
+            width="600"
+            height="200"
+            decoding="async"
+            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+          />
 
-      <div className="md:w-1/2 p-6">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-          {fifthPost.title}
-        </h2>
-        <p className="text-gray-600 mb-4">{fifthPost.description}</p>
-        <div className="flex items-center text-blue-600 font-medium">
-          <span>Read More</span>
-          <ChevronRight className="ml-1 w-5 h-5" />
-        </div>
-      </div>
-    </Link>
-     )}
-      
+          <div className="md:w-1/2 p-6">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              {fifthPost.title}
+            </h2>
+            <p className="text-gray-600 mb-4">{fifthPost.description}</p>
+            <div className="flex items-center text-blue-600 font-medium">
+              <span>Read More</span>
+              <ChevronRight className="ml-1 w-5 h-5" />
+            </div>
+          </div>
+        </Link>
+      )}
+      {/* sixpost */}
 
+      {sixPost && (
+        <Link
+          to={"/blog/ultimate-guide-to-debate-training"}
+          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+        >
+          <img
+            src={sixPost.image}
+            alt={sixPost.title}
+            loading="lazy"
+            width="600"
+            height="200"
+            decoding="async"
+            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+          />
+
+          <div className="md:w-1/2 p-6">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              {sixPost.title}
+            </h2>
+            <p className="text-gray-600 mb-4">{sixPost.description}</p>
+            <div className="flex items-center text-blue-600 font-medium">
+              <span>Read More</span>
+              <ChevronRight className="ml-1 w-5 h-5" />
+            </div>
+          </div>
+        </Link>
+      )}
     </div>
   );
 };
@@ -233,7 +271,6 @@ export default Blog;
 
 {
   /* Remaining Blog Posts in Grid Layout */
-
   // {fourthPost && (
   //   <Link
   //     to={'/blog/learn-all-about-different-types-of-debate'}
@@ -248,7 +285,6 @@ export default Blog;
   //       decoding="async"
   //       className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
   //     />
-
   //     <div className="md:w-1/2 p-6">
   //       <h2 className="text-2xl font-semibold text-gray-800 mb-2">
   //         {fourthPost.title}

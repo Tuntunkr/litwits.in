@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import writingFormat1 from "/WomanSpeaking.jpeg";
 import writingFormat2 from "/Woman2.jpeg";
 import Public from "/Public.jpeg";
+import  Contact from "../../sections/Contact"
 
 const ExploreDifferentTypesOfWritingFormats = () => {
   return (
@@ -29,10 +30,10 @@ const ExploreDifferentTypesOfWritingFormats = () => {
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
           <article className="mx-auto w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             <header className="mb-8">
-              <h1 className="mb-4 text-2xl font-extrabold  text-gray-900 lg:mb-6 lg:text-3xl dark:text-white">
+              <h1 className="mb-4 text-2xl font-extrabold lg:mb-6 lg:text-3xl !text-gray-900">
                 Explore Different Types Of Writing Formats And How To Master Them
               </h1>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
+              <p className="text-lg text-gray-600 ">
                 Discover the power of written expression across various formats and styles
               </p>
               <div className="flex justify-center items-center mb-12">
@@ -54,7 +55,7 @@ const ExploreDifferentTypesOfWritingFormats = () => {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Understanding Writing Formats
               </h2>
               <p className="mb-4">
@@ -72,7 +73,7 @@ const ExploreDifferentTypesOfWritingFormats = () => {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Types of Writing Formats
               </h2>
               <div className="flex justify-center items-center mb-12">
@@ -83,84 +84,84 @@ const ExploreDifferentTypesOfWritingFormats = () => {
               </p>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">1. Persuasive Writing</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">1. Persuasive Writing</h6>
                 <p className="mt-2 mb-4">
                   We rely on persuasive writing to change minds. You'll hear it in speeches, in advertisements, in op-eds. The reader is urged to think, to feel, to act. This format is fact and emotion-driven. You stake your ground and lend it your support. It aims to convince readers to believe in or do something by presenting a logical argument and supporting evidence.
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">2. Essay Writing</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">2. Essay Writing</h6>
                 <p className="mt-2 mb-4">
                   An essay is organized and disciplined. You'll use it during school assignments, examinations, and competitive tests. An essay generally has an introduction, a body, and a conclusion. Every element has a distinct function. The structure aids you in organizing ideas logically. One type is the college essay, which is meant to demonstrate who you are. It has to be personal, but it also has to be organized.
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">3. Academic Writing</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">3. Academic Writing</h6>
                 <p className="mt-2 mb-4">
                   It is one of the most widely used types of writing formats in schools and universities. Thus, it's serious, clear, and research-based. You'll often encounter this style in reports, papers, and theses. It is the format of arguments, analysis, and evidence. It's not enough to talk about what you think; you have to demonstrate your point. It also requires citations and should have a formal voice. It is used to communicate ideas backed by strong research and information within the academic community.
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">4. Journalistic Writing</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">4. Journalistic Writing</h6>
                 <p className="mt-2 mb-4">
                   One of the most prevalent types of writing format, journalistic writing, is all about facts. It appears in news articles, interviews, and feature articles. Journalistic prose is clean, efficient, and a fast read. It tells you the who, what, when, where, why, and how. You're not infusing opinions, and you are posting truth. Headlines, leads, and short paragraphs are as important here. If you love being informed and love telling real stories, then this is the format for you to follow.
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">5. Creative Writing</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">5. Creative Writing</h6>
                 <p className="mt-2 mb-4">
                   Creative writing is a type of writing format that allows your mind to roam. It just really has to do with self-expression. You'll find it in stories, in poems, in memoirs. This approach flouts rules to investigate emotion, rhythm, and voice.
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">6. Fiction Writing</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">6. Fiction Writing</h6>
                 <p className="mt-2 mb-4">
                   Fiction is all about making stories. You make up characters, plot lines, and worlds. Think about novels, short stories, or even epics of fantasy. This form of writing is mostly used by authors to showcase their creativity and are often used for the purpose of entertainment, to explore different themes, or for artistic expression.
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">7. Flash Fiction</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">7. Flash Fiction</h6>
                 <p className="mt-2 mb-4">
                   Flash fiction is a type of creative writing that is terse and to the point. These are under 1,000-word stories suitable for blogs and social media. You say a lot in a few lines. It's fun and creative. It shapes your writing skills and sparks ignition for storytelling, thus honing your writing style.
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">8. Poetry</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">8. Poetry</h6>
                 <p className="mt-2 mb-4">
                   Poetry plays with sound, rhythm, and form. It may be structured or unstructured. Poetries are composed to convey stories, express feelings, and form pictures. Poets select words based on their meaning and sound, positioning them in such a way that builds a rhythm (which is often referred to as the meter).
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">9. Memoir</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">9. Memoir</h6>
                 <p className="mt-2 mb-4">
                   Memoirs are one of the creative writing format examples that shares real stories from your life. A novelistic take on the true events, though, is super easy because everything really happened. You look back on your life and share lessons, joys and disappointments.
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">10. Script Writing for Plays</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">10. Script Writing for Plays</h6>
                 <p className="mt-2 mb-4">
                   Script writing is generally done for the stage or screen purposes. Scripts include dialogue, scenes and direction. You're not merely telling a story, you're showing it through what people do and say. Each of the writing format examples, like play, short film or drama scripts have their unique structure.
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">11. Research Paper</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">11. Research Paper</h6>
                 <p className="mt-2 mb-4">
                   A research paper's purpose is to synthesize various opinions, facts, and evidence, regarding an issue, from multiple sources like books, articles, journals, and interviews and interpret the information into your own writing. All claims have to be substantiated; thus, citations are a must. So, if you're working on academic write-ups, you must do these things to make your writing accepted and credible.
                 </p>
               </div>
 
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">12. College Essay</h6>
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">12. College Essay</h6>
                 <p className="mt-2 mb-4">
                   College essays are included as part of applications for admission or scholarships. You have to tell your story, share your values and express your goals. Nevertheless, you still need structure, and focus. It is personal and professional all at once.
                 </p>
@@ -168,7 +169,7 @@ const ExploreDifferentTypesOfWritingFormats = () => {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Skills You Need to Master Different Formats
               </h2>
               <div className="flex justify-center items-center mb-12">
@@ -196,7 +197,7 @@ const ExploreDifferentTypesOfWritingFormats = () => {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Benefits of Learning Different Writing Styles
               </h2>
               <p className="mb-4">
@@ -214,7 +215,7 @@ const ExploreDifferentTypesOfWritingFormats = () => {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 How Our Coaching Helps You Excel?
               </h2>
               <p className="mb-4">
@@ -238,7 +239,7 @@ const ExploreDifferentTypesOfWritingFormats = () => {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Conclusion
               </h2>
               <p className="mb-4">
@@ -251,6 +252,9 @@ const ExploreDifferentTypesOfWritingFormats = () => {
           </article>
         </div>
       </main>
+      <section>
+        <Contact />
+      </section>
     </>
   );
 };

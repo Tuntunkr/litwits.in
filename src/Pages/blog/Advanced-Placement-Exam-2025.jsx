@@ -203,11 +203,11 @@ const AdvancedPlacementExam2025 = () => {
           </>
         )}
       </Helmet>
-      <div className="container  mx-auto p-4  pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+      <div className="container  mx-auto p-4  pt-12 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
         {/* Blog Title */}
 
-        <h1 className="text-4xl font-bold mb-2 text-gray-900">{blog.title}</h1>
-        <div className="text-gray-600 text-sm mb-8">
+        <h1 className="text-4xl font-bold pt-12 mb-2 text-gray-900 ">{blog.title}</h1>
+        <div className="text-gray-600 text-sm mb-8 ">
           By Author Name - {blog.date}
         </div>
 
@@ -221,8 +221,8 @@ const AdvancedPlacementExam2025 = () => {
         </div>
 
         {/* Blog Content */}
-        <div className="text-gray-700 text-lg leading-relaxed">
-          <p className="mb-6 text-gray-900">
+        <div className="text-gray-700 text-lg leading-relaxed ">
+          <p className="mb-6 text-gray-900 ">
             Feeling anxious about the AP Exam 2025? Well, that's perfectly
             normal. Advanced Placements plays a significant role in shaping
             one's collage application. So, let's get to what really matters! You
@@ -230,21 +230,21 @@ const AdvancedPlacementExam2025 = () => {
             drill on your part to achieve success.
           </p>
 
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 ">
             So here we are to provide you with all the information to help you
             prepare for the AP exam and ensure your chances of success. From
             expert study tips to{" "}
-            <strong className="text-gray-900">
+            <strong className="text-gray-900 ">
               How to Register for AP Exams 2025: A Step-by-Step Guide
             </strong>
             , we've got everything covered.
           </p>
 
           {/* Section: What Are AP Exams? */}
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
             What Are AP Exams?
           </h2>
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 ">
             You may already have a bit of a clue, but we think an explanation is
             needed here: AP exams are college-level tests conducted by the
             College Board for high school students in the US. A good passing
@@ -253,7 +253,7 @@ const AdvancedPlacementExam2025 = () => {
             only when you do it right.
           </p>
 
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 ">
             However, these tests are nothing like typical high school
             examinations. They are deliberately crafted to challenge students'
             comfort levels, trying to test their knowledge and endurance. You
@@ -262,7 +262,7 @@ const AdvancedPlacementExam2025 = () => {
           </p>
 
           {/* Section: Benefits of Taking AP Courses and Exams */}
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
             Benefits of Taking AP Courses and Exams
           </h2>
           {/* <div className="flex justify-center items-center mb-12">
@@ -281,19 +281,19 @@ const AdvancedPlacementExam2025 = () => {
           </div>
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3">
-              <strong className="text-gray-900">
+              <strong className="text-gray-900 ">
                 Earn College Credit and Save Money:
               </strong>{" "}
               Passing this test can translate to gaining college credit, which
               can save students time and money.
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">University Acceptance:</strong>{" "}
+              <strong className="text-gray-900 ">University Acceptance:</strong>{" "}
               AP exam scores are accepted by most universities around the globe,
               enabling students to bypass introductory-level courses.
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">
+              <strong className="text-gray-900 ">
                 Strengthen College Application:
               </strong>{" "}
               High AP scores add impact to an application. Admission councils
@@ -301,14 +301,14 @@ const AdvancedPlacementExam2025 = () => {
               academically.
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">
+              <strong className="text-gray-900 ">
                 Develop Essential Skills:
               </strong>{" "}
               This exam helps students develop essential skills such as critical
               thinking, time management, and independent study habits.
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">
+              <strong className="text-gray-900 ">
                 Enhance Scholarship Opportunities:
               </strong>{" "}
               Various scholarships take AP scores into account to provide
@@ -317,10 +317,10 @@ const AdvancedPlacementExam2025 = () => {
           </ul>
 
           {/* Section: AP Exam Schedule and Dates */}
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
             AP Exam Schedule and Dates
           </h2>
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 ">
             Always stay in the loop regarding the dates for the AP Exams in
             2025. These examinations are usually set for two weeks in May, each
             subject being assigned a specific date. The 2025 AP Exams are
@@ -330,36 +330,36 @@ const AdvancedPlacementExam2025 = () => {
           </p>
 
           {/* Section: AP Exam Fees */}
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
             AP Exam Fees
           </h2>
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 ">
             Having clearly established their worth, it is also reasonable to add
             that AP exams are not cheap. It is thus wise to plan ahead for
             expenditures and avoid incurring any unnecessary late fees.
           </p>
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3">
-              <strong className="text-gray-900">
+              <strong className="text-gray-900 ">
                 Regular fee per AP exam:
               </strong>{" "}
               $99 (for U.S. students)
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">International fee:</strong> $129
+              <strong className="text-gray-900 ">International fee:</strong> $129
               (outside U.S. territories and Canada)
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">Late registration:</strong>{" "}
+              <strong className="text-gray-900 ">Late registration:</strong>{" "}
               Additional charges may apply
             </li>
           </ul>
 
           {/* Section: AP Exam Syllabus and Subjects */}
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
             AP Exam Syllabus and Subjects
           </h2>
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 ">
             With 38 AP subjects, undergraduate students have the flexibility to
             choose from subjects that they would like to study in relation to
             their interests and careers. Each subject's syllabus has a standard
@@ -368,29 +368,29 @@ const AdvancedPlacementExam2025 = () => {
           </p>
 
           {/* Section: Popular AP Exam Subjects */}
-          <h3 className="text-xl font-bold mb-4 text-gray-900">
+          <h3 className="text-xl font-bold mb-4 text-gray-900 ">
             Popular AP Exam Subjects:
           </h3>
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3">
-              <strong className="text-gray-900">STEM Fields:</strong> AP
+              <strong className="text-gray-900 ">STEM Fields:</strong> AP
               Calculus, AP Physics, AP Computer Science
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">Social Sciences:</strong> AP
+              <strong className="text-gray-900 ">Social Sciences:</strong> AP
               U.S. History, AP World History, AP Government
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">Languages and Arts:</strong> AP
+              <strong className="text-gray-900 ">Languages and Arts:</strong> AP
               English Literature, AP Spanish, AP Studio Art
             </li>
           </ul>
 
           {/* Section: How to Choose AP Exam Subjects? */}
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
             How to Choose AP Exam Subjects?
           </h2>
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 ">
             Choosing AP exam subjects is meant to be a strategic decision that
             wouldn't bode well with both academic strengths and long-term goals.
             Consider the following:
@@ -398,18 +398,18 @@ const AdvancedPlacementExam2025 = () => {
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3">
               Do you plan to pursue pre-med? Take{" "}
-              <strong className="text-gray-900">AP Biology</strong> and{" "}
-              <strong className="text-gray-900">AP Chemistry</strong>.
+              <strong className="text-gray-900 ">AP Biology</strong> and{" "}
+              <strong className="text-gray-900 ">AP Chemistry</strong>.
             </li>
             <li className="mb-3">
               Are you interested in pursuing engineering? Choose{" "}
-              <strong className="text-gray-900">AP Physics</strong> and{" "}
-              <strong className="text-gray-900">Calculus BC</strong>.
+              <strong className="text-gray-900 ">AP Physics</strong> and{" "}
+              <strong className="text-gray-900 ">Calculus BC</strong>.
             </li>
             <li className="mb-3">
               Interested in law and business? Go for{" "}
-              <strong className="text-gray-900">AP Economics</strong> and{" "}
-              <strong className="text-gray-900">
+              <strong className="text-gray-900 ">AP Economics</strong> and{" "}
+              <strong className="text-gray-900 ">
                 AP Comparative Government
               </strong>
               .
@@ -417,33 +417,33 @@ const AdvancedPlacementExam2025 = () => {
           </ul>
 
           {/* Section: AP Exam Prep Resources */}
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
             AP Exam Prep Resources
           </h2>
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 ">
             Effective preparation requires the right resources. Here are some of
             the best tools to help you succeed:
           </p>
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3">
-              <strong className="text-gray-900">
+              <strong className="text-gray-900 ">
                 College Board's Official AP Classroom
               </strong>
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">YouTube Tutors</strong>
+              <strong className="text-gray-900 ">YouTube Tutors</strong>
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">Review Books</strong> (Barron's,
+              <strong className="text-gray-900 ">Review Books</strong> (Barron's,
               Princeton Review, 5 Steps to a 5)
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">AP Study Groups</strong>
+              <strong className="text-gray-900 ">AP Study Groups</strong>
             </li>
           </ul>
 
           {/* Section: When to Start Studying for AP Exams? */}
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
             When to Start Studying for AP Exams?
           </h2>
           {/* <div className="flex justify-center items-center mb-12">
@@ -460,7 +460,7 @@ const AdvancedPlacementExam2025 = () => {
               className="rounded-lg w-full md:w-1/2 h-72 object-cover shadow-lg"
             />
           </div>
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 ">
             Ideally, students should begin preparing 6 months before the exam or
             no later than the mid-year, which is usually after the winter break.
             However, if time is limited, focus on high-yield topics, practice
@@ -468,36 +468,36 @@ const AdvancedPlacementExam2025 = () => {
           </p>
 
           {/* Section: Conclusion */}
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">Conclusion</h2>
-          <p className="mb-6 text-gray-900">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 ">Conclusion</h2>
+          <p className="mb-6 text-gray-900 ">
             To wrap it up, AP Exams are not just another academic milestone;
             they are an opportunity to earn college credits, enhance your
             application, and develop essential skills for higher education.
             Smart preparation and strategic subject selection will significantly
             improve your performance.
           </p>
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 ">
             So, now, go out there, ace those AP Exams, and take on your next big
             academic challenge!
           </p>
 
           {/* Section: FAQs */}
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">FAQs</h2>
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 ">FAQs</h2>
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3">
-              <strong className="text-gray-900">
+              <strong className="text-gray-900 ">
                 How many AP Exams do I take?
-              </strong>{" "}
+              </strong>
               It depends on your academic goals and college aspirations.
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">
+              <strong className="text-gray-900 ">
                 Are AP Exams harder than college courses?
               </strong>{" "}
               It depends on the college and AP Exam being considered.
             </li>
             <li className="mb-3">
-              <strong className="text-gray-900">
+              <strong className="text-gray-900 ">
                 What happens if I fail an AP Exam?
               </strong>{" "}
               You won't earn college credit, but it won't affect your high
@@ -507,7 +507,7 @@ const AdvancedPlacementExam2025 = () => {
 
           {blog.id === 2 && (
             <>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 Every year, students from all over the world gather for
                 something that's more than just a competition. They partake in
                 the World Scholar's Cup not just to compete but also to learn,
@@ -517,16 +517,16 @@ const AdvancedPlacementExam2025 = () => {
                 burning long after the challenge is over.
               </p>
 
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 This blog dives into the details of the World Scholar's Cup
                 2025, including its syllabus, subjects, schedule, registration
                 process and much more.
               </p>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 What is the World Scholar's Cup?
               </h2>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 The World Scholar's Cup is an international academic competition
                 that inspires school students from ages of 8 to 18 toward a
                 passion for learning and collaboration. Established in 2007,
@@ -537,7 +537,7 @@ const AdvancedPlacementExam2025 = () => {
                 that yield a wholesome educational experience.
               </p>
 
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 The competition hosts four major events: Team Debate, Scholar's
                 Bowl, Collaborative Writing, and Scholar's Challenge, wherein
                 scholars are judged on reasoning, problem-solving, and critical
@@ -545,7 +545,7 @@ const AdvancedPlacementExam2025 = () => {
                 in a fun yet competitive setup.
               </p>
 
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 Unlike the more traditional competitions, the World Scholar's
                 Cup encourages collaboration over competitive individualism. The
                 emphasis is not on winning but on learning and self-improvement
@@ -553,10 +553,10 @@ const AdvancedPlacementExam2025 = () => {
                 and improved self-confidence.
               </p>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 The World Scholar's Cup Advantage
               </h2>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 Participating in the World Scholar's Cup is not merely an
                 academic exercise—it's a self-discovery experience. Participants
                 have the chance to enhance their creativity and problem-solving
@@ -567,41 +567,41 @@ const AdvancedPlacementExam2025 = () => {
 
               <ul className="list-disc list-inside mb-6 pl-5">
                 <li className="mb-3">
-                  <strong className="text-gray-900">Global Networking:</strong>{" "}
+                  <strong className="text-gray-900 ">Global Networking:</strong>{" "}
                   By interacting with people all around the world, participants
                   promote understanding between cultures.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Skill Development:</strong>{" "}
+                  <strong className="text-gray-900 ">Skill Development:</strong>{" "}
                   Skills such as critical thinking, public speaking, writing,
                   and teamwork skills are developed in the competition, which is
                   essential for future academic and professional endeavors.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">
+                  <strong className="text-gray-900 ">
                     Confidence Building:
                   </strong>{" "}
                   Conquering diverse challenges builds self-confidence and
                   adaptability.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Memorable Moments:</strong>{" "}
+                  <strong className="text-gray-900 ">Memorable Moments:</strong>{" "}
                   From engaging in impassioned debate on challenging topics to
                   participating in talent shows, the World Scholar's Cup
                   provides memorable & enriching moments.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Road to Yale:</strong> In
+                  <strong className="text-gray-900 ">Road to Yale:</strong> In
                   the invitation-only Tournament of Champions at Yale University
                   the top performers in world rounds are invited, laying the
                   road to prestigious academic institutions.
                 </li>
               </ul>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 World Scholar's Cup 2025 Registration
               </h2>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 World Scholar's Cup 2025 Registration is easy but advance
                 planning is important. The timeline, the fees, and the
                 procedures will enable participants to secure their positions
@@ -609,8 +609,8 @@ const AdvancedPlacementExam2025 = () => {
                 Here is what you will need to know:
               </p>
 
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Schedule</h3>
-              <p className="mb-6 text-gray-900">
+              <h3 className="text-xl font-bold mb-4 text-gray-900 ">Schedule</h3>
+              <p className="mb-6 text-gray-900 ">
                 The Regional rounds in the World Scholar's Cup 2025 Schedule are
                 arranged all throughout the year in different venues. The
                 Regional rounds and Global rounds are held at Lusaka, Bangkok,
@@ -622,17 +622,17 @@ const AdvancedPlacementExam2025 = () => {
                 Champions in November.
               </p>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 World Scholar's Cup Eligibility Criteria
               </h2>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 The World Scholar's Cup welcomes students from different
                 backgrounds. Whether you are a well-versed debater or are simply
                 curious as to how academic competitions work, there's a place
                 for you.
               </p>
 
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 The World Scholar's Cup is open to students between the ages of
                 8 to 18 years and offers a variety of educational backgrounds.
                 Students are categorized into divisions according to their age
@@ -641,52 +641,52 @@ const AdvancedPlacementExam2025 = () => {
 
               <ul className="list-disc list-inside mb-6 pl-5">
                 <li className="mb-3">
-                  <strong className="text-gray-900">Junior Division:</strong>{" "}
+                  <strong className="text-gray-900 ">Junior Division:</strong>{" "}
                   Students aged 11 to 14 years are included.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Senior Division:</strong> It
+                  <strong className="text-gray-900 ">Senior Division:</strong> It
                   includes students aged 15 to 18 years.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Skittles Division:</strong>{" "}
+                  <strong className="text-gray-900 ">Skittles Division:</strong>{" "}
                   Students aged 8 - 10 years
                 </li>
               </ul>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 How to Join the World Scholar's Cup?
               </h2>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 It is easy to start the World Scholar's Cup journey:
               </p>
 
               <ul className="list-disc list-inside mb-6 pl-5">
                 <li className="mb-3">
-                  <strong className="text-gray-900">Team Formation:</strong>{" "}
+                  <strong className="text-gray-900 ">Team Formation:</strong>{" "}
                   Build a team of three students in the same age group of the
                   same school or different schools.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Choose a Round:</strong>{" "}
+                  <strong className="text-gray-900 ">Choose a Round:</strong>{" "}
                   Select a regional round that suits your location and schedule.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Register:</strong> Complete
+                  <strong className="text-gray-900 ">Register:</strong> Complete
                   the World Scholar's Cup 2025 Registration on the website,
                   submitting the required information and the registration fee.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Join In:</strong> Be there
+                  <strong className="text-gray-900 ">Join In:</strong> Be there
                   for the selected round, partake in the activities, and be a
                   part of the World Scholar's Cup 2025 experience.
                 </li>
               </ul>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 World Scholar's Cup Syllabus
               </h2>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 The World Scholar's Cup syllabus is interdisciplinary, including
                 various subjects in an integrated learning experience. Students
                 are encouraged to explore connections between different fields,
@@ -695,10 +695,10 @@ const AdvancedPlacementExam2025 = () => {
                 and many more are covered in the World Scholar's Cup 2025.
               </p>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 World Scholar's Cup Subjects
               </h2>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 The World Scholar's Cup 2025 Topics encompass a range of
                 subjects that change annually to align with the overarching
                 theme:
@@ -706,48 +706,48 @@ const AdvancedPlacementExam2025 = () => {
 
               <ul className="list-disc list-inside mb-6 pl-5">
                 <li className="mb-3">
-                  <strong className="text-gray-900">
+                  <strong className="text-gray-900 ">
                     Science & Technology:
                   </strong>{" "}
                   Investigating scientific principles and technological
                   innovation
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">History:</strong>{" "}
+                  <strong className="text-gray-900 ">History:</strong>{" "}
                   Investigating past events and their consequences
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Social Studies:</strong>{" "}
+                  <strong className="text-gray-900 ">Social Studies:</strong>{" "}
                   Investigating social systems and problems
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Art & Music:</strong>{" "}
+                  <strong className="text-gray-900 ">Art & Music:</strong>{" "}
                   Analyzing works of art and music
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Literature & Media:</strong>{" "}
+                  <strong className="text-gray-900 ">Literature & Media:</strong>{" "}
                   Interpreting texts and media
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">Special Area:</strong> A
+                  <strong className="text-gray-900 ">Special Area:</strong> A
                   specific topic based on the year's theme
                 </li>
               </ul>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 World Scholar's Cup 2025 Theme
               </h2>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 For the 2025 season, the World Scholar's Cup has introduced the
                 theme "World Scholar's Cup 2025 Theme: Reigniting the Future."
                 This theme will guide the selection of topics across all
                 subjects.
               </p>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Kickstarter World Scholar's Cup
               </h2>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 Beginning your World Scholar's Cup experience is easy with the
                 right mindset and the right training. The secret lies in taking
                 things one step at a time—learning the competition format,
@@ -760,7 +760,7 @@ const AdvancedPlacementExam2025 = () => {
               <p className="text-2xl font-bold mb-4 text-gray-700">
                 Conclusion
               </p>
-              <p className="mb-6 text-gray-900">
+              <p className="mb-6 text-gray-900 ">
                 The World Scholar's Cup provides one of the very few occasions
                 for students: this is about broadening horizons, challenging
                 themselves, and feeling part of an international community of
@@ -771,10 +771,10 @@ const AdvancedPlacementExam2025 = () => {
                 flame. Register, train and team up with LITWITS for World Scholar's Cup.
               </p>
 
-              <h2 className="text-2xl font-bold mb-4 text-gray-900">FAQs</h2>
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">FAQs</h2>
               <ul className="list-disc list-inside mb-6 pl-5">
                 <li className="mb-3">
-                  <strong className="text-gray-900">
+                  <strong className="text-gray-900 ">
                     Who can participate in the World Scholar's Cup 2025?
                   </strong>{" "}
                   School Students aged 8 to 18 from any educational background
@@ -783,7 +783,7 @@ const AdvancedPlacementExam2025 = () => {
                   to collaborate.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">
+                  <strong className="text-gray-900 ">
                     What are the different rounds in the World Scholar's Cup
                     2025?
                   </strong>{" "}
@@ -793,7 +793,7 @@ const AdvancedPlacementExam2025 = () => {
                   Global stages, where they face off against other nations.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">
+                  <strong className="text-gray-900 ">
                     How much does World Scholar's Cup 2025 registration cost?
                   </strong>{" "}
                   The World Scholar's Cup 2025 registration price varies
@@ -801,7 +801,7 @@ const AdvancedPlacementExam2025 = () => {
                   each participant is between $50 and $500.
                 </li>
                 <li className="mb-3">
-                  <strong className="text-gray-900">
+                  <strong className="text-gray-900 ">
                     How can I prepare for the World Scholar's Cup 2025?
                   </strong>{" "}
                   You may sign up with LITWITS to prepare for the World

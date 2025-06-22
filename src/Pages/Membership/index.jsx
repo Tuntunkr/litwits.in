@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Rozarpayment from "../../Rozarpayment";
 import { Helmet } from "react-helmet-async";
 import CourseCurriculum from "./CourseCurriculum";
+import  Contact from "../../sections/Contact"
 
 const index = () => {
   return (
@@ -179,247 +180,277 @@ const index = () => {
         </script>
       </Helmet>
       <section className="p-4">
-        <div>
-          <h1 className="text-3xl font-nato pt-6 font-bold text-center mb-8">
-            {" "}
-            GROUP SESSIONS
-          </h1>
+  <div>
+    <h1 className="text-3xl font-nato pt-6 font-bold text-center mb-8">GROUP SESSIONS</h1>
+    <hr className="mt-4 mb-4" />
+    <p className="text-lg md:text-xl mb-8 text-center text-gray-800">
+      Duration of each group session will be 90 minutes
+    </p>
+  </div>
+  
+  {/* Group Sessions Table with Discount Badges */}
+  <div className="flex items-center justify-center px-4 py-8 from-gray-50 to-gray-200 text-center">
+    <table className="w-full max-w-4xl">
+      <thead>
+        <tr className="bg-gradient-to-r from-gray-900 to-gray-800">
+          <th className="text-white p-4 text-left">SESSIONS</th>
+          <th className="text-white p-4">VALIDITY</th>
+          <th className="text-white p-4">TOTAL FEE IN INR</th>
+          <th className="text-white p-4">BUY</th>
+        </tr>
+      </thead>
+      <tbody>
+        {[
+          { sessions: "10", validity: "2.5 Months", price: 12000, originalPrice: 17143, discount: true },
+          { sessions: "20", validity: "4 Months", price: 20060, originalPrice: 28657, discount: true },
+          { sessions: "30", validity: "6 Months", price: 26550, originalPrice: 37929, discount: true },
+          { sessions: "Unlimited", validity: "12 Months", price: 94400, originalPrice: 134857, discount: true },
+        ].map((item, index) => (
+          <tr key={index} className="border-b border-gray-200 hover:bg-gray-50">
+            <td className="p-4 font-medium">{item.sessions}</td>
+            <td className="p-4">{item.validity}</td>
+            <td className="p-4 relative">
+              {item.discount && (
+                <>
+                  <span className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-red-600 to-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                    30% OFF
+                  </span>
+                  <div className="flex flex-col items-center">
+                    <span className="text-gray-400 line-through text-sm">₹{item.originalPrice.toLocaleString()}</span>
+                    <span className="text-gray-900 font-bold">₹{item.price.toLocaleString()}</span>
+                  </div>
+                </>
+              )}
+            </td>
+            <td className="p-4">
+              <Rozarpayment
+                inrAmount={item.price}
+                className="choose-plan bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white px-4 py-2 rounded-md transition"
+              />
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
 
-          <hr className="mt-4 mb-4" />
-          {/* Subheading */}
-          <p className="text-lg md:text-xl mb-8 text-center text-gray-800">
-            Duration of each group session will be 90 minutes
-          </p>
+  <CourseCurriculum />
+  
+  <div className="px-4 py-4">
+    {/* Section Title */}
+    <h1 className="text-3xl font-bold font-nato text-gray-700 text-center mb-2">
+      INDIVIDUAL SESSIONS
+    </h1>
+    <hr className="mb-10 border-gray-600 w-24 mx-auto" />
+
+    {/* Individual Sessions Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {[
+        {
+          title: "TED-ED Training",
+          price: 17700,
+          originalPrice: 25286,
+          sessions: "5 Sessions",
+          features: [
+            "Understanding the Fundamentals",
+            "Crafting the Narrative",
+            "Delivery and Manner in Presentations",
+            "Identifying the Problem",
+            "Developing Critical Thinking and Planning",
+            "Recognition Through 'TED-Ed Student Talk Program'",
+          ],
+          discount: true,
+        },
+        {
+          title: "MUN Guidance Package",
+          price: 17700,
+          originalPrice: 25286,
+          sessions: "5 Sessions",
+          features: [
+            "Research Material",
+            "Position Paper",
+            "GSL Speech",
+            "Moderated Caucus",
+            "Draft Resolution",
+            "Press Release / Working Paper",
+          ],
+          discount: true,
+        },
+        {
+          title: "Research Paper Guidance",
+          price: 17700,
+          originalPrice: 25286,
+          sessions: "5 Sessions",
+          features: [
+            "Introduction to Research",
+            "How to form a thesis",
+            "Scientific Method",
+            "Conducting an Experiment",
+            "Drawing Conclusions",
+            "Case Studies, Citations, Formatting Papers",
+          ],
+          discount: true,
+        },
+        {
+          title: "College Counseling",
+          price: 0,
+          sessions: "Full Guidance",
+          features: [
+            "Customized Roadmap",
+            "Essay Brainstorming & Development",
+            "Candidacy Positioning",
+            "University Selection & Application",
+            "Extracurricular Development",
+            "Interview Mentoring & LORs",
+          ],
+          discount: false,
+        },
+      ].map((plan, index) => (
+        <div
+          key={index}
+          className="flex flex-col justify-between min-h-[400px] bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg p-6 shadow-lg relative overflow-hidden"
+        >
+          {plan.discount && (
+            <>
+              <div className="absolute top-0 right-0 bg-gradient-to-r from-red-600 to-red-500 text-white text-xs font-bold px-6 py-1 transform rotate-45 translate-x-8 -translate-y-1 z-10">
+                30% OFF
+              </div>
+              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-r from-red-600 to-red-500 opacity-20 transform rotate-45 translate-x-4 -translate-y-4"></div>
+            </>
+          )}
+          
+          <div>
+            <h3 className="text-xl font-semibold mb-2 uppercase">{plan.title}</h3>
+            <div className="mb-4">
+              {plan.price > 0 ? (
+                <>
+                  {plan.discount && (
+                    <span className="text-gray-300 line-through text-sm mr-2">₹{plan.originalPrice.toLocaleString()}</span>
+                  )}
+                  <span className="text-white font-bold text-lg">₹{plan.price.toLocaleString()}</span>
+                </>
+              ) : (
+                <span className="text-white font-bold text-lg">Custom Package</span>
+              )}
+            </div>
+            <p className="mb-4 font-medium">{plan.sessions}</p>
+            <ul className="space-y-2 text-sm">
+              {plan.features.map((feature, i) => (
+                <li key={i} className="flex items-start text-white font-normal text-base">
+                  <span className="w-3 h-3 bg-red-500 rounded-full mr-3 mt-1 flex-shrink-0"></span>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="mt-6">
+            {plan.price > 0 ? (
+              <Rozarpayment
+                inrAmount={plan.price}
+                className="w-full choose-plan bg-gradient-to-r from-gray-800 to-gray-700 hover:from-gray-700 hover:to-gray-600 transition text-white py-2 rounded-md text-center font-semibold"
+              />
+            ) : (
+              <button className="w-full choose-plan bg-gradient-to-r from-gray-800 to-gray-700 hover:from-gray-700 hover:to-gray-600 transition text-white py-2 rounded-md text-center font-semibold">
+                Book a Consultation
+              </button>
+            )}
+          </div>
         </div>
-        <div className="flex items-center justify-center px-4 py-8 from-gray-50 to-gray-200 text-center">
-          <table>
-            <thead>
-              <tr>
-                <th className="text-white">SESSIONS</th>
-                <th className="text-white">VALIDITY</th>
-                <th className="text-white">TOTAL FEE IN INR</th>
-                <th className="text-white">BUY</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>10</td>
-                <td>2.5 Months</td>
-                <td>₹12,000</td>
-                <td>
-                  <Rozarpayment
-                    inrAmount={12000}
-                    className="choose-plan mt-4"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>20</td>
-                <td>4 Months</td>
-                <td>₹20,060</td>
-                <td>
-                  <Rozarpayment
-                    inrAmount={20060}
-                    className="choose-plan mt-4"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>30</td>
-                <td>6 Months</td>
-                <td>₹26,550</td>
-                <td>
-                  <Rozarpayment inrAmount={26550} />
-                </td>
-              </tr>
+      ))}
+    </div>
 
-              <tr>
-                <td>Unlimited</td>
-                <td>12 Months</td>
-                <td>₹94,400</td>
-                <td>
-                  <Rozarpayment
-                    inrAmount={94400}
-                    className="choose-plan mt-4"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <CourseCurriculum />
-        <div className="px-4 py-4">
-  {/* Section Title */}
-  <h1 className="text-3xl font-bold font-nato text-gray-700 text-center mb-2">
-    INDIVIDUAL SESSIONS
-  </h1>
-  <hr className="mb-10 border-gray-600 w-24 mx-auto" />
+    {/* Spacer */}
+    <div className="my-20" />
 
-  {/* Individual Sessions Grid */}
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-    {[
-      {
-        title: "TED-ED Training",
-        price: 17700,
-        sessions: "5 Sessions",
-        features: [
-          "Understanding the Fundamentals",
-          "Crafting the Narrative",
-          "Delivery and Manner in Presentations",
-          "Identifying the Problem",
-          "Developing Critical Thinking and Planning",
-          "Recognition Through ‘TED-Ed Student Talk Program’",
-        ],
-      },
-      {
-        title: "MUN Guidance Package",
-        price: 17700,
-        sessions: "5 Sessions",
-        features: [
-          "Research Material",
-          "Position Paper",
-          "GSL Speech",
-          "Moderated Caucus",
-          "Draft Resolution",
-          "Press Release / Working Paper",
-        ],
-      },
-      {
-        title: "Research Paper Guidance",
-        price: 17700,
-        sessions: "5 Sessions",
-        features: [
-          "Introduction to Research",
-          "How to form a thesis",
-          "Scientific Method",
-          "Conducting an Experiment",
-          "Drawing Conclusions",
-          "Case Studies, Citations, Formatting Papers",
-        ],
-      },
-      {
-        title: "College Counseling",
-        price: 0,
-        sessions: "Full Guidance",
-        features: [
-          "Customized Roadmap",
-          "Essay Brainstorming & Development",
-          "Candidacy Positioning",
-          "University Selection & Application",
-          "Extracurricular Development",
-          "Interview Mentoring & LORs",
-        ],
-      },
-    ].map((plan, index) => (
-      <div
-        key={index}
-        className="flex flex-col justify-between min-h-[400px] bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg p-6 shadow-lg"
-      >
-        <div>
-          <h3 className="text-xl font-semibold mb-2 uppercase">{plan.title}</h3>
-          <p className="text-lg font-bold mb-1">
-            {plan.price > 0 ? `₹${plan.price}` : "Custom Package"}
-          </p>
-          <p className="mb-4 font-medium">{plan.sessions}</p>
-          <ul className="space-y-2 text-sm">
-  {plan.features.map((feature, i) => (
-    <li key={i} className="flex items-start text-white font-normal text-base">
-      <span className="w-3 h-3 bg-red-500 rounded-full mr-3 mt-1 flex-shrink-0"></span>
-      <span>{feature}</span>
-    </li>
-  ))}
-</ul>
+    {/* Academic Sessions */}
+    <h1 className="text-3xl font-bold font-nato text-gray-700 text-center">
+      ACADEMIC SESSIONS
+    </h1>
+    <hr className="mt-4 mb-10 border-gray-600 w-24 mx-auto" />
 
-        </div>
-        <div className="mt-6">
-          {plan.price > 0 ? (
-            <Rozarpayment
-              inrAmount={plan.price}
-              className="w-full choose-plan transition text-white py-2 rounded-md text-center font-semibold"
-            />
-          ) : (
-            <button className="w-full choose-plan transition text-white py-2 rounded-md text-center font-semibold">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "AP EXAM PREPARATION",
+          price: 35400,
+          originalPrice: 50571,
+          sessions: "30 Sessions",
+          features: [
+            "Subject-Specific Strategies",
+            "Advanced Exam Techniques",
+            "Practice & Test Simulation",
+            "Mastering Multiple-Choice Strategies",
+            "Essay Writing Guidance : DBQs and FRQs",
+            "Regular Feedback & Progress Tracking",
+          ],
+          discount: true,
+        },
+        {
+          title: "SAT PREP SESSION",
+          price: 47200,
+          originalPrice: 67429,
+          sessions: "40 Sessions",
+          features: [
+            "In-depth review of Math, Reading, and Writing sections.",
+            "Timed practice tests with targeted drills.",
+            "Expert guidance on Evidence-Based Reading and Essay Writing.",
+            "Personalized feedback and progress tracking.",
+          ],
+          discount: true,
+        },
+        {
+          title: "ACT PREP SESSION",
+          price: 35400,
+          originalPrice: 50571,
+          sessions: "30 Sessions",
+          features: [
+            "Initial assessment to identify strengths and improvement areas.",
+            "Conceptual clarity with a foundational approach.",
+            "Comprehensive review of Math, English, Reading, Science, and Writing.",
+            "Test strategies, time management, and shortcuts for efficiency.",
+          ],
+          discount: true,
+        },
+      ].map((plan, index) => (
+        <div
+          key={index}
+          className="flex flex-col justify-between min-h-[400px] bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg p-6 shadow-lg relative overflow-hidden"
+        >
+          {plan.discount && (
+            <>
+              <div className="absolute top-0 right-0 bg-gradient-to-r from-red-600 to-red-500 text-white text-xs font-bold px-6 py-1 transform rotate-45 translate-x-8 -translate-y-1 z-10">
+                30% OFF
+              </div>
+              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-r from-red-600 to-red-500 opacity-20 transform rotate-45 translate-x-4 -translate-y-4"></div>
+            </>
+          )}
+          
+          <div>
+            <h3 className="text-xl font-semibold mb-2 uppercase">{plan.title}</h3>
+            <div className="mb-4">
+              <span className="text-gray-300 line-through text-sm mr-2">₹{plan.originalPrice.toLocaleString()}</span>
+              <span className="text-white font-bold text-lg">₹{plan.price.toLocaleString()}</span>
+            </div>
+            <p className="mb-4 font-medium">{plan.sessions}</p>
+            <ul className="space-y-2 text-sm">
+              {plan.features.map((feature, i) => (
+                <li key={i} className="flex items-start text-white font-normal text-base">
+                  <span className="w-3 h-3 bg-red-500 rounded-full mr-3 mt-1 flex-shrink-0"></span>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <Link to={"/contact-us"}>
+            <button className="mt-6 w-full choose-plan bg-gradient-to-r from-gray-800 to-gray-700 hover:from-gray-700 hover:to-gray-600 transition text-white py-2 rounded-md text-center font-semibold">
               Book a Consultation
             </button>
-          )}
+          </Link>
         </div>
-      </div>
-    ))}
+      ))}
+    </div>
   </div>
-
-  {/* Spacer */}
-  <div className="my-20" />
-
-  {/* Academic Sessions */}
-  <h1 className="text-3xl font-bold font-nato text-gray-700 text-center">
-    ACADEMIC SESSIONS
-  </h1>
-  <hr className="mt-4 mb-10 border-gray-600 w-24 mx-auto" />
-
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    {[
-      {
-        title: "AP EXAM PREPARATION",
-        sessions: "30 Sessions",
-        features: [
-          "Subject-Specific Strategies",
-          "Advanced Exam Techniques",
-          "Practice & Test Simulation",
-          "Mastering Multiple-Choice Strategies",
-          "Essay Writing Guidance : DBQs and FRQs",
-          "Regular Feedback & Progress Tracking",
-        ],
-      },
-      {
-        title: "SAT PREP SESSION",
-        sessions: "40 Sessions",
-        features: [
-          "In-depth review of Math, Reading, and Writing sections.",
-          "Timed practice tests with targeted drills.",
-          "Expert guidance on Evidence-Based Reading and Essay Writing.",
-          "Personalized feedback and progress tracking.",
-        ],
-      },
-      {
-        title: "ACT PREP SESSION",
-        sessions: "30 Sessions",
-        features: [
-          "Initial assessment to identify strengths and improvement areas.",
-          "Conceptual clarity with a foundational approach.",
-          "Comprehensive review of Math, English, Reading, Science, and Writing.",
-          "Test strategies, time management, and shortcuts for efficiency.",
-        ],
-      },
-    ].map((plan, index) => (
-      <div
-        key={index}
-        className="flex flex-col justify-between min-h-[400px] bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg p-6 shadow-lg"
-      >
-        <div>
-          <h3 className="text-xl font-semibold mb-2 uppercase">{plan.title}</h3>
-          <p className="mb-4 font-medium">{plan.sessions}</p>
-          <ul className="space-y-2 text-sm">
-  {plan.features.map((feature, i) => (
-    <li key={i} className="flex items-start text-white font-normal text-base">
-      <span className="w-3 h-3 bg-red-500 rounded-full mr-3 mt-1 flex-shrink-0"></span>
-      <span>{feature}</span>
-    </li>
-  ))}
-</ul>
-
-        </div>
-        <Link to={"/contact-us"}>
-          <button className="mt-6 w-full choose-plan transition text-white py-2 rounded-md text-center font-semibold">
-            Book a Consultation
-          </button>
-        </Link>
-      </div>
-    ))}
-  </div>
-</div>
-
-
-      </section>
+</section>
       {/* FAQ Section */}
       <section id="faq" className="container mx-auto px-8 bg-gray-50">
         <div className="container mx-auto ">
@@ -490,6 +521,10 @@ const index = () => {
             </Accordion.Item>
           </Accordion>
         </div>
+      </section>
+
+      <section>
+        <Contact />
       </section>
     </>
   );

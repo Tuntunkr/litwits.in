@@ -18,6 +18,7 @@ import "./Collage.css";
 import AutoSliderSection from "./AutoSliderSection";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import  Contact from "../../sections/Contact"
 
 const CollegeCounseling = () => {
   const cards = [
@@ -785,6 +786,9 @@ const CollegeCounseling = () => {
             </div>
           </div>
         </section>
+      </section>
+      <section>
+        <Contact />
       </section>
     </>
   );

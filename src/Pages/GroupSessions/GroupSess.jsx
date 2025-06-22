@@ -9,7 +9,9 @@ import competition from "/assets/ivy-league-prep.avif";
 import financial from "/assets/financial-literacy-session.avif";
 import Writing from "/assets/academic-writing-session.avif";
 import { Link } from "react-router-dom";
+import  Contact from "../../sections/Contact"
 import { Helmet } from "react-helmet-async";
+
 const GroupSess = () => {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -1303,6 +1305,9 @@ const GroupSess = () => {
             </Accordion>
           </div>
         </section>
+      </section>
+      <section>
+        <Contact />
       </section>
     </>
   );

@@ -3,6 +3,7 @@ import Satimg from "/Satimage.jpeg";
 import Satimg1 from "/Satimage2.jpeg";
 import Satimg2 from "/Satimage1.jpeg";
 import { Helmet } from "react-helmet-async";
+import  Contact from "../../sections/Contact"
 
 const SATPreparation2025 = () => {
   return (
@@ -124,7 +125,7 @@ const SATPreparation2025 = () => {
               abroad.
             </p>
 
-            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900">
               Understanding the SAT
             </h2>
             <p>
@@ -156,7 +157,7 @@ const SATPreparation2025 = () => {
               preparation 2025 a success.
             </p>
 
-            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900">
               When to Start Preparing?
             </h2>
             <div className="flex justify-center items-center mb-12">
@@ -202,7 +203,7 @@ const SATPreparation2025 = () => {
               lead to success in the SAT preparation 2025!
             </p>
 
-            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900">
               Why Choose LITWITS for SAT Preparation?
             </h2>
             <p>
@@ -221,7 +222,7 @@ const SATPreparation2025 = () => {
               professional tutoring for reaching their test score goals.
             </p>
 
-            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900">
               Time Management and Study Plan
             </h2>
             <p>
@@ -231,7 +232,7 @@ const SATPreparation2025 = () => {
               focus on weak areas are the foundations for success.
             </p>
 
-            <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+            <h3 className="text-xl font-bold mb-3 text-gray-900">
               Creating a Personalized Study Schedule
             </h3>
             <p>
@@ -250,20 +251,20 @@ const SATPreparation2025 = () => {
             </p>
             <ul className="list-disc list-inside mb-6 pl-5">
               <li className="mb-3">
-                <strong className="text-gray-900">Concept Review (40%):</strong>{" "}
+                <strong className="text-gray-900 ">Concept Review (40%):</strong>{" "}
                 Strengthen fundamental Math, Reading, and Writing skills.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Practice Tests (30%):</strong>{" "}
+                <strong className="text-gray-900 ">Practice Tests (30%):</strong>{" "}
                 Online time-limited SAT preparation should be taken to enhance
                 both speed and precision.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Error Analysis (20%):</strong>{" "}
+                <strong className="text-gray-900 ">Error Analysis (20%):</strong>{" "}
                 Review mistakes and focus importantly on the weaker areas.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">
+                <strong className="text-gray-900 ">
                   Strategy Refinement (10%):
                 </strong>{" "}
                 Develop test-taking strategies that focus on time management
@@ -271,7 +272,7 @@ const SATPreparation2025 = () => {
               </li>
             </ul>
 
-            <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+            <h3 className="text-xl font-bold mb-3 text-gray-900">
               Staying Consistent and Avoiding Burnout
             </h3>
             <div className="flex justify-center items-center mb-12">
@@ -295,7 +296,7 @@ const SATPreparation2025 = () => {
               university.
             </p>
 
-            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900">
               Test Day Tips
             </h2>
             <p>
@@ -303,7 +304,7 @@ const SATPreparation2025 = () => {
               on the test day. So, it is important to be well-prepared.
             </p>
 
-            <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+            <h3 className="text-xl font-bold mb-3 text-gray-900">
               What to Expect on Test Day?
             </h3>
             <p>
@@ -314,7 +315,7 @@ const SATPreparation2025 = () => {
               breaks strategically to keep you alert.
             </p>
 
-            <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+            <h3 className="text-xl font-bold mb-3 text-gray-900">
               Steps for a Stress-Free Test
             </h3>
             <p>
@@ -322,27 +323,27 @@ const SATPreparation2025 = () => {
               2025 are:
             </p>
             <ul className="list-disc list-inside mb-6 pl-5">
-              <li className="mb-3">
-                <strong className="text-gray-900">Relaxed and Focused:</strong>{" "}
+              <li className="mt-2">
+                <strong className="text-gray-900 ">Relaxed and Focused:</strong>{" "}
                 Take some deep breaths before the exam starts and pace yourself,
                 do not try to rush through the questions.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">
+                <strong className="text-gray-900 ">
                   Manage Your Time Wisely:
                 </strong>{" "}
                 Do not spend a lot of time on one question; flag difficult ones
                 and come back to them.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">
+                <strong className="text-gray-900 ">
                   Use the Process of Elimination:
                 </strong>{" "}
                 If you are not sure, eliminate incorrect answers first to
                 increase your chances.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Reread Your Answers:</strong>{" "}
+                <strong className="text-gray-900 ">Reread Your Answers:</strong>{" "}
                 If you have time after you are done with the exam, review back
                 to correct the errors.
               </li>
@@ -354,7 +355,7 @@ const SATPreparation2025 = () => {
               day!
             </p>
 
-            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900">
               Conclusion
             </h2>
             <p>
@@ -371,6 +372,9 @@ const SATPreparation2025 = () => {
           </article>
         </div>
       </main>
+      <section>
+        <Contact />
+      </section>
     </>
   );
 };

@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import blogimage2 from "/blogimage2.jpeg";
 import blogimage1 from "/blogimage1.jpg";
 import blogimage from "/blogimage.webp";
+import  Contact from "../../sections/Contact"
 
 const LearnAllAboutDifferentTypesOfDebate = () => {
   return (
@@ -30,10 +31,10 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
           <article className="mx-auto w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             <header className="mb-8">
-              <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+              <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl ">
                 Learn All About Different Types of Debate
               </h1>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
+              <p className="text-lg text-gray-600 ">
                 Master the art of structured argumentation and become a more
                 persuasive communicator
               </p>
@@ -49,7 +50,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
             <section className="mb-12">
               <p className="mb-4">
                 Have you ever watched a passionate exchange of thoughts and
-                ideas, and wondered, “I want to do that!”? Debating is not
+                ideas, and wondered, "I want to do that!"? Debating is not
                 merely a formal argument. It is a mental sport that trains your
                 critical thinking, communication, and persuasion skills.
                 Debating teaches you to look at a problem from multiple
@@ -67,7 +68,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Understanding the Basics of Debate
               </h2>
               <p className="mb-4">
@@ -92,7 +93,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Types of Debate
               </h2>
               <div className="flex justify-center items-center mb-12">
@@ -145,8 +146,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
               </ul> */}
               {/* list */}
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">1. Public Forum Debate</h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">1. Public Forum Debate</h6>
+                <p className="mt-2 mb-4 ">
                   Public Forum is a very popular team format for discussion of
                   current affairs and real-world matters. Two teams (usually two
                   students each) argue over a resolution, making it the most
@@ -159,8 +160,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">2. Asian and American Parliamentary Debate</h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">2. Asian and American Parliamentary Debate</h6>
+                <p className="mt-2 mb-4 ">
                   The Asian format has three speakers to a team, but the
                   American typically contains only two. Debaters respond to
                   issues on the spot, honing their creativity and improvisation.
@@ -171,8 +172,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">3. British Parliamentary Debate</h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">3. British Parliamentary Debate</h6>
+                <p className="mt-2 mb-4 ">
                   In a single round of British Parliamentary Debate, there are
                   four teams. Two on the proposition and two on the opposition.
                   In this format, every pair belongs to a team and competes
@@ -185,8 +186,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">4. World Schools Debate Format</h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">4. World Schools Debate Format</h6>
+                <p className="mt-2 mb-4 ">
                   In World Schools Debate, you need to combine prepared and
                   impromptu speeches, making it a hybrid model particularly
                   suitable for International competitions. They are from
@@ -200,8 +201,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">5. Policy Debate</h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">5. Policy Debate</h6>
+                <p className="mt-2 mb-4 ">
                   Policy Debate consists of two-person teams debating for or
                   against a particular policy solution. It is extremely
                   research-oriented, with an emphasis on evidence,
@@ -224,8 +225,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">6. Lincoln Douglas Debate</h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">6. Lincoln Douglas Debate</h6>
+                <p className="mt-2 mb-4 ">
                   This individual debate style focuses on moral, ethical, and
                   philosophical issues. Lincoln Douglas Debate demands a sound
                   value-based argument and good rebuttal techniques. If you like
@@ -238,8 +239,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">7. Debate Congress</h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">7. Debate Congress</h6>
+                <p className="mt-2 mb-4 ">
                   Also known as Student Congress, this version mimics
                   legislative sessions. Student participants bring up bills and
                   resolutions, debate them in a formal environment, and vote on
@@ -252,8 +253,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">8. Extempore Debates </h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">8. Extempore Debates </h6>
+                <p className="mt-2 mb-4 ">
                   Extempore debates challenge your thinking and speaking skills
                   on the spot. You are assigned a topic mere minutes before you
                   present a speech. This style of debating builds up
@@ -265,8 +266,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">9. Declamation</h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">9. Declamation</h6>
+                <p className="mt-2 mb-4 ">
                   Declamation involves presenting a well-known speech in your
                   own voice and style. Although not an argumentative format, it
                   is usually employed to develop speaking ability within debate
@@ -285,8 +286,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">10. Model United Nations (MUN) </h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">10. Model United Nations (MUN) </h6>
+                <p className="mt-2 mb-4 ">
                   MUN is an imitation of United Nations meetings in which
                   members act as nations, debate international issues, and
                   resolve to pass resolutions. Although not confrontational like
@@ -299,8 +300,8 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
                 </p>
               </div>
               <div>
-                <h6 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">11. Impromptu </h6>
-                <p className="mt-2 mb-4">
+                <h6 className="text-2xl font-bold mb-4 text-gray-900 ">11. Impromptu </h6>
+                <p className="mt-2 mb-4 ">
                   Impromptu debating allows you to speak with minimal
                   preparation, often on lighthearted or abstract subjects. You
                   need to have the capacity to think quickly and confidently,
@@ -314,7 +315,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Important Skills for Debating
               </h2>
               <div className="flex justify-center items-center mb-12">
@@ -349,7 +350,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
               </section>
 
               {/* Benefits of Debating */}
-              <h5 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h5 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Benefits of Debating
               </h5>
 
@@ -376,7 +377,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
 
               {/*How to Improve Debating Skills?
                */}
-              <h5 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h5 className="text-2xl font-bold mb-4 text-gray-900 ">
                 How to Improve Debating Skills?
               </h5>
 
@@ -409,7 +410,7 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
               </section>
 
               {/*Conclusion */}
-              <h5 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h5 className="text-2xl font-bold mb-4 text-gray-900 ">
                 Conclusion
               </h5>
 
@@ -427,6 +428,9 @@ const LearnAllAboutDifferentTypesOfDebate = () => {
           </article>
         </div>
       </main>
+      <section>
+        <Contact />
+      </section>
     </>
   );
 };

@@ -3,6 +3,7 @@ import world from "/World.jpeg";
 import wsc2 from "/wsc2.avif";
 import wscblog from "/wscblog.jpg";
 import { Helmet } from "react-helmet-async";
+import  Contact from "../../sections/Contact"
 
 const IntroductionToTheWorldScholarsCup2025Tournament = () => {
   return (
@@ -112,7 +113,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
             </p>
             <p>
             Every year, students from all over the world gather for something
-              that’s more than just a competition. They partake in the World
+              that's more than just a competition. They partake in the World
               Scholar's Cup not just to compete but also to learn, to share
               ideas, and to create friendships that will last a lifetime. It is
               an opportunity to look at things differently and face difficult
@@ -126,11 +127,11 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               and much more.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
               What is the World Scholar's Cup?
             </h2>
             <p>
-              The World Scholar’s Cup is an international academic competition
+              The World Scholar's Cup is an international academic competition
               that inspires school students from ages of 8 to 18 toward a
               passion for learning and collaboration. Established in 2007,
               currently in more than 60 nations, it invites thousands of
@@ -140,8 +141,8 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               yield a wholesome educational experience.
             </p>
             <p>
-              The competition hosts four major events: Team Debate, Scholar’s
-              Bowl, Collaborative Writing, and Scholar’s Challenge, wherein
+              The competition hosts four major events: Team Debate, Scholar's
+              Bowl, Collaborative Writing, and Scholar's Challenge, wherein
               scholars are judged on reasoning, problem-solving, and critical
               thinking skills, compelling them to delve into different topics in
               a fun yet competitive setup.
@@ -155,8 +156,8 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
             </p>
             <br/>
 
-            <h2 className="text-2xl mt2 font-bold mb-4 text-gray-900 dark:text-white">
-              The World Scholar’s Cup Advantage
+            <h2 className="text-2xl mt2 font-bold mb-4 text-gray-900 ">
+              The World Scholar's Cup Advantage
             </h2>
             <p>
               Participating in the World Scholar's Cup is not merely an academic
@@ -167,30 +168,30 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               chore and more of an adventure. Other advantages consist of:
             </p>
             <ul className="list-disc list-inside mb-6 pl-5">
-              <li className="mb-3">
-                <strong className="text-gray-900">Global Networking:</strong> By
+              <li className="mb-3 mt-2">
+                <strong className="text-gray-900 ">Global Networking:</strong> By
                 interacting with people all around the world, participants
                 promote understanding between cultures.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Skill Development:</strong>{" "}
+                <strong className="text-gray-900 ">Skill Development:</strong>{" "}
                 Skills such as critical thinking, public speaking, writing, and
                 teamwork skills are developed in the competition, which is
                 essential for future academic and professional endeavors.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Confidence Building:</strong>{" "}
+                <strong className="text-gray-900 ">Confidence Building:</strong>{" "}
                 Conquering diverse challenges builds self-confidence and
                 adaptability.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Memorable Moments:</strong>{" "}
+                <strong className="text-gray-900 ">Memorable Moments:</strong>{" "}
                 From engaging in impassioned debate on challenging topics to
                 participating in talent shows, the World Scholar's Cup provides
                 memorable & enriching moments.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Road to Yale:</strong> In the
+                <strong className="text-gray-900 ">Road to Yale:</strong> In the
                 invitation-only Tournament of Champions at Yale University, the
                 top performers in world rounds are invited, laying the road to
                 prestigious academic institutions.
@@ -199,12 +200,12 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
             <p>
               Participating in the World Scholar's Cup enhances academic
               curiosity and encourages scholars to explore topics beyond
-              traditional curriculums. It’s an excellent way to develop a love
+              traditional curriculums. It's an excellent way to develop a love
               for learning in a fun and dynamic environment.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-              World Scholar’s Cup 2025 Registration
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
+              World Scholar's Cup 2025 Registration
             </h2>
             {/* second image here  */}
             <div className="flex justify-center items-center mb-12">
@@ -224,7 +225,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
             <br/>
             <ul className="list-disc list-inside mb-6 pl-5">
               <li className="mb-3">
-                <strong className="text-gray-900">Schedule:</strong> The
+                <strong className="text-gray-900 ">Schedule:</strong> The
                 Regional rounds in the World Scholar's Cup 2025 Schedule are
                 arranged all throughout the year in different venues. The
                 Regional rounds and Global rounds are held at Lusaka, Bangkok,
@@ -236,16 +237,16 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
                 Champions in November.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">
+                <strong className="text-gray-900 ">
                   Registration Procedure:
                 </strong>{" "}
                 Registration can be done via the official World Scholar's Cup
                 website. As the seats get occupied fast, early registration is
                 recommended. At LITWITS, we register, train, and team up
-                students for World Scholar’s Cup.
+                students for World Scholar's Cup.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Pricing:</strong> The World
+                <strong className="text-gray-900 ">Pricing:</strong> The World
                 Scholar's Cup 2025 price differs by place and round. Particular
                 prices are given on the registration portal.
               </li>
@@ -256,8 +257,8 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               discounted rates.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-              World Scholar’s Cup Eligibility Criteria
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
+              World Scholar's Cup Eligibility Criteria
             </h2>
             <p>
               The World Scholar's Cup welcomes students from different
@@ -273,15 +274,15 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
             </p>
             <ul className="list-disc list-inside mb-6 pl-5">
               <li className="mb-3">
-                <strong className="text-gray-900">Junior Division:</strong>{" "}
+                <strong className="text-gray-900 ">Junior Division:</strong>{" "}
                 Students aged 11 to 14 years are included.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Senior Division:</strong> It
+                <strong className="text-gray-900 ">Senior Division:</strong> It
                 includes students aged 15 to 18 years.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Skittles Division:</strong>{" "}
+                <strong className="text-gray-900 ">Skittles Division:</strong>{" "}
                 Students aged 8 - 10 years.
               </li>
             </ul>
@@ -294,27 +295,27 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               meet the age requirements.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-              How to Join the World Scholar’s Cup?
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
+              How to Join the World Scholar's Cup?
             </h2>
             <p>It is easy to start the World Scholar's Cup journey:</p>
             <ul className="list-disc list-inside mb-6 pl-5">
               <li className="mb-3">
-                <strong className="text-gray-900">Team Formation:</strong> Build
+                <strong className="text-gray-900 ">Team Formation:</strong> Build
                 a team of three students in the same age group of the same
                 school or different schools.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Choose a Round:</strong>{" "}
+                <strong className="text-gray-900 ">Choose a Round:</strong>{" "}
                 Select a regional round that suits your location and schedule.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Register:</strong> Complete
+                <strong className="text-gray-900 ">Register:</strong> Complete
                 the World Scholar's Cup 2025 Registration on the website,
                 submitting the required information and the registration fee.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Join In:</strong> Be there for
+                <strong className="text-gray-900 ">Join In:</strong> Be there for
                 the selected round, partake in the activities, and be a part of
                 the World Scholar's Cup 2025 experience.
               </li>
@@ -325,19 +326,19 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               when they sign up with LITWITS.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-              World Scholar’s Cup Syllabus
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
+              World Scholar's Cup Syllabus
             </h2>
             <p>
-              The World Scholar’s Cup syllabus is interdisciplinary, including
+              The World Scholar's Cup syllabus is interdisciplinary, including
               various subjects in an integrated learning experience. Students
               are encouraged to explore connections between different fields,
               instead of the traditional memorization technique. Various topics
               across science, history, social studies, art, literature, and many
-              more are covered in the World Scholar’s Cup 2025.
+              more are covered in the World Scholar's Cup 2025.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
               World Scholar's Cup Subjects
             </h2>
 
@@ -355,28 +356,28 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
             </p>
             <ul className="list-disc list-inside mb-6 pl-5">
               <li className="mb-3">
-                <strong className="text-gray-900">Science & Technology:</strong>{" "}
+                <strong className="text-gray-900 ">Science & Technology:</strong>{" "}
                 Investigating scientific principles and technological
                 innovation.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">History:</strong>{" "}
+                <strong className="text-gray-900 ">History:</strong>{" "}
                 Investigating past events and their consequences.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Social Studies:</strong>{" "}
+                <strong className="text-gray-900 ">Social Studies:</strong>{" "}
                 Investigating social systems and problems.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Art & Music:</strong>{" "}
+                <strong className="text-gray-900 ">Art & Music:</strong>{" "}
                 Analyzing works of art and music.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Literature & Media:</strong>{" "}
+                <strong className="text-gray-900 ">Literature & Media:</strong>{" "}
                 Interpreting texts and media.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">Special Area:</strong> A
+                <strong className="text-gray-900 ">Special Area:</strong> A
                 specific topic based on the year's theme.
               </li>
             </ul>
@@ -388,8 +389,8 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               community.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-              World Scholar’s Cup 2025 Materials
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
+              World Scholar's Cup 2025 Materials
             </h2>
             <p>
               LITWITS provides the study guide that includes background
@@ -398,17 +399,17 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               the different events.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-              World Scholar’s Cup 2025 Theme
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
+              World Scholar's Cup 2025 Theme
             </h2>
             <p>
               For the 2025 season, the World Scholar's Cup has introduced the
-              theme "World Scholar’s Cup 2025 Theme: Reigniting the Future."
+              theme "World Scholar's Cup 2025 Theme: Reigniting the Future."
               This theme will guide the selection of topics across all subjects.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-              Kickstarter World Scholar’s Cup
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
+              Kickstarter World Scholar's Cup
             </h2>
             <p>
               Beginning your World Scholar's Cup experience is easy with the
@@ -420,7 +421,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               excellent outcomes.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
               Conclusion
             </h2>
             <p>
@@ -435,12 +436,12 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               learning, collaboration, and discovery.
             </p>
             <br/>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
               FAQs
             </h2>
             <ul className="list-disc list-inside mb-6 pl-5">
               <li className="mb-3">
-                <strong className="text-gray-900">
+                <strong className="text-gray-900 ">
                   Who can participate in the World Scholar's Cup 2025?
                 </strong>{" "}
                 School Students aged 8 to 18 from any educational background are
@@ -452,8 +453,8 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
                 8 to 10 qualify for the Skittles Division.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">
-                  What are the different rounds in the World Scholar’s Cup 2025?
+                <strong className="text-gray-900 ">
+                  What are the different rounds in the World Scholar's Cup 2025?
                 </strong>{" "}
                 There are several phases to the tournament, starting with the
                 Regional Rounds, which are held all around the world all year
@@ -463,7 +464,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
                 is hosted at Yale University in the United States.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">
+                <strong className="text-gray-900 ">
                   How much does World Scholar's Cup 2025 registration cost?
                 </strong>{" "}
                 The World Scholar's Cup 2025 registration price varies depending
@@ -473,11 +474,11 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
                 information.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">
+                <strong className="text-gray-900 ">
                   What subjects are covered in the World Scholar's Cup 2025
                   topics?
                 </strong>{" "}
-                The World Scholar’s Cup 2025 embraces an interdisciplinary
+                The World Scholar's Cup 2025 embraces an interdisciplinary
                 approach, covering a diverse range of subjects. Participants
                 will focus on Literature, Art & Music, History, Social Studies,
                 and Science & Technology. For those wishing for a more
@@ -485,24 +486,27 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
                 Special Area connected to the competition's main topic for 2025.
               </li>
               <li className="mb-3">
-                <strong className="text-gray-900">
-                  How can I prepare for the World Scholar’s Cup 2025?
+                <strong className="text-gray-900 ">
+                  How can I prepare for the World Scholar's Cup 2025?
                 </strong>{" "}
-                You may sign up with LITWITS to prepare for the World Scholar’s
+                You may sign up with LITWITS to prepare for the World Scholar's
                 Cup. LITWITS is at the forefront of preparing young scholars for
-                the World Scholar’s Cup (WSC) and consistently holding top
+                the World Scholar's Cup (WSC) and consistently holding top
                 rankings in Regional Rounds, Global Rounds, and the finale, the
                 prestigious Tournament of Champions at Yale University. Our
                 comprehensive WSC program immerses students in a dynamic and
                 intellectually enriching environment, encompassing literature,
                 science, politics, history, and the arts. Do find our membership
-                packages and for your queries regarding World Scholar’s Cup
+                packages and for your queries regarding World Scholar's Cup
                 preparation, do reach out to us.
               </li>
             </ul>
           </article>
         </div>
       </main>
+      <section>
+        <Contact />
+      </section>
     </>
   );
 };

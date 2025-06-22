@@ -10,13 +10,14 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between flex-wrap gap-8 lg:gap-20">
           {/* Left Section */}
           <div className="flex-1 mb-8 lg:mb-0">
-             <Link
-              to="/">
-
-             <span className="uppercase font-light font-noto-serif text-white" style={{ fontSize: "clamp(24px, 4vw, 36px)" }}>
-              Litwits
-            </span>
-              </Link>
+            <Link to="/">
+              <span
+                className="uppercase font-light font-noto-serif text-white"
+                style={{ fontSize: "clamp(24px, 4vw, 36px)" }}
+              >
+                Litwits
+              </span>
+            </Link>
 
             <div className="flex items-center gap-4 mt-6">
               {socialMedia.map((icon) => (
@@ -29,6 +30,18 @@ const Footer = () => {
                 </a>
               ))}
             </div>
+            {/* googel review section */}
+            {/* <div className="flex items-center gap-4 ">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/009/663/927/small/5-star-rating-review-star-transparent-free-png.png"
+                alt="Google Review"
+                width={160}
+                height={150}
+              />
+            </div> */}
+            {/* <p className="text-lg font-semibold font-palanquin text-white">
+              TrustScore 4.8 | 142 reviews
+            </p> */}
           </div>
 
           {/* Links Section */}
@@ -63,7 +76,6 @@ const Footer = () => {
             >
               Contact
             </Link>
-
           </div>
         </div>
 

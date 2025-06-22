@@ -12,6 +12,7 @@ import SATPreparation2025 from "./Pages/blog/SatBlog";
 import BlogRedirect from "./components/BlogRedirect";
 import LearnAllAboutDifferentTypesOfDebate from "./Pages/blog/LearnAllAboutDifferentTypesofDebate";
 import ExploreDifferentTypesOfWritingFormats from "./Pages/blog/ExploreDifferentTypesOfWritingFormats";
+import UltimateguidetodebateTraining from "./Pages/blog/UltimateguidetodebateTraining";
 // import TypesOfDebate from "./Pages/blog/TypesOfDebate";
 
 // Lazy Loading Pages
@@ -177,6 +178,7 @@ const App = () => {
             <Route path="/blog/sat-preparation-2025-how-to-prepare-for-sat-exam" element={<SATPreparation2025 />} />
             <Route path="/blog/learn-all-about-different-types-of-debate" element={<LearnAllAboutDifferentTypesOfDebate />} />
             <Route path="/blog/explore-different-types-of-writing-formats" element={<ExploreDifferentTypesOfWritingFormats />} />
+            <Route path="/blog/ultimate-guide-to-debate-training" element={<UltimateguidetodebateTraining />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

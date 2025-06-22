@@ -43,7 +43,7 @@ body button {
 
 a {
   color: inherit !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* Link {

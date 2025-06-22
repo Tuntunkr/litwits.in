@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
 import heroimage from "/assets/contact-us.avif";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -18,39 +17,39 @@ const Co = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .send(
-        "service_6i3x5r4", // EmailJS Service ID
-        "template_bqv3vza", // EmailJS Template ID
-        {
-          first_name: formData.firstName,
-          last_name: formData.lastName,
+    try {
+      const response = await fetch("https://formspree.io/f/mzzgaelv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-        },
-        "sz_GE4KVonWfG0Ovo" // Your EmailJS Public Key
-      )
-      .then(
-        () => {
-          // Show success toast
-          toast.success("Your message has been sent successfully!");
-          setFormData({
-            firstName: "",
-            lastName: "",
-            email: "",
-            phone: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.error("Failed to send email:", error);
-          toast.error("Failed to send message. Please try again.");
-        }
-      );
+        }),
+      });
+
+      if (response.ok) {
+        toast.success("Your message has been sent successfully!");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        toast.error("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast.error("Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -58,7 +57,7 @@ const Co = () => {
       className="min-h-screen flex items-center justify-center bg-cover bg-center"
       style={{
         backgroundImage: `url(${heroimage})`,
-        backgroundAttachment: "fixed", // Parallax effect
+        backgroundAttachment: "fixed",
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
@@ -71,7 +70,9 @@ const Co = () => {
           Contact Us
         </h2>
         <form className="contact space-y-6" onSubmit={handleSubmit}>
-          {/* Row with four inputs */}
+          {/* Hidden honeypot field for spam protection */}
+          <input type="text" name="_gotcha" style={{ display: "none" }} />
+
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <input
               type="text"
@@ -111,7 +112,6 @@ const Co = () => {
             />
           </div>
 
-          {/* Textarea */}
           <div>
             <textarea
               name="message"
@@ -123,7 +123,6 @@ const Co = () => {
             />
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
             className="w-full bg-red-800 text-white uppercase submit py-2 px-6 rounded-lg hover:bg-red-700 transition-all shadow-xs"
@@ -133,7 +132,6 @@ const Co = () => {
         </form>
       </div>
 
-      {/* Descriptive Content for Accessibility */}
       <p id="contact-us-description" className="sr-only">
         Reach out to LITWITS for inquiries, course details, and mentorship
         opportunities.

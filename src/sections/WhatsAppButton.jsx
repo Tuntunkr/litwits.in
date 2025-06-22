@@ -6,11 +6,11 @@ const ContactButtons = () => {
     <>
       {/* Phone Call Button (Placed on Top) */}
       <a
-  href="tel:7827098747"
-  className="fixed bottom-20 mb-2 right-5 z-[9999] w-[60px] h-[60px] rounded-full bg-[#890C25] flex items-center justify-center shadow-md animate-breathe"
->
-  <FaPhone className="text-white text-2xl rotate-90" />
-</a>
+        href="tel:7827098747"
+        className="fixed bottom-20 mb-2 right-5 z-[9999] w-[60px] h-[60px] rounded-full bg-[#890C25] flex items-center justify-center shadow-md animate-breathe"
+      >
+        <FaPhone className="text-white text-2xl rotate-90" />
+      </a>
 
       {/* WhatsApp Button (Below the Phone Button) */}
       <a
