@@ -685,13 +685,12 @@ const GroupSess = () => {
       {/* World Scholar's Cup */}
       <section id="voices" className="py-10 bg-gray-50">
         <div
-         className="relative flex items-center justify-center 
-             h-[700px] sm:h-[480px] md:h-[520px] lg:h-[600px] 
-             bg-cover bg-center"
-
+          className="relative flex items-center justify-center 
+      min-h-[700px] sm:min-h-[480px] md:min-h-[520px] lg:min-h-[600px] 
+      bg-cover bg-center"
           style={{
             backgroundImage: `url('/assets/ted-ed-student-talk-program.avif')`,
-            backgroundAttachment: "fixed", // Enables parallax effect
+            backgroundAttachment: "fixed",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -699,8 +698,9 @@ const GroupSess = () => {
           aria-label="TED-Ed Student Talks Program with expert mentorship on social issues and storytelling."
           aria-describedby="ted-ed-program-description"
         >
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
           <div className="relative text-center text-white max-w-5xl px-4 py-10 rounded-lg">
             {/* Title */}
             <h1 className="font-noto font-bold text-2xl md:text-5xl mb-3">
@@ -708,20 +708,14 @@ const GroupSess = () => {
             </h1>
 
             {/* Description Paragraphs */}
-            <p
-              className="text-left font-notosm:text-base md:text-lg leading-6 md:leading-7 text-white mb-2"
-              style={{ fontSize: "15px" }}
-            >
+            <p className="text-left font-noto text-sm  leading-6 md:leading-7 text-white mb-2">
               Shaping passion for social responsibility through a thoughtfully
               designed program, students embark on an enriching journey
               exploring diverse perspectives and refining their critical
               thinking abilities.
             </p>
 
-            <p
-              className="text-left font-noto sm:text-base md:text-lg leading-6 md:leading-7 text-white mb-4"
-              style={{ fontSize: "15px" }}
-            >
+            <p className="text-left font-noto text-sm  leading-6 md:leading-7 text-white mb-4">
               Shaping passion for social responsibility and guided by
               experienced mentors, our students embark on an enriching journey
               exploring diverse perspectives, thinking critically about issues
@@ -736,23 +730,20 @@ const GroupSess = () => {
               lasting impact on global audiences.
             </p>
 
+            {/* Buttons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
               <Link
                 to="https://wa.me/9811701747?text=Hi! I’m interested in your TED-Ed Student Talks Program. Please share details about the program and I request a free consultation."
-                className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center "
-                style={{
-                  fontFamily: "Noto Sans",
-                }}
+                className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-sm md:text-base font-medium hover:bg-red-700 transition text-center"
+                style={{ fontFamily: "Noto Sans" }}
               >
                 Free Consultation
               </Link>
 
               <Link
                 to="/membership"
-                className="bg-blue-950  text-white px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
-                style={{
-                  fontFamily: "Noto Sans",
-                }}
+                className="bg-blue-950 text-white px-6 py-3 w-full no-underline uppercase rounded-md text-sm md:text-base font-medium transition text-center"
+                style={{ fontFamily: "Noto Sans" }}
               >
                 Enroll Now
               </Link>
@@ -760,11 +751,7 @@ const GroupSess = () => {
           </div>
 
           {/* Descriptive Content for Accessibility */}
-          <p
-            id="ted-ed-program-description"
-            className="sr-only"
-            style={{ fontSize: "15px" }}
-          >
+          <p id="ted-ed-program-description" className="sr-only">
             The TED-Ed Student Talks Program empowers students to explore
             diverse perspectives, refine critical thinking skills, and transform
             ideas into powerful narratives through expert mentorship.
@@ -841,29 +828,29 @@ const GroupSess = () => {
       <section id="voices" className="py-10 bg-gray-50">
         <div
           className="relative flex items-center justify-center 
-             h-[600px] sm:h-[480px] md:h-[520px] lg:h-[500px] 
-             bg-cover bg-center"
+       min-h-[600px] sm:min-h-[480px] md:min-h-[520px] lg:min-h-[500px] 
+       bg-cover bg-center"
           style={{
             backgroundImage: `url('/assets/research-paper-guidance.avif')`,
             backgroundAttachment: "fixed",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
           role="img"
           aria-label="Research Paper Guidance for academic success and effective writing skills."
           aria-describedby="research-paper-description"
         >
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>{" "}
           {/* Dark overlay */}
-          <div className="relative text-center text-white max-w-5xl px-4">
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+          <div className="relative text-center text-white max-w-5xl px-4 py-10">
             {/* Title */}
             <h1 className="font-noto font-bold text-2xl md:text-5xl mb-3">
               RESEARCH PAPER GUIDANCE
             </h1>
 
             {/* Description */}
-            <p
-              className="text-left font-noto  md:text-lg leading-relaxed"
-              style={{ fontSize: "15px" }}
-            >
+            <p className="text-left font-noto text-sm leading-relaxed mb-2">
               Our Research Paper Writing sessions support students throughout
               the entire process— from developing engaging research questions in
               fields of their interest to identifying gaps in their chosen
@@ -872,44 +859,36 @@ const GroupSess = () => {
               styles, and ethical research practices.
             </p>
 
-            <p
-              className="text-left font-noto md:text-lg leading-relaxed mt-2"
-              style={{ fontSize: "15px" }}
-            >
+            <p className="text-left font-noto text-sm leading-relaxed">
               In an information-rich world, mastering research and effective
               presentation is crucial. Our program empowers students to produce
               high-quality papers while developing essential analytical and
               writing skills, transforming their ideas into compelling research
               works.
             </p>
+
+            {/* Buttons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
               <Link
                 to="https://wa.me/9811701747?text=Hi! I’m interested in your Research Paper Guidance Program. Please share details about the program and I request a free consultation."
-                className="bg-red-800 text-white px-6 py-3  no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center "
-                style={{
-                  fontFamily: "Noto Sans",
-                }}
+                className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-sm md:text-base font-medium hover:bg-red-700 transition text-center"
+                style={{ fontFamily: "Noto Sans" }}
               >
                 Free Consultation
               </Link>
 
               <Link
                 to="/membership"
-                className="text-white bg-blue-950 px-6 py-3 w-full  no-underline uppercase rounded-md text-base font-medium transition text-center "
-                style={{
-                  fontFamily: "Noto Sans",
-                }}
+                className="bg-blue-950 text-white px-6 py-3 w-full no-underline uppercase rounded-md text-sm md:text-base font-medium transition text-center"
+                style={{ fontFamily: "Noto Sans" }}
               >
                 Enroll Now
               </Link>
             </div>
           </div>
+
           {/* Descriptive Content for Accessibility */}
-          <p
-            id="research-paper-description"
-            className="sr-only"
-            style={{ fontSize: "15px" }}
-          >
+          <p id="research-paper-description" className="sr-only">
             Comprehensive research paper guidance from developing engaging
             questions to crafting compelling narratives, ensuring students
             produce high-quality academic work.

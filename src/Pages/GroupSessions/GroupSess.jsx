@@ -900,7 +900,7 @@ const GroupSess = () => {
         {/* World Scholar's Cup */}
         <section id="voices" className="py-10 bg-gray-50">
           <div
-            className="relative flex items-center justify-center h-[495px] bg-cover bg-center"
+            className="relative flex items-center justify-center min-h-[495px] md:h-[495px] bg-cover bg-center"
             style={{
               backgroundImage: `url(${world})`,
               backgroundSize: "cover",
@@ -915,14 +915,11 @@ const GroupSess = () => {
             {/*  Blue overlay instead of black */}
             <div className="absolute inset-0 bg-blue-950/80"></div>
 
-            <div className="relative text-left text-white max-w-5xl px-4">
+            <div className="relative text-left text-white max-w-5xl px-4 py-10">
               <h1 className="font-noto text-center font-bold text-2xl md:text-5xl mb-2">
                 WORLD SCHOLAR'S CUP
               </h1>
-              <p
-                className="font-noto  md:text-lg leading-relaxed"
-                style={{ fontSize: "15px" }}
-              >
+              <p className="font-noto text-sm  leading-relaxed">
                 LITWITS is at the forefront of World Scholar’s Cup training,
                 consistently holding top rankings in Regional Rounds, Global
                 Rounds, and the prestigious Tournament of Champions at Yale
@@ -930,10 +927,7 @@ const GroupSess = () => {
                 dynamic and intellectually enriching environment, encompassing
                 literature, science, politics, history, and the arts.
               </p>
-              <p
-                className="font-noto  md:text-lg leading-relaxed mt-1"
-                style={{ fontSize: "15px" }}
-              >
+              <p className="font-noto text-sm  leading-relaxed mt-2">
                 The journey involves preparing teams for the four events -
                 debate, collaborative writing, Scholar's Challenge and the
                 Scholar's Bowl. The rigorous approach sharpens their academic
@@ -942,10 +936,10 @@ const GroupSess = () => {
                 stage.
               </p>
 
-              <div className="gap-4 w-full max-md items-center mx-auto mt-6">
+              <div className="w-full flex justify-center mt-6">
                 <Link
                   to="https://wa.me/9811701747?text=Hi! I’m interested in the WSC Program. Please share details about the program and I request a free consultation"
-                  className="bg-red-800 text-white px-6 py-3 uppercase no-underline w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center "
+                  className="bg-red-800 text-white px-6 py-3 uppercase no-underline w-full md:w-auto rounded-md text-sm md:text-base font-medium hover:bg-red-700 transition text-center"
                   style={{
                     fontFamily: "Noto Sans",
                   }}
@@ -956,11 +950,7 @@ const GroupSess = () => {
             </div>
 
             {/* Descriptive Content for Accessibility */}
-            <p
-              id="world-scholar-cup-description"
-              className="sr-only"
-              style={{ fontSize: "15px" }}
-            >
+            <p id="world-scholar-cup-description" className="sr-only">
               Comprehensive coaching for the World Scholar's Cup, preparing
               students for debate, collaborative writing, and analytical
               challenges, fostering critical thinking and teamwork.
@@ -1433,8 +1423,8 @@ const GroupSess = () => {
           </div>
         </section>
       </section>
-           <section>
-        <Individual/>
+      <section>
+        <Individual />
       </section>
     </>
   );
