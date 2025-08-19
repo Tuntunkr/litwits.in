@@ -1,0 +1,350 @@
+body {
+    font-family: Arial, sans-serif,;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+}
+
+.table-container {
+    width: 80%;
+    margin: 50px auto;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {
+    background-color: #990000;
+    color: #fff;
+}
+
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.choose-plan {
+    background-color: #990000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choose-plan:hover {
+    background-color: #730000;
+}
+.pricing-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.pricing-container h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.pricing-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* .plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+} */
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.highlighted {
+    border: 2px solid #990000;
+}
+
+.plan h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.plan .price {
+    font-size: 1.5rem;
+    color: #990000;
+    margin: 10px 0;
+}
+
+.plan .price span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.plan .sessions {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* .plan ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #990000;
+} */
+
+.choose-plan {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    background-color: #990000;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choose-plan:hover {
+    background-color: #730000;
+}
+
+@media (max-width: 768px) {
+    .plan {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .plan {
+        width: 100%;
+    }
+}
+h2 {
+    /* text-align: center; */
+    font-size: 1.5rem;
+    color: #666;
+    margin: 20px 0;
+}
+h1 {
+    text-align: center;
+   
+}
+
+.plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Plan Styles */
+.plan {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.highlighted {
+    border: 2px solid #990000;
+}
+
+.plan h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #990000;
+}
+
+.price .icon {
+    font-size: 1.8rem;
+}
+
+.sessions {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    position: relative;
+    /* padding-left: 25px; */
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #990000;
+    font-size: 1rem;
+} */
+
+.choose-plan {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #990000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choose-plan:hover {
+    background-color: #730000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plan {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+}
+.bd{
+    border: 1px solid #ddd;
+}
+
+/* new redesign css  */
+
+/* Add to your index.css */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap'); */
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #f9fafb;
+  color: #374151;
+}
+
+.font-nato {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+/* Card Hover Effects */
+.hover-effect {
+  transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #dc2626;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b91c1c;
+  transform: translateY(-1px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .responsive-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+}
