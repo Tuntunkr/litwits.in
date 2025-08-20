@@ -11,7 +11,7 @@ const GroupSess = () => {
       <section className="container py-5">
         <div className="mb-2">
           <h2 className=" text-center fw-bold text-2xl md:text-5xl mb-2">
-            LITWITS: Shaping Global Scholars
+            WORLD SCHOLAR’S CUP TRAINING
           </h2>
           <p className="lead text-center font-bold text-sm sm:text-base leading-7 sm:leading-8">
             LITWITS is at the forefront of World Scholar’s Cup training around
@@ -58,7 +58,7 @@ const GroupSess = () => {
             At the end of January, every year, a new theme is released that
             tackles six interdisciplinary subjects - like
             <strong>
-              History, Literature, Social Studies, Art & Music, Science,
+              History, Literature, Social Studies, Art & Music, Science,.
             </strong>{" "}
             and a wildcard <strong>Special Area</strong>. It's serious fun, and
             it's seriously rewarding when done right.
@@ -74,14 +74,14 @@ const GroupSess = () => {
             What are the Events of the World Scholar’s Cup?{" "}
           </h3>
           <p className="mt-2 mb-4 text-sm sm:text-base leading-7 sm:leading-8">
-            Students from over 60 countries compete in four events:
+            Students from over 70 countries compete in four events:
           </p>
 
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
               <Accordion.Header>
                 <strong>Team Debate:- </strong>
-                <span> Speak your mind. Think on your feet.</span>
+                <span>  Speak your mind. Think on your feet.</span>
               </Accordion.Header>
               <Accordion.Body className="text-gray-900">
                 <ul className="list-disc list-inside mb-6 pl-5">
@@ -112,7 +112,6 @@ const GroupSess = () => {
               <Accordion.Header>
                 <strong>Collaborative Writing:-</strong>
                 <span>
-                  {" "}
                   Craft brilliant essays, then make them better with your team.
                 </span>
               </Accordion.Header>
@@ -132,7 +131,7 @@ const GroupSess = () => {
 
             <Accordion.Item eventKey="2">
               <Accordion.Header>
-                <strong>Scholar’s Challenge</strong>
+                <strong>Scholar’s Challenge:-</strong>
                 <span>
                   A deceptively tricky quiz where more than one answer seems to
                   be right.
@@ -162,7 +161,7 @@ const GroupSess = () => {
 
             <Accordion.Item eventKey="3">
               <Accordion.Header>
-                <strong>Scholar’s Bowl</strong>
+                <strong>Scholar’s Bowl:-</strong>
                 <span>
                   {" "}
                   A multimedia team quiz with music, memes, strategy, and speed.
@@ -233,9 +232,7 @@ const GroupSess = () => {
               resources tailored for every WSC event.
             </span>
           </p>
-          <p className="text-sm sm:text-base ">
-            You can participate as:
-          </p>
+          <p className="text-sm sm:text-base ">You can participate as:</p>
 
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3 text-gray-900 text-sm sm:text-base leading-7 sm:leading-8">
@@ -245,10 +242,9 @@ const GroupSess = () => {
             </li>
 
             <li className="mb-3 text-gray-900 text-sm sm:text-base leading-7 sm:leading-8">
-              <strong className="text-gray-900 ">
-                An independent team (LITWITS will pair you with like-minded
-                scholars to form a competitive team across all rounds)
-              </strong>{" "}
+              An <strong className="text-gray-900 "> independent team </strong>{" "}
+              (LITWITS will pair you with like-minded scholars to form a
+              competitive team across all rounds)
             </li>
           </ul>
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
@@ -293,7 +289,7 @@ const GroupSess = () => {
               <strong className="text-sm sm:text-base leading-7 sm:leading-8">
                 Form a Team: If you're an individual participant, LITWITS will
                 help you form one by connecting you with other interested
-                students.{" "}
+                students.
               </strong>
             </li>
             <li className="text-gray-900 text-sm sm:text-base leading-7 sm:leading-8">
@@ -308,7 +304,7 @@ const GroupSess = () => {
               <strong>Begin Preparation:</strong> Once registered, download the
               curriculum and begin studying the six subjects. Teams typically
               spend time preparing for debates, writing sessions, and the
-              quiz-based events. essions, and the quiz-based events.
+              quiz-based events.
             </li>
             <li className="text-gray-900 text-sm sm:text-base leading-7 sm:leading-8">
               <strong>Compete in Your Round: </strong> Attend your selected
@@ -374,57 +370,35 @@ const GroupSess = () => {
             building ideas that actually stick.
           </p>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            We take big topics and make them feel personal. Thought experiments,
-            real-world applications, open-floor debates - it’s a classroom where
-            curiosity doesn’t just survive, it thrives. Students leave sessions
-            not just more informed, but more excited to keep learning.
+            We take big topics and make them feel personal. Thought experiments, real-world applications, open-floor debates - it’s a classroom where curiosity doesn’t just survive, it thrives. Students leave sessions not just more informed, but more excited to keep learning.
+
           </p>
           <h4>
-            <strong>Here’s what you get with us:</strong>
+            <strong>A strong, smart community</strong>
           </h4>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            This isn’t a solo journey. At LITWITS, you’re surrounded by a tribe
-            of thinkers, speakers, writers, and world-class overthinkers (in the
-            best way possible). You'll meet students from across cities,
-            countries, and backgrounds, all united by a shared love for learning
-            and a genuine desire to grow.
+            This isn’t a solo journey. At LITWITS, you’re surrounded by a tribe of thinkers, speakers, writers, and world-class overthinkers (in the best way possible). You'll meet students from across cities, countries, and backgrounds, all united by a shared love for learning and a genuine desire to grow.
           </p>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            We’ve had teams that started as strangers and ended up celebrating
-            wins together at Yale. We've watched in-session debate prep turn
-            into lifelong friendships. It’s the kind of community where you’re
-            challenged to do better, and cheered on when you do.
+            We’ve had teams that started as strangers and ended up celebrating wins together at Yale. We've watched in-session debate prep turn into lifelong friendships. It’s the kind of community where you’re challenged to do better, and cheered on when you do.
           </p>
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
             Expert feedback that actually helps
           </h4>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            We don’t believe in sugarcoating or vague compliments. When we say
-            “great point,” we’ll tell you why it worked. And when something
-            needs improvement, we don’t leave you guessing; we show you exactly
-            how to strengthen it.
+            We don’t believe in sugarcoating or vague compliments. When we say “great point,” we’ll tell you why it worked. And when something needs improvement, we don’t leave you guessing; we show you exactly how to strengthen it.
           </p>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            From dissecting your arguments line by line to helping you reframe
-            an entire essay intro, our mentors provide detailed, actionable, and
-            personalized feedback that builds your skills without breaking your
-            confidence. It’s high standards with high support because that’s
-            what growth really looks like.
+            From dissecting your arguments line by line to helping you reframe an entire essay intro, our mentors provide detailed, actionable, and personalized feedback that builds your skills without breaking your confidence. It’s high standards with high support because that’s what growth really looks like.
           </p>
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
             Practice that feels purposeful
           </h4>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            We believe prep should feel less like “more work” and more like
-            “real progress.” That’s why we simulate actual WSC rounds, run team
-            quizzes, host mock debates, and assign writing prompts that make
-            your brain do somersaults in the best way possible.
+            We believe prep should feel less like “more work” and more like “real progress.” That’s why we simulate actual WSC rounds, run team quizzes, host mock debates, and assign writing prompts that make your brain do somersaults in the best way possible.
           </p>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            You’ll learn how to manage pressure, pace yourself during
-            challenges, and handle curveballs mid-debate. And every single task
-            is backed by strategy, so you know why you’re doing what you’re
-            doing.
+           You’ll learn how to manage pressure, pace yourself during challenges, and handle curveballs mid-debate. And every single task is backed by strategy, so you know why you’re doing what you’re doing.
           </p>
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
             Results without burnout
@@ -445,31 +419,20 @@ const GroupSess = () => {
             WSC Curriculum Document
           </h4>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            We don’t just tell you to “go study the syllabus.” We break it down
-            for you. Our curriculum documents are detailed, topic-wise study
-            guides packed with clear explanations, memorable examples, and
-            revision-friendly layouts. Whether you need a quick refresh before
-            Global or a deep dive into obscure concepts, this is your go-to
-            manual.
+           We don’t just tell you to “go study the syllabus.” We break it down for you. Our curriculum documents are detailed, topic-wise study guides packed with clear explanations, memorable examples, and revision-friendly layouts. Whether you need a quick refresh before Global or a deep dive into obscure concepts, this is your go-to manual.
           </p>
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
             WSC Quiz Document
           </h4>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            Topic-wise practice quizzes that mimic the Scholar’s Challenge in
-            tone and trickiness. Perfect for brushing up, revision, and
-            realizing just how much you didn’t know before (and how much you can
-            master with the right prep).
+           Topic-wise practice quizzes that mimic the Scholar’s Challenge in tone and trickiness. Perfect for brushing up, revision, and realizing just how much you didn’t know before (and how much you can master with the right prep).
           </p>
 
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
             WSC Writing Prompts Document
           </h4>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            A bank of creative and argumentative prompts across themes. Use them
-            to brainstorm, practice team writing, or just embrace the chaos of
-            trying to craft a thesis in 20 minutes. Writing under pressure has
-            never felt this doable or this fun.
+           A bank of creative and argumentative prompts across themes. Use them to brainstorm, practice team writing, or just embrace the chaos of trying to craft a thesis in 20 minutes. Writing under pressure has never felt this doable or this fun.
           </p>
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
             WSC Debate Motions Document
@@ -500,19 +463,13 @@ const GroupSess = () => {
             What’s it like to be part of LITWITS?
           </h3>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            It’s intense, yes, but also highly rewarding. One day you’ll be
-            untangling philosophical dilemmas. Next, you’ll be laughing your way
-            through mock debates about whether emojis are destroying language.
+            It’s intense, yes, but also highly rewarding. One day you’ll be untangling philosophical dilemmas. Next, you’ll be laughing your way through mock debates about whether emojis are destroying language.
           </p>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            Students grow more confident, more articulate, and more curious with
-            zero pressure to be perfect. Just the right push to be excellent
+           Students grow more confident, more articulate, and more curious with zero pressure to be perfect. Just the right push to be excellent.
           </p>
           <p className="text-sm sm:text-base leading-7 sm:leading-8">
-            And parents, you’ll see your child develop skills that matter way
-            beyond the competition: critical thinking, teamwork, communication,
-            time management, and a genuine love for learning. Not to mention the
-            confidence that comes from owning a room with your ideas.
+            And parents, you’ll see your child develop skills that matter way beyond the competition: critical thinking, teamwork, communication, time management, and a genuine love for learning. Not to mention the confidence that comes from owning a room with your ideas.
           </p>
         </div>
         <h3 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
