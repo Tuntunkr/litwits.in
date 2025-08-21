@@ -10,14 +10,14 @@ const GroupSess = () => {
     <section>
       <section className="container py-5">
         <div className="mb-2">
-          <h2 className=" text-center fw-bold text-2xl md:text-5xl mb-5">
+          <h2 className=" text-center fw-bold text-2xl md:text-5xl mb-5 text-gray-900">
             WORLD SCHOLAR’S CUP TRAINING
           </h2>
-          <p className="font-bold text-sm sm:text-base">
+          <p className="font-bold text-sm sm:text-base text-gray-900">
             LITWITS is at the forefront of World Scholar’s Cup training around
             the globe.
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             As a testament to our pursuit of excellence, LITWITS has been
             awarded the World Scholar’s Cup
             <strong> Coach of the Year Award, 2025 </strong>
@@ -30,11 +30,11 @@ const GroupSess = () => {
           <h3 className="fw-semibold text-2xl md:text-5xl mb-2 mt-5">
             What is the World Scholar’s Cup (WSC)?
           </h3>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900 ">
             The World Scholar’s Cup isn't just a competition. It’s a launchpad
             for global dominance.
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             You don’t just study a syllabus - you dive into a universe. One
             moment you’re exploring whether artists are the new explorers (“they
             just use paint instead of ships”), and the next, you’re writing
@@ -43,18 +43,18 @@ const GroupSess = () => {
             make it into textbooks. Or get philosophical with a prompt like:
             “When a story tells you something, it’s also hiding something.”
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             And just when you think you’ve caught your breath, along comes the
             Scholar’s Bowl - where you team up, hit buzzers, and try to figure
             out how a Shakespeare quote connects to a Brooklyn Nine-Nine scene.
             Yes, that actually happens.
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             Oh, and did we mention the alpacas that lead to hours of high-stakes
             negotiations over color swaps, ownership, and trading rights? Let’s
             just say diplomacy has never been more rewarding.
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             At the end of January, every year, a new theme is released that
             tackles six interdisciplinary subjects - like
             <strong>
@@ -63,7 +63,7 @@ const GroupSess = () => {
             and a wildcard <strong>Special Area</strong>. It's serious fun, and
             it's seriously rewarding when done right.
           </p>
-          <strong className="text-sm sm:text-base ">
+          <strong className="text-sm sm:text-base text-gray-900">
             For the 2025 WSC curriculum, click{" "}
             <span className="text-blue-500">here</span>.
           </strong>
@@ -73,7 +73,7 @@ const GroupSess = () => {
           <h3 className="fw-semibold text-2xl md:text-5xl mb-2 mt-5">
             What are the Events of the World Scholar’s Cup?{" "}
           </h3>
-          <p className="mt-2 mb-4 text-sm sm:text-base">
+          <p className="mt-2 mb-4 text-sm sm:text-base text-gray-900">
             Students from over 70 countries compete in four events:
           </p>
 
@@ -188,7 +188,7 @@ const GroupSess = () => {
             </Accordion.Item>
           </Accordion>
         </div>
-        <p className="mt-3 text-sm sm:text-base ">
+        <p className="mt-3 text-sm sm:text-base text-gray-900">
           These events aren’t just exciting - they’re demanding. They require
           sharp thinking, smart strategy, and serious preparation.
           <br />
@@ -196,13 +196,13 @@ const GroupSess = () => {
             LITWITS leads the way.
           </strong>
         </p>
-        <p className=" text-sm sm:text-base ">
+        <p className=" text-sm sm:text-base text-gray-900">
           We don’t just help you sign up - we build champions. From forming
           competitive teams to delivering top-tier World Scholar’s Cup training
           across all four events,
           <strong>LITWITS is where serious Scholars go to excel.</strong>
         </p>
-        <p className="text-sm sm:text-base ">
+        <p className="text-sm sm:text-base text-gray-900">
           Because excellence isn’t luck. At{" "}
           <strong>LITWITS, excellence is a habit.</strong>
         </p>
@@ -210,31 +210,31 @@ const GroupSess = () => {
           <h3 className="fw-semibold text-2xl md:text-5xl mb-2 mt-5">
             World Scholar’s Cup Eligibility
           </h3>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             The World Scholar’s Cup is open to all students and{" "}
             <strong className="text-sm sm:text-base">
               LITWITS is here to make the journey easier.
             </strong>{" "}
             Whether you are signing up solo or with friends:
           </p>
-          <p className="ml-5 text-sm sm:text-base">
+          <p className="ml-5 text-sm sm:text-base text-gray-900">
             -<span className="ml-4">Register with LITWITS</span>
           </p>
-          <p className="ml-5 ">
+          <p className="ml-5 text-gray-900">
             -
             <span className="ml-4 text-sm sm:text-base ">
               Form a super team with the help of our diverse and talented
               student network
             </span>
           </p>
-          <p className="ml-5 ">
+          <p className="ml-5 text-gray-900">
             -
             <span className="ml-4 text-sm sm:text-base ">
               Train strategically with LITWITS, with expert guidance and
               resources tailored for every WSC event.
             </span>
           </p>
-          <p className="text-sm sm:text-base ">You can participate as:</p>
+          <p className="text-sm sm:text-base text-gray-900">You can participate as:</p>
 
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3 text-gray-900 text-sm sm:text-base">
@@ -270,10 +270,10 @@ const GroupSess = () => {
               student.)
             </li>
           </ul>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             WSC values diversity, inclusivity, and the curiosity to engage with complex ideas.
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             The program is open to both new and returning participants.
           </p>
         </div>
@@ -281,7 +281,7 @@ const GroupSess = () => {
           <h3 className="font-bold fw-semibold text-2xl md:text-5xl mb-3 mt-5">
             How to Join the World Scholar’s Cup?
           </h3>
-          <p className="mt-2 text-sm sm:text-base ">
+          <p className="mt-2 text-sm sm:text-base text-gray-900">
             Joining the World Scholar’s Cup involves a few simple steps:
           </p>
 
@@ -322,29 +322,29 @@ const GroupSess = () => {
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5">
             LITWITS: Your Official Launchpad to WSC Success
           </h4>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             <strong>
               If you’re serious about the World Scholar’s Cup, LITWITS is your
               destination.
             </strong>
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             We’re not here to spoon-feed facts or toss you a syllabus and wish
             you luck. We’re here to make you fall in love with learning, and
             turn you into the kind of scholar who walks into a debate room or
             writing hall knowing exactly what to do.
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             Whether you're just starting your WSC journey or aiming for that
             Yale podium,
             <strong> LITWITS is where preparation meets transformation.</strong>
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             You shall discover that debate can be thrilling, writing can be
             powerful, and even the trickiest multiple-choice questions can feel
             like a game when you know how to think, not just what to remember.
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             At LITWITS, preparation isn’t about stress or feeling overwhelmed.
             It’s about building mastery through momentum - bit by bit, session
             by session - until performance becomes second nature. You’ll get the
@@ -352,16 +352,16 @@ const GroupSess = () => {
             but to thrive in it. To walk into any round and say, “I’ve got
             this.”
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             Because we don’t just teach. We train, team up, mentor, and guide.
           </p>
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5">
             Here’s what you get with us:
           </h4>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             <strong>Engaging, high-energy sessions</strong>
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900 ">
             We don’t do boring! Our classes are part discussion, part
             exploration, part “wait, how did we just talk for an hour about time
             travel and war ethics?” Every session is structured but never stiff.
@@ -370,7 +370,7 @@ const GroupSess = () => {
             students are in it - asking questions, challenging each other, and
             building ideas that actually stick.
           </p>
-          <p className="text-sm sm:text-base">
+          <p className="text-sm sm:text-base text-gray-900">
             We take big topics and make them feel personal. Thought experiments,
             real-world applications, open-floor debates - it’s a classroom where
             curiosity doesn’t just survive, it thrives. Students leave sessions
@@ -379,14 +379,14 @@ const GroupSess = () => {
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
             <strong>A strong, smart community</strong>
           </h4>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             This isn’t a solo journey. At LITWITS, you’re surrounded by a tribe
             of thinkers, speakers, writers, and world-class overthinkers (in the
             best way possible). You'll meet students from across cities,
             countries, and backgrounds, all united by a shared love for learning
             and a genuine desire to grow.
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             We’ve had teams that started as strangers and ended up celebrating
             wins together at Yale. We've watched in-session debate prep turn
             into lifelong friendships. It’s the kind of community where you’re
@@ -395,13 +395,13 @@ const GroupSess = () => {
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
             Expert feedback that actually helps
           </h4>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             We don’t believe in sugarcoating or vague compliments. When we say
             “great point,” we’ll tell you why it worked. And when something
             needs improvement, we don’t leave you guessing; we show you exactly
             how to strengthen it.
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             From dissecting your arguments line by line to helping you reframe
             an entire essay intro, our mentors provide detailed, actionable, and
             personalized feedback that builds your skills without breaking your
@@ -411,13 +411,13 @@ const GroupSess = () => {
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
             Practice that feels purposeful
           </h4>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             We believe prep should feel less like “more work” and more like
             “real progress.” That’s why we simulate actual WSC rounds, run team
             quizzes, host mock debates, and assign writing prompts that make
             your brain do somersaults in the best way possible.
           </p>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             You’ll learn how to manage pressure, pace yourself during
             challenges, and handle curveballs mid-debate. And every single task
             is backed by strategy, so you know why you’re doing what you’re
@@ -426,7 +426,7 @@ const GroupSess = () => {
           <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-4">
             Results without burnout
           </h4>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             Yes, we aim high for excellence. But we also keep things human. We
             help students plan their prep smartly, balancing consistency with
             mental bandwidth. Whether you’re juggling school exams or just
@@ -443,7 +443,7 @@ const GroupSess = () => {
               <strong className="text-xl md:text-2xl mb-3 mt-4 block">
                 WSC Curriculum Document
               </strong>
-              <p className="text-sm sm:text-base mt-2">
+              <p className="text-sm sm:text-base mt-2 text-gray-900">
                 We don’t just tell you to “go study the syllabus.” We break it
                 down for you. Our curriculum documents are detailed, topic-wise
                 study guides packed with clear explanations, memorable examples,
@@ -456,7 +456,7 @@ const GroupSess = () => {
               <strong className="text-xl md:text-2xl mb-3 mt-4 block">
                 WSC Quiz Document
               </strong>
-              <p className="text-sm sm:text-base mt-2">
+              <p className="text-sm sm:text-base mt-2 text-gray-900">
                 Topic-wise practice quizzes that mimic the Scholar’s Challenge
                 in tone and trickiness. Perfect for brushing up, revision, and
                 realizing just how much you didn’t know before (and how much you
@@ -467,7 +467,7 @@ const GroupSess = () => {
               <strong className="text-xl md:text-2xl mb-3 mt-4 block">
                 WSC Writing Prompts Document
               </strong>
-              <p className="text-sm sm:text-base mt-2">
+              <p className="text-sm sm:text-base mt-2 text-gray-900">
                 A bank of creative and argumentative prompts across themes. Use
                 them to brainstorm, practice team writing, or just embrace the
                 chaos of trying to craft a thesis in 20 minutes. Writing under
@@ -478,7 +478,7 @@ const GroupSess = () => {
               <strong className="text-xl md:text-2xl mb-3 mt-4 block">
                 WSC Debate Motions Document
               </strong>
-              <p className="text-sm sm:text-base mt-2">
+              <p className="text-sm sm:text-base mt-2 text-gray-900">
                 A carefully curated list of WSC-style motions, complete with
                 framing suggestions, prep angles, and unexpected twists. Ideal
                 for mock rounds, solo practice, or that pesky voice in your head
@@ -489,14 +489,14 @@ const GroupSess = () => {
           <h3 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5">
             LITWITS Achievements at the World Scholars Cup
           </h3>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900 ">
             Let’s just say our trophy shelves are crowded. A few highlights:
           </p>
           <section className="container-fluid p-0 mb-4">
             <PrizeSlider />
           </section>
 
-          <p className="text-sm sm:text-base leading-7 sm:leading-8">
+          <p className="text-sm sm:text-base leading-7 sm:leading-8 text-gray-900">
             Learn more about our achievements in WSC:
             <a href="/public/WSCimages/LITWITSACHIEVEMENTS.pdf" download>
               <span className="text-blue-500 "> click here </span>
@@ -505,16 +505,16 @@ const GroupSess = () => {
           <h3 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5">
             What’s it like to be part of LITWITS?
           </h3>
-          <p className="text-sm sm:text-base ">
+          <p className="text-sm sm:text-base text-gray-900">
             It’s intense, yes, but also highly rewarding. One day you’ll be
             untangling philosophical dilemmas. Next, you’ll be laughing your way
             through mock debates about whether emojis are destroying language.
           </p>
-          <p className="text-sm sm:text-bas">
+          <p className="text-sm sm:text-base text-gray-900 ">
             Students grow more confident, more articulate, and more curious with
             zero pressure to be perfect. Just the right push to be excellent.
           </p>
-          <p className="text-sm sm:text-base">
+          <p className="text-sm sm:text-base text-gray-900">
             And parents, you’ll see your child develop skills that matter way
             beyond the competition: critical thinking, teamwork, communication,
             time management, and a genuine love for learning. Not to mention the
@@ -524,7 +524,7 @@ const GroupSess = () => {
         <h3 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5">
           What are you waiting for?
         </h3>
-        <p className="text-sm sm:text-base">
+        <p className="text-sm sm:text-base text-gray-900">
           Whether you're forming your first team or chasing Yale, we’ve got your
           back.
         </p>

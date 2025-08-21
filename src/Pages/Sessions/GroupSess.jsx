@@ -11,7 +11,7 @@ import Writing from "/assets/academic-writing-session.avif";
 import { Link } from "react-router-dom";
 
 import { Helmet } from "react-helmet-async";
-import Individual from "../GroupSessions/index";
+import Individual from "../Sessions/index";
 
 const GroupSess = () => {
   const sliderRef = useRef(null);

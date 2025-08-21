@@ -8,7 +8,7 @@ const GroupSessions = () => {
   };
 
   return (
-    <div className="bg-gray-50 text-gray-900 min-h-96 flex flex-col items-center  font-Noto">
+    <div className="bg-gray-50 text-gray-900 min-h-96 flex flex-col items-center  font-Noto mt-4">
     <div className="bg-white p-3 rounded-xl shadow-lg w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-6">
       {/* Left Side */}
       <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 sm:p-8 rounded-xl text-white flex flex-col items-start min-h-[400px] text-left">

@@ -5,8 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/group-session", label: " SESSIONS" },
-  { href: "/WscSession", label: "WSC SESSIONS" },
+  { href: "/session", label: " SESSIONS" },
+  { href: "/WscSession", label: " World Scholars Cup" },
   { href: "/college-counseling", label: "College Counseling" },
   { href: "/membership", label: "Membership" },
 ];
@@ -23,17 +23,17 @@ function Header() {
       {/* Header container */}
       <div className="fixed top-0 left-0 right-0 z-50  bg-red-800 px-4 py-[40px] flex items-center justify-between sm:justify-center ">
         {/* Logo Left on mobile, Center on desktop */}
-       <div className="flex items-center w-full sm:justify-center relative">
-  <Navbar.Brand
-    href="/"
-    style={{
-      fontFamily: "Noto Serif, serif",
-      fontWeight: 400,
-      color: "#890C25",
-      fontSize: "clamp(1.2rem, 4vw, 1.7rem)",
-    }}
-    className="sm:absolute sm:left-1/2 sm:-translate-x-1/2"
-  >
+        <div className="flex items-center w-full sm:justify-center relative">
+          <Navbar.Brand
+            href="/"
+            style={{
+              fontFamily: "Noto Serif, serif",
+              fontWeight: 400,
+              color: "#890C25",
+              fontSize: "clamp(1.2rem, 4vw, 1.7rem)",
+            }}
+            className="sm:absolute sm:left-1/2 sm:-translate-x-1/2"
+          >
             <span
               className="uppercase  font-light font-noto-serif text-white"
               style={{ fontSize: "clamp(24px, 4vw, 36px)" }}
@@ -55,19 +55,20 @@ function Header() {
       {/* Floating Navigation Tabs (half in navbar, half out) */}
       {/* <div className="hidden sm:block fixed left-1/2 transform -translate-x-1/2 z-40 top-[100px] w-full max-w-6xl px-4 pointer-events-none "> */}
       <div className="hidden sm:block fixed left-1/2 transform -translate-x-1/2 z-40 top-[80px] w-full pointer-events-none bg-red-800 shadow-md h-[22px] border-b border-white">
-        <div className="flex  justify-center flex-wrap gap-4 sm:gap-3 md:gap-6 pointer-events-auto ">
+        <div className="flex justify-center flex-wrap gap-4 sm:gap-3 md:gap-6 pointer-events-auto w-full max-w-6xl mx-auto px-4">
           {navLinks.map((link) => {
             const isActive = location.pathname === link.href;
             return (
               <Link
                 key={link.href}
                 to={link.href}
-                className={`pointer-events-auto uppercase px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 text-sm sm:text-base font-serif font-medium shadow-lg border transition-all duration-200 
-                  ${
-                    isActive
-                      ? "bg-red-900 text-white"
-                      : "bg-red-900 text-white hover:bg-red-700 "
-                  }`}
+                className={`flex-1 text-center uppercase py-2 sm:py-2.5 md:py-3 
+          text-sm sm:text-base font-serif font-medium shadow-lg border transition-all duration-200
+          ${
+            isActive
+              ? "bg-red-900 text-white"
+              : "bg-red-900 text-white hover:bg-red-700"
+          }`}
               >
                 {link.label}
               </Link>

@@ -558,8 +558,8 @@ const Footer = () => {
 
           {/* Middle Links Section */}
           <div className="flex-1 grid grid-cols-2 gap-8 lg:gap-16 lg:flex lg:justify-around mb-8 lg:mb-0">
-            {footerLinks.map((section) => (
-              <div key={section.title}>
+            {footerLinks.map((section,index) => (
+              <div key={index}>{section.title}
                 <ul>
                   {section.links.map((link) => (
                     <li
