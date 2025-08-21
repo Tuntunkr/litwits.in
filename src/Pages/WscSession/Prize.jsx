@@ -258,7 +258,7 @@ const PrizeSlider = () => {
   }, [activeIndex, items.length, itemsPerSlide, tripleItems.length]);
 
   return (
-    <div className="relative overflow-hidden py-8 bg-gray-50 mt-5">
+    <div className="relative overflow-hidden py-8 bg-gray-50 mt-3">
       <div
         className={`flex ${
           isTransitioning
