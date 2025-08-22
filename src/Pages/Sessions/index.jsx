@@ -10,6 +10,8 @@ import Sat from "/assets/sat-prep-session.avif";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Contact from "../../sections/Contact";
+import ted from "/group-26695.png";
+import RESEARCH from "/group-26696.png"
 
 const GroupSess = () => {
   const sliderRef = useRef(null);
@@ -595,7 +597,7 @@ const GroupSess = () => {
 
       <section
         id="home"
-        className="bg-cover bg-center h-[40vh] flex items-center justify-center text-white"
+        className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
         style={{
           backgroundImage: "url('/assets/individual-session.avif')",
           fontFamily: "'Noto Sans', sans-serif",
@@ -605,7 +607,7 @@ const GroupSess = () => {
         aria-describedby="individual-sessions-description"
       >
         <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
-          <h1 className="text-[5vw] md:text-[1.8vw] lg:text-[30px] font-bold leading-tight mt-4">
+          <h1 className="text-[5vw] md:text-[1.8vw] lg:text-[30px] font-bold leading-tight mt-2">
             INDIVIDUAL SESSIONS
           </h1>
         </div>
@@ -631,6 +633,15 @@ const GroupSess = () => {
       >
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <img
+              src={mdl}
+              alt="Model United Nations training for diplomacy, negotiation, and leadership skills."
+              style={{ height: "350px" }}
+              className="rounded-lg shadow-lg w-full object-cover"
+              title="Model United Nations (MUN) at Litwits"
+              aria-label="Model United Nations (MUN) at Litwits"
+              aria-describedby="Immersive MUN training that prepares students for global diplomacy, impactful position papers, and confident public speaking at prestigious conferences."
+            />
             <div>
               <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
                 MODEL UNITED NATIONS (MUN)
@@ -669,93 +680,74 @@ const GroupSess = () => {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* World Scholar's Cup */}
+
+      <section
+        id="individual-session"
+        className="container-fluid mx-auto py-10 bg-white"
+      >
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
+                TED-ED STUDENT TALKS
+              </h2>
+              <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                Shaping passion for social responsibility through a thoughtfully
+                designed program, students embark on an enriching journey
+                exploring diverse perspectives and refining their critical
+                thinking abilities.
+              </p>
+              <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                Shaping passion for social responsibility and guided by
+                experienced mentors, our students embark on an enriching journey
+                exploring diverse perspectives, thinking critically about issues
+                in their community or around the globe to identify a problem or
+                a gap in the field that interests them—such as social justice,
+                gender justice, education, or healthcare and others. The mentors
+                work with the students to understand the issues critically,
+                ideate sustainable solutions, conceptualize and craft powerful
+                narratives culminating in an impactful video presentation for
+                the 'TED-Ed Student Talk Program' platform. The platform helps
+                students gain recognition through the prestigious TED-Ed
+                platform, and leave a lasting impact on global audiences.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
+                <Link
+                  to="https://wa.me/9811701747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
+                  className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center "
+                  style={{
+                    fontFamily: "Noto Sans",
+                  }}
+                >
+                  Free Consultation
+                </Link>
+
+                <Link
+                  to="/membership"
+                  className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
+                  style={{
+                    fontFamily: "Noto Sans",
+                  }}
+                >
+                  Enroll Now
+                </Link>
+              </div>
+            </div>
             <img
-              src={mdl}
+              src={ted}
               alt="Model United Nations training for diplomacy, negotiation, and leadership skills."
-              style={{ height: "350px" }}
+              style={{ height: "500px" }}
               className="rounded-lg shadow-lg w-full object-cover"
               title="Model United Nations (MUN) at Litwits"
               aria-label="Model United Nations (MUN) at Litwits"
               aria-describedby="Immersive MUN training that prepares students for global diplomacy, impactful position papers, and confident public speaking at prestigious conferences."
             />
           </div>
-        </div>
-      </section>
-
-      {/* World Scholar's Cup */}
-      <section id="voices" className="py-10 bg-gray-50">
-        <div
-          className="relative flex items-center justify-center 
-      min-h-[700px] sm:min-h-[480px] md:min-h-[520px] lg:min-h-[600px] 
-      bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/assets/ted-ed-student-talk-program.avif')`,
-            backgroundAttachment: "fixed",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          role="img"
-          aria-label="TED-Ed Student Talks Program with expert mentorship on social issues and storytelling."
-          aria-describedby="ted-ed-program-description"
-        >
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-          <div className="relative text-center text-white max-w-5xl px-4 py-10 rounded-lg">
-            {/* Title */}
-            <h1 className="font-noto font-bold text-2xl md:text-5xl mb-3">
-              TED-ED STUDENT TALKS
-            </h1>
-
-            {/* Description Paragraphs */}
-            <p className="text-left font-noto text-sm  leading-6 md:leading-7 text-white mb-2">
-              Shaping passion for social responsibility through a thoughtfully
-              designed program, students embark on an enriching journey
-              exploring diverse perspectives and refining their critical
-              thinking abilities.
-            </p>
-
-            <p className="text-left font-noto text-sm  leading-6 md:leading-7 text-white mb-4">
-              Shaping passion for social responsibility and guided by
-              experienced mentors, our students embark on an enriching journey
-              exploring diverse perspectives, thinking critically about issues
-              in their community or around the globe to identify a problem or a
-              gap in the field that interests them—such as social justice,
-              gender justice, education, or healthcare and others. The mentors
-              work with the students to understand the issues critically, ideate
-              sustainable solutions, conceptualize and craft powerful narratives
-              culminating in an impactful video presentation for the 'TED-Ed
-              Student Talk Program' platform. The platform helps students gain
-              recognition through the prestigious TED-Ed platform, and leave a
-              lasting impact on global audiences.
-            </p>
-
-            {/* Buttons */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
-              <Link
-                to="https://wa.me/9811701747?text=Hi! I’m interested in your TED-Ed Student Talks Program. Please share details about the program and I request a free consultation."
-                className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-sm md:text-base font-medium hover:bg-red-700 transition text-center"
-                style={{ fontFamily: "Noto Sans" }}
-              >
-                Free Consultation
-              </Link>
-
-              <Link
-                to="/membership"
-                className="bg-blue-950 text-white px-6 py-3 w-full no-underline uppercase rounded-md text-sm md:text-base font-medium transition text-center"
-                style={{ fontFamily: "Noto Sans" }}
-              >
-                Enroll Now
-              </Link>
-            </div>
-          </div>
-
-          {/* Descriptive Content for Accessibility */}
-          <p id="ted-ed-program-description" className="sr-only">
-            The TED-Ed Student Talks Program empowers students to explore
-            diverse perspectives, refine critical thinking skills, and transform
-            ideas into powerful narratives through expert mentorship.
-          </p>
         </div>
       </section>
 
@@ -822,81 +814,67 @@ const GroupSess = () => {
           </div>
         </div>
       </section>
-      {/* Writing Section */}
 
-      {/* World Scholar's Cup */}
-      <section id="voices" className="py-10 bg-gray-50">
-        <div
-          className="relative flex items-center justify-center 
-       min-h-[600px] sm:min-h-[480px] md:min-h-[520px] lg:min-h-[500px] 
-       bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/assets/research-paper-guidance.avif')`,
-            backgroundAttachment: "fixed",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          role="img"
-          aria-label="Research Paper Guidance for academic success and effective writing skills."
-          aria-describedby="research-paper-description"
-        >
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-          <div className="relative text-center text-white max-w-5xl px-4 py-10">
-            {/* Title */}
-            <h1 className="font-noto font-bold text-2xl md:text-5xl mb-3">
-              RESEARCH PAPER GUIDANCE
-            </h1>
+      {/*  RESEARCH PAPER GUIDANCE */}
 
-            {/* Description */}
-            <p className="text-left font-noto text-sm leading-relaxed mb-2">
-              Our Research Paper Writing sessions support students throughout
-              the entire process— from developing engaging research questions in
-              fields of their interest to identifying gaps in their chosen
-              field. We lay the groundwork for a coherent narrative that guides
-              them through the literature review, thesis development, citation
-              styles, and ethical research practices.
-            </p>
+      <section
+        id="individual-session"
+        className="container-fluid mx-auto py-10 bg-white"
+      >
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
+                RESEARCH PAPER GUIDANCE
+              </h2>
+              <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                Our Research Paper Writing sessions support students throughout
+                the entire process— from developing engaging research questions
+                in fields of their interest to identifying gaps in their chosen
+                field. We lay the groundwork for a coherent narrative that
+                guides them through the literature review, thesis development,
+                citation styles, and ethical research practices.
+              </p>
+              <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                In an information-rich world, mastering research and effective
+                presentation is crucial. Our program empowers students to
+                produce high-quality papers while developing essential
+                analytical and writing skills, transforming their ideas into
+                compelling research works.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
+                <Link
+                  to="https://wa.me/9811701747?text=Hi! I’m interested in your Research Paper Guidance Program. Please share details about the program and I request a free consultation."
+                  className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-sm md:text-base font-medium hover:bg-red-700 transition text-center"
+                  style={{ fontFamily: "Noto Sans" }}
+                >
+                  Free Consultation
+                </Link>
 
-            <p className="text-left font-noto text-sm leading-relaxed">
-              In an information-rich world, mastering research and effective
-              presentation is crucial. Our program empowers students to produce
-              high-quality papers while developing essential analytical and
-              writing skills, transforming their ideas into compelling research
-              works.
-            </p>
-
-            {/* Buttons */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
-              <Link
-                to="https://wa.me/9811701747?text=Hi! I’m interested in your Research Paper Guidance Program. Please share details about the program and I request a free consultation."
-                className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-sm md:text-base font-medium hover:bg-red-700 transition text-center"
-                style={{ fontFamily: "Noto Sans" }}
-              >
-                Free Consultation
-              </Link>
-
-              <Link
-                to="/membership"
-                className="bg-blue-950 text-white px-6 py-3 w-full no-underline uppercase rounded-md text-sm md:text-base font-medium transition text-center"
-                style={{ fontFamily: "Noto Sans" }}
-              >
-                Enroll Now
-              </Link>
+                <Link
+                  to="/membership"
+                  className="bg-blue-950 text-white px-6 py-3 w-full no-underline uppercase rounded-md text-sm md:text-base font-medium transition text-center"
+                  style={{ fontFamily: "Noto Sans" }}
+                >
+                  Enroll Now
+                </Link>
+              </div>
             </div>
+            <img
+              src={RESEARCH}
+              alt="Model United Nations training for diplomacy, negotiation, and leadership skills."
+              style={{ height: "400px" }}
+              className="rounded-lg shadow-lg w-full object-cover"
+              title="Model United Nations (MUN) at Litwits"
+              aria-label="Model United Nations (MUN) at Litwits"
+              aria-describedby="Immersive MUN training that prepares students for global diplomacy, impactful position papers, and confident public speaking at prestigious conferences."
+            />
           </div>
-
-          {/* Descriptive Content for Accessibility */}
-          <p id="research-paper-description" className="sr-only">
-            Comprehensive research paper guidance from developing engaging
-            questions to crafting compelling narratives, ensuring students
-            produce high-quality academic work.
-          </p>
         </div>
       </section>
 
-      {/* Mun section  */}
+      {/* ADVANCED PLACEMENT PREP SESSION  */}
       <section
         id="individual-session"
         className="container-fluid mx-auto py-10 bg-white"
@@ -952,46 +930,18 @@ const GroupSess = () => {
         </div>
       </section>
       {/* Writing Section */}
-
-      <section>
-        <div
-          className="container-fluid relative bg-red-900 py-8"
-          style={{
-            height: "500px",
-            backgroundImage: `url(${Sat})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed",
-          }}
-          role="img"
-          aria-label="SAT Prep Session with targeted strategies for improved test performance."
-          aria-describedby="sat-prep-session-description"
-        >
-          {/* Overlay for opacity */}
-          <div
-            className="absolute inset-0 bg-black bg-opacity-50"
-            style={{
-              zIndex: 1, // Ensures the overlay is below the text
-            }}
-          ></div>
-
-          {/* Content */}
-          <div
-            className="relative z-10 w-full max-w-[1499px] mx-auto p-4 lg:p-8 flex flex-col items-center justify-center text-center"
-            style={{ height: "100%" }}
-          >
-            {/* Text Content */}
-            <div className="max-w-[950px]">
-              {" "}
-              {/* Restrict width for better readability */}
-              <h1 className="font-noto font-bold text-2xl text-white mb-2 lg:text-2xl">
+            <section
+        id="individual-session"
+        className="container-fluid mx-auto py-10 bg-white"
+      >
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
                 SAT PREP SESSION
-              </h1>
-              <p
-                className="font-noto  text-white text-start leading-relaxed lg:text-lg "
-                style={{ fontSize: "15px" }}
-              >
-                Through expert instruction and targeted strategies, we focus on
+              </h2>
+              <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                 Through expert instruction and targeted strategies, we focus on
                 all SAT sections: Evidence-Based Reading, Writing and Language,
                 and Math.By understanding the test format, mastering timing, and
                 honing question-handling techniques, students are equipped to
@@ -1020,18 +970,16 @@ const GroupSess = () => {
                 </Link>
               </div>
             </div>
+            <img
+              src={Sat}
+              alt="Model United Nations training for diplomacy, negotiation, and leadership skills."
+              style={{ height: "350px" }}
+              className="rounded-lg shadow-lg w-full object-cover"
+              title="Model United Nations (MUN) at Litwits"
+              aria-label="Model United Nations (MUN) at Litwits"
+              aria-describedby="Immersive MUN training that prepares students for global diplomacy, impactful position papers, and confident public speaking at prestigious conferences."
+            />
           </div>
-
-          {/* Descriptive Content for Accessibility */}
-          <p
-            id="sat-prep-session-description"
-            className="sr-only"
-            style={{ fontSize: "15px" }}
-          >
-            Expert-led SAT preparation covering Evidence-Based Reading, Writing,
-            and Math, with targeted strategies to improve timing, accuracy, and
-            confidence for optimal test performance.
-          </p>
         </div>
       </section>
 
@@ -1186,6 +1134,74 @@ const GroupSess = () => {
               <Accordion.Body className="bg-[#890C25] text-white">
                 No. Group Sessions and Individual Sessions are structured and
                 priced separately.
+              </Accordion.Body>
+            </Accordion.Item>
+            {/* First Accordion */}
+            <Accordion.Item eventKey="6">
+              <Accordion.Header>
+                As a member, which sessions can I attend?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                All members of Group Sessions have access to all group sessions.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="7">
+              <Accordion.Header>
+                How many sessions can I attend in a week?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Members may attend as many sessions as they prefer. Some
+                sessions may overlap, so we recommend checking the schedule in
+                advance to attend the sessions of their interest.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="8">
+              <Accordion.Header>
+                What are the timings of the sessions?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Each individual session is 90 minutes, ensuring ample time for
+                in-depth learning, interactive discussions, and personalized
+                guidance from our expert mentors. <br />
+                Monday to Friday: 8:00 p.m. – 9:30 p.m. IST{" "}
+                <br className="mt-2" />
+                Saturday: 12:15 p.m. – 1:45 p.m. IST
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="9">
+              <Accordion.Header>
+                What if I do not have a team member for a competition?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                No worries! We assist in forming competitive teams for excellent
+                outcomes for all the competitions. If you don’t have a team, we
+                will pair you with other participants of your skill level,
+                ensuring that everyone has a chance to participate and
+                collaborate effectively.
+              </Accordion.Body>
+            </Accordion.Item>
+
+            {/* Second Accordion */}
+
+            <Accordion.Item eventKey="10">
+              <Accordion.Header>
+                Can I convert my Group Session package to Individual Sessions?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                No. Group Sessions and Individual Sessions are structured and
+                priced separately. Since individual sessions provide
+                personalized mentorship, they require a different payment model
+                from group-based learning.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="11">
+              <Accordion.Header>
+                Do you offer trial sessions for students?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                We offer One-Time Sessions for a fee. These sessions allow
+                students to discover our teaching style and session structure
+                before committing to a full package.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

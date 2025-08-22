@@ -11,7 +11,7 @@ import Writing from "/assets/academic-writing-session.avif";
 import { Link } from "react-router-dom";
 
 import { Helmet } from "react-helmet-async";
-import Individual from "../GroupSessions/index";
+import Individual from "../Sessions/index";
 
 const GroupSess = () => {
   const sliderRef = useRef(null);
@@ -811,7 +811,7 @@ const GroupSess = () => {
 
         <section
           id="home"
-          className="bg-cover bg-center h-[40vh] flex items-center justify-center text-white"
+          className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
           style={{
             backgroundImage: "url('/assets/group-session.avif')",
             fontFamily: "'Noto Sans', sans-serif",
@@ -821,7 +821,7 @@ const GroupSess = () => {
           aria-describedby="group-session-description"
         >
           <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
-            <h1 className="text-[5vw] md:text-[1.8vw] lg:text-[30px] font-bold leading-tight mt-4">
+            <h1 className="text-[5vw] md:text-[1.8vw] lg:text-[30px] font-bold leading-tight mt-2">
               GROUP SESSIONS
             </h1>
           </div>
@@ -898,7 +898,7 @@ const GroupSess = () => {
         </section>
 
         {/* World Scholar's Cup */}
-        <section id="voices" className="py-10 bg-gray-50">
+        {/* <section id="voices" className="py-10 bg-gray-50">
           <div
             className="relative flex items-center justify-center min-h-[495px] md:h-[495px] bg-cover bg-center"
             style={{
@@ -913,7 +913,7 @@ const GroupSess = () => {
             aria-describedby="world-scholar-cup-description"
           >
             {/*  Blue overlay instead of black */}
-            <div className="absolute inset-0 bg-blue-950/80"></div>
+            {/* <div className="absolute inset-0 bg-blue-950/80"></div>
 
             <div className="relative text-left text-white max-w-5xl px-4 py-10">
               <h1 className="font-noto text-center font-bold text-2xl md:text-5xl mb-2">
@@ -950,13 +950,13 @@ const GroupSess = () => {
             </div>
 
             {/* Descriptive Content for Accessibility */}
-            <p id="world-scholar-cup-description" className="sr-only">
+            {/* <p id="world-scholar-cup-description" className="sr-only">
               Comprehensive coaching for the World Scholar's Cup, preparing
               students for debate, collaborative writing, and analytical
               challenges, fostering critical thinking and teamwork.
             </p>
           </div>
-        </section>
+        </section> * */}
 
         {/* SOCIAL IMPACT section  */}
         <section
@@ -1283,15 +1283,7 @@ const GroupSess = () => {
         >
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <img
-                src={competition}
-                alt="Ivy League Prep for success in competitive environments."
-                title="Ivy League and Prestigious Competitions at Litwits"
-                aria-label="Ivy League and Prestigious Competitions at Litwits"
-                aria-describedby="Focused coaching to prepare students for high-stakes competitions such as Harvard/Yale Invitationals, fostering resilience and academic excellence."
-                style={{ height: "400px", width: "100%" }}
-                className="rounded-lg shadow-lg w-full object-fit object-top"
-              />
+
               <div>
                 <h2 className="text-2xl text-start font-bold uppercase text-red-700 mb-2">
                   IVY LEAGUE & PRESTIGIOUS COMPETITIONS
@@ -1335,91 +1327,16 @@ const GroupSess = () => {
                   </Link>
                 </div>
               </div>
+                            <img
+                src={competition}
+                alt="Ivy League Prep for success in competitive environments."
+                title="Ivy League and Prestigious Competitions at Litwits"
+                aria-label="Ivy League and Prestigious Competitions at Litwits"
+                aria-describedby="Focused coaching to prepare students for high-stakes competitions such as Harvard/Yale Invitationals, fostering resilience and academic excellence."
+                style={{ height: "400px", width: "100%" }}
+                className="rounded-lg shadow-lg w-full object-fit object-top"
+              />
             </div>
-          </div>
-        </section>
-
-        {/* Mun section  */}
-
-        {/* FAQ Section */}
-        <section id="faq" className="container mx-auto px-8 bg-gray-50">
-          <div className="container mx-auto ">
-            <h2 className="text-3xl font-noto pt-6 font-bold text-center text-red-700 mb-2">
-              FREQUENTLY ASKED QUESTIONS
-            </h2>
-          </div>
-          <div className="p-4">
-            {/* First Accordion */}
-            <Accordion defaultActiveKey="0" flush>
-              <Accordion.Item eventKey="0">
-                <Accordion.Header>
-                  As a member, which sessions can I attend?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  All members of Group Sessions have access to all group
-                  sessions.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="1">
-                <Accordion.Header>
-                  How many sessions can I attend in a week?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  Members may attend as many sessions as they prefer. Some
-                  sessions may overlap, so we recommend checking the schedule in
-                  advance to attend the sessions of their interest.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="2">
-                <Accordion.Header>
-                  What are the timings of the sessions?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  Each individual session is 90 minutes, ensuring ample time for
-                  in-depth learning, interactive discussions, and personalized
-                  guidance from our expert mentors. <br />
-                  Monday to Friday: 8:00 p.m. – 9:30 p.m. IST{" "}
-                  <br className="mt-2" />
-                  Saturday: 12:15 p.m. – 1:45 p.m. IST
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="3">
-                <Accordion.Header>
-                  What if I do not have a team member for a competition?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  No worries! We assist in forming competitive teams for
-                  excellent outcomes for all the competitions. If you don’t have
-                  a team, we will pair you with other participants of your skill
-                  level, ensuring that everyone has a chance to participate and
-                  collaborate effectively.
-                </Accordion.Body>
-              </Accordion.Item>
-
-              {/* Second Accordion */}
-
-              <Accordion.Item eventKey="4">
-                <Accordion.Header>
-                  Can I convert my Group Session package to Individual Sessions?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  No. Group Sessions and Individual Sessions are structured and
-                  priced separately. Since individual sessions provide
-                  personalized mentorship, they require a different payment
-                  model from group-based learning.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="5">
-                <Accordion.Header>
-                  Do you offer trial sessions for students?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  We offer One-Time Sessions for a fee. These sessions allow
-                  students to discover our teaching style and session structure
-                  before committing to a full package.
-                </Accordion.Body>
-              </Accordion.Item>
-            </Accordion>
           </div>
         </section>
       </section>

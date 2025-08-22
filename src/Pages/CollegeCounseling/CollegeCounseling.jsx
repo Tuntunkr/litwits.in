@@ -264,7 +264,7 @@ const CollegeCounseling = () => {
         {/* Hero Section */}
         <section
           id="home"
-          className="bg-cover bg-center h-[40vh] flex items-center justify-center text-white"
+          className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
           style={{
             backgroundImage: "url('/assets/college-counseling.avif')",
             fontFamily: "'Noto Sans', sans-serif",
@@ -274,7 +274,7 @@ const CollegeCounseling = () => {
           aria-describedby="consultation-description"
         >
           <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
-            <h1 className="text-[3vw] md:text-[1vw] lg:text-[30px] font-bold leading-tight mt-4">
+            <h1 className="text-[3vw] md:text-[1vw] lg:text-[30px] font-bold leading-tight mt-2">
               COLLEGE COUNSELING
             </h1>
           </div>

@@ -20,7 +20,7 @@ import ChatBot from "./sections/ChatBot";
 
 // Lazy Loading Pages
 const Hero = lazy(() => import("./sections/Hero"));
-const GroupSess = lazy(() => import("./Pages/GroupSessions/GroupSess"));
+const Session = lazy(() => import("./Pages/Sessions/GroupSess"));
 const WscSession = lazy(() =>import("./Pages/WscSession/index"));
 const Membership = lazy(() => import("./Pages/Membership/index"));
 const Contact = lazy(() => import("./Pages/Contact/index"));
@@ -158,7 +158,7 @@ const App = () => {
         >
           <Routes>
             <Route path="/" element={<Hero />} />
-            <Route path="/group-session" element={<GroupSess />} />
+            <Route path="/Session" element={<Session/>} />
             <Route
               path="/WscSession"
               element={<WscSession/>}
