@@ -105,7 +105,7 @@ const Hero = React.forwardRef((props, ref) => {
           backgroundImage: `linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.4)), url(${heroimage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "calc(100vh - 80px)",
+          height: "calc(100vh - 70px)",
         }}
       >
         <div className="relative w-full lg:w-1/2 flex flex-col justify-center items-center text-white text-center space-y-6">
@@ -134,9 +134,6 @@ const Hero = React.forwardRef((props, ref) => {
       <br />
       <section>
         <AwardsSlider />
-      </section>
-      <section>
-        <TestimonialCarousel />
       </section>
       <section>
         <Contact />

@@ -42,10 +42,10 @@ const GroupSessions = () => {
   
       {/* Right Side */}
       <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4  rounded-xl text-white flex flex-col">
-        <h2 className="text-lg md:text-xl font-bold mb-3 text-center lg:text-left text-white font-noto">
+        <h2 className="text-lg md:text-xl font-bold mb-3 mt-2 text-center lg:text-left text-white font-noto">
           Monday to Sunday: 08:00 to 9:30 p.m
         </h2>
-        <div className="bg-gray-700 p-4 rounded-lg shadow-md flex flex-col h-full">
+        <div className=" p-4 rounded-lg shadow-md flex flex-col h-full">
           <img
             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
             alt="Course Thumbnail"
@@ -61,8 +61,8 @@ const GroupSessions = () => {
             - Team formation is offered for various competitions to members
             who require a team.
           </h3>
-          <button className="mt-auto w-full bg-red-600 hover:bg-red-700 transition text-white py-3 rounded-lg text-base font-semibold">
-            Check Out Now
+          <button className="mt-auto w-full bg-red-800 hover:bg-red-900 transition text-white py-3 rounded-lg text-base font-semibold">
+            Check Out 
           </button>
         </div>
       </div>

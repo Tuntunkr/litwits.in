@@ -1,18 +1,23 @@
-
 import React, { useRef, useEffect, useState } from "react";
 
 const AutoSliderSection = ({ cards = [] }) => {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);
-  const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
+  const [visibleSlides, setVisibleSlides] = useState(1);
+  const [direction, setDirection] = useState(1); // 1 → forward, -1 → backward
   const totalSlides = cards.length;
 
   // Set card width dynamically
   useEffect(() => {
     const updateCardWidth = () => {
       if (sliderRef.current && sliderRef.current.children.length > 0) {
-        setCardWidth(sliderRef.current.children[0].offsetWidth);
+        const firstCard = sliderRef.current.children[0];
+        setCardWidth(firstCard.offsetWidth);
+
+        // visible slides count detect
+        const containerWidth = sliderRef.current.offsetWidth;
+        setVisibleSlides(Math.round(containerWidth / firstCard.offsetWidth));
       }
     };
 
@@ -25,15 +30,15 @@ const AutoSliderSection = ({ cards = [] }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (totalSlides > 0) {
-        setCurrentSlide((prevSlide) => {
-          let newSlide = prevSlide + direction;
-          
-          // Reverse the direction if we reach the last or first slide
-          if (newSlide >= totalSlides - 1) {
-            setDirection(-1); // Start moving backward
-            newSlide = totalSlides - 2;
-          } else if (newSlide <= 0) {
-            setDirection(1); // Start moving forward
+        setCurrentSlide((prev) => {
+          let newSlide = prev + direction;
+
+          // Reverse when reaching bounds
+          if (newSlide > totalSlides - visibleSlides) {
+            setDirection(-1);
+            newSlide = totalSlides - visibleSlides - 1;
+          } else if (newSlide < 0) {
+            setDirection(1);
             newSlide = 1;
           }
 
@@ -43,7 +48,7 @@ const AutoSliderSection = ({ cards = [] }) => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [totalSlides, direction]);
+  }, [totalSlides, direction, visibleSlides]);
 
   useEffect(() => {
     if (sliderRef.current) {
@@ -56,22 +61,25 @@ const AutoSliderSection = ({ cards = [] }) => {
 
   const handleDotClick = (index) => {
     setCurrentSlide(index);
-    setDirection(index > currentSlide ? 1 : -1); // Update direction based on user click
+    setDirection(index > currentSlide ? 1 : -1);
   };
 
   return (
     <section>
       <div className="bg-red-800 container-fluid mx-auto flex items-center justify-center py-8">
         <div className="w-full max-w-[1499px] p-4 lg:p-8">
-          <h2 className=" uppercase font-noto  text-center text-2xl text-white md:text-3xl font-bold ">
+          <h2 className="uppercase font-noto text-center text-2xl text-white md:text-3xl font-bold">
             Curated College List and Personalized Fit
           </h2>
-          <p className="text-start font-noto text-white max-w-2xl mx-auto mb-12"style={{ fontSize: "15px" }}>
+          <p
+            className="text-start font-noto text-white max-w-5xl mx-auto mb-12"
+            style={{ fontSize: "15px" }}
+          >
             Choosing the right college is one of the most important decisions
-            you will make. At LITWITS, we take the guesswork out of this
-            process by curating a personalized list of colleges that best fit
-            your aspirations, strengths, and goals. Here's how we approach
-            this crucial step:
+            you will make. At LITWITS, we take the guesswork out of this process
+            by curating a personalized list of colleges that best fit your
+            aspirations, strengths, and goals. Here's how we approach this
+            crucial step:
           </p>
 
           <section id="group-session" className="mb-8">
@@ -79,14 +87,15 @@ const AutoSliderSection = ({ cards = [] }) => {
               <div className="relative">
                 <div
                   ref={sliderRef}
-                  className="flex overflow-hidden scroll-smooth space-x-4 scrollbar-hide"
+                  className="flex overflow-hidden scroll-smooth scrollbar-hide"
                   style={{ width: "100%" }}
                 >
                   {totalSlides > 0 ? (
                     cards.map((card, idx) => (
                       <div
                         key={idx}
-                        className="shrink-0 w-full sm:w-[75%] md:w-[50%] lg:w-[33%] bg-transparent rounded-lg shadow-lg p-4"
+                        className="shrink-0 w-full sm:w-[75%] md:w-[50%] lg:w-[33%] 
+                   bg-transparent rounded-lg shadow-lg p-4"
                       >
                         <img
                           src={card.image}
@@ -99,7 +108,10 @@ const AutoSliderSection = ({ cards = [] }) => {
                         <h3 className="text-lg font-bold text-white mb-2">
                           {card.title}
                         </h3>
-                        <p className="text-white leading-relaxed"style={{ fontSize: "15px" }}>
+                        <p
+                          className="text-white leading-relaxed"
+                          style={{ fontSize: "15px" }}
+                        >
                           {card.description}
                         </p>
                       </div>
@@ -108,17 +120,21 @@ const AutoSliderSection = ({ cards = [] }) => {
                     <p className="text-center text-white">No cards available</p>
                   )}
                 </div>
+
                 <div className="flex justify-center mt-4 space-x-2">
-                  {Array.from({ length: totalSlides }, (_, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => handleDotClick(idx)}
-                      className={`h-2 w-6 rounded-full ${
-                        currentSlide === idx ? "bg-white" : "bg-gray-400"
-                      } transition-all duration-300`}
-                      aria-label={`Go to slide ${idx + 1}`}
-                    />
-                  ))}
+                  {Array.from(
+                    { length: Math.max(totalSlides - visibleSlides + 1, 0) },
+                    (_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => handleDotClick(idx)}
+                        className={`h-2 w-6 rounded-full ${
+                          currentSlide === idx ? "bg-white" : "bg-gray-400"
+                        } transition-all duration-300`}
+                        aria-label={`Go to slide ${idx + 1}`}
+                      />
+                    )
+                  )}
                 </div>
               </div>
             </div>

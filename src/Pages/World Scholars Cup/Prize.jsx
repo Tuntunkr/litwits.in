@@ -280,7 +280,7 @@ const PrizeSlider = () => {
                 className="relative px-2"
                 style={{ width: `${100 / itemsPerSlide}%` }}
               >
-                <div className="rounded-xl overflow-hidden h-[350px] md:h-[450px] lg:h-[500px] shadow hover:shadow-xl transition-all duration-500">
+               <div className="rounded-xl overflow-hidden h-[280px] md:h-[380px] lg:h-[380px] shadow hover:shadow-xl transition-all duration-500">
                   <img
                     src={item.image}
                     alt={item.alt}
