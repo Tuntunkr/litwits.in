@@ -274,7 +274,7 @@ const CollegeCounseling = () => {
           aria-describedby="consultation-description"
         >
           <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
-            <h1 className="text-[3vw] md:text-[1vw] lg:text-[30px] font-bold leading-tight mt-2">
+            <h1 className="text-[5vw] md:text-[1.8vw] lg:text-[30px] font-bold leading-tight mt-2">
               COLLEGE COUNSELING
             </h1>
           </div>
@@ -384,57 +384,43 @@ const CollegeCounseling = () => {
 
         {/* SAT  start*/}
         <section
-          className="relative bg-cover bg-center py-10 text-center text-white"
-          style={{
-            backgroundImage: `url(${blueprint})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed",
-            backgroundRepeat: "no-repeat",
-          }}
-          role="img"
-          aria-label="Blueprint for Success with LITWITS"
-          aria-describedby="blueprint-description"
+          id="individual-session"
+          className="container-fluid mx-auto py-10 bg-white"
         >
-          {/* Background Opacity Layer */}
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="container mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <img
+                src={blueprint}
+                alt="Defining unique identity through passion, strengths, and potential."
+                title="Defining Your Unique Identity with LITWITS"
+                aria-label="Defining Your Unique Identity with LITWITS"
+                aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
+                className="rounded-lg shadow-lg w-full h-auto object-contain"
+              />
 
-          {/* Content Section */}
-          <div className="relative container mx-auto px-4 ">
-            <h2 className="text-2xl text-white md:text-3xl font-bold mb-6">
-              A BLUEPRINT FOR SUCCESS
-            </h2>
-            <div className="flex text-start flex-col max-w-[980px] mx-auto ">
-              <p style={{ fontSize: "15px" }}>
-                Once we have a clear understanding of your identity and
-                aspirations, we create a personalized roadmap that leverages all
-                your strengths into an actionable, cohesive plan. The roadmap
-                includes:
-              </p>
-
-              <p style={{ fontSize: "15px" }}>
-                We break down each stage of your journey with clear deadlines
-                and monthly goals to ensure consistent progress.
-              </p>
-
-              <p style={{ fontSize: "15px" }}>
-                We turn ideas into action by guiding you through internships,
-                research projects, leadership opportunities, extracurricular
-                activities, and capstone projects, ensuring tangible results at
-                every step.
-              </p>
+              <div>
+                <h2 className="text-3xl text-start uppercase font-bold text-red-700 mb-4">
+                  A BLUEPRINT FOR SUCCESS
+                </h2>
+                <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Once we have a clear understanding of your identity and
+                  aspirations, we create a personalized roadmap that leverages
+                  all your strengths into an actionable, cohesive plan. The
+                  roadmap includes:
+                </p>
+                <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                  We break down each stage of your journey with clear deadlines
+                  and monthly goals to ensure consistent progress.
+                </p>
+                <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                  We turn ideas into action by guiding you through internships,
+                  research projects, leadership opportunities, extracurricular
+                  activities, and capstone projects, ensuring tangible results
+                  at every step.
+                </p>
+              </div>
             </div>
           </div>
-
-          {/* Descriptive Content for Accessibility */}
-          <p
-            id="blueprint-description"
-            className="sr-only"
-            style={{ fontSize: "15px" }}
-          >
-            Personalized roadmap integrating strengths into an actionable plan
-            for consistent academic growth.
-          </p>
         </section>
 
         {/* SAT  end*/}
@@ -446,18 +432,8 @@ const CollegeCounseling = () => {
           id="individual-session"
           className="container-fluid mx-auto py-10 bg-white"
         >
-          <div className="max-w-(--breakpoint-xl) mx-auto">
+          <div className=" container max-w-(--breakpoint-xl) mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              {/* Image Section */}
-              <img
-                src={build}
-                alt="Profile-building for leadership, creativity, and impactful achievements."
-                title="Building a Cohesive and Impactful Profile with LITWITS"
-                aria-label="Building a Cohesive and Impactful Profile with LITWITS"
-                aria-describedby="Guidance in curating extracurriculars, building resumes, and crafting a strong academic narrative."
-                style={{ height: "530px" }}
-                className="rounded-lg shadow-lg w-full h-full object-cover"
-              />
               {/* Text Section */}
               <div className="flex flex-col justify-center h-full">
                 <p className="text-[#890C25] uppercase text-start text-2xl md:text-2xl font-bold mb-2">
@@ -468,7 +444,7 @@ const CollegeCounseling = () => {
                   self and demonstrate leadership, intellectual curiosity, and a
                   commitment to making a positive impact. We help you:
                 </p>
-               
+
                 <li className="list-none m-1">
                   <strong className="block text-lg font-semibold text-gray-800">
                     Curate Extracurriculars:
@@ -476,10 +452,9 @@ const CollegeCounseling = () => {
                   <span className="text-gray-600" style={{ fontSize: "15px" }}>
                     Pursue activities that align with your passions and
                     strengthen your profile. Whether it’s leadership roles in
-                    <span className="text-blue-500 font-medium"> MUNs</span>,
-                    debate tournaments, TED-Ed talks, Writing Competitions, or
-                    entrepreneurship, we guide you in selecting experiences that
-                    tell a cohesive, compelling story.
+                    MUNs,debate tournaments, TED-Ed talks, Writing Competitions,
+                    or entrepreneurship, we guide you in selecting experiences
+                    that tell a cohesive, compelling story.
                   </span>
                 </li>
                 <li className="list-none m-1">
@@ -505,6 +480,16 @@ const CollegeCounseling = () => {
                 </li>
                 {/* </ul> */}
               </div>
+              {/* Image Section */}
+              <img
+                src={build}
+                alt="Profile-building for leadership, creativity, and impactful achievements."
+                title="Building a Cohesive and Impactful Profile with LITWITS"
+                aria-label="Building a Cohesive and Impactful Profile with LITWITS"
+                aria-describedby="Guidance in curating extracurriculars, building resumes, and crafting a strong academic narrative."
+                style={{ height: "530px" }}
+                className="rounded-lg shadow-lg w-full h-full object-cover"
+              />
             </div>
           </div>
         </section>
@@ -512,64 +497,51 @@ const CollegeCounseling = () => {
         {/* Writing Section */}
 
         {/* World Scholar's Cup */}
-
         <section
-          className="relative bg-cover bg-center py-10 text-center text-white"
-          style={{
-            backgroundImage: `url(${Tomeet})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed",
-            backgroundRepeat: "no-repeat",
-          }}
-          role="img"
-          aria-label="Achieving Academic Excellence with LITWITS"
-          aria-describedby="academic-excellence-description"
+          id="individual-session"
+          className="container-fluid mx-auto py-10 bg-white"
         >
-          {/* Background Opacity Layer */}
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="container mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <img
+                src={Tomeet}
+                alt="Defining unique identity through passion, strengths, and potential."
+                title="Defining Your Unique Identity with LITWITS"
+                aria-label="Defining Your Unique Identity with LITWITS"
+                aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
+                className="rounded-lg shadow-lg w-full h-auto object-contain"
+              />
 
-          {/* Content Section */}
-          <div className="relative container mx-auto text-white text-center ">
-            <p className="font-noto uppercase font-bold text-2xl md:text-2xl mb-6  max-w-3xl mx-auto">
-              To meet the demanding standards of top universities, we provide
+              <div>
+                <p className="text-[#890C25] uppercase text-start text-2xl md:text-2xl font-bold mb-2">
+                  To meet the demanding standards of top universities, we provide
               tailored guidance for academic excellence, including:
-            </p>
-            <div className="max-w-[950px] mx-auto text-start space-y-4">
-              <p style={{ fontSize: "15px" }}>
-                <span className="font-semibold">Test Preparation:</span> Our
+                </p>
+                <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                  <span className="font-semibold">Test Preparation:</span> Our
                 team offers comprehensive support for standardized tests like
                 SAT, ACT, AP exams, IELTS, and other assessments. Our focused
                 approach ensures you're fully prepared to achieve your best
                 possible scores.
-              </p>
-              <p style={{ fontSize: "15px" }}>
-                <span className="font-semibold">
-                  Advanced Coursework Guidance:
-                </span>
-                Whether it's selecting the right AP courses or excelling in
-                advanced academic projects, we provide strategies for success in
-                challenging coursework.
-              </p>
+                </p>
+                <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                  <span className="font-semibold">Test Preparation:</span> Our
+                team offers comprehensive support for standardized tests like
+                SAT, ACT, AP exams, IELTS, and other assessments. Our focused
+                approach ensures you're fully prepared to achieve your best
+                possible scores.
+                </p>
+              </div>
             </div>
           </div>
-
-          {/* Descriptive Content for Accessibility */}
-          <p
-            id="academic-excellence-description"
-            className="sr-only"
-            style={{ fontSize: "15px" }}
-          >
-            Tailored guidance for test preparation, advanced coursework, and
-            strong academic performance.
-          </p>
         </section>
+
         {/* Mun section  */}
         <section
           id="individual-session"
           className="container-fluid mx-auto py-10 bg-white"
         >
-          <div className="max-w-(--breakpoint-xl) mx-auto">
+          <div className=" container max-w-(--breakpoint-xl) mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
               {/* Text Section */}
               <div className="flex flex-col justify-center">
@@ -587,7 +559,9 @@ const CollegeCounseling = () => {
                     Essay Writing:
                   </strong>
                   <span className="text-gray-600" style={{ fontSize: "15px" }}>
-                    We work with you to craft standout Common App essays and supplementary essays that authentically represent your personality, experiences,and aspirations.
+                    We work with you to craft standout Common App essays and
+                    supplementary essays that authentically represent your
+                    personality, experiences,and aspirations.
                   </span>
                 </li>
                 <br />
@@ -635,7 +609,9 @@ const CollegeCounseling = () => {
 
         <section className="bg-red-800 to-[#33000A] text-white py-10 px-4">
           <div className="max-w-(--breakpoint-lg) mx-auto text-center">
-            <p className=" font-bold mb-1 text-2xl md:text-2xl">PRESENTING YOUR BEST SELF</p>
+            <p className=" font-bold mb-1 text-2xl md:text-2xl">
+              PRESENTING YOUR BEST SELF
+            </p>
             <p
               className="text-white md:text-xl mb-4"
               style={{ fontSize: "15px" }}

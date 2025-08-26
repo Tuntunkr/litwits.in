@@ -112,7 +112,8 @@
 
 // export default PopularProducts;
 import React from "react";
-import studentimg from "/assets/litwits-leaders.avif";
+// import studentimg from "/assets/litwits-leaders.avif";
+import TestimonialCarousel from "./Testimonial";
 
 const PopularProducts = () => {
   return (
@@ -123,25 +124,39 @@ const PopularProducts = () => {
             {/* Text Content */}
             <div className="text-center lg:text-left">
               <p className="text-lg text-white leading-relaxed text-left  mb-3">
-               Driven by a mission to build leaders, LITWITS has redefined the education landscape by championing critical thinking, and the power of inquiry.
-
+                Driven by a mission to build leaders, LITWITS has redefined the
+                education landscape by championing critical thinking, and the
+                power of inquiry.
               </p>
               <p className="text-lg text-white leading-relaxed text-left  mb-3">
-                For over a decade, LITWITS has been dedicated to shaping leaders, empowering more than 10,000 students to think critically and drive meaningful change in their own lives, in their communities and the world. 
+                For over a decade, LITWITS has been dedicated to shaping
+                leaders, empowering more than 10,000 students to think
+                critically and drive meaningful change in their own lives, in
+                their communities and the world.
                 {/* For over a decade, LITWITS has empowered more than 10,000 students to engage in meaningful discourse, broadening perspectives and cultivating a nuanced understanding of the world.  */}
               </p>
               <p className="text-lg text-white leading-relaxed text-left  mb-3">
-                LITWITS students' ability to think critically and formulate deep and effective questions has led to LITWITS being home to the best speakers and debaters.
+                LITWITS students' ability to think critically and formulate deep
+                and effective questions has led to LITWITS being home to the
+                best speakers and debaters.
               </p>
               <p className="text-lg text-white leading-relaxed text-left mb-3">
-               With a legacy of excellence, LITWITS students have consistently shone at leading global competitions, including the Harvard Online Debate, Harvard International Review, Edinburgh BP World Cup, Yale University, and the Stanford Invitational. At the World Scholar’s Cup, our delegations have repeatedly ranked among the top, with notable performances across India, Beijing, Dubai, Doha, Melbourne, The Hague, Bangkok, Vietnam, Kuala Lumpur, and Yale.
+                With a legacy of excellence, LITWITS students have consistently
+                shone at leading global competitions, including the Harvard
+                Online Debate, Harvard International Review, Edinburgh BP World
+                Cup, Yale University, and the Stanford Invitational. At the
+                World Scholar’s Cup, our delegations have repeatedly ranked
+                among the top, with notable performances across India, Beijing,
+                Dubai, Doha, Melbourne, The Hague, Bangkok, Vietnam, Kuala
+                Lumpur, and Yale.
               </p>
               <p className="text-lg text-white leading-relaxed text-left ">
-               LITWITS has helped shape students into catalysts for the change they want to create in the world. 
+                LITWITS has helped shape students into catalysts for the change
+                they want to create in the world.
               </p>
             </div>
             {/* Image */}
-            <div className="mt-8 mx-auto max-w-full relative">
+            {/* <div className="mt-8 mx-auto max-w-full relative">
               <img
                 src={studentimg}
                 alt="LITWITS - Empowering students to become global leaders."
@@ -150,13 +165,16 @@ const PopularProducts = () => {
                 aria-describedby="LITWITS transforms education with critical thinking, debate, and writing programs to build strong leaders."
                 className="object-cover rounded-lg shadow-xl transition-transform duration-300 ease-in-out transform hover:scale-105 w-full h-auto"
               />
-            </div>
+            </div> */}
+         
           </div>
         </div>
+           <section>
+              <TestimonialCarousel />
+            </section>
       </section>
     </>
   );
 };
 
 export default PopularProducts;
-

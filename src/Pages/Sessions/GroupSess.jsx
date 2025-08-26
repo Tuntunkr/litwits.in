@@ -913,7 +913,7 @@ const GroupSess = () => {
             aria-describedby="world-scholar-cup-description"
           >
             {/*  Blue overlay instead of black */}
-            {/* <div className="absolute inset-0 bg-blue-950/80"></div>
+        {/* <div className="absolute inset-0 bg-blue-950/80"></div>
 
             <div className="relative text-left text-white max-w-5xl px-4 py-10">
               <h1 className="font-noto text-center font-bold text-2xl md:text-5xl mb-2">
@@ -950,7 +950,7 @@ const GroupSess = () => {
             </div>
 
             {/* Descriptive Content for Accessibility */}
-            {/* <p id="world-scholar-cup-description" className="sr-only">
+        {/* <p id="world-scholar-cup-description" className="sr-only">
               Comprehensive coaching for the World Scholar's Cup, preparing
               students for debate, collaborative writing, and analytical
               challenges, fostering critical thinking and teamwork.
@@ -1136,7 +1136,7 @@ const GroupSess = () => {
                   budgeting, and investing in a real and approachable way.
                 </p>
                 <p
-                  className="font-nototext-gray-700"
+                  className="font-noto text-gray-700"
                   style={{ fontSize: "15px" }}
                 >
                   Our program introduces key financial concepts such as
@@ -1283,7 +1283,6 @@ const GroupSess = () => {
         >
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-
               <div>
                 <h2 className="text-2xl text-start font-bold uppercase text-red-700 mb-2">
                   IVY LEAGUE & PRESTIGIOUS COMPETITIONS
@@ -1327,14 +1326,13 @@ const GroupSess = () => {
                   </Link>
                 </div>
               </div>
-                            <img
+              <img
                 src={competition}
                 alt="Ivy League Prep for success in competitive environments."
                 title="Ivy League and Prestigious Competitions at Litwits"
                 aria-label="Ivy League and Prestigious Competitions at Litwits"
                 aria-describedby="Focused coaching to prepare students for high-stakes competitions such as Harvard/Yale Invitationals, fostering resilience and academic excellence."
-                style={{ height: "400px", width: "100%" }}
-                className="rounded-lg shadow-lg w-full object-fit object-top"
+                className="rounded-lg shadow-lg w-full h-[450px] object-contain bg-white"
               />
             </div>
           </div>

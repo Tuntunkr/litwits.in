@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Contact from "../../sections/Contact";
 import ted from "/group-26695.png";
-import RESEARCH from "/group-26696.png"
+import RESEARCH from "/group-26696.png";
 
 const GroupSess = () => {
   const sliderRef = useRef(null);
@@ -741,11 +741,11 @@ const GroupSess = () => {
             <img
               src={ted}
               alt="Model United Nations training for diplomacy, negotiation, and leadership skills."
-              style={{ height: "500px" }}
-              className="rounded-lg shadow-lg w-full object-cover"
+              className="rounded-lg shadow-lg w-full object-contain bg-black"
               title="Model United Nations (MUN) at Litwits"
               aria-label="Model United Nations (MUN) at Litwits"
               aria-describedby="Immersive MUN training that prepares students for global diplomacy, impactful position papers, and confident public speaking at prestigious conferences."
+              style={{ width: "100%", height: "500px" }}
             />
           </div>
         </div>
@@ -814,7 +814,6 @@ const GroupSess = () => {
           </div>
         </div>
       </section>
-
 
       {/*  RESEARCH PAPER GUIDANCE */}
 
@@ -930,7 +929,7 @@ const GroupSess = () => {
         </div>
       </section>
       {/* Writing Section */}
-            <section
+      <section
         id="individual-session"
         className="container-fluid mx-auto py-10 bg-white"
       >
@@ -941,7 +940,7 @@ const GroupSess = () => {
                 SAT PREP SESSION
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                 Through expert instruction and targeted strategies, we focus on
+                Through expert instruction and targeted strategies, we focus on
                 all SAT sections: Evidence-Based Reading, Writing and Language,
                 and Math.By understanding the test format, mastering timing, and
                 honing question-handling techniques, students are equipped to

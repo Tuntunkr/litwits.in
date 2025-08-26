@@ -114,7 +114,7 @@ const TestimonialCarousel = () => {
 
   return (
     <section
-      className="relative bg-white py-12 md:py-16 lg:py-20 font-noto overflow-hidden"
+      className="relative  py-6 md:py-8 lg:py-10 font-noto overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -131,12 +131,12 @@ const TestimonialCarousel = () => {
           />
         </div>
 
-        <div className="relative  max-w-6xl mx-auto z-10">
+        <div className="relative  max-w-6xl mx-auto z-10 ">
           <Link
             onClick={handleExternalClick}
             className="block w-full h-full cursor-pointer"
           >
-            <div className="relative w-full h-[350px] p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+            <div className="relative w-full  p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden ">
               <AnimatePresence custom={direction} mode="popLayout">
                 <motion.div
                   key={testimonials[currentIndex].id}
@@ -155,17 +155,20 @@ const TestimonialCarousel = () => {
                     x: direction > 0 ? -100 : 100,
                     transition: { duration: 0.5 },
                   }}
-                  className="absolute inset-0 flex flex-col justify-center items-center p-6"
+                  className="relative flex flex-col justify-center items-center p-6 h-auto"
                 >
-                  <div className="text-center">
-                    <div className="text-gray-700 italic text-base md:text-lg lg:text-xl mb-6 leading-relaxed">
-                      <p>"{testimonials[currentIndex].text}"</p>
+                  <div className="text-center  ">
+                    <div className="text-gray-700 italic text-base md:text-lg lg:text-xl mb-6 leading-20 sm:leading-8 md:leading-9">
+                      <p className="text-gray-900">
+                        "{testimonials[currentIndex].text}"
+                      </p>
                       {testimonials[currentIndex].extra && (
-                        <p className="mt-2 font-medium text-black not-italic">
+                        <p className="mt-2 font-medium text-gray-900 not-italic ">
                           {testimonials[currentIndex].extra}
                         </p>
                       )}
                     </div>
+
                     <div className="mt-6">
                       <h4 className="text-lg md:text-xl font-semibold text-[#890C25]">
                         {testimonials[currentIndex].name}

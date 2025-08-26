@@ -21,7 +21,7 @@ import ChatBot from "./sections/ChatBot";
 // Lazy Loading Pages
 const Hero = lazy(() => import("./sections/Hero"));
 const Session = lazy(() => import("./Pages/Sessions/GroupSess"));
-const WscSession = lazy(() =>import("./Pages/WscSession/index"));
+const WorldScholarsCup = lazy(() =>import("./Pages/World Scholars Cup/index"));
 const Membership = lazy(() => import("./Pages/Membership/index"));
 const Contact = lazy(() => import("./Pages/Contact/index"));
 const RefundPolicy = lazy(() => import("./Pages/Refund/RefundPolicy"));
@@ -160,8 +160,8 @@ const App = () => {
             <Route path="/" element={<Hero />} />
             <Route path="/Session" element={<Session/>} />
             <Route
-              path="/WscSession"
-              element={<WscSession/>}
+              path="/World Scholars Cup"
+              element={<WorldScholarsCup/>}
             />
             <Route path="/membership" element={<Membership />} />
             <Route path="/college-counseling" element={<CollegeCounseling />} />
