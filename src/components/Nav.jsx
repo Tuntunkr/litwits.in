@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/session", label: " SESSIONS" },
-  { href: "/World Scholars Cup", label: " World Scholars Cup" },
+  { href: "/world-scholars-cup", label: " World Scholars Cup" },
   { href: "/college-counseling", label: "College Counseling" },
   { href: "/membership", label: "Membership" },
 ];

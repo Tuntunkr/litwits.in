@@ -160,7 +160,7 @@ const App = () => {
             <Route path="/" element={<Hero />} />
             <Route path="/Session" element={<Session/>} />
             <Route
-              path="/World Scholars Cup"
+              path="/world-scholars-cup"
               element={<WorldScholarsCup/>}
             />
             <Route path="/membership" element={<Membership />} />
