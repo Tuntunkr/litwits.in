@@ -8,11 +8,38 @@ import Contact from "../../sections/Contact";
 const GroupSess = () => {
   return (
     <section>
-      <section className="container py-5">
-        <div className="mb-2">
-          <h2 className=" text-center fw-bold text-3xl md:text-5xl mb-3 text-red-700">
+      <section
+        id="WORLD SCHOLAR’S CUP TRAINING"
+        className="relative h-[25vh] w-full flex items-center justify-center text-white overflow-hidden"
+        style={{ fontFamily: "'Noto Sans', sans-serif" }}
+        role="img"
+        aria-label="Group Sessions at LITWITS for Writing, Debate, Public Speaking, and more to foster growth and learning."
+        aria-describedby="group-session-description"
+      >
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-center bg-contain bg-no-repeat"
+          style={{
+            backgroundImage: "url('/assets/WORLD SCHOLAR’S CUP TRAINING.jpeg')",
+          }}
+        ></div>
+
+        {/* Overlay (thoda transparent black) */}
+        <div className="absolute inset-0 bg-[rgba(0,0,0,0.85)]"></div>
+
+        {/* Content */}
+        <div className="relative z-10 text-center">
+          <h2 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2">
             WORLD SCHOLAR’S CUP TRAINING
           </h2>
+        </div>
+      </section>
+
+      <section className="container py-5">
+        <div className="mb-1">
+          {/* <h2 className=" text-center fw-bold text-3xl md:text-5xl mb-3 text-red-700">
+            WORLD SCHOLAR’S CUP TRAINING
+          </h2> */}
           <p
             className="font-bold leading-relaxed text-gray-900 text-center"
             style={{ fontSize: "15px" }}
@@ -36,13 +63,13 @@ const GroupSess = () => {
           </h5>
         </div>
         <div>
-          <h3 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5 text-red-700">
-            LITWITS Achievements at the World Scholars Cup
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 text-center">
+            World Scholar's Cup Awards
           </h3>
-          <p className=" text-gray-900 mb-0" style={{ fontSize: "15px" }}>
+          {/* <p className=" text-gray-900 mb-0" style={{ fontSize: "15px" }}>
             Let’s just say our trophy shelves are crowded. A few highlights:
-          </p>
-          <section className="container-fluid p-0 mb-2">
+          </p> */}
+          <section className="container-fluid p-0 mb-2 mt-2">
             <PrizeSlider />
           </section>
           <p className=" text-gray-900" style={{ fontSize: "15px" }}>
@@ -53,7 +80,7 @@ const GroupSess = () => {
           </p>
         </div>
         <div className="">
-          <h3 className="fw-semibold text-2xl md:text-5xl mb-2 mt-5 text-red-700 ">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             What is the World Scholar’s Cup (WSC)?
           </h3>
           <p className=" text-gray-900 " style={{ fontSize: "15px" }}>
@@ -65,9 +92,9 @@ const GroupSess = () => {
             style={{ fontSize: "15px" }}
           >
             You don’t just study a syllabus - you dive into a universe. One
-            moment you’re exploring whether artists are the new explorers (“they
-            just use paint instead of ships”), and the next, you’re writing
-            about why some mysteries are better left unsolved. Want to challenge
+            moment you’re exploring whether artists are the new explorers “they
+            just use paint instead of ships”, and the next, you’re writing about
+            why some mysteries are better left unsolved. Want to challenge
             history? Try making a case for the unsung discoveries that didn’t
             make it into textbooks. Or get philosophical with a prompt like:
             “When a story tells you something, it’s also hiding something.”
@@ -108,7 +135,7 @@ const GroupSess = () => {
         </div>
 
         <div className="">
-          <h3 className="fw-semibold text-2xl md:text-5xl mb-2 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             What are the Events of the World Scholar’s Cup?
           </h3>
           <p
@@ -255,7 +282,7 @@ const GroupSess = () => {
           Because excellence isn’t luck. At LITWITS, excellence is a habit.
         </p>
         <div className="">
-          <h3 className="fw-semibold text-2xl md:text-5xl mb-2 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             World Scholar’s Cup Eligibility
           </h3>
           <p
@@ -298,48 +325,45 @@ const GroupSess = () => {
 
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3 text-gray-900 " style={{ fontSize: "15px" }}>
-              A school-affiliated team
+              A school-affiliated team.
             </li>
 
             <li
               className="mb-3 text-gray-900 leading-relaxed"
               style={{ fontSize: "15px" }}
             >
-              An independent team ( LITWITS will pair you with like-minded
-              scholars to form a competitive team across all rounds )
+              An independent team (LITWITS will pair you with like-minded
+              scholars to form a competitive team across all rounds)
             </li>
           </ul>
-          <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             <strong> Eligibility Criteria:</strong>
-          </h4>
+          </h3>
           <ul className="list-disc list-inside mb-6 mt-2 space-y-4">
-             <li className="relative pl-5 text-gray-900 leading-relaxed text-[15px] flex before:content-['•'] before:absolute before:left-0 before:text-black">
+            <li className="relative pl-5 text-gray-900 leading-relaxed text-[15px] flex before:content-['•'] before:absolute before:left-0 before:text-black">
               <span className="font-bold mr-1  whitespace-nowrap">
-               Skittles: 
+                Skittles:
               </span>
               <span>
-                Events are held in select countries
-              for students 10 and younger only; these younger scholars are also
-              welcome in the standard Junior Division.
+                Events are held in select countries for students 10 and younger
+                only; these younger scholars are also welcome in the standard
+                Junior Division.
               </span>
             </li>
-             <li className="relative pl-5 text-gray-900 leading-relaxed text-[15px] flex before:content-['•'] before:absolute before:left-0 before:text-black">
+            <li className="relative pl-5 text-gray-900 leading-relaxed text-[15px] flex before:content-['•'] before:absolute before:left-0 before:text-black">
               <span className="font-bold mr-1  whitespace-nowrap">
-               Junior Division: 
+                Junior Division:
               </span>
-              <span>
-               Students aged 11 to 13
-              </span>
+              <span>Students aged 11 to 13</span>
             </li>
-             <li className="relative pl-5 text-gray-900 leading-relaxed text-[15px] flex before:content-['•'] before:absolute before:left-0 before:text-black">
+            <li className="relative pl-5 text-gray-900 leading-relaxed text-[15px] flex before:content-['•'] before:absolute before:left-0 before:text-black">
               <span className="font-bold mr-1  whitespace-nowrap">
-               Senior Division:
+                Senior Division:
               </span>
               <span>
-              Students aged 14 and above (For
-              2025: any student who turns 14 by January 1, 2025 (i.e. born
-              before January 1, 2011) will be considered a senior division
-              student.)
+                Students aged 14 and above (For 2025: any student who turns 14
+                by January 1, 2025 (i.e. born before January 1, 2011) will be
+                considered a senior division student.)
               </span>
             </li>
           </ul>
@@ -358,7 +382,7 @@ const GroupSess = () => {
           </p>
         </div>
         <div className="mb-7">
-          <h3 className="font-bold fw-semibold text-2xl md:text-5xl mb-3 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             How to Join the World Scholar’s Cup?
           </h3>
           <p
@@ -370,7 +394,9 @@ const GroupSess = () => {
 
           <ul className="mt-2 space-y-4">
             <li className="relative pl-5 text-gray-900 leading-relaxed text-[15px] flex before:content-['•'] before:absolute before:left-0 before:text-black">
-              <span className="font-bold mr-1 whitespace-nowrap">Form a Team:</span>
+              <span className="font-bold mr-1 whitespace-nowrap">
+                Form a Team:
+              </span>
               <span>
                 If you're an individual participant, LITWITS will help you form
                 one by connecting you with other interested students.
@@ -388,7 +414,9 @@ const GroupSess = () => {
             </li>
 
             <li className="relative pl-5 text-gray-900 leading-relaxed text-[15px] flex before:content-['•'] before:absolute before:left-0 before:text-black">
-              <span className="font-bold mr-1 whitespace-nowrap">Register Your Team:</span>
+              <span className="font-bold mr-1 whitespace-nowrap">
+                Register Your Team:
+              </span>
               <span>
                 Visit the official website to register. You’ll need basic team
                 details and a payment method.
@@ -407,7 +435,9 @@ const GroupSess = () => {
             </li>
 
             <li className="relative pl-5 text-gray-900 leading-relaxed text-[15px] flex before:content-['•'] before:absolute before:left-0 before:text-black">
-              <span className="font-bold mr-1 whitespace-nowrap">Compete in Your Round:</span>
+              <span className="font-bold mr-1 whitespace-nowrap">
+                Compete in Your Round:
+              </span>
               <span>
                 Attend your selected Regional Round. If your team qualifies, you
                 can progress to the Global Rounds.
@@ -426,9 +456,9 @@ const GroupSess = () => {
           </ul>
         </div>
         <div className="mb-3">
-          <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             LITWITS: Your Official Launchpad to WSC Success
-          </h4>
+          </h3>
           <p
             className=" text-gray-900 leading-relaxed"
             style={{ fontSize: "15px" }}
@@ -479,13 +509,13 @@ const GroupSess = () => {
           >
             Because we don’t just teach. We train, team up, mentor, and guide.
           </p>
-          <h4 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             Here’s what you get with us:
-          </h4>
+          </h3>
 
           <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
             <li className="text-gray-900">
-              <strong className="md:text-xl block  text-xl  mb-3 mt-4 text-gray-900">
+              <strong className=" block  text-base  mb-3 mt-4 text-gray-900 md:text-xl">
                 Engaging, high-energy sessions
               </strong>
 
@@ -513,7 +543,7 @@ const GroupSess = () => {
               </p>
             </li>
             <li className="text-gray-900">
-              <strong className="md:text-xl block  text-xl  mb-3 mt-4 text-gray-900">
+              <strong className="block  text-base  mb-3 mt-4 text-gray-900 md:text-xl">
                 A strong, smart community
               </strong>
               <p
@@ -538,7 +568,7 @@ const GroupSess = () => {
               </p>
             </li>
             <li className="text-gray-900">
-              <strong className="md:text-xl block  text-xl  mb-3 mt-4 text-gray-900">
+              <strong className="block  text-base  mb-3 mt-4 text-gray-900 md:text-xl">
                 Expert feedback that actually helps
               </strong>
               <p
@@ -546,7 +576,7 @@ const GroupSess = () => {
                 style={{ fontSize: "15px" }}
               >
                 We don’t believe in sugarcoating or vague compliments. When we
-                say “great point,” we’ll tell you why it worked. And when
+                say “great point” we’ll tell you why it worked. And when
                 something needs improvement, we don’t leave you guessing; we
                 show you exactly how to strengthen it.
               </p>
@@ -562,7 +592,7 @@ const GroupSess = () => {
               </p>
             </li>
             <li className="text-gray-900">
-              <strong className="md:text-xl block  text-xl  mb-3 mt-4 text-gray-900">
+              <strong className="block  text-base  mb-3 mt-4 text-gray-900 md:text-xl">
                 Practice that feels purposeful
               </strong>
               <p
@@ -570,7 +600,7 @@ const GroupSess = () => {
                 style={{ fontSize: "15px" }}
               >
                 We believe prep should feel less like “more work” and more like
-                “real progress.” That’s why we simulate actual WSC rounds, run
+                “real progress”. That’s why we simulate actual WSC rounds, run
                 team quizzes, host mock debates, and assign writing prompts that
                 make your brain do somersaults in the best way possible.
               </p>
@@ -585,7 +615,7 @@ const GroupSess = () => {
               </p>
             </li>
             <li className="text-gray-900">
-              <strong className="md:text-xl block  text-xl  mb-3 mt-4 text-gray-900">
+              <strong className="block  text-base  mb-3 mt-4 text-gray-900 md:text-xl">
                 Results without burnout
               </strong>
               <p
@@ -602,12 +632,12 @@ const GroupSess = () => {
           </ul>
         </div>
         <div className="mb-7">
-          <h3 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             We have the resources you’ve been looking for:
           </h3>
           <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
             <li className="text-gray-900">
-              <strong className="md:text-xl block fw-semibold text-xl  mb-3 mt-4 text-gray-900">
+              <strong className="block  text-base  mb-3 mt-4 text-gray-900 md:text-xl">
                 WSC Curriculum Document
               </strong>
               <p
@@ -623,7 +653,7 @@ const GroupSess = () => {
               </p>
             </li>
             <li className="text-gray-900">
-              <strong className="md:text-xl block fw-semibold text-xl  mb-3 mt-4 text-gray-900">
+              <strong className="block  text-base  mb-3 mt-4 text-gray-900 md:text-xl">
                 WSC Quiz Document
               </strong>
               <p
@@ -637,7 +667,7 @@ const GroupSess = () => {
               </p>
             </li>
             <li className="text-gray-900">
-              <strong className="md:text-xl block fw-semibold text-xl  mb-3 mt-4 text-gray-900">
+              <strong className="block  text-base  mb-3 mt-4 text-gray-900 md:text-xl">
                 WSC Writing Prompts Document
               </strong>
               <p
@@ -651,7 +681,7 @@ const GroupSess = () => {
               </p>
             </li>
             <li className="text-gray-900">
-              <strong className="md:text-xl block fw-semibold text-xl  mb-3 mt-4 text-gray-900">
+              <strong className="block  text-base  mb-3 mt-4 text-gray-900 md:text-xl">
                 WSC Debate Motions Document
               </strong>
               <p
@@ -665,7 +695,7 @@ const GroupSess = () => {
               </p>
             </li>
           </ul>
-          <h3 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             What’s it like to be part of LITWITS?
           </h3>
           <p
@@ -693,9 +723,10 @@ const GroupSess = () => {
             confidence that comes from owning a room with your ideas.
           </p>
         </div>
-        <h3 className="fw-semibold text-2xl md:text-5xl mb-3 mt-5 text-red-700">
+        <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
           What are you waiting for?
         </h3>
+
         <p className=" text-gray-900" style={{ fontSize: "15px" }}>
           Whether you're forming your first team or chasing Yale, we’ve got your
           back.
