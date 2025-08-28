@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import blogs from "/blog.jpeg";
-import BN from "/BN.jpg";
+import blogs from "/blog.png";
+import BN from "/BN.png";
 import APLogo from "/AP-Logo.jpg";
 import { Helmet } from "react-helmet-async";
 import Accordion from "react-bootstrap/Accordion";
@@ -280,9 +280,10 @@ const AdvancedPlacementExam2025 = () => {
             <img
               src={blogs}
               alt={blog.title}
-              className="rounded-md mt-3 h-[26rem] w-full object-cover shadow-lg"
+              className="rounded-md mt-3 h-[35rem] w-full object-cover shadow-lg "
             />
           </div>
+
           <ul className="list-disc list-inside mb-6 pl-5">
             <li className="mb-3 text-gray-900">
               <strong className="text-gray-900 ">
@@ -461,9 +462,10 @@ const AdvancedPlacementExam2025 = () => {
             <img
               src={BN}
               alt={blog.title}
-              className="rounded-md mt-3 h-[26rem] w-full object-cover shadow-lg"
+              className="rounded-md mt-3 h-[30rem] w-full object-fill shadow-lg"
             />
           </div>
+
           <p className="mb-6 text-gray-900 ">
             Ideally, students should begin preparing 6 months before the exam or
             no later than the mid-year, which is usually after the winter break.

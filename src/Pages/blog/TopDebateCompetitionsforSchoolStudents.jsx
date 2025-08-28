@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import Contact from "../../sections/Contact";
 import Accordion from "react-bootstrap/Accordion";
- import circleboy from "/circleboy.jpeg";
+ import circleboy from "/circleboy.png";
 
 
 function Competitions() {
@@ -47,7 +47,7 @@ function Competitions() {
               <img
                 src={circleboy}
                 alt="Different writing formats"
-                className="rounded-md mt-3 h-96 w-full object-cover shadow-lg"
+                className="rounded-md mt-3 h-100 w-full object-cover shadow-lg"
               />
             </div>
           </header>
