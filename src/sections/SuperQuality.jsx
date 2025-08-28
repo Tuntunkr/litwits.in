@@ -18,7 +18,7 @@ const SuperQuality = () => {
             WE ARE PARTNERS IN OUR STUDENT'S EDUCATIONAL  JOURNEY
           </p>
           <div className="pl-1 pr-1 ">
-          <p className=" md:text-l text-white  text-left leading-sung font-noto"style={{ fontSize: "15px" }}>
+          <p className=" md:text-l text-white  text-left  font-noto  text-lg  leading-relaxed   mb-3">
             Nurtured by a group of diverse knowledge professionals, LITWITS
             empowers students to build powerful profiles through an extensive
             range of diverse and dynamic opportunities. These include Debating,
@@ -31,7 +31,7 @@ const SuperQuality = () => {
             clear roadmap through every step of the journey.
           </p>
 
-          <p className=" md:text-l text-white  text-left leading-relaxed font-noto mt-2"style={{ fontSize: "15px" }}>
+          <p className="md:text-l text-white  text-left  font-noto  text-lg  leading-relaxed   mb-3">
             LITWITS prides itself on its adaptive teaching methodologies
             designed to cater to diverse learning styles and abilities.
             Dedicated mentors help students identify their core strengths—their

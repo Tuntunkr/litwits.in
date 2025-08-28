@@ -19,14 +19,14 @@ const Services = () => {
       <div className="container mx-auto px-4 py-12 sm:py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Text Content */}
         <div className="space-y-2 p-4 sm:p-6 lg:p-8">
-          <p className="text-sm sm:text-base leading-7 sm:leading-8">
+          <p className="leading-7 sm:leading-8.  md:text-l text-white  text-left  font-noto  text-lg  mb-3">
             Professionals, PhDs, and Postgraduates from renowned institutions
             worldwide bring a wealth of expertise drawing from their
             distinguished experiences. These include judging elite tournaments
             at Yale, Harvard, Stanford Invitationals,the Debating
             Championships at Durham, Oxford, and Cambridge.
           </p>
-          <p className="text-sm sm:text-base leading-7 sm:leading-8">
+          <p className="leading-7 sm:leading-8.  md:text-l text-white  text-left  font-noto  text-lg  mb-3">
             Their accomplishments span serving as UN Millennium Fellows,
             collaborating with Members of Parliament and legislative bodies,
             working as Research Assistants to professors at leading
