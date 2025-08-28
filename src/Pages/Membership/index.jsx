@@ -9,35 +9,35 @@ import CourseCurriculum from "./CourseCurriculum";
 import Contact from "../../sections/Contact";
 
 const index = () => {
-  // const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(true);
 
   // Prevent background scroll when popup is open
-  // useEffect(() => {
-  //   if (showPopup) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "auto";
-  //   }
-  //   return () => {
-  //     document.body.style.overflow = "auto";
-  //   };
-  // }, [showPopup]);
+  useEffect(() => {
+    if (showPopup) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showPopup]);
 
-  // // Razorpay payment handler
-  // const handleRazorpay = () => {
-  //   // You can use your existing Rozarpayment logic here, or open Razorpay directly
-  //   // For demo, we'll just alert. Replace with actual Rozarpayment logic if needed.
-  //   if (window.Rozarpayment) {
-  //     window.Rozarpayment(9600); // Example amount
-  //   } else {
-  //     alert("Razorpay payment flow should open here.");
-  //   }
-  // };
+  // Razorpay payment handler
+  const handleRazorpay = () => {
+    // You can use your existing Rozarpayment logic here, or open Razorpay directly
+    // For demo, we'll just alert. Replace with actual Rozarpayment logic if needed.
+    if (window.Rozarpayment) {
+      window.Rozarpayment(9600); // Example amount
+    } else {
+      alert("Razorpay payment flow should open here.");
+    }
+  };
 
   return (
     <>
       {/* Popup Animation Style */}
-      {/* <style>{`
+      <style>{`
         @keyframes popupIn {
           0% { transform: scale(0.7) translateY(40px); opacity: 0; }
           80% { transform: scale(1.05) translateY(-8px); opacity: 1; }
@@ -46,9 +46,9 @@ const index = () => {
         .animate-popup {
           animation: popupIn 0.5s cubic-bezier(.68,-0.55,.27,1.55);
         }
-      `}</style> */}
+      `}</style>
       {/* Offer Popup Modal */}
-      {/* {showPopup && (
+      {showPopup && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center"
           style={{
@@ -56,35 +56,35 @@ const index = () => {
             backdropFilter: "blur(2px)",
           }}
         >
-          <div
+           <div 
             className="relative bg-white rounded-xl shadow-2xl max-w-[95vw] w-full sm:max-w-lg p-4 flex flex-col items-center animate-popup"
             style={{ boxSizing: "border-box" }}
-          >
+          > 
             {/* Close Button */}
-      {/* <button
+            <button
               className="absolute top-2 right-2 text-gray-600 hover:text-red-600 text-2xl font-bold"
               onClick={() => setShowPopup(false)}
               aria-label="Close"
             >
               &times;
-            </button> */}
-      {/* Banner Image */}
-      {/* <img
+            </button>
+            {/* Banner Image */}
+            <img
               src="/offer.jpeg"
               alt="Offer Banner"
-              className="w-full h-full rounded-lg mb-4 "
-              // style={{ maxHeight: "300px" }}
-            /> */}
-      {/* Razorpay Button */}
-      {/* 
-            <Rozarpayment inrAmount={1200} className="choose-plan mt-4" />
+              className=" rounded-lg mb-4 object-cover"
+               style={{ maxHeight: "500px" }}
+            /> 
+            {/* Razorpay Button */}
 
+           <Rozarpayment inrAmount={1200} className="w-full choose-plan transition bg-[#890C25] hover:bg-red-700 text-white py-2 rounded-md text-center font-semibold mt-4" />
+ {/* 
             <p className="text-sm text-gray-700 text-center mt-2">
               Limited seats available! Register now for the Master Class.
-            </p>
+            </p> */}
           </div>
         </div>
-      )} */}
+      )}
       {/* SEO Meta Tags */}
       <Helmet>
         <title>

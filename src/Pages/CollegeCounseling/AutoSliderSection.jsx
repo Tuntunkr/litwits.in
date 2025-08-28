@@ -68,7 +68,7 @@ const AutoSliderSection = ({ cards = [] }) => {
     <section>
       <div className="bg-red-800 container-fluid mx-auto flex items-center justify-center py-8">
         <div className="w-full max-w-[1499px] p-4 lg:p-8">
-          <h2 className="uppercase font-noto text-center text-2xl text-white md:text-3xl font-bold">
+          <h2 className="uppercase font-noto text-center fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-white  ">
             Curated College List and Personalized Fit
           </h2>
           <p
@@ -97,15 +97,26 @@ const AutoSliderSection = ({ cards = [] }) => {
                         className="shrink-0 w-full sm:w-[75%] md:w-[50%] lg:w-[33%] 
                    bg-transparent rounded-lg shadow-lg p-4"
                       >
-                        <img
+                        <div className="w-full aspect-[16/9]">
+                          <img
+                            src={card.image}
+                            className="w-full h-[250px] rounded-lg object-cover"
+                            alt={card.alt}
+                            title={card.imgTitle}
+                            aria-label={card.ariaLabel}
+                            aria-describedby={card.ariaDescribedby}
+                          />
+                        </div>
+
+                        {/* <img
                           src={card.image}
-                          className="rounded-lg mb-4 w-full h-[300px] object-cover"
+                          className="rounded-lg mb-4 w-full h-[300px] object-cover bg-red-800"
                           alt={card.alt}
                           title={card.imgTitle}
                           aria-label={card.ariaLabel}
                           aria-describedby={card.ariaDescribedby}
-                        />
-                        <h3 className="text-lg font-bold text-white mb-2">
+                        /> */}
+                        <h3 className="text-lg font-bold text-white mb-2 mt-1">
                           {card.title}
                         </h3>
                         <p

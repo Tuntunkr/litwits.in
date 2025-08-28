@@ -274,7 +274,7 @@ const CollegeCounseling = () => {
           aria-describedby="consultation-description"
         >
           <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
-            <h1 className="text-[5vw] md:text-[1.8vw] lg:text-[30px] font-bold leading-tight mt-2">
+            <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2">
               COLLEGE COUNSELING
             </h1>
           </div>
@@ -354,7 +354,7 @@ const CollegeCounseling = () => {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-3xl text-start uppercase font-bold text-red-700 mb-4">
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start uppercase  text-red-700 mb-4">
                   Defining Your Unique Identity
                 </h2>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -399,7 +399,7 @@ const CollegeCounseling = () => {
               />
 
               <div>
-                <h2 className="text-3xl text-start uppercase font-bold text-red-700 mb-4">
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start uppercase  text-red-700 mb-4">
                   A BLUEPRINT FOR SUCCESS
                 </h2>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -436,7 +436,7 @@ const CollegeCounseling = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* Text Section */}
               <div className="flex flex-col justify-center h-full">
-                <p className="text-[#890C25] uppercase text-start text-2xl md:text-2xl font-bold mb-2">
+                <p className="text-red-700 uppercase text-start fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-2">
                   Build a Cohesive and Impactful Profile
                 </p>
                 <p className="text-gray-700 mb-2" style={{ fontSize: "15px" }}>
@@ -473,7 +473,7 @@ const CollegeCounseling = () => {
                   </strong>
                   <span className="text-gray-600" style={{ fontSize: "15px" }}>
                     We direct all aspects of your profile toward your central
-                    theme or “human brand.” This ensures that your application
+                    theme or “human brand”. This ensures that your application
                     reflects not just your accomplishments, but also the purpose
                     and values that drive you.
                   </span>
@@ -513,7 +513,7 @@ const CollegeCounseling = () => {
               />
 
               <div>
-                <p className="text-[#890C25] uppercase text-start text-2xl md:text-2xl font-bold mb-2">
+                <p className="text-red-700 uppercase text-start fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-2">
                   To meet the demanding standards of top universities, we provide
               tailored guidance for academic excellence, including:
                 </p>
@@ -545,7 +545,7 @@ const CollegeCounseling = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
               {/* Text Section */}
               <div className="flex flex-col justify-center">
-                <p className="text-[#890C25] uppercase text-start text-2xl md:text-2xl font-bold mb-2">
+                <p className="text-red-700 uppercase text-start fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-2">
                   Craft Authentic and Impactful Applications
                 </p>
                 <p className="text-gray-700 mb-2" style={{ fontSize: "15px" }}>
@@ -584,7 +584,7 @@ const CollegeCounseling = () => {
                   <span className="text-gray-600" style={{ fontSize: "15px" }}>
                     We ensure that every part of your application—personal
                     statements, essays, recommendations—forms a coherent,
-                    compelling narrative that aligns with your “human brand.”
+                    compelling narrative that aligns with your “human brand”.
                   </span>
                 </li>
               </div>
@@ -609,7 +609,7 @@ const CollegeCounseling = () => {
 
         <section className="bg-red-800 to-[#33000A] text-white py-10 px-4">
           <div className="max-w-(--breakpoint-lg) mx-auto text-center">
-            <p className=" font-bold mb-1 text-2xl md:text-2xl">
+            <p className="  mb-1 fw-semibold text-[18px] md:text-[1.5rem] leading-snug">
               PRESENTING YOUR BEST SELF
             </p>
             <p
@@ -695,7 +695,7 @@ const CollegeCounseling = () => {
                 />
               </div>
               <div className="flex flex-col justify-between">
-                <p className="text-2xl uppercase text-left font-bold text-[#890C25] mb-2">
+                <p className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug uppercase text-left  text-red-700 mb-2">
                   Navigating Admissions Decisions
                 </p>
                 <p className="text-gray-700 mb-2" style={{ fontSize: "15px" }}>

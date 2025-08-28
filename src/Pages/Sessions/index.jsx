@@ -607,7 +607,7 @@ const GroupSess = () => {
         aria-describedby="individual-sessions-description"
       >
         <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
-          <h1 className="text-[5vw] md:text-[1.8vw] lg:text-[30px] font-bold leading-tight mt-2">
+          <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2">
             INDIVIDUAL SESSIONS
           </h1>
         </div>
@@ -643,7 +643,7 @@ const GroupSess = () => {
               aria-describedby="Immersive MUN training that prepares students for global diplomacy, impactful position papers, and confident public speaking at prestigious conferences."
             />
             <div>
-              <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
+              <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start  text-red-700 mb-2">
                 MODEL UNITED NATIONS (MUN)
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -693,7 +693,7 @@ const GroupSess = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
+              <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start  text-red-700 mb-2">
                 TED-ED STUDENT TALKS
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -768,7 +768,7 @@ const GroupSess = () => {
               aria-describedby="The Social Impact Program empowers students to align personal values with global initiatives, fostering ethical leadership and impactful change in their communities."
             />
             <div>
-              <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
+              <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start  text-red-700 mb-2">
                 SOCIAL IMPACT
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -824,7 +824,7 @@ const GroupSess = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
+              <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start  text-red-700 mb-2">
                 RESEARCH PAPER GUIDANCE
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -890,7 +890,7 @@ const GroupSess = () => {
               aria-describedby="Personalised coaching in AP subjects like Calculus, Economics, and History, with tailored lessons to help students excel in college-level coursework and achieve top scores."
             />
             <div>
-              <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
+              <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start  text-red-700 mb-2">
                 ADVANCED PLACEMENT PREP SESSION
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -936,7 +936,7 @@ const GroupSess = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
+              <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start  text-red-700 mb-2">
                 SAT PREP SESSION
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -998,7 +998,7 @@ const GroupSess = () => {
               aria-describedby="Tailored ACT preparation with personalised lesson plans that build core skills in English, Math, Reading, and Science, ensuring students excel with confidence."
             />
             <div>
-              <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
+              <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start  text-red-700 mb-2">
                 ACT PREP SESSION
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>

@@ -160,13 +160,14 @@ const SATPreparation2025 = () => {
             <h2 className="text-2xl font-bold mb-4 mt-4 text-gray-900">
               When to Start Preparing?
             </h2>
-            <div className="flex justify-center items-center mb-12">
-              <img
-                src={Satimg1}
-                alt="SAT study plan"
-                className="rounded-md mt-3 h-[26rem] w-full object-cover shadow-lg"
-              />
-            </div>
+           <div className="flex justify-center items-center mb-12">
+  <img
+    src={Satimg1}
+    alt="SAT study plan"
+    className="rounded-md mt-3 w-full h-auto object-contain shadow-lg"
+  />
+</div>
+
             <p className="text-black">
               When you start with SAT preparation, you must consider checking
               your efficiency in specific subjects, like reading, writing, and
@@ -279,7 +280,7 @@ const SATPreparation2025 = () => {
               <img
                 src={Satimg2}
                 alt="SAT test strategies"
-                 className="rounded-md mt-3 h-[26rem] w-full object-cover shadow-lg"
+                 className="rounded-md mt-3 w-full h-auto object-contain shadow-lg"
               />
             </div>
             <p className="text-black">

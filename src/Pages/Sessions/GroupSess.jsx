@@ -821,7 +821,7 @@ const GroupSess = () => {
           aria-describedby="group-session-description"
         >
           <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
-            <h1 className="text-[5vw] md:text-[1.8vw] lg:text-[30px] font-bold leading-tight mt-2">
+            <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2">
               GROUP SESSIONS
             </h1>
           </div>
@@ -848,7 +848,7 @@ const GroupSess = () => {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-2xl text-start font-bold text-red-700 uppercase mb-2">
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start  text-red-700 uppercase mb-2">
                   WRITING
                 </h2>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -975,7 +975,7 @@ const GroupSess = () => {
                 className="rounded-lg shadow-lg w-full object-cover object-top p-0 m-0"
               />
               <div>
-                <h2 className="text-2xl font-bold text-red-700 uppercase text-start mb-2">
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-red-700 uppercase text-start mb-2">
                   DEBATE AND PUBLIC SPEAKING
                 </h2>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -1040,7 +1040,7 @@ const GroupSess = () => {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-2xl text-start font-bold text-red-700 mb-2">
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start text-red-700 mb-2">
                   ENTREPRENEURSHIP SESSION
                 </h2>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
@@ -1122,7 +1122,7 @@ const GroupSess = () => {
                 className="rounded-lg shadow-lg w-full object-cover object-top p-0 m-0"
               />
               <div>
-                <h2 className="text-2xl font-bold text-red-700 uppercase text-start mb-2">
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-red-700 uppercase text-start mb-2">
                   FINANCIAL LITERACY SESSION
                 </h2>
                 <p
@@ -1284,7 +1284,7 @@ const GroupSess = () => {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-2xl text-start font-bold uppercase text-red-700 mb-2">
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug t text-start uppercase text-red-700 mb-2">
                   IVY LEAGUE & PRESTIGIOUS COMPETITIONS
                 </h2>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>

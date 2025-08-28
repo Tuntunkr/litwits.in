@@ -14,11 +14,11 @@ const SuperQuality = () => {
 
       <div className="relative flex items-center justify-center h-full px-4 md:px-8 lg:px-16">
         <div className="text-center text-white space-y-3 max-w-5xl mx-auto font-serif py-8 sm:py-12 md:py-16 lg:py-20">
-          <p className="text-lg sm:text-xl font-noto md:text-2xl lg:text-2xl font-semibold leading-relaxed">
+          <p className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug font-noto   ">
             WE ARE PARTNERS IN OUR STUDENT'S EDUCATIONAL  JOURNEY
           </p>
           <div className="pl-1 pr-1 ">
-          <p className=" md:text-l text-white  text-left leading-relaxed font-noto"style={{ fontSize: "15px" }}>
+          <p className=" md:text-l text-white  text-left leading-sung font-noto"style={{ fontSize: "15px" }}>
             Nurtured by a group of diverse knowledge professionals, LITWITS
             empowers students to build powerful profiles through an extensive
             range of diverse and dynamic opportunities. These include Debating,
