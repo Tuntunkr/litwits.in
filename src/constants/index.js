@@ -16,8 +16,7 @@ export const footerLinks = [
         // title: "Our Products",
         links: [
             { name: "Home", link: "/" },
-            { name: "Group Sessions", link: "/group-session" },
-            { name: "Individual Sessions", link: "/individual-session" },
+            { name: "Session", link: "/session" },
             { name: "College Counseling", link: "/college-counseling" },
             { name: "Blog", link: "/blog" },
             { name: "Membership", link: "/membership" },
