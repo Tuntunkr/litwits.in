@@ -73,7 +73,7 @@ const index = () => {
               src="/offer.jpeg"
               alt="Offer Banner"
               className=" rounded-lg mb-4 object-cover"
-               style={{ maxHeight: "500px" }}
+               style={{ maxHeight: "440px" }}
             /> 
             {/* Razorpay Button */}
 

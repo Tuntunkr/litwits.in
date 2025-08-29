@@ -72,7 +72,7 @@ const Hero = React.forwardRef((props, ref) => {
           }}
         >
            <div 
-            className="relative bg-white rounded-xl shadow-2xl max-w-[95vw] w-full sm:max-w-lg p-4 flex flex-col items-center animate-popup"
+            className="relative bg-white rounded-xl shadow-2xl max-w-[90vw] w-full sm:max-w-lg p-4 flex flex-col items-center animate-popup"
             style={{ boxSizing: "border-box" }}
           > 
             {/* Close Button */}
@@ -88,7 +88,7 @@ const Hero = React.forwardRef((props, ref) => {
               src="/offer.jpeg"
               alt="Offer Banner"
               className=" rounded-lg mb-4 object-cover"
-               style={{ maxHeight: "500px" }}
+               style={{ maxHeight: "440px" }}
             /> 
             {/* Razorpay Button */}
           <Rozarpayment inrAmount={1200} className="w-full choose-plan transition bg-[#890C25] hover:bg-red-700 text-white py-2 rounded-md text-center font-semibold mt-4" />

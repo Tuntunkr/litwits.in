@@ -1,12 +1,12 @@
 import { facebook, instagram, linkedin, shieldTick, support, truckFast } from "../assets/icons";
 
-export const navLinks = [
-    { href: "home", label: "Home" },
-    { href: "group-session", label: "GROUP SESSIONS" },
-    { href: "individual-session", label: "INDIVIDUAL SESSIONS" },
-    { href: "college-counseling", label: "College Counseling" },
-    { href: "membership", label: "MEMBERSHIP" },
-];
+// export const navLinks = [
+//     { href: "home", label: "Home" },
+//     { href: "group-session", label: "GROUP SESSIONS" },
+//     { href: "individual-session", label: "INDIVIDUAL SESSIONS" },
+//     { href: "college-counseling", label: "College Counseling" },
+//     { href: "membership", label: "MEMBERSHIP" },
+// ];
 
 
 
