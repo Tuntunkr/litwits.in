@@ -5,9 +5,7 @@ const path = require('path');
 // Define your site's routes
 const paths = [
   "/",
-  "/group-session",
-  "/individual-session",
-  "/voices",
+  "/sessions",
   "/membership",
   "/college-counseling",
   "/contact-us",

@@ -136,7 +136,7 @@ const Footer = () => {
               className="border border-white px-6 py-2 rounded-lg uppercase font-medium text-sm shadow-lg"
               style={{ fontFamily: "Noto Sans" }}
             >
-              Apply Now
+              Enroll Now
             </Link>
             <Link
               to="/contact-us"
