@@ -741,7 +741,7 @@ const GroupSess = () => {
             <img
               src={ted}
               alt="Model United Nations training for diplomacy, negotiation, and leadership skills."
-              className="rounded-lg shadow-lg w-full object-contain bg-black"
+              className="rounded-lg shadow-lg w-full object-cover"
               title="Model United Nations (MUN) at Litwits"
               aria-label="Model United Nations (MUN) at Litwits"
               aria-describedby="Immersive MUN training that prepares students for global diplomacy, impactful position papers, and confident public speaking at prestigious conferences."
