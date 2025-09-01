@@ -16,6 +16,7 @@ import UltimateguidetodebateTraining from "./Pages/blog/UltimateguidetodebateTra
 import TopDebateCompetitionsforSchoolStudents from "./Pages/blog/TopDebateCompetitionsforSchoolStudents";
 import Competition from "./Pages/blog/ Competitions"
 import ChatBot from "./sections/ChatBot";
+import Mun from "./Pages/blog/Mun-blog";
 // import TypesOfDebate from "./Pages/blog/TypesOfDebate";
 
 // Lazy Loading Pages
@@ -183,6 +184,7 @@ const App = () => {
             <Route path="/blog/top-debate-competitions-for-school-students" element={<TopDebateCompetitionsforSchoolStudents />} />
             <Route path="/blog/Understanding-Debate-Competitions" element={<Competition>
             </Competition>}></Route>
+            <Route path = '/blog/Mun-blog' element={<Mun></Mun>}></Route>
 
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -17,15 +17,13 @@ const GroupSess = () => {
         aria-describedby="group-session-description"
       >
         {/* Background Image */}
-<div className="absolute inset-0">
-  <img
-    src="/assets/wsc image.jpeg"
-    alt="background"
-    className="w-full h-[40vh] object-fill"
-  />
-</div>
-
-
+        <div className="absolute inset-0">
+          <img
+            src="/assets/wsc image.jpeg"
+            alt="background"
+            className="w-full h-[40vh] object-fill"
+          />
+        </div>
 
         {/* Overlay (thoda transparent black) */}
         <div className="absolute inset-0 "></div>
