@@ -19,7 +19,7 @@ const GroupSess = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/assets/wsc image.jpeg"
+            src="/assets/wsc-image.jpeg"
             alt="background"
             className="w-full h-full object-cover"
           />
@@ -55,9 +55,9 @@ const GroupSess = () => {
             As a testament to our pursuit of excellence, LITWITS has been
             awarded the World Scholar’s Cup
             <strong className="text-sm sm:text-base text-gray-900">
-              {" "}
+              
               Coach of the Year Award, 2025
-            </strong>{" "}
+            </strong>
             for our unmatched mentorship, academic leadership, and top rankings
             across various Regional and Global rounds, and the Grand
             Finale,Tournament of Champions at Yale University.
