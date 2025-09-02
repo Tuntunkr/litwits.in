@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Contact from "../../sections/Contact";
 import ted from "/group-26695.png";
-import RESEARCH from "/group-26696.png";
+import RESEARCH from "/Reserch.png";
 
 const GroupSess = () => {
   const sliderRef = useRef(null);
