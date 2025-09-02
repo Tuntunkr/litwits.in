@@ -159,7 +159,7 @@ const Footer = () => {
               className="inline-block"
             />
             Copyright 2025. All Rights Reserved by
-            <span className="font-semibold">LITWITS</span>.
+            <span className="font-semibold">LITWITS</span>
           </p>
         </div>
       </div>
