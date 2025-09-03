@@ -809,32 +809,12 @@ const GroupSess = () => {
 
         {/* SEO Meta Tags */}
 
-        <section
-          id="home"
-          className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
-          style={{
-            backgroundImage: "url('/assets/group-session.avif')",
-            fontFamily: "'Noto Sans', sans-serif",
-          }}
-          role="img"
-          aria-label="Group Sessions at LITWITS for Writing, Debate, Public Speaking, and more to foster growth and learning."
-          aria-describedby="group-session-description"
-        >
-          <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
-            <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2">
+        <section className="bg-red-900 h-[20vh] flex items-center justify-center">
+          <div className="container mx-auto px-4 text-center p-8 rounded-lg">
+            <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-4 text-white">
               GROUP SESSIONS
             </h1>
           </div>
-          {/* Descriptive Content for Accessibility */}
-          <p
-            id="group-session-description"
-            className="sr-only"
-            style={{ fontSize: "15px" }}
-          >
-            Enhance your skills with LITWITS' Group Sessions in Writing, Debate,
-            Public Speaking, Entrepreneurship, Financial Literacy, and World
-            Scholar's Cup. Enroll now for academic success and personal growth!
-          </p>
         </section>
 
         {/* 2 section  */}
