@@ -4,11 +4,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./individualessions.css";
 import PrizeSlider from "./Prize";
 import Contact from "../../sections/Contact";
+import Prize11 from "/public/WSCimages/11.png";
+import Prize23 from "/public/WSCimages/23.png";
+import wsc from "/assets/wsc image.jpeg";
+import Prize1 from "/public/WSCimages/1.png";
+import worlds from "/worlds.jpeg";
 
 const GroupSess = () => {
   return (
     <section>
-      <section
+      {/* <section
         id="WORLD SCHOLAR’S CUP TRAINING"
         className="relative h-[25vh] w-full flex items-center justify-center text-white overflow-hidden"
         style={{ fontFamily: "'Noto Sans', sans-serif" }}
@@ -17,31 +22,80 @@ const GroupSess = () => {
         aria-describedby="group-session-description"
       >
         {/* Background Image */}
-       <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
           <img
             src="/assets/wsc-image.jpeg"
             alt="background"
             className="w-full h-full object-cover"
           />
-        </div>
+        </div> */}
 
-        {/* Overlay (thoda transparent black) */}
-        <div className="absolute inset-0 "></div>
+      {/* Overlay (thoda transparent black) */}
+      {/* <div className="absolute inset-0 "></div> */}
 
-        {/* Content */}
-        <div className="relative z-10 text-center">
+      {/* Content */}
+      {/* <div className="relative z-10 text-center">
           <h2 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2">
             WORLD SCHOLAR’S CUP TRAINING
           </h2>
         </div>
+      </section> */}
+      <section className="bg-red-900 h-[20vh] flex items-center justify-center">
+        <div className="container mx-auto px-4 text-center p-8 rounded-lg">
+          <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-4 text-white">
+            WORLD SCHOLAR’S CUP TRAINING
+          </h1>
+        </div>
       </section>
 
       <section className="container py-5">
-        <div className="mb-1">
+        {/* LITWITS is at the forefront of World Scholar’s Cup training around
+            the globe. */}
+        <section
+          id="individual-session"
+          className="container-fluid mx-auto py-10 bg-white"
+        >
+          <div className="container mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+              <div>
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start uppercase  text-red-700 mb-4">
+                  LITWITS is at the forefront of World Scholar’s Cup training
+                  around the globe.
+                </h2>
+                <h5
+                  className="text-gray-900 leading-snug sm:leading-8"
+                  style={{ fontSize: "15px" }}
+                >
+                  As a testament to our pursuit of excellence, LITWITS has been
+                  awarded the World Scholar’s Cup
+                  <strong className="text-sm sm:text-base text-gray-900">
+                    {" "}
+                    Coach of the Year Award, 2025
+                  </strong>{" "}
+                  for our unmatched mentorship, academic leadership, and top
+                  rankings across various Regional and Global rounds, and the
+                  Grand Finale, Tournament of Champions at Yale University.
+                </h5>
+              </div>
+              <div className="rounded-lg shadow-lg w-full overflow-hidden">
+                <iframe
+                  src="https://www.instagram.com/p/DLo_dbPJ6Gn/embed"
+                  className="w-full h-[500px] rounded-lg"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency="true"
+                  allowFullScreen={true}
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <div className="mb-1">
           {/* <h2 className=" text-center fw-bold text-3xl md:text-5xl mb-3 text-red-700">
             WORLD SCHOLAR’S CUP TRAINING
           </h2> */}
-          <p
+        {/* <p
             className="font-bold leading-relaxed text-gray-900 text-center"
             style={{ fontSize: "15px" }}
           >
@@ -62,7 +116,7 @@ const GroupSess = () => {
             across various Regional and Global rounds, and the Grand
             Finale,Tournament of Champions at Yale University.
           </h5>
-        </div>
+        </div> */}
         <div>
           <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 text-center">
             World Scholar's Cup Awards
@@ -145,6 +199,15 @@ const GroupSess = () => {
           >
             Students from over 70 countries compete in four events:
           </p>
+
+          {/* image */}
+          <div className="w-full h-[500px] mb-3">
+            <img
+              src={wsc}
+              alt="World Scholar’s Cup Events"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
 
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
@@ -282,6 +345,14 @@ const GroupSess = () => {
         >
           Because excellence isn’t luck. At LITWITS, excellence is a habit.
         </p>
+
+        <div className="w-full h-[500px] mb-3">
+          <img
+            src={Prize1}
+            alt="World Scholar’s Cup Events"
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
         <div className="">
           <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             World Scholar’s Cup Eligibility
@@ -382,6 +453,21 @@ const GroupSess = () => {
             The program is open to both new and returning participants.
           </p>
         </div>
+
+        <div className="w-full h-[500px] mb-3">
+          <a
+            href=" https://www.scholarscup.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={worlds}
+              alt="World Scholar’s Cup Events"
+              className="w-full h-full object-cover object-center"
+            />
+          </a>
+        </div>
+
         <div className="mb-7">
           <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             How to Join the World Scholar’s Cup?
@@ -456,7 +542,87 @@ const GroupSess = () => {
             </li>
           </ul>
         </div>
-        <div className="mb-3">
+
+        {/* Official Launchpad to WSC Success */}
+
+        <section
+          id="individual-session"
+          className="container-fluid mx-auto py-10 bg-white"
+        >
+          <div className="container mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <img
+                src={Prize11}
+                alt="Defining unique identity through passion, strengths, and potential."
+                title="Defining Your Unique Identity with LITWITS"
+                aria-label="Defining Your Unique Identity with LITWITS"
+                aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
+                style={{ height: "550px" }}
+                className="rounded-lg shadow-lg w-full"
+              />
+              <div>
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start uppercase  text-red-700 mb-4">
+                  LITWITS: Your Official Launchpad to WSC Success
+                </h2>
+                <p
+                  className=" text-gray-900 leading-relaxed"
+                  style={{ fontSize: "15px" }}
+                >
+                  <strong>
+                    If you’re serious about the World Scholar’s Cup, LITWITS is
+                    your destination.
+                  </strong>
+                </p>
+                <p
+                  className=" text-gray-900 leading-relaxed"
+                  style={{ fontSize: "15px" }}
+                >
+                  We’re not here to spoon-feed facts or toss you a syllabus and
+                  wish you luck. We’re here to make you fall in love with
+                  learning, and turn you into the kind of scholar who walks into
+                  a debate room or writing hall knowing exactly what to do.
+                </p>
+                <p
+                  className=" text-gray-900 leading-relaxed"
+                  style={{ fontSize: "15px" }}
+                >
+                  Whether you're just starting your WSC journey or aiming for
+                  that Yale podium, LITWITS is where preparation meets
+                  transformation.
+                </p>
+                <p
+                  className=" text-gray-900 leading-relaxed"
+                  style={{ fontSize: "15px" }}
+                >
+                  You shall discover that debate can be thrilling, writing can
+                  be powerful, and even the trickiest multiple-choice questions
+                  can feel like a game when you know how to think, not just what
+                  to remember.
+                </p>
+                <p
+                  className=" text-gray-900 leading-relaxed"
+                  style={{ fontSize: "15px" }}
+                >
+                  At LITWITS, preparation isn’t about stress or feeling
+                  overwhelmed. It’s about building mastery through momentum -
+                  bit by bit, session by session - until performance becomes
+                  second nature. You’ll get the structure, strategy, and
+                  community you need to not just survive WSC, but to thrive in
+                  it. To walk into any round and say, “I’ve got this.”
+                </p>
+                <p
+                  className=" text-gray-900 leading-relaxed"
+                  style={{ fontSize: "15px" }}
+                >
+                  Because we don’t just teach. We train, team up, mentor, and
+                  guide.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <div className="mb-3">
           <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             LITWITS: Your Official Launchpad to WSC Success
           </h3>
@@ -631,7 +797,7 @@ const GroupSess = () => {
               </p>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="mb-7">
           <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             We have the resources you’ve been looking for:
@@ -696,7 +862,61 @@ const GroupSess = () => {
               </p>
             </li>
           </ul>
-          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
+
+          {/* What’s it like to be part of LITWITS? */}
+
+          <section
+            id="individual-session"
+            className="container-fluid mx-auto py-10 bg-white"
+          >
+            <div className="container mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start uppercase  text-red-700 mb-4">
+                    What’s it like to be part of LITWITS?
+                  </h2>
+                  <p
+                    className=" text-gray-900 leading-relaxed"
+                    style={{ fontSize: "15px" }}
+                  >
+                    It’s intense, yes, but also highly rewarding. One day you’ll
+                    be untangling philosophical dilemmas. Next, you’ll be
+                    laughing your way through mock debates about whether emojis
+                    are destroying language.
+                  </p>
+                  <p
+                    className=" text-gray-900 leading-relaxed"
+                    style={{ fontSize: "15px" }}
+                  >
+                    Students grow more confident, more articulate, and more
+                    curious with zero pressure to be perfect. Just the right
+                    push to be excellent.
+                  </p>
+                  <p
+                    className=" text-gray-900 leading-relaxed"
+                    style={{ fontSize: "15px" }}
+                  >
+                    And parents, you’ll see your child develop skills that
+                    matter way beyond the competition: critical thinking,
+                    teamwork, communication, time management, and a genuine love
+                    for learning. Not to mention the confidence that comes from
+                    owning a room with your ideas.
+                  </p>
+                </div>
+                <img
+                  src={Prize23}
+                  alt="Defining unique identity through passion, strengths, and potential."
+                  title="Defining Your Unique Identity with LITWITS"
+                  aria-label="Defining Your Unique Identity with LITWITS"
+                  aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
+                  style={{ height: "350px" }}
+                  className="rounded-lg shadow-lg w-full"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
             What’s it like to be part of LITWITS?
           </h3>
           <p
@@ -722,7 +942,7 @@ const GroupSess = () => {
             beyond the competition: critical thinking, teamwork, communication,
             time management, and a genuine love for learning. Not to mention the
             confidence that comes from owning a room with your ideas.
-          </p>
+          </p> */}
         </div>
         <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
           What are you waiting for?

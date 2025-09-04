@@ -112,22 +112,24 @@ const Footer = () => {
           </div>
 
           {/* Middle Links Section */}
-          <div className="flex-1 grid grid-cols-2 gap-8 lg:gap-16 lg:flex lg:justify-around mb-8 lg:mb-0">
-            {footerLinks.map((section,index) => (
-              <div key={index}>{section.title}
-                <ul>
-                  {section.links.map((link) => (
-                    <li
-                      key={link.name}
-                      className="text-sm text-[#FFFFFF] footermenu hover:text-white mb-2 uppercase cursor-pointer"
-                    >
-                      <Link to={link.link}>{link.name}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+      <div className="flex-1 grid grid-cols-2 gap-8 lg:gap-16 lg:flex lg:justify-items-start lg:text-center mb-8 lg:mb-0">
+  {footerLinks.map((section, index) => (
+    <div key={index}>
+      <h4 className="text-white font-semibold mb-3">{section.title}</h4>
+      <ul>
+        {section.links.map((link) => (
+          <li
+            key={link.name}
+            className="text-sm text-[#FFFFFF] footermenu hover:text-white mb-2 uppercase cursor-pointer"
+          >
+            <Link to={link.link}>{link.name}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</div>
+
 
           {/* Right Buttons Section */}
           <div className="flex flex-col items-start gap-4">
@@ -140,7 +142,7 @@ const Footer = () => {
             </Link>
             <Link
               to="/contact-us"
-              className="border border-white px-6 py-2 rounded-lg text-sm uppercase font-medium hover:text-[#781C2D]"
+              className="border border-white px-9 py-2 rounded-lg text-sm uppercase font-medium hover:text-[#781C2D]"
               style={{ fontFamily: "Noto Sans" }}
             >
               Contact
