@@ -262,7 +262,7 @@ const CollegeCounseling = () => {
 
       <section>
         {/* Hero Section */}
-        <section
+        {/* <section
           id="home"
           className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
           style={{
@@ -280,7 +280,7 @@ const CollegeCounseling = () => {
           </div>
 
           {/* <!-- Descriptive Content for Accessibility --> */}
-          <p
+          {/* <p
             id="consultation-description"
             class="sr-only"
             style={{ fontSize: "15px" }}
@@ -288,7 +288,14 @@ const CollegeCounseling = () => {
             Comprehensive guidance starting from middle school to help students
             navigate the college admissions process with a clear roadmap.
           </p>
-        </section>
+        </section> */} 
+              <section className="bg-red-900 h-[20vh] flex items-center justify-center">
+        <div className="container mx-auto px-4 text-center p-8 rounded-lg">
+          <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-4 text-white">
+            COLLEGE COUNSELING
+          </h1>
+        </div>
+      </section>
 
         {/* 2 section  */}
 

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Contact from "../../sections/Contact";
 import ted from "/group-26695.png";
-import RESEARCH from "/group-26696.png";
+import RESEARCH from "/Reserch.png";
 
 const GroupSess = () => {
   const sliderRef = useRef(null);
@@ -596,18 +596,19 @@ const GroupSess = () => {
       {/* Hero Section */}
 
       <section
-        id="home"
-        className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
-        style={{
-          backgroundImage: "url('/assets/individual-session.avif')",
-          fontFamily: "'Noto Sans', sans-serif",
-        }}
-        role="img"
-        aria-label="Individual Sessions for focused learning in key academic and leadership areas."
-        aria-describedby="individual-sessions-description"
+        className="bg-red-900 h-[20vh] flex items-center justify-center"
+        // id="home"
+        // className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
+        // style={{
+        //   backgroundImage: "url('/assets/individual-session.avif')",
+        //   fontFamily: "'Noto Sans', sans-serif",
+        // }}
+        // role="img"
+        // aria-label="Individual Sessions for focused learning in key academic and leadership areas."
+        // aria-describedby="individual-sessions-description"
       >
-        <div className="container mx-auto px-4 text-center bg-opacity-50 p-8 rounded-lg">
-          <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2">
+        <div className="container mx-auto px-4 text-center p-8 rounded-lg">
+          <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2 text-white">
             INDIVIDUAL SESSIONS
           </h1>
         </div>

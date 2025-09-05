@@ -9,6 +9,7 @@ import Explore from "/WomanSpeaking.jpeg";
 import Ultimate from "/ultimate.png";
 import Competitions from "/Competitions.jpeg";
 import Book from "/Competitions.jpeg";
+import mun from '/mun.png'
 
 // Sample blog data with 10 entries
 const blogData = [
@@ -61,13 +62,13 @@ const blogData = [
         "Debate competitions are more than just verbal sparring matches — they are rigorous intellectual arenas where young minds sharpen their logic, develop confidence, and voice their perspectives on global issues. From school auditoriums to international campuses, debate competitions offer students a unique opportunity to evolve as speakers, thinkers, and leaders. Whether you are a curious beginner or a seasoned team prepping for the global stage, this guide is your complete roadmap. ",
     image: Book,
   },
-  //  {
-  //   id: 8,
-  //   title: "Top Debate Competitions for School Students.",
-  //   description:
-  //     "Debate competitions are more than just verbal sparring matches — they are rigorous intellectual arenas where young minds sharpen their logic, develop confidence, and voice their perspectives on global issues. From school auditoriums to international campuses, debate competitions offer students a unique opportunity to evolve as speakers, thinkers, and leaders. Whether you are a curious beginner or a seasoned team prepping for the global stage, this guide is your complete roadmap. ",
-  //   image: Book,
-  // },
+   {
+    id: 8,
+    title: "The Ultimate Guide to Model United Nations (MUN) for Students and Parents",
+    description:
+      "Welcome to the world of Model United Nations (MUN) - a space where international politics meets classroom learning, where young people practice the art of diplomacy, and where tomorrow’s changemakers are born.",
+    image: mun,
+  },
   ...Array.from({ length: 9 }, (_, index) => ({
     id: index + 3, // Start from ID 3 to avoid duplicate IDs
     title: `Advanced Placement Exam 2025`,
@@ -87,7 +88,7 @@ const Blog = () => {
   const fifthPost = blogData.find((post) => post.id === 5);
   const sixPost = blogData.find((post) => post.id === 6);
    const sevenPost = blogData.find((post) => post.id === 7);
-  // const EightPost = blogData.find((post) => post.id === 8);
+   const EightPost = blogData.find((post) => post.id === 8);
 
 
   return (
@@ -308,11 +309,11 @@ const Blog = () => {
           </div>
         </Link>
       )} 
-        {/* Eight blog
+        {/* Eight blog */}
 
       {EightPost && (
         <Link
-          to={"/blog/Understanding-Debate-Competitions"}
+          to={"/blog/Mun-blog"}
           className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
         >
           <img
@@ -336,7 +337,7 @@ const Blog = () => {
             </div>
           </div>
         </Link>
-      )} */}
+      )} 
     </div>
   );
 };

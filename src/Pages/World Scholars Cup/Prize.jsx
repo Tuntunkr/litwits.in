@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Prize1 from "/public/WSCimages/1.png";
+// import Prize1 from "/public/WSCimages/1.png";
 import Prize2 from "/public/WSCimages/2.png";
 import Prize3 from "/public/WSCimages/3.png";
 import Prize4 from "/public/WSCimages/4.png";
@@ -9,7 +9,7 @@ import Prize7 from "/public/WSCimages/7.png";
 import Prize8 from "/public/WSCimages/8.png";
 import Prize9 from "/public/WSCimages/9.png";
 import Prize10 from "/public/WSCimages/10.png";
-import Prize11 from "/public/WSCimages/11.png";
+// import Prize11 from "/public/WSCimages/11.png";
 import Prize12 from "/public/WSCimages/12.png";
 import Prize13 from "/public/WSCimages/13.png";
 import Prize14 from "/public/WSCimages/14.png";
@@ -21,7 +21,7 @@ import Prize19 from "/public/WSCimages/19.png";
 import Prize20 from "/public/WSCimages/20.png";
 import Prize21 from "/public/WSCimages/21.png";
 import Prize22 from "/public/WSCimages/22.png";
-import Prize23 from "/public/WSCimages/23.png";
+// import Prize23 from "/public/WSCimages/23.png";
 import Prize24 from "/public/WSCimages/24.png";
 import Prize25 from "/public/WSCimages/25.png";
 import Prize26 from "/public/WSCimages/26.png";
@@ -33,12 +33,12 @@ const PrizeSlider = () => {
   const [isTransitioning, setIsTransitioning] = useState(true);
 
   const items = [
-    {
-      id: 1,
-      image: Prize1,
-      title: "Grand Champion Trophy",
-      alt: "A golden champion trophy",
-    },
+    // {
+    //   id: 1,
+    //   image: Prize1,
+    //   title: "Grand Champion Trophy",
+    //   alt: "A golden champion trophy",
+    // },
     {
       id: 2,
       image: Prize2,
@@ -93,12 +93,12 @@ const PrizeSlider = () => {
       title: "Success Recognition",
       alt: "Success and recognition moment",
     },
-    {
-      id: 11,
-      image: Prize11,
-      title: "Success Recognition",
-      alt: "Success and recognition moment",
-    },
+    // {
+    //   id: 11,
+    //   image: Prize11,
+    //   title: "Success Recognition",
+    //   alt: "Success and recognition moment",
+    // },
     {
       id: 12,
       image: Prize12,
@@ -165,12 +165,12 @@ const PrizeSlider = () => {
       title: "Success Recognition",
       alt: "Success and recognition moment",
     },
-    {
-      id: 23,
-      image: Prize23,
-      title: "Success Recognition",
-      alt: "Success and recognition moment",
-    },
+    // {
+    //   id: 23,
+    //   image: Prize23,
+    //   title: "Success Recognition",
+    //   alt: "Success and recognition moment",
+    // },
     {
       id: 24,
       image: Prize24,

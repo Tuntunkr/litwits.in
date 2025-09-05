@@ -12,16 +12,16 @@ import { facebook, instagram, linkedin, shieldTick, support, truckFast } from ".
 
 
 export const footerLinks = [
-    {
-        // title: "Our Products",
-        links: [
-            { name: "Home", link: "/" },
-            { name: "Sessions", link: "/session" },
-            { name: "College Counseling", link: "/college-counseling" },
-            { name: "Blog", link: "/blog" },
-            { name: "Membership", link: "/membership" },
-        ],
-    },
+    // {
+    //     // title: "Our Products",
+    //     links: [
+    //         { name: "Home", link: "/" },
+    //         { name: "Sessions", link: "/session" },
+    //         { name: "College Counseling", link: "/college-counseling" },
+    //         { name: "Blog", link: "/blog" },
+    //         { name: "Membership", link: "/membership" },
+    //     ],
+    // },
     {
         // title: "LEGAL",
         links: [
