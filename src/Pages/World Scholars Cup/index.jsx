@@ -84,7 +84,6 @@ const GroupSess = () => {
                   frameBorder="0"
                   scrolling="no"
                   allowTransparency="true"
-                  
                   allowFullScreen={true}
                 ></iframe>
               </div>
