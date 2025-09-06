@@ -45,7 +45,7 @@ const Hero = React.forwardRef((props, ref) => {
   return (
     <>
       {/* Popup Animation Style */}
-      <style>{`
+      {/* <style>{`
         @keyframes popupOverlayIn {
           0% { opacity: 0; }
           100% { opacity: 1; }
@@ -62,7 +62,6 @@ const Hero = React.forwardRef((props, ref) => {
           animation: popupIn 0.5s cubic-bezier(.68,-0.55,.27,1.55);
         }
       `}</style>
-      {/* Offer Popup Modal */}
        {showPopup && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center animate-popup-overlay"
@@ -75,7 +74,6 @@ const Hero = React.forwardRef((props, ref) => {
             className="relative bg-white rounded-xl shadow-2xl max-w-[90vw] w-full sm:max-w-lg p-4 flex flex-col items-center animate-popup"
             style={{ boxSizing: "border-box" }}
           > 
-            {/* Close Button */}
              <button
               className="absolute top-2 right-2 text-gray-600 hover:text-red-600 text-2xl font-bold"
               onClick={() => setShowPopup(false)}
@@ -83,22 +81,16 @@ const Hero = React.forwardRef((props, ref) => {
             >
               &times;
             </button> 
-            {/* Banner Image */}
             <img
               src="/offer.jpeg"
               alt="Offer Banner"
               className=" rounded-lg mb-4 object-cover"
                style={{ maxHeight: "440px" }}
             /> 
-            {/* Razorpay Button */}
           <Rozarpayment inrAmount={1200} className="w-full choose-plan transition bg-[#890C25] hover:bg-red-700 text-white py-2 rounded-md text-center font-semibold mt-4" />
-            {/*
-            <p className="text-sm text-gray-700 text-center mt-2">
-              Limited seats available! Register now for the Master Class.
-            </p> */}
           </div> 
         </div> 
-      )}  
+      )}   */}
       <section
         ref={ref}
         className="relative flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20"
