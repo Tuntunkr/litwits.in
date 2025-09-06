@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./individualessions.css";
@@ -63,12 +64,12 @@ const GroupSess = () => {
                   around the globe.
                 </h2>
                 <h5
-                  className="text-gray-900 leading-snug sm:leading-8"
+                  className="text-gray-900 leading-snug sm:leading-8 mt-3"
                   style={{ fontSize: "15px" }}
                 >
                   As a testament to our pursuit of excellence, LITWITS has been
                   awarded the World Scholar’s Cup
-                  <strong className="text-sm sm:text-base text-gray-900">
+                  <strong className="text-sm sm:text-base text-gray-900 uppercase">
                     {" "}
                     Coach of the Year Award, 2025
                   </strong>{" "}
@@ -76,7 +77,17 @@ const GroupSess = () => {
                   rankings across various Regional and Global rounds, and the
                   Grand Finale, Tournament of Champions at Yale University.
                 </h5>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mt-4">
+                  <Link
+                    to="https://wa.me/9811701747?text=Hi! I’m interested in your Financial Literacy Session.Please share details about the program and I request a free consultation."
+                    className="bg-red-800 text-white px-4 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                    style={{ fontFamily: "Noto Sans" }}
+                  >
+                    Free Consultation
+                  </Link>
+                </div>
               </div>
+
               <div className="rounded-lg shadow-lg w-full overflow-hidden">
                 <iframe
                   src="https://www.instagram.com/p/DLo_dbPJ6Gn/embed"
@@ -118,7 +129,7 @@ const GroupSess = () => {
           </h5>
         </div> */}
         <div>
-          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 text-center">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 text-center uppercase">
             World Scholar's Cup Awards
           </h3>
           {/* <p className=" text-gray-900 mb-0" style={{ fontSize: "15px" }}>
@@ -135,7 +146,7 @@ const GroupSess = () => {
           </p>
         </div>
         <div className="">
-          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
             What is the World Scholar’s Cup (WSC)?
           </h3>
           <p className=" text-gray-900 " style={{ fontSize: "15px" }}>
@@ -190,7 +201,7 @@ const GroupSess = () => {
         </div>
 
         <div className="">
-          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
             What are the Events of the World Scholar’s Cup?
           </h3>
           <p
@@ -345,16 +356,126 @@ const GroupSess = () => {
         >
           Because excellence isn’t luck. At LITWITS, excellence is a habit.
         </p>
+        <div>
+          <Link to={"/contact-us"}>
+            <button
+              className="bg-red-800 text-white px-4 py-3 no-underline uppercase rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+              style={{ fontFamily: "Noto Sans" }}
+            >
+              Book a Consultation
+            </button>
+          </Link>
+        </div>
 
-        <div className="w-full h-[500px] mb-3">
+        {/* <div className="w-full h-[500px] mb-3">
           <img
             src={Prize1}
             alt="World Scholar’s Cup Events"
             className="w-full h-full object-cover object-center"
           />
-        </div>
+        </div> */}
+
+        <section
+          id="individual-session"
+          className="container-fluid mx-auto py-10 bg-white"
+        >
+          <div className="container mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start uppercase  text-red-700 mb-4">
+                  World Scholar’s Cup Eligibility
+                </h2>
+                <p
+                  className=" leading-relaxed text-gray-900"
+                  style={{ fontSize: "15px" }}
+                >
+                  The World Scholar’s Cup is open to all students and LITWITS is
+                  here to make the journey easier. Whether you are signing up
+                  solo or with friends:
+                </p>
+                <ul className="list-disc list-inside mb-6 pl-5">
+                  <li
+                    className="mb-3 text-gray-900 leading-relaxed"
+                    style={{ fontSize: "15px" }}
+                  >
+                    Register with LITWITS
+                  </li>
+                  <li
+                    className="mb-3 text-gray-900 leading-relaxed"
+                    style={{ fontSize: "15px" }}
+                  >
+                    Form a super team with the help of our diverse and talented
+                    student network
+                  </li>
+                  <li
+                    className="mb-3 text-gray-900 leading-relaxed"
+                    style={{ fontSize: "15px" }}
+                  >
+                    {" "}
+                    Train strategically with LITWITS, with expert guidance and
+                    resources tailored for every WSC event.
+                  </li>
+                </ul>
+                <p
+                  className=" text-gray-900 leading-relaxed"
+                  style={{ fontSize: "15px" }}
+                >
+                  You can participate as:
+                </p>
+
+                <ul className="list-disc list-inside mb-6 pl-5">
+                  <li
+                    className="mb-3 text-gray-900 "
+                    style={{ fontSize: "15px" }}
+                  >
+                    A school-affiliated team.
+                  </li>
+
+                  <li
+                    className="mb-3 text-gray-900 leading-relaxed"
+                    style={{ fontSize: "15px" }}
+                  >
+                    An independent team (LITWITS will pair you with like-minded
+                    scholars to form a competitive team across all rounds)
+                  </li>
+                </ul>
+                                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
+                    <Link
+                      to="https://wa.me/9811701747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
+                      className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center "
+                      style={{
+                        fontFamily: "Noto Sans",
+                      }}
+                    >
+                      Free Consultation
+                    </Link>
+
+                    <Link
+                      to="/membership"
+                      className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
+                      style={{
+                        fontFamily: "Noto Sans",
+                      }}
+                    >
+                      Enroll Now
+                    </Link>
+                  </div>
+              </div>
+              <img
+                src={Prize1}
+                alt="Defining unique identity through passion, strengths, and potential."
+                title="Defining Your Unique Identity with LITWITS"
+                aria-label="Defining Your Unique Identity with LITWITS"
+                aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
+                style={{ height: "550px" }}
+                className="rounded-lg shadow-lg w-full"
+              />
+            </div>
+          </div>
+        </section>
+
         <div className="">
-          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
+          {/* <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
             World Scholar’s Cup Eligibility
           </h3>
           <p
@@ -407,8 +528,8 @@ const GroupSess = () => {
               An independent team (LITWITS will pair you with like-minded
               scholars to form a competitive team across all rounds)
             </li>
-          </ul>
-          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
+          </ul> */}
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
             <strong> Eligibility Criteria:</strong>
           </h3>
           <ul className="list-disc list-inside mb-6 mt-2 space-y-4">
@@ -469,7 +590,7 @@ const GroupSess = () => {
         </div>
 
         <div className="mb-7">
-          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
             How to Join the World Scholar’s Cup?
           </h3>
           <p
@@ -557,7 +678,7 @@ const GroupSess = () => {
                 title="Defining Your Unique Identity with LITWITS"
                 aria-label="Defining Your Unique Identity with LITWITS"
                 aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
-                style={{ height: "550px" }}
+                style={{ height: "650px" }}
                 className="rounded-lg shadow-lg w-full"
               />
               <div>
@@ -617,6 +738,27 @@ const GroupSess = () => {
                   Because we don’t just teach. We train, team up, mentor, and
                   guide.
                 </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
+                  <Link
+                    to="https://wa.me/9811701747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
+                    className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center "
+                    style={{
+                      fontFamily: "Noto Sans",
+                    }}
+                  >
+                    Free Consultation
+                  </Link>
+
+                  <Link
+                    to="/membership"
+                    className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
+                    style={{
+                      fontFamily: "Noto Sans",
+                    }}
+                  >
+                    Enroll Now
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -799,7 +941,7 @@ const GroupSess = () => {
           </ul>
         </div> */}
         <div className="mb-7">
-          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
+          <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
             We have the resources you’ve been looking for:
           </h3>
           <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
@@ -902,6 +1044,27 @@ const GroupSess = () => {
                     for learning. Not to mention the confidence that comes from
                     owning a room with your ideas.
                   </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
+                    <Link
+                      to="https://wa.me/9811701747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
+                      className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center "
+                      style={{
+                        fontFamily: "Noto Sans",
+                      }}
+                    >
+                      Free Consultation
+                    </Link>
+
+                    <Link
+                      to="/membership"
+                      className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
+                      style={{
+                        fontFamily: "Noto Sans",
+                      }}
+                    >
+                      Enroll Now
+                    </Link>
+                  </div>
                 </div>
                 <img
                   src={Prize23}
@@ -909,7 +1072,7 @@ const GroupSess = () => {
                   title="Defining Your Unique Identity with LITWITS"
                   aria-label="Defining Your Unique Identity with LITWITS"
                   aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
-                  style={{ height: "350px" }}
+                  style={{ height: "450px" }}
                   className="rounded-lg shadow-lg w-full"
                 />
               </div>
@@ -944,7 +1107,7 @@ const GroupSess = () => {
             confidence that comes from owning a room with your ideas.
           </p> */}
         </div>
-        <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700">
+        <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
           What are you waiting for?
         </h3>
 

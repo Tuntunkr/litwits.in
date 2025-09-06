@@ -10,6 +10,7 @@ import financial from "/assets/financial-literacy-session.avif";
 import Writing from "/assets/academic-writing-session.avif";
 import { Link } from "react-router-dom";
 
+
 import { Helmet } from "react-helmet-async";
 import Individual from "../Sessions/index";
 
