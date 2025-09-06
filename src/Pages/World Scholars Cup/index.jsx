@@ -140,7 +140,7 @@ const GroupSess = () => {
           </section>
           <p className=" text-gray-900" style={{ fontSize: "15px" }}>
             Learn more about our achievements in WSC:
-            <a href="/public/WSCimages/LITWITSACHIEVEMENTS.pdf" download>
+            <a href="/WSCimages/LITWITSACHIEVEMENTS.pdf" download>
               <span className="text-blue-500 "> click here </span>
             </a>
           </p>
