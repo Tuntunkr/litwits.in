@@ -751,7 +751,7 @@ const CollegeCounseling = () => {
             <div className="relative z-10 grid gap-6 grid-cols-1 lg:grid-cols-[3fr_1fr] items-center max-w-6xl mx-auto p-8">
               {/* Left: Heading (More Space) */}
               <div className="w-full overflow-hidden">
-                <h2 className="whitespace-nowrap overflow-hidden text-ellipsis text-start text-base sm:text-lg md:text-xl lg:text-2xl font-medium leading-relaxed ml-12">
+                <h2 className="whitespace-nowrap overflow-hidden text-ellipsis text-start text-base sm:text-lg md:text-xl lg:text-2xl font-medium leading-relaxed ml-12 text-white">
                   Take the Next Step Towards Your Dream University
                 </h2>
               </div>

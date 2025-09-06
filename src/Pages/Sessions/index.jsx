@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet-async";
 import Contact from "../../sections/Contact";
 import ted from "/group-26695.png";
 import RESEARCH from "/Reserch.png";
+import APLogo from "/AP.png";
 
 const GroupSess = () => {
   const sliderRef = useRef(null);
@@ -882,7 +883,7 @@ const GroupSess = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <img
-              src={apworld}
+              src={ APLogo }
               alt="Advanced Placement Prep Session for comprehensive subject mastery and university readiness."
               style={{ height: "280px" }}
               className="rounded-lg shadow-lg w-full"
