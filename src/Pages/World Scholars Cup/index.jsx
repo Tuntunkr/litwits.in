@@ -71,7 +71,7 @@ const GroupSess = () => {
                   awarded the World Scholar’s Cup
                   <strong className="text-sm sm:text-base text-gray-900 uppercase">
                     {" "}
-                    Coach of the Year Award, 2025
+                   COACH OF THE YEAR AWARD, 2025
                   </strong>{" "}
                   for our unmatched mentorship, academic leadership, and top
                   rankings across various Regional and Global rounds, and the
@@ -79,12 +79,22 @@ const GroupSess = () => {
                 </h5>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mt-4">
                   <Link
-                    to="https://wa.me/9811701747?text=Hi! I’m interested in your Financial Literacy Session.Please share details about the program and I request a free consultation."
+                    to="https://wa.me/9811701747?text=Hi! I’m interested in your World Scholars Cup Session.Please share details about the program and I request a free consultation."
                     className="bg-red-800 text-white px-4 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                     style={{ fontFamily: "Noto Sans" }}
                   >
                     Free Consultation
                   </Link>
+
+                   <Link
+                      to="/membership"
+                      className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
+                      style={{
+                        fontFamily: "Noto Sans",
+                      }}
+                    >
+                      Enroll Now
+                    </Link>
                 </div>
               </div>
 
@@ -441,14 +451,12 @@ const GroupSess = () => {
                 </ul>
                                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                     <Link
-                      to="https://wa.me/9811701747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
-                      className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center "
-                      style={{
-                        fontFamily: "Noto Sans",
-                      }}
-                    >
-                      Free Consultation
-                    </Link>
+                    to="https://wa.me/9811701747?text=Hi! I’m interested in your World Scholars Cup Session.Please share details about the program and I request a free consultation."
+                    className="bg-red-800 text-white px-4 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                    style={{ fontFamily: "Noto Sans" }}
+                  >
+                    Free Consultation
+                  </Link>
 
                     <Link
                       to="/membership"
@@ -740,11 +748,9 @@ const GroupSess = () => {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                   <Link
-                    to="https://wa.me/9811701747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
-                    className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center "
-                    style={{
-                      fontFamily: "Noto Sans",
-                    }}
+                    to="https://wa.me/9811701747?text=Hi! I’m interested in your World Scholars Cup Session.Please share details about the program and I request a free consultation."
+                    className="bg-red-800 text-white px-4 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                    style={{ fontFamily: "Noto Sans" }}
                   >
                     Free Consultation
                   </Link>
@@ -1045,15 +1051,13 @@ const GroupSess = () => {
                     owning a room with your ideas.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
-                    <Link
-                      to="https://wa.me/9811701747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
-                      className="bg-red-800 text-white px-6 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center "
-                      style={{
-                        fontFamily: "Noto Sans",
-                      }}
-                    >
-                      Free Consultation
-                    </Link>
+                     <Link
+                    to="https://wa.me/9811701747?text=Hi! I’m interested in your World Scholars Cup Session.Please share details about the program and I request a free consultation."
+                    className="bg-red-800 text-white px-4 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                    style={{ fontFamily: "Noto Sans" }}
+                  >
+                    Free Consultation
+                  </Link>
 
                     <Link
                       to="/membership"
