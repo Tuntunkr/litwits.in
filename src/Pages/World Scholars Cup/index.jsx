@@ -71,7 +71,7 @@ const GroupSess = () => {
                   awarded the World Scholar’s Cup
                   <strong className="text-sm sm:text-base text-gray-900 uppercase">
                     {" "}
-                   COACH OF THE YEAR AWARD, 2025
+                    COACH OF THE YEAR AWARD, 2025
                   </strong>{" "}
                   for our unmatched mentorship, academic leadership, and top
                   rankings across various Regional and Global rounds, and the
@@ -86,15 +86,15 @@ const GroupSess = () => {
                     Free Consultation
                   </Link>
 
-                   <Link
-                      to="/membership"
-                      className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
-                      style={{
-                        fontFamily: "Noto Sans",
-                      }}
-                    >
-                      Enroll Now
-                    </Link>
+                  <Link
+                    to="/membership"
+                    className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
+                    style={{
+                      fontFamily: "Noto Sans",
+                    }}
+                  >
+                    Enroll Now
+                  </Link>
                 </div>
               </div>
 
@@ -205,8 +205,17 @@ const GroupSess = () => {
             className="leading-relaxed text-gray-900"
             style={{ fontSize: "15px" }}
           >
-            For the 2025 WSC curriculum, click
-            <span className="text-blue-500 text-sm sm:text-base"> here</span>.
+            For the 2025 WSC curriculum,{" "}
+            <a
+              href="https://www.scholarscup.org/themes/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="text-blue-500 text-sm sm:text-base">
+                click here
+              </span>
+            </a>
+            .
           </p>
         </div>
 
@@ -449,8 +458,8 @@ const GroupSess = () => {
                     scholars to form a competitive team across all rounds)
                   </li>
                 </ul>
-                                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
-                    <Link
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
+                  <Link
                     to="https://wa.me/9811701747?text=Hi! I’m interested in your World Scholars Cup Session.Please share details about the program and I request a free consultation."
                     className="bg-red-800 text-white px-4 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
                     style={{ fontFamily: "Noto Sans" }}
@@ -458,16 +467,16 @@ const GroupSess = () => {
                     Free Consultation
                   </Link>
 
-                    <Link
-                      to="/membership"
-                      className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
-                      style={{
-                        fontFamily: "Noto Sans",
-                      }}
-                    >
-                      Enroll Now
-                    </Link>
-                  </div>
+                  <Link
+                    to="/membership"
+                    className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
+                    style={{
+                      fontFamily: "Noto Sans",
+                    }}
+                  >
+                    Enroll Now
+                  </Link>
+                </div>
               </div>
               <img
                 src={Prize1}
@@ -583,16 +592,16 @@ const GroupSess = () => {
           </p>
         </div>
 
-        <div className="w-full h-[500px] mb-3">
+        <div className="w-full aspect-[16/9] mb-3">
           <a
-            href=" https://www.scholarscup.org/"
+            href="https://www.scholarscup.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
               src={worlds}
               alt="World Scholar’s Cup Events"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-contain sm:object-cover object-center rounded-lg"
             />
           </a>
         </div>
@@ -1051,13 +1060,13 @@ const GroupSess = () => {
                     owning a room with your ideas.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
-                     <Link
-                    to="https://wa.me/9811701747?text=Hi! I’m interested in your World Scholars Cup Session.Please share details about the program and I request a free consultation."
-                    className="bg-red-800 text-white px-4 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
-                    style={{ fontFamily: "Noto Sans" }}
-                  >
-                    Free Consultation
-                  </Link>
+                    <Link
+                      to="https://wa.me/9811701747?text=Hi! I’m interested in your World Scholars Cup Session.Please share details about the program and I request a free consultation."
+                      className="bg-red-800 text-white px-4 py-3 no-underline uppercase w-full rounded-md text-base font-medium hover:bg-red-700 transition text-center"
+                      style={{ fontFamily: "Noto Sans" }}
+                    >
+                      Free Consultation
+                    </Link>
 
                     <Link
                       to="/membership"
