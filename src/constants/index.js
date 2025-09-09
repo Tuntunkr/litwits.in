@@ -1,4 +1,15 @@
-import { facebook, instagram, linkedin, shieldTick, support, truckFast } from "../assets/icons";
+import { 
+  facebook, 
+  instagram, 
+  linkedin, 
+  shieldTick, 
+  support, 
+  truckFast, 
+//   youtube,
+} from "../assets/icons";
+
+
+
 
 // export const navLinks = [
 //     { href: "home", label: "Home" },
@@ -30,7 +41,9 @@ export const footerLinks = [
             { name: "Refund Policy", link: "/refund-policy" }, 
         ],
     },
+    
 ];
+
 
 export const socialMedia = [
     {
@@ -47,5 +60,10 @@ export const socialMedia = [
         src: linkedin,
         alt: "linkedin logo",
         link: "https://www.linkedin.com/company/litwitsglobal/",
-    },
+    }, 
+    //  {
+    //     src: youtube, 
+    //     alt: "youtube logo",
+    //     link: "",  
+    // },
 ];

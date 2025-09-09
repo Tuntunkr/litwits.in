@@ -264,15 +264,16 @@ const index = () => {
             Duration of each group session 90 minutes
           </p>
         </div>
-        <div className="flex items-center justify-center px- py-1 from-gray-50 to-gray-200 text-center w-full overflow-x-auto">
+        <CourseCurriculum />
+        <div className="flex items-center justify-center px- py-1 from-gray-50 to-gray-200 text-center w-full overflow-x-auto mt-5">
           <table>
             <thead className="bg-gradient-to-br from-gray-900 to-gray-800 font-noto ">
               <tr>
                 <th
-                  className="text-white  font-noto "
+                  className="text-white  font-noto uppercase"
                   style={{ fontFamily: "Noto Sans" }}
                 >
-                  SESSIONS
+                  No. of Group Sessions
                 </th>
                 <th
                   className="text-white  font-noto"
@@ -419,7 +420,6 @@ const index = () => {
           </table>
         </div>
 
-        <CourseCurriculum />
         <div className=" py-3">
           {/* Section Title */}
           <h1
@@ -434,8 +434,8 @@ const index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "TED-ED Training",
-                price: 20000,
+                title: "TED-ED Training Package",
+                price: 25000,
                 sessions: "5 Sessions",
                 features: [
                   "Understanding the Fundamentals",
@@ -448,7 +448,7 @@ const index = () => {
               },
               {
                 title: "MUN Guidance Package",
-                price: 20000,
+                price: 25000,
                 sessions: "5 Sessions",
                 features: [
                   "Research Material",
@@ -461,7 +461,7 @@ const index = () => {
               },
               {
                 title: "Research Paper Guidance",
-                price: 20000,
+                price: 25000,
                 sessions: "5 Sessions",
                 features: [
                   "Introduction to Research",
@@ -690,6 +690,26 @@ const index = () => {
               <Accordion.Body className="bg-[#890C25] text-white">
                 You may attend any sessions from the weekly schedule as per your
                 interest.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="6">
+              <Accordion.Header>Who can join?</Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Learning begins with passion, not experience—and that’s exactly
+                what our sessions are all about. We have categories for students
+                from Grade 4 to adults ,anyone who is eager to explore debate,
+                public speaking, or writing can join us. No prior experience is
+                required; just passion and commitment for learning.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="7">
+              <Accordion.Header>
+                What if you miss a group session?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                If a group session is ever missed, you can simply attend the
+                next one. However, do ensure all sessions are completed within
+                the validity period.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

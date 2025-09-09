@@ -883,7 +883,7 @@ const GroupSess = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <img
-              src={ APLogo }
+              src={APLogo}
               alt="Advanced Placement Prep Session for comprehensive subject mastery and university readiness."
               style={{ height: "280px" }}
               className="rounded-lg shadow-lg w-full"
@@ -1043,6 +1043,25 @@ const GroupSess = () => {
           </div>
         </div>
       </section>
+      <div className="container">
+  <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
+        Individual sessions for Adults
+      </h3>
+
+      <p className=" text-gray-900" style={{ fontSize: "15px" }}>
+        Great ideas deserve to be expressed with power, precision, and clarity.
+        Passion and commitment are the foundation — but guidance and structure
+        transform potential into excellence.
+      </p>
+      <p className=" text-gray-900" style={{ fontSize: "15px" }}>
+        Our individual sessions are tailored to meet each student’s unique
+        needs, whether in public speaking, debating, or academic writing. With a
+        focus on both skill-building and confidence, these one-on-one
+        engagements create a space where students can develop their voice,
+        refine their arguments, and elevate their expression.
+      </p>
+      </div>
+    
 
       {/* Mun section  */}
 
@@ -1128,7 +1147,7 @@ const GroupSess = () => {
                 strategies needed for MUN success.
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="5">
+            {/* <Accordion.Item eventKey="5">
               <Accordion.Header>
                 Can I convert my Group Session package to Individual Sessions?
               </Accordion.Header>
@@ -1136,7 +1155,7 @@ const GroupSess = () => {
                 No. Group Sessions and Individual Sessions are structured and
                 priced separately.
               </Accordion.Body>
-            </Accordion.Item>
+            </Accordion.Item> */}
             {/* First Accordion */}
             <Accordion.Item eventKey="6">
               <Accordion.Header>
@@ -1203,6 +1222,26 @@ const GroupSess = () => {
                 We offer One-Time Sessions for a fee. These sessions allow
                 students to discover our teaching style and session structure
                 before committing to a full package.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="12">
+              <Accordion.Header>Who can join?</Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Learning begins with passion, not experience—and that’s exactly
+                what our sessions are all about. We have categories for students
+                from Grade 4 to adults ,anyone who is eager to explore debate,
+                public speaking, or writing can join us. No prior experience is
+                required; just passion and commitment for learning.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="13">
+              <Accordion.Header>
+                What if you miss a group session?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                If a group session is ever missed, you can simply attend the
+                next one. However, do ensure all sessions are completed within
+                the validity period.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
