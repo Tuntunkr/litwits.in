@@ -687,23 +687,27 @@ const GroupSess = () => {
           id="individual-session"
           className="container-fluid mx-auto py-10 bg-white"
         >
-          <div className="container mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <img
-                src={Prize11}
-                alt="Defining unique identity through passion, strengths, and potential."
-                title="Defining Your Unique Identity with LITWITS"
-                aria-label="Defining Your Unique Identity with LITWITS"
-                aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
-                style={{ height: "650px" }}
-                className="rounded-lg shadow-lg w-full"
-              />
+          <div className="container mx-auto ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center ">
+              {/* Image Wrapper with red background */}
+              <div
+                className="bg-red-900 rounded-lg shadow-lg flex items-center justify-center w-full 
+  h-[400px] sm:h-[400px]  lg:h-[550px]"
+              >
+                <img
+                  src={Prize11}
+                  alt="Defining unique identity through passion, strengths, and potential."
+                  className="w-full object-contain p-4"
+                />
+              </div>
+
+              {/* Text Content */}
               <div>
-                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start uppercase  text-red-700 mb-4">
+                <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start uppercase text-red-700 mb-4">
                   LITWITS: Your Official Launchpad to WSC Success
                 </h2>
                 <p
-                  className=" text-gray-900 leading-relaxed"
+                  className="text-gray-900 leading-relaxed"
                   style={{ fontSize: "15px" }}
                 >
                   <strong>
@@ -712,7 +716,7 @@ const GroupSess = () => {
                   </strong>
                 </p>
                 <p
-                  className=" text-gray-900 leading-relaxed"
+                  className="text-gray-900 leading-relaxed"
                   style={{ fontSize: "15px" }}
                 >
                   We’re not here to spoon-feed facts or toss you a syllabus and
@@ -721,7 +725,7 @@ const GroupSess = () => {
                   a debate room or writing hall knowing exactly what to do.
                 </p>
                 <p
-                  className=" text-gray-900 leading-relaxed"
+                  className="text-gray-900 leading-relaxed"
                   style={{ fontSize: "15px" }}
                 >
                   Whether you're just starting your WSC journey or aiming for
@@ -729,7 +733,7 @@ const GroupSess = () => {
                   transformation.
                 </p>
                 <p
-                  className=" text-gray-900 leading-relaxed"
+                  className="text-gray-900 leading-relaxed"
                   style={{ fontSize: "15px" }}
                 >
                   You shall discover that debate can be thrilling, writing can
@@ -738,7 +742,7 @@ const GroupSess = () => {
                   to remember.
                 </p>
                 <p
-                  className=" text-gray-900 leading-relaxed"
+                  className="text-gray-900 leading-relaxed"
                   style={{ fontSize: "15px" }}
                 >
                   At LITWITS, preparation isn’t about stress or feeling
@@ -749,12 +753,14 @@ const GroupSess = () => {
                   it. To walk into any round and say, “I’ve got this.”
                 </p>
                 <p
-                  className=" text-gray-900 leading-relaxed"
+                  className="text-gray-900 leading-relaxed"
                   style={{ fontSize: "15px" }}
                 >
                   Because we don’t just teach. We train, team up, mentor, and
                   guide.
                 </p>
+
+                {/* Buttons */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                   <Link
                     to="https://wa.me/9811701747?text=Hi! I’m interested in your World Scholars Cup Session.Please share details about the program and I request a free consultation."
@@ -766,10 +772,8 @@ const GroupSess = () => {
 
                   <Link
                     to="/membership"
-                    className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center "
-                    style={{
-                      fontFamily: "Noto Sans",
-                    }}
+                    className="text-white bg-blue-950 px-6 py-3 w-full no-underline uppercase rounded-md text-base font-medium transition text-center"
+                    style={{ fontFamily: "Noto Sans" }}
                   >
                     Enroll Now
                   </Link>

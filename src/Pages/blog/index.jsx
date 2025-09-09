@@ -9,7 +9,7 @@ import Explore from "/WomanSpeaking.jpeg";
 import Ultimate from "/ultimate.png";
 import Competitions from "/Competitions.jpeg";
 import Book from "/Competitions.jpeg";
-import mun from '/mun.png'
+import mun from "/mun.png";
 
 // Sample blog data with 10 entries
 const blogData = [
@@ -59,12 +59,13 @@ const blogData = [
     id: 7,
     title: "Top Debate Competitions for School Students",
     description:
-        "Debate competitions are more than just verbal sparring matches — they are rigorous intellectual arenas where young minds sharpen their logic, develop confidence, and voice their perspectives on global issues. From school auditoriums to international campuses, debate competitions offer students a unique opportunity to evolve as speakers, thinkers, and leaders. Whether you are a curious beginner or a seasoned team prepping for the global stage, this guide is your complete roadmap. ",
+      "Debate competitions are more than just verbal sparring matches — they are rigorous intellectual arenas where young minds sharpen their logic, develop confidence, and voice their perspectives on global issues. From school auditoriums to international campuses, debate competitions offer students a unique opportunity to evolve as speakers, thinkers, and leaders. Whether you are a curious beginner or a seasoned team prepping for the global stage, this guide is your complete roadmap. ",
     image: Book,
   },
-   {
+  {
     id: 8,
-    title: "The Ultimate Guide to Model United Nations (MUN) for Students and Parents",
+    title:
+      "The Ultimate Guide to Model United Nations (MUN) for Students and Parents",
     description:
       "Welcome to the world of Model United Nations (MUN) - a space where international politics meets classroom learning, where young people practice the art of diplomacy, and where tomorrow’s changemakers are born.",
     image: mun,
@@ -87,257 +88,266 @@ const Blog = () => {
   const fourthPost = blogData.find((post) => post.id === 4);
   const fifthPost = blogData.find((post) => post.id === 5);
   const sixPost = blogData.find((post) => post.id === 6);
-   const sevenPost = blogData.find((post) => post.id === 7);
-   const EightPost = blogData.find((post) => post.id === 8);
-
+  const sevenPost = blogData.find((post) => post.id === 7);
+  const EightPost = blogData.find((post) => post.id === 8);
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      {/* Hero Section */}
-      <section className="mb-12">
-        <h1 className="text-4xl font-bold mb-4 text-center">Recent Blogs</h1>
+    <div className="">
+      <section className="bg-red-900 h-[20vh] flex items-center justify-center">
+        <div className="container mx-auto px-4 text-center p-8 rounded-lg">
+          <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-4 text-white">
+            BLOG
+          </h1>
+        </div>
       </section>
+      <div className="container mx-auto px-4 py-8">
+        {/* Hero Section */}
 
-      {/* First Blog Post */}
-      {firstPost && (
-        <Link
-          to={`/blog/${firstPost.title
-            .replace(/\s+/g, "-")
-            .replace(/[^a-zA-Z0-9-]/g, "")
-            .toLowerCase()}`}
-          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-        >
-          {/* Image Section */}
-          <img
-            src={firstPost.image}
-            alt={firstPost.title}
-            loading="lazy"
-            width="600"
-            height="200"
-            decoding="async"
-            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-          />
+        {/* <section className="mb-12">
+        <h1 className="text-4xl font-bold mb-4 text-center">Recent Blogs</h1>
+      </section> */}
 
-          {/* Content Section */}
-          <div className="md:w-1/2 p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-              {firstPost.title}
-            </h2>
-            <p className="text-gray-600 mb-4">{firstPost.description}</p>
-            <div className="flex items-center text-blue-600 font-medium">
-              <span>Read More</span>
-              <ChevronRight className="ml-1 w-5 h-5" />
+        {/* First Blog Post */}
+        {firstPost && (
+          <Link
+            to={`/blog/${firstPost.title
+              .replace(/\s+/g, "-")
+              .replace(/[^a-zA-Z0-9-]/g, "")
+              .toLowerCase()}`}
+            className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+          >
+            {/* Image Section */}
+            <img
+              src={firstPost.image}
+              alt={firstPost.title}
+              loading="lazy"
+              width="600"
+              height="200"
+              decoding="async"
+              className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+            />
+
+            {/* Content Section */}
+            <div className="md:w-1/2 p-6">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                {firstPost.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{firstPost.description}</p>
+              <div className="flex items-center text-blue-600 font-medium">
+                <span>Read More</span>
+                <ChevronRight className="ml-1 w-5 h-5" />
+              </div>
             </div>
-          </div>
-        </Link>
-      )}
+          </Link>
+        )}
 
-      {/* Second Blog Post */}
-      {secondPost && (
-        <Link
-          to={"/blog/introduction-to-the-world-scholars-cup-2025-tournament"}
-          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-        >
-          {/* Image Section */}
-          <img
-            src={secondPost.image}
-            alt={secondPost.title}
-            loading="lazy"
-            width="600"
-            height="200"
-            decoding="async"
-            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-          />
+        {/* Second Blog Post */}
+        {secondPost && (
+          <Link
+            to={"/blog/introduction-to-the-world-scholars-cup-2025-tournament"}
+            className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+          >
+            {/* Image Section */}
+            <img
+              src={secondPost.image}
+              alt={secondPost.title}
+              loading="lazy"
+              width="600"
+              height="200"
+              decoding="async"
+              className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+            />
 
-          {/* Content Section */}
-          <div className="md:w-1/2 p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-              {secondPost.title}
-            </h2>
-            <p className="text-gray-600 mb-4">{secondPost.description}</p>
-            <div className="flex items-center text-blue-600 font-medium">
-              <span>Read More</span>
-              <ChevronRight className="ml-1 w-5 h-5" />
+            {/* Content Section */}
+            <div className="md:w-1/2 p-6">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                {secondPost.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{secondPost.description}</p>
+              <div className="flex items-center text-blue-600 font-medium">
+                <span>Read More</span>
+                <ChevronRight className="ml-1 w-5 h-5" />
+              </div>
             </div>
-          </div>
-        </Link>
-      )}
+          </Link>
+        )}
 
-      {/* Sat Blog Post */}
-      {thirdPost && (
-        <Link
-          to={"/blog/sat-preparation-2025-how-to-prepare-for-sat-exam"}
-          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-        >
-          {/* Image Section */}
-          <img
-            src={thirdPost.image}
-            alt={thirdPost.title}
-            loading="lazy"
-            width="600"
-            height="200"
-            decoding="async"
-            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-          />
+        {/* Sat Blog Post */}
+        {thirdPost && (
+          <Link
+            to={"/blog/sat-preparation-2025-how-to-prepare-for-sat-exam"}
+            className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+          >
+            {/* Image Section */}
+            <img
+              src={thirdPost.image}
+              alt={thirdPost.title}
+              loading="lazy"
+              width="600"
+              height="200"
+              decoding="async"
+              className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+            />
 
-          {/* Content Section */}
-          <div className="md:w-1/2 p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-              {thirdPost.title}
-            </h2>
-            <p className="text-gray-600 mb-4">{thirdPost.description}</p>
-            <div className="flex items-center text-blue-600 font-medium">
-              <span>Read More</span>
-              <ChevronRight className="ml-1 w-5 h-5" />
+            {/* Content Section */}
+            <div className="md:w-1/2 p-6">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                {thirdPost.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{thirdPost.description}</p>
+              <div className="flex items-center text-blue-600 font-medium">
+                <span>Read More</span>
+                <ChevronRight className="ml-1 w-5 h-5" />
+              </div>
             </div>
-          </div>
-        </Link>
-      )}
+          </Link>
+        )}
 
-      {/* fourth blog  */}
-      {fourthPost && (
-        <Link
-          to={"/blog/learn-all-about-different-types-of-debate"}
-          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-        >
-          <img
-            src={fourthPost.image}
-            alt={fourthPost.title}
-            loading="lazy"
-            width="600"
-            height="200"
-            decoding="async"
-            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-          />
+        {/* fourth blog  */}
+        {fourthPost && (
+          <Link
+            to={"/blog/learn-all-about-different-types-of-debate"}
+            className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+          >
+            <img
+              src={fourthPost.image}
+              alt={fourthPost.title}
+              loading="lazy"
+              width="600"
+              height="200"
+              decoding="async"
+              className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+            />
 
-          <div className="md:w-1/2 p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-              {fourthPost.title}
-            </h2>
-            <p className="text-gray-600 mb-4">{fourthPost.description}</p>
-            <div className="flex items-center text-blue-600 font-medium">
-              <span>Read More</span>
-              <ChevronRight className="ml-1 w-5 h-5" />
+            <div className="md:w-1/2 p-6">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                {fourthPost.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{fourthPost.description}</p>
+              <div className="flex items-center text-blue-600 font-medium">
+                <span>Read More</span>
+                <ChevronRight className="ml-1 w-5 h-5" />
+              </div>
             </div>
-          </div>
-        </Link>
-      )}
+          </Link>
+        )}
 
-      {/* fifth blog */}
-      {fifthPost && (
-        <Link
-          to={"/blog/explore-different-types-of-writing-formats"}
-          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-        >
-          <img
-            src={fifthPost.image}
-            alt={fifthPost.title}
-            loading="lazy"
-            width="600"
-            height="200"
-            decoding="async"
-            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-          />
+        {/* fifth blog */}
+        {fifthPost && (
+          <Link
+            to={"/blog/explore-different-types-of-writing-formats"}
+            className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+          >
+            <img
+              src={fifthPost.image}
+              alt={fifthPost.title}
+              loading="lazy"
+              width="600"
+              height="200"
+              decoding="async"
+              className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+            />
 
-          <div className="md:w-1/2 p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-              {fifthPost.title}
-            </h2>
-            <p className="text-gray-600 mb-4">{fifthPost.description}</p>
-            <div className="flex items-center text-blue-600 font-medium">
-              <span>Read More</span>
-              <ChevronRight className="ml-1 w-5 h-5" />
+            <div className="md:w-1/2 p-6">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                {fifthPost.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{fifthPost.description}</p>
+              <div className="flex items-center text-blue-600 font-medium">
+                <span>Read More</span>
+                <ChevronRight className="ml-1 w-5 h-5" />
+              </div>
             </div>
-          </div>
-        </Link>
-      )}
-      {/* sixpost */}
+          </Link>
+        )}
+        {/* sixpost */}
 
-      {sixPost && (
-        <Link
-          to={"/blog/ultimate-guide-to-debate-training"}
-          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-        >
-          <img
-            src={sixPost.image}
-            alt={sixPost.title}
-            loading="lazy"
-            width="600"
-            height="200"
-            decoding="async"
-            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-          />
+        {sixPost && (
+          <Link
+            to={"/blog/ultimate-guide-to-debate-training"}
+            className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+          >
+            <img
+              src={sixPost.image}
+              alt={sixPost.title}
+              loading="lazy"
+              width="600"
+              height="200"
+              decoding="async"
+              className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+            />
 
-          <div className="md:w-1/2 p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-              {sixPost.title}
-            </h2>
-            <p className="text-gray-600 mb-4">{sixPost.description}</p>
-            <div className="flex items-center text-blue-600 font-medium">
-              <span>Read More</span>
-              <ChevronRight className="ml-1 w-5 h-5" />
+            <div className="md:w-1/2 p-6">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                {sixPost.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{sixPost.description}</p>
+              <div className="flex items-center text-blue-600 font-medium">
+                <span>Read More</span>
+                <ChevronRight className="ml-1 w-5 h-5" />
+              </div>
             </div>
-          </div>
-        </Link>
-      )}
-      {/* Seven blog */}
+          </Link>
+        )}
+        {/* Seven blog */}
 
-       {sevenPost && (
-        <Link
-          to={"/blog/top-debate-competitions-for-school-students"}
-          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-        >
-          <img
-            src={sevenPost.image}
-            alt={sevenPost.title}
-            loading="lazy"
-            width="600"
-            height="200"
-            decoding="async"
-            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-          />
+        {sevenPost && (
+          <Link
+            to={"/blog/top-debate-competitions-for-school-students"}
+            className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+          >
+            <img
+              src={sevenPost.image}
+              alt={sevenPost.title}
+              loading="lazy"
+              width="600"
+              height="200"
+              decoding="async"
+              className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+            />
 
-          <div className="md:w-1/2 p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-              {sevenPost.title}
-            </h2>
-            <p className="text-gray-600 mb-4">{sevenPost.description}</p>
-            <div className="flex items-center text-blue-600 font-medium">
-              <span>Read More</span>
-              <ChevronRight className="ml-1 w-5 h-5" />
+            <div className="md:w-1/2 p-6">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                {sevenPost.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{sevenPost.description}</p>
+              <div className="flex items-center text-blue-600 font-medium">
+                <span>Read More</span>
+                <ChevronRight className="ml-1 w-5 h-5" />
+              </div>
             </div>
-          </div>
-        </Link>
-      )} 
+          </Link>
+        )}
         {/* Eight blog */}
 
-      {EightPost && (
-        <Link
-          to={"/blog/Mun-blog"}
-          className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-        >
-          <img
-            src={EightPost.image}
-            alt={EightPost.title}
-            loading="lazy"
-            width="600"
-            height="200"
-            decoding="async"
-            className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-          />
+        {EightPost && (
+          <Link
+            to={"/blog/Mun-blog"}
+            className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+          >
+            <img
+              src={EightPost.image}
+              alt={EightPost.title}
+              loading="lazy"
+              width="600"
+              height="200"
+              decoding="async"
+              className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+            />
 
-          <div className="md:w-1/2 p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-              {EightPost.title}
-            </h2>
-            <p className="text-gray-600 mb-4">{EightPost.description}</p>
-            <div className="flex items-center text-blue-600 font-medium">
-              <span>Read More</span>
-              <ChevronRight className="ml-1 w-5 h-5" />
+            <div className="md:w-1/2 p-6">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                {EightPost.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{EightPost.description}</p>
+              <div className="flex items-center text-blue-600 font-medium">
+                <span>Read More</span>
+                <ChevronRight className="ml-1 w-5 h-5" />
+              </div>
             </div>
-          </div>
-        </Link>
-      )} 
+          </Link>
+        )}
+      </div>
     </div>
   );
 };

@@ -1,9 +1,7 @@
-
-
 import { Link } from "react-router-dom";
 import { copyrightSign } from "../assets/icons";
 import { footerLinks, socialMedia } from "../constants";
-import Shweta from "/assets/Shweta.png"
+import Shweta from "/assets/Shweta.png";
 import Sudpa from "/assets/Sudpa.png";
 
 const Footer = () => {
@@ -56,7 +54,7 @@ const Footer = () => {
             {/* Google Review Block (Styled like Trustpilot) */}
             <div className="mt-3 rounded-xl max-w-xs text-white">
               <a
-                href= "https://www.google.com/maps/place/LITWITS/@28.4154844,77.0605087,17z/data=!4m18!1m9!3m8!1s0x390ce3c0ea6a7c37:0x566aba097b77a242!2sLITWITS!8m2!3d28.4154844!4d77.0630836!9m1!1b1!16s%2Fg%2F11whx8jmm6!3m7!1s0x390ce3c0ea6a7c37:0x566aba097b77a242!8m2!3d28.4154844!4d77.0630836!9m1!1b1!16s%2Fg%2F11whx8jmm6?entry=ttu"
+                href="https://www.google.com/maps/place/LITWITS/@28.4154844,77.0605087,17z/data=!4m18!1m9!3m8!1s0x390ce3c0ea6a7c37:0x566aba097b77a242!2sLITWITS!8m2!3d28.4154844!4d77.0630836!9m1!1b1!16s%2Fg%2F11whx8jmm6!3m7!1s0x390ce3c0ea6a7c37:0x566aba097b77a242!8m2!3d28.4154844!4d77.0630836!9m1!1b1!16s%2Fg%2F11whx8jmm6?entry=ttu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3"
@@ -97,39 +95,42 @@ const Footer = () => {
 
                   {/* Rating Text */}
                   <div className="text-sm mt-1">
-
-                    <span>Join Our Happy Customers<br/>Write a Review</span>
+                    <span>
+                      Join Our Happy Customers
+                      <br />
+                      Write a Review
+                    </span>
                     {/* <span className="text-yellow-400 font-semibold">
                       5.0 Excellent
                     </span>
                     <span className="text-white">| Reviews 5,000</span> */}
                     {/* <span>  Join Our <br/>Happy Customers<br/> Write a Review</span>    */}
                   </div>
-                 
                 </div>
               </a>
             </div>
           </div>
 
           {/* Middle Links Section */}
-      <div className="flex-1 grid grid-cols-2 gap-8 lg:gap-16 lg:flex lg:justify-items-start lg:text-center mb-8 lg:mb-0">
-  {footerLinks.map((section, index) => (
-    <div key={index}>
-      <h4 className="text-white font-semibold mb-3">{section.title}</h4>
-      <ul>
-        {section.links.map((link) => (
-          <li
-            key={link.name}
-            className="text-sm text-[#FFFFFF] footermenu hover:text-white mb-2 uppercase cursor-pointer"
-          >
-            <Link to={link.link}>{link.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  ))}
-</div>
-
+          <div className="flex-1 grid grid-cols-2 gap-8 lg:gap-16 lg:flex lg:justify-items-start lg:text-center mb-8 lg:mb-0">
+            {footerLinks.map((section, index) => (
+              <div key={index}>
+                <h4 className="text-white font-semibold mb-3">
+                  {section.title}
+                </h4>
+                <ul>
+                  {section.links.map((link) => (
+                    <li
+                      key={link.name}
+                      className="text-sm text-[#FFFFFF] footermenu hover:text-white mb-2 uppercase cursor-pointer"
+                    >
+                      <Link to={link.link}>{link.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
 
           {/* Right Buttons Section */}
           <div className="flex flex-col items-start gap-4">

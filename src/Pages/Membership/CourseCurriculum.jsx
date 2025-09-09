@@ -42,7 +42,7 @@ const GroupSessions = () => {
   
       {/* Right Side */}
       <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4  rounded-xl text-white flex flex-col">
-        <h2 className="text-lg md:text-xl font-bold mb-3 mt-2 text-center lg:text-left text-white font-noto">
+        <h2 className="text-lg md:text-xl font-bold mb-3 mt-2 text-center lg:text-left text-white font-noto uppercase">
           Monday to Sunday: 08:00 to 9:30 p.m
         </h2>
         <div className=" p-4 rounded-lg shadow-md flex flex-col h-full">

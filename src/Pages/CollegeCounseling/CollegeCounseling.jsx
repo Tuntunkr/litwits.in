@@ -280,7 +280,7 @@ const CollegeCounseling = () => {
           </div>
 
           {/* <!-- Descriptive Content for Accessibility --> */}
-          {/* <p
+        {/* <p
             id="consultation-description"
             class="sr-only"
             style={{ fontSize: "15px" }}
@@ -288,14 +288,14 @@ const CollegeCounseling = () => {
             Comprehensive guidance starting from middle school to help students
             navigate the college admissions process with a clear roadmap.
           </p>
-        </section> */} 
-              <section className="bg-red-900 h-[20vh] flex items-center justify-center">
-        <div className="container mx-auto px-4 text-center p-8 rounded-lg">
-          <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-4 text-white">
-            COLLEGE COUNSELING
-          </h1>
-        </div>
-      </section>
+        </section> */}
+        <section className="bg-red-900 h-[20vh] flex items-center justify-center">
+          <div className="container mx-auto px-4 text-center p-8 rounded-lg">
+            <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-4 text-white">
+              COLLEGE COUNSELING
+            </h1>
+          </div>
+        </section>
 
         {/* 2 section  */}
 
@@ -516,28 +516,28 @@ const CollegeCounseling = () => {
                 title="Defining Your Unique Identity with LITWITS"
                 aria-label="Defining Your Unique Identity with LITWITS"
                 aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
-                className="rounded-lg shadow-lg w-full h-auto object-contain"
+                className="rounded-lg shadow-lg w-full h-[250px] object-contain bg-red-900"
               />
 
               <div>
                 <p className="text-red-700 uppercase text-start fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-2">
-                  To meet the demanding standards of top universities, we provide
-              tailored guidance for academic excellence, including:
+                  To meet the demanding standards of top universities, we
+                  provide tailored guidance for academic excellence, including:
                 </p>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                  <span className="font-semibold">Test Preparation:</span> Our
+                  team offers comprehensive support for standardized tests like
+                  SAT, ACT, AP exams, IELTS, and other assessments. Our focused
+                  approach ensures you're fully prepared to achieve your best
+                  possible scores.
+                </p>
+                {/* <p className="text-gray-700" style={{ fontSize: "15px" }}>
                   <span className="font-semibold">Test Preparation:</span> Our
                 team offers comprehensive support for standardized tests like
                 SAT, ACT, AP exams, IELTS, and other assessments. Our focused
                 approach ensures you're fully prepared to achieve your best
                 possible scores.
-                </p>
-                <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                  <span className="font-semibold">Test Preparation:</span> Our
-                team offers comprehensive support for standardized tests like
-                SAT, ACT, AP exams, IELTS, and other assessments. Our focused
-                approach ensures you're fully prepared to achieve your best
-                possible scores.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
