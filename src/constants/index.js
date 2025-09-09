@@ -2,10 +2,7 @@ import {
   facebook, 
   instagram, 
   linkedin, 
-  shieldTick, 
-  support, 
-  truckFast, 
-//   youtube,
+  youtube,
 } from "../assets/icons";
 
 
@@ -61,9 +58,9 @@ export const socialMedia = [
         alt: "linkedin logo",
         link: "https://www.linkedin.com/company/litwitsglobal/",
     }, 
-    //  {
-    //     src: youtube, 
-    //     alt: "youtube logo",
-    //     link: "",  
-    // },
+     {
+        src: youtube, 
+        alt: "youtube logo",
+        link: "https://www.youtube.com/@litwitstraining",  
+    },
 ];
