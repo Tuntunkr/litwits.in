@@ -9,7 +9,8 @@ import support from './support.svg';
 import shieldTick from './shield-tick.svg';
 import star from './star.svg';
 import truckFast from './truck-fast.svg';
-import linkedin from './linkedin.svg'; // Add this line
+import linkedin from './linkedin.svg'; 
+import youtube from './youtube.svg';
 
 export {
     arrowRight,
@@ -23,5 +24,6 @@ export {
     shieldTick,
     star,
     truckFast,
-    linkedin // Add this line to export
+    linkedin,
+    youtube
 };
