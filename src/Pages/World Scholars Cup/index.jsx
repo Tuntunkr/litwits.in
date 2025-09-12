@@ -484,8 +484,8 @@ const GroupSess = () => {
                 title="Defining Your Unique Identity with LITWITS"
                 aria-label="Defining Your Unique Identity with LITWITS"
                 aria-describedby="Guided self-discovery through psychometric assessments and reflective activities to align personal goals and academic aspirations."
-                style={{ height: "550px" }}
-                className="rounded-lg shadow-lg w-full"
+                style={{ height: "500px" }}
+                className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
           </div>
@@ -1143,6 +1143,71 @@ const GroupSess = () => {
             Curious to see our schedule or resource samples?
           </li>
         </ul>
+        <div className="p-4">
+          {/* First Accordion */}
+          <Accordion defaultActiveKey="0" flush>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>
+                Do I need prior debate or writing experience to join WSC?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Not at all! Many of our most successful scholars started with
+                zero debate or writing background. WSC is designed to be
+                accessible to everyone—whether you’re stepping into your first
+                debate round or already love crafting essays. At LITWITS, we
+                train you from the ground up, so all you need to bring is
+                curiosity and the willingness to learn.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>
+                How much time do I need to prepare for WSC?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                It depends on your goals. If you’re aiming for competitive
+                success at Regional or Global rounds, we recommend starting prep
+                at least 2–3 months in advance. With LITWITS, sessions are
+                structured to balance schoolwork and prep, so you can steadily
+                build skills without feeling overwhelmed.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>Can I join without a team?</Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Yes! You don’t need a team to begin. Many scholars register
+                solo, and LITWITS helps pair you with like-minded students to
+                form a strong team. In fact, some of our most decorated teams
+                began as complete strangers who met through our network.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>
+                Is the World Scholar’s Cup only for academically “top” students?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Absolutely not. WSC values creativity, teamwork, and curiosity
+                more than rote academic achievement. Some of the best debaters
+                are comedians at heart, some of the sharpest writers are
+                daydreamers, and some of the best quizzers simply love random
+                facts. If you love learning and thinking in new ways, WSC is for
+                you.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="4">
+              <Accordion.Header>
+                What do parents gain from enrolling their child in LITWITS WSC
+                training?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Parents see their child grow into a confident, articulate, and
+                globally minded individual. Beyond medals and trophies, scholars
+                build skills like critical thinking, teamwork, leadership, and
+                communication—skills that matter long after the competition. And
+                yes, the joy of watching your child shine on stage is priceless.
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </div>
       </section>
       <section className="">
         <Contact />
