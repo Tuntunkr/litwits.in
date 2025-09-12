@@ -162,38 +162,44 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               chance to enhance their creativity and problem-solving skills when
               exposed to global perspectives. The competition is meant to be
               entertaining and engaging in order to make learning less of a
-              chore and more of an adventure. Other advantages consist of:
+              chore and more of an adventure.
             </p>
-            <ul className="list-disc list-inside mb-6 pl-5">
-              <li className="mb-3 mt-2 text-gray-900">
-                <strong className="text-gray-900 ">Global Networking:</strong>{" "}
+            <p className="text-black">Other advantages consist of:</p>
+            <ul className="list-disc list-outside space-y-4 text-gray-900 mb-6 mt-3 pl-6">
+              <li className="text-gray-900">
+                <span className="font-bold">Global Networking:</span>
                 By interacting with people all around the world, participants
                 promote understanding between cultures.
               </li>
-              <li className="mb-3 text-gray-900">
-                <strong className="text-gray-900 ">Skill Development:</strong>{" "}
+
+              <li className="text-gray-900">
+                <span className="font-bold">Skill Development:</span>
                 Skills such as critical thinking, public speaking, writing, and
                 teamwork skills are developed in the competition, which is
                 essential for future academic and professional endeavors.
               </li>
-              <li className="mb-3 text-gray-900">
-                <strong className="text-gray-900 ">Confidence Building:</strong>{" "}
+
+              <li className="text-gray-900">
+                <span className="font-bold">Confidence Building:</span>
                 Conquering diverse challenges builds self-confidence and
                 adaptability.
               </li>
-              <li className="mb-3 text-gray-900">
-                <strong className="text-gray-900 ">Memorable Moments:</strong>{" "}
+
+              <li className="text-gray-900">
+                <span className="font-bold">Memorable Moments:</span>
                 From engaging in impassioned debate on challenging topics to
                 participating in talent shows, the World Scholar's Cup provides
                 memorable & enriching moments.
               </li>
-              <li className="mb-3 text-gray-900">
-                <strong className="text-gray-900 ">Road to Yale:</strong> In the
-                invitation-only Tournament of Champions at Yale University, the
-                top performers in world rounds are invited, laying the road to
-                prestigious academic institutions.
+
+              <li className="text-gray-900">
+                <span className="font-bold">Road to Yale:</span>
+                In the invitation-only Tournament of Champions at Yale
+                University, the top performers in world rounds are invited,
+                laying the road to prestigious academic institutions.
               </li>
             </ul>
+
             <p className="text-black ">
               Participating in the World Scholar's Cup enhances academic
               curiosity and encourages scholars to explore topics beyond
@@ -220,7 +226,7 @@ const IntroductionToTheWorldScholarsCup2025Tournament = () => {
               you will need to know:
             </p>
             <br />
-            <ul className="list-disc list-inside mb-6 pl-5">
+            <ul className="  list-disc list-outside space-y-4 text-gray-900 mb-6 mt-6 pl-6">
               <li className="mb-3 text-gray-900">
                 <strong className="text-gray-900 ">Schedule:</strong> The
                 Regional rounds in the World Scholar's Cup 2025 Schedule are
