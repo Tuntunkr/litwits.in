@@ -119,7 +119,8 @@ const PopularProducts = () => {
   return (
     <>
       <section>
-        <div className="bg-red-900 w-full mx-auto px-4 py-16 flex items-center justify-center">
+        
+        <div className="bg-[#857558] w-full mx-auto px-4 py-16 flex items-center justify-center">
           <div className="w-full  p-6 lg:p-12 flex flex-col gap-8">
             {/* Text Content */}
             <div className="text-center lg:text-left">
