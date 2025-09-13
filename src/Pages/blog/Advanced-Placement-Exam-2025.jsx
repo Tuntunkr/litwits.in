@@ -589,8 +589,8 @@ const AdvancedPlacementExam2025 = () => {
 
               <ul className="list-disc list-inside mb-6 pl-5">
                 <li className="mb-3">
-                  <strong className="text-gray-900 ">Global Networking:</strong>{" "}
-                  By interacting with people all around the world, participants
+                  <strong className="text-gray-900 ">Global Networking: &nbsp;</strong>
+                   By interacting with people all around the world, participants
                   promote understanding between cultures.
                 </li>
                 <li className="mb-3">
