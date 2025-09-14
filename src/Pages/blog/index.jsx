@@ -29,9 +29,9 @@ const blogData = [
   },
   {
     id: 3,
-    title: "SAT Preparation 2025: How to Prepare for SAT Exam",
+    title: "SAT Exam Preparation 2025: How to Prepare for SAT Exam?",
     description:
-      "Scholastic Assessment Test, often known as SAT, is an important standardized test that functions as the key admission criterion for college admissions, specifically for Indian students who aim to study abroad.",
+      "If you’re planning to study abroad, the SAT Exam 2025 is likely on your radar. It’s a globally recognized test accepted by universities around the world, designed to measure your readiness for college-level academics. With intense competition and evolving exam patterns, preparing effectively is the key to achieving a high score.",
     image: Satimg,
   },
   {
