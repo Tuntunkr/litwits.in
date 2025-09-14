@@ -22,7 +22,7 @@ function Header() {
       <div className="h-[120px] sm:h-[130px] md:h-[100px]  bg-red-800" />
 
       {/* Header container */}
-      <div className="fixed top-0 left-0 right-0 z-50  bg-red-800 px-4 py-[40px] flex items-center justify-between sm:justify-center ">
+      <div className="fixed top-0 left-0 right-0 z-50  bg-red-800 px-4 py-[30px] flex items-center justify-between sm:justify-center ">
         {/* Logo Left on mobile, Center on desktop */}
         <div className="flex items-center w-full sm:justify-center relative">
           <Navbar.Brand
@@ -55,7 +55,7 @@ function Header() {
 
       {/* Floating Navigation Tabs (half in navbar, half out) */}
       {/* <div className="hidden sm:block fixed left-1/2 transform -translate-x-1/2 z-40 top-[100px] w-full max-w-6xl px-4 pointer-events-none "> */}
-      <div className="hidden sm:block fixed left-1/2 transform -translate-x-1/2 z-40 top-[80px] w-full pointer-events-none bg-red-800 shadow-md h-[50px]">
+      <div className="hidden sm:block fixed left-1/2 transform -translate-x-1/2 z-40 top-[60px] w-full pointer-events-none bg-red-800 shadow-md h-[50px]">
         <div className="flex justify-center flex-wrap gap-1 pointer-events-auto w-full max-w-6xl mx-auto px-4">
           {navLinks.map((link) => {
             const isActive = location.pathname === link.href;

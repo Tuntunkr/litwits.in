@@ -3,7 +3,7 @@ import studentimg from "/assets/Trophy.png";
 
 const Services = () => {
   return (
-    <section className="text-white bg-red-900 font-serif">
+    <section className="text-white bg-[#857558] font-serif">
       {/* Uncomment Helmet if using React Helmet for SEO */}
       {/* <Helmet>
         <title>Expert Mentorship - LITWITS</title>
@@ -16,50 +16,49 @@ const Services = () => {
         <link rel="canonical" href="https://litwits.in/services" />
       </Helmet> */}
 
-     <div className="container mx-auto px-4 py-12 sm:py-16 lg:py-24">
-  {/* Title Centered Above Both */}
-  <div className="text-center mb-10">
-    <p className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug font-noto  uppercase ">
-       Guided by scholars and experts in their field
-    </p>
-   
-  </div>
+      <div className="container mx-auto px-4 py-12 sm:py-16 lg:py-12">
+        {/* Title Centered Above Both */}
+        <div className="text-center mb-10">
+          <p className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug font-noto  uppercase ">
+            Guided by scholars and experts in their field
+          </p>
+        </div>
 
-  {/* Text + Image Grid */}
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-    {/* Left Text Content */}
-    <div className="space-y-4 p-4 sm:p-6 lg:p-8">
-      <p className="leading-7 sm:leading-8 md:text-l text-white text-left font-noto text-lg mb-3">
-        Professionals, PhDs, and Postgraduates from renowned institutions
-        worldwide bring a wealth of expertise drawing from their distinguished
-        experiences. These include judging elite tournaments at Yale, Harvard,
-        Stanford Invitationals, the Debating Championships at Durham, Oxford,
-        and Cambridge.
-      </p>
-      <p className="leading-7 sm:leading-8 md:text-l text-white text-left font-noto text-lg mb-3">
-        Their accomplishments span serving as UN Millennium Fellows,
-        collaborating with Members of Parliament and legislative bodies, working
-        as Research Assistants to professors at leading universities, presiding
-        over debate and quiz societies, teaching at prestigious institutions,
-        publishing in esteemed academic journals, and gaining invaluable
-        insights through internships at top legal firms.
-      </p>
-    </div>
+        {/* Text + Image Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Left Text Content */}
+          <div className="space-y-4 p-4 sm:p-6 lg:p-8">
+            <p className="leading-7 sm:leading-8 md:text-l text-white text-left font-noto text-lg mb-3">
+              Professionals, PhDs, and Postgraduates from renowned institutions
+              worldwide bring a wealth of expertise drawing from their
+              distinguished experiences. These include judging elite tournaments
+              at Yale, Harvard, Stanford Invitationals, the Debating
+              Championships at Durham, Oxford, and Cambridge.
+            </p>
+            <p className="leading-7 sm:leading-8 md:text-l text-white text-left font-noto text-lg mb-3">
+              Their accomplishments span serving as UN Millennium Fellows,
+              collaborating with Members of Parliament and legislative bodies,
+              working as Research Assistants to professors at leading
+              universities, presiding over debate and quiz societies, teaching
+              at prestigious institutions, publishing in esteemed academic
+              journals, and gaining invaluable insights through internships at
+              top legal firms.
+            </p>
+          </div>
 
-    {/* Right Image */}
-    <div className="relative group w-full md:w-[90%] mx-auto overflow-hidden transition-transform duration-300 hover:scale-105">
-      <img
-        src={studentimg}
-        alt="LITWITS mentors guiding students for academic success."
-        title="LITWITS Mentors - Expert Guidance"
-        aria-label="LITWITS Mentors - Expert Guidance"
-        aria-describedby="Experienced mentors from Yale, Harvard, Oxford, and Cambridge provide expert coaching for students."
-        className="w-full max-w-[400px] h-[340px] md:h-[400px] object-contain mx-auto shadow-lg"
-      />
-    </div>
-  </div>
-</div>
-
+          {/* Right Image */}
+          <div className="relative group w-full md:w-[90%] mx-auto overflow-hidden transition-transform duration-300 hover:scale-105">
+            <img
+              src={studentimg}
+              alt="LITWITS mentors guiding students for academic success."
+              title="LITWITS Mentors - Expert Guidance"
+              aria-label="LITWITS Mentors - Expert Guidance"
+              aria-describedby="Experienced mentors from Yale, Harvard, Oxford, and Cambridge provide expert coaching for students."
+              className="w-full max-w-[400px] h-[340px] md:h-[400px] object-contain mx-auto shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

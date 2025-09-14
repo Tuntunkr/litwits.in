@@ -66,7 +66,7 @@ const AutoSliderSection = ({ cards = [] }) => {
 
   return (
     <section>
-      <div className="bg-red-800 container-fluid mx-auto flex items-center justify-center py-8">
+      <div className="bg-[#857558] container-fluid mx-auto flex items-center justify-center py-8">
         <div className="w-full max-w-[1499px] p-4 lg:p-8">
           <h2 className="uppercase font-noto text-center fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-white  ">
             Curated College List and Personalized Fit

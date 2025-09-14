@@ -614,7 +614,7 @@ const CollegeCounseling = () => {
 
         {/*Presenting Your Best Self start */}
 
-        <section className="bg-red-800 to-[#33000A] text-white py-10 px-4">
+        <section className="bg-[#857558] to-[#33000A] text-white py-10 px-4">
           <div className="max-w-(--breakpoint-lg) mx-auto text-center">
             <p className="  mb-1 fw-semibold text-[18px] md:text-[1.5rem] leading-snug">
               PRESENTING YOUR BEST SELF
