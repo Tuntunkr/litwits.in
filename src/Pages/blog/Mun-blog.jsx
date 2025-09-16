@@ -10,92 +10,97 @@ const Mun = () => {
   return (
     <>
       <Helmet prioritizeSeoTags>
-        <title>
-          The Ultimate Guide to Model United Nations (MUN) for Students and
-          Parents
-        </title>
-        <meta
-          name="title"
-          content="The Ultimate Guide to Model United Nations (MUN) for Students and Parents"
-        />
-        <meta
-          name="description"
-          content="Welcome to the world of Model United Nations (MUN) - a space where international politics meets classroom learning, where young people practice the art of diplomacy, and where tomorrow’s changemakers are born.
-"
-        />
-        <meta
-          name="keywords"
-          content="World Scholar's Cup, World Scholar Cup, What is World Scholar's Cup, World Scholar Cup 2025 Registration, World Scholar Cup Eligibility, How to join World Scholar's Cup, World Scholar's Cup syllabus, World Scholar's Cup subjects, Scholar's Cup participation, World Scholar's Cup 2025 theme, Scholar's Cup registration process"
-        />
-        <meta name="author" content="LITWITS" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:title"
-          content="The Ultimate Guide to Model United Nations (MUN) for Students and Parents"
-        />
-        <meta
-          property="og:description"
-          content="Introduction to the World Scholar's Cup Tournament. Learn about 2025 registration, eligibility, syllabus, subjects, and how to join this global academic event."
-        />
-        {/* <meta
-          property="og:url"
-          content="https://litwits.in/blogs/Introduction-to-the-world-scholars-cup-2025-tournament"
-        />
-        <meta
-          property="og:image"
-          content="https://litwits.in/assets/litwits-logo.png"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Introduction to the World Scholar's Cup 2025 Tournament"
-        />
-        <meta
-          name="twitter:description"
-          content="Introduction to the World Scholar's Cup Tournament. Learn about 2025 registration, eligibility, syllabus, subjects, and how to join this global academic event."
-        />
-        <meta
-          name="twitter:image"
-          content="https://litwits.in/assets/litwits-logo.png"
-        /> */}
-        {/* Schema.org JSON-LD */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://litwits.in/blogs/Introduction-to-the-world-scholars-cup-2025-tournament",
-            },
-            headline: "Introduction to the World Scholar's Cup 2025 Tournament",
-            description:
-              "Introduction to the World Scholar's Cup Tournament. Learn about 2025 registration, eligibility, syllabus, subjects, and how to join this global academic event.",
-            image: "https://litwits.in/assets/litwits-logo.png",
-            author: {
-              "@type": "Organization",
-              name: "LITWITS",
-              url: "https://litwits.in",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "LITWITS",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://litwits.in/assets/litwits-logo.png",
-              },
-            },
-            datePublished: "2025-03-30T17:38:42.140208Z",
-            dateModified: "2025-03-30T17:38:42.140208Z",
-            keywords:
-              "World Scholar's Cup, World Scholar Cup, What is World Scholar's Cup, World Scholar Cup 2025 Registration, World Scholar Cup Eligibility, How to join World Scholar's Cup, World Scholar's Cup syllabus, World Scholar's Cup subjects, Scholar's Cup participation, World Scholar's Cup 2025 theme, Scholar's Cup registration process",
-            articleSection: "Education",
-            articleBody:
-              "Introduction to the World Scholar's Cup Tournament. Learn about 2025 registration, eligibility, syllabus, subjects, and how to join this global academic event.",
-          })}
-        </script>
-      </Helmet>
+  <title>
+    The Ultimate Guide to Model United Nations (MUN) | Litwits MUN Training Course
+  </title>
+  <meta
+    name="title"
+    content="The Ultimate Guide to Model United Nations (MUN) | Litwits MUN Training Course"
+  />
+  <meta
+    name="description"
+    content="Discover how Model United Nations (MUN) helps students build global awareness, leadership, and diplomacy skills. Learn its history, importance, and how Litwits prepares students for MUN success through structured mentorship, research guidance, mock sessions, and confidence-building training."
+  />
+  <meta
+    name="keywords"
+    content="Model United Nations guide, MUN for students, MUN training India, Litwits MUN coaching, MUN for parents, Model UN skills, MUN research training, MUN debate training, best MUN coaching India, how to prepare for MUN, benefits of Model UN, MUN public speaking, MUN leadership skills, Litwits Model United Nations"
+  />
+  <meta name="author" content="LITWITS" />
+  <meta name="robots" content="index, follow" />
+
+  {/* Open Graph (OG) */}
+  <meta property="og:type" content="article" />
+  <meta
+    property="og:title"
+    content="The Ultimate Guide to Model United Nations (MUN) | Litwits Training"
+  />
+  <meta
+    property="og:description"
+    content="Model United Nations (MUN) empowers students to step into the shoes of diplomats. Learn its history, benefits, and how Litwits equips students with research, debate, resolution drafting, and leadership skills to excel in MUN conferences."
+  />
+  <meta
+    property="og:url"
+    content="https://litwits.in/blogs/model-united-nations-guide"
+  />
+  <meta
+    property="og:image"
+    content="https://litwits.in/assets/litwits-logo.png"
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="The Ultimate Guide to Model United Nations (MUN) | Litwits"
+  />
+  <meta
+    name="twitter:description"
+    content="Explore how MUN builds diplomacy, leadership & global awareness. Litwits trains students to excel with research, debates & mock sessions."
+  />
+  <meta
+    name="twitter:image"
+    content="https://litwits.in/assets/litwits-logo.png"
+  />
+
+  {/* Schema.org JSON-LD */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://litwits.in/blogs/model-united-nations-guide",
+      },
+      headline:
+        "The Ultimate Guide to Model United Nations (MUN) | Litwits MUN Training Course",
+      description:
+        "Discover how Model United Nations (MUN) helps students build global awareness, leadership, and diplomacy skills. Learn its history, importance, and how Litwits prepares students for MUN success through structured mentorship, research guidance, mock sessions, and confidence-building training.",
+      image: "https://litwits.in/assets/litwits-logo.png",
+      author: {
+        "@type": "Organization",
+        name: "LITWITS",
+        url: "https://litwits.in",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "LITWITS",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://litwits.in/assets/litwits-logo.png",
+        },
+      },
+      datePublished: "2025-09-15T17:38:42.140208Z",
+      dateModified: "2025-09-15T17:38:42.140208Z",
+      keywords:
+        "Model United Nations guide, MUN for students, MUN training India, Litwits MUN coaching, MUN for parents, Model UN skills, MUN research training, MUN debate training, best MUN coaching India, how to prepare for MUN, benefits of Model UN, MUN public speaking, MUN leadership skills, Litwits Model United Nations",
+      articleSection: "Education",
+      articleBody:
+        "Model United Nations (MUN) empowers students to step into the shoes of diplomats. Learn its history, benefits, and how Litwits equips students with research, debate, resolution drafting, and leadership skills to excel in MUN conferences.",
+    })}
+  </script>
+</Helmet>
+
+
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
           <article className="mx-auto w-full  format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">

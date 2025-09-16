@@ -14,28 +14,37 @@ import LearnAllAboutDifferentTypesOfDebate from "./Pages/blog/LearnAllAboutDiffe
 import ExploreDifferentTypesOfWritingFormats from "./Pages/blog/ExploreDifferentTypesOfWritingFormats";
 import UltimateguidetodebateTraining from "./Pages/blog/UltimateguidetodebateTraining";
 import TopDebateCompetitionsforSchoolStudents from "./Pages/blog/TopDebateCompetitionsforSchoolStudents";
-import Competition from "./Pages/blog/ Competitions"
+import Competition from "./Pages/blog/ Competitions";
 import ChatBot from "./sections/ChatBot";
 import Mun from "./Pages/blog/Mun-blog";
+import Adult from "./Pages/IndividiualAdult";
 // import TypesOfDebate from "./Pages/blog/TypesOfDebate";
 
 // Lazy Loading Pages
 const Hero = lazy(() => import("./sections/Hero"));
 const Session = lazy(() => import("./Pages/Sessions/GroupSess"));
-const WorldScholarsCup = lazy(() =>import("./Pages/World Scholars Cup/index"));
+const WorldScholarsCup = lazy(() => import("./Pages/World Scholars Cup/index"));
 const Membership = lazy(() => import("./Pages/Membership/index"));
 const Contact = lazy(() => import("./Pages/Contact/index"));
 const RefundPolicy = lazy(() => import("./Pages/Refund/RefundPolicy"));
 const TermsAndConditions = lazy(() =>
   import("./Pages/TermsAndConditions/TermsAndConditions")
 );
+const GroupSess = lazy(() => import("./Pages/GroupSessions/GroupSess"));
+const IndividualSessions = lazy(() =>
+  import("./Pages/IndividualSessions/index")
+);
 const CollegeCounseling = lazy(() =>
   import("./Pages/CollegeCounseling/CollegeCounseling")
 );
 const PrivacyPolicy = lazy(() => import("./Pages/PrivacyPolicy"));
 const Blog = lazy(() => import("./Pages/blog"));
-const BlogDetails = lazy(() => import("./Pages/blog/Advanced-Placement-Exam-2025"));
-const World = lazy(() => import("./Pages/blog/IntroductionToTheWorldScholarsCup2025Tournament"));
+const BlogDetails = lazy(() =>
+  import("./Pages/blog/Advanced-Placement-Exam-2025")
+);
+const World = lazy(() =>
+  import("./Pages/blog/IntroductionToTheWorldScholarsCup2025Tournament")
+);
 const NotFound = lazy(() => import("./Pages/404"));
 
 const App = () => {
@@ -43,7 +52,9 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Join LITWITS for Debate, Writing, AP Prep & World Scholar's Cup!</title>
+        <title>
+          Join LITWITS for Debate, Writing, AP Prep & World Scholar's Cup!
+        </title>
         <meta
           name="description"
           content="Join LITWITS to enhance debating, writing, research, and public speaking. Expert mentors prepare students for Ivy League admissions, World Scholar's Cup, and more."
@@ -159,13 +170,18 @@ const App = () => {
         >
           <Routes>
             <Route path="/" element={<Hero />} />
-            <Route path="/Session" element={<Session/>} />
-            <Route
-              path="/world-scholars-cup"
-              element={<WorldScholarsCup/>}
-            />
+            <Route path="/Session" element={<Session />} />
+            <Route path="/world-scholars-cup" element={<WorldScholarsCup />} />
             <Route path="/membership" element={<Membership />} />
             <Route path="/college-counseling" element={<CollegeCounseling />} />
+
+            <Route path="/group-session" element={<GroupSess />} />
+            <Route
+              path="/individual-session"
+              element={<IndividualSessions />}
+            />
+            <Route path="/individual-adult" element={<Adult />} />
+
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
             <Route
@@ -176,15 +192,35 @@ const App = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id/:title" element={<BlogRedirect />} />
             <Route path="/blog/:title" element={<BlogDetails />} />
-            <Route path="/blog/introduction-to-the-world-scholars-cup-2025-tournament" element={<IntroductionToTheWorldScholarsCup2025Tournament />} />
-            <Route path="/blog/sat-preparation-2025-how-to-prepare-for-sat-exam" element={<SATPreparation2025 />} />
-            <Route path="/blog/learn-all-about-different-types-of-debate" element={<LearnAllAboutDifferentTypesOfDebate />} />
-            <Route path="/blog/explore-different-types-of-writing-formats" element={<ExploreDifferentTypesOfWritingFormats />} />
-            <Route path="/blog/ultimate-guide-to-debate-training" element={<UltimateguidetodebateTraining />} />
-            <Route path="/blog/top-debate-competitions-for-school-students" element={<TopDebateCompetitionsforSchoolStudents />} />
-            <Route path="/blog/Understanding-Debate-Competitions" element={<Competition>
-            </Competition>}></Route>
-            <Route path = '/blog/Mun-blog' element={<Mun></Mun>}></Route>
+            <Route
+              path="/blog/introduction-to-the-world-scholars-cup-2025-tournament"
+              element={<IntroductionToTheWorldScholarsCup2025Tournament />}
+            />
+            <Route
+              path="/blog/sat-preparation-2025-how-to-prepare-for-sat-exam"
+              element={<SATPreparation2025 />}
+            />
+            <Route
+              path="/blog/learn-all-about-different-types-of-debate"
+              element={<LearnAllAboutDifferentTypesOfDebate />}
+            />
+            <Route
+              path="/blog/explore-different-types-of-writing-formats"
+              element={<ExploreDifferentTypesOfWritingFormats />}
+            />
+            <Route
+              path="/blog/ultimate-guide-to-debate-training"
+              element={<UltimateguidetodebateTraining />}
+            />
+            <Route
+              path="/blog/top-debate-competitions-for-school-students"
+              element={<TopDebateCompetitionsforSchoolStudents />}
+            />
+            <Route
+              path="/blog/Understanding-Debate-Competitions"
+              element={<Competition></Competition>}
+            ></Route>
+            <Route path="/blog/Mun-blog" element={<Mun></Mun>}></Route>
 
             <Route path="*" element={<NotFound />} />
           </Routes>
@@ -192,7 +228,7 @@ const App = () => {
       </div>
       <section>
         <WhatsAppButton />
-        {/* <ChatBot/> */}  
+        {/* <ChatBot/> */}
       </section>
       <Footer />
     </>

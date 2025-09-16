@@ -10,10 +10,27 @@ import Prize23 from "/public/WSCimages/23.png";
 import wsc from "/assets/wsc image.jpeg";
 import Prize1 from "/public/WSCimages/1.png";
 import worlds from "/worlds.jpeg";
+import { Helmet } from "react-helmet";
 
 const GroupSess = () => {
   return (
     <section>
+      <Helmet>
+        <title>
+          World Scholar’s Cup Training 2025 | LITWITS – Award-Winning WSC Coaching
+        </title>
+        <meta
+          name="description"
+          content="Join Litwits, winner of the World Scholar’s Cup (WSC) Coach of the Year Award 2025, for elite WSC training. From debate, writing, and Scholar’s Challenge to the Scholar’s Bowl, we prepare students for Regional, Global, and Yale Tournament of Champions rounds. Free consultation & enrollment open now."
+        />
+        <meta
+          name="keywords"
+          content="World Scholar’s Cup training, WSC 2025 preparation, WSC debate coaching, WSC curriculum 2025, WSC syllabus 2025, WSC debate motions 2025, WSC writing prompts 2025, WSC Scholar’s Challenge practice, WSC collaborative writing training, WSC Global Round 2025, WSC Tournament of Champions Yale 2025, WSC team registration, WSC eligibility Junior & Senior Division, How to join WSC 2025, Best WSC coaching in India, Litwits WSC coach of the year 2025, Litwits WSC training programs, Advanced WSC preparation, Step-by-step WSC guide, WSC Regional Round preparation, WSC Global Round Yale coaching"
+        />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="World Scholar’s Cup Training 2025 | LITWITS – Award-Winning Coaching" />
+        <meta property="og:description" content="Litwits is at the forefront of World Scholar’s Cup training worldwide. Awarded Coach of the Year 2025, we mentor champions across all WSC events – Debate, Writing, Scholar’s Challenge, and Scholar’s Bowl – leading to top results at Regional, Global, and Yale Rounds." />
+      </Helmet>
       {/* <section
         id="WORLD SCHOLAR’S CUP TRAINING"
         className="relative h-[25vh] w-full flex items-center justify-center text-white overflow-hidden"
