@@ -11,7 +11,7 @@ const Adult = () => {
       </Helmet>
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-100 to-gray-300">
         <div className="bg-white shadow-lg rounded-lg p-10 text-center w-11/12 md:w-8/12 lg:w-6/12">
-          <h1 className="text-6xl md:text-8xl font-extrabold text-red-800 mb-4">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-red-800 mb-4">
             Coming Soon
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">

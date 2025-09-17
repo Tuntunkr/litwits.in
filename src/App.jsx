@@ -175,9 +175,9 @@ const App = () => {
             <Route path="/membership" element={<Membership />} />
             <Route path="/college-counseling" element={<CollegeCounseling />} />
 
-            <Route path="/group-session" element={<GroupSess />} />
+            <Route path="/group-sessions" element={<GroupSess />} />
             <Route
-              path="/individual-session"
+              path="/individual-sessions"
               element={<IndividualSessions />}
             />
             <Route path="/individual-adult" element={<Adult />} />

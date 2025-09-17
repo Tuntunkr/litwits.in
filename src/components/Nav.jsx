@@ -381,8 +381,8 @@ const navLinks = [
     href: "/session",
     label: "SESSIONS",
     subLinks: [
-      { href: "/group-session", label: "Group Session" },
-      { href: "/individual-session", label: "Individual Session" },
+      { href: "/group-sessions", label: "Group Sessions" },
+      { href: "/individual-sessions", label: "Individual Sessions" },
       { href: "/individual-adult", label: "Individual for Adult" },
     ],
   },
@@ -522,7 +522,7 @@ function Header() {
                       <a
                         key={sub.href}
                         href={sub.href}
-                        className={`block px-4 py-3 text-sm text-red-900 hover:bg-red-50 hover:text-red-700 font-serif transition-colors duration-150 text-decoration-none ${
+                        className={`block px-4 py-3 text-sm text-red-900 hover:bg-red-800 hover:text-white font-Noto transition-colors duration-150 text-decoration-none ${
                           index === 0 ? "rounded-t-lg" : ""
                         } ${
                           index === link.subLinks.length - 1 ? "rounded-b-lg" : ""
