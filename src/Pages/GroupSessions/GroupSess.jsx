@@ -1317,85 +1317,105 @@ const GroupSess = () => {
           </div>
         </section>
       </section>
-       <section id="faq" className="container mx-auto px-8 bg-gray-50">
-          <div className="container mx-auto ">
-            <h2 className="text-3xl font-noto pt-6 font-bold text-center text-red-700 mb-8">
-              FREQUENTLY ASKED QUESTIONS
-            </h2>
-          </div>
-          <div className="p-4">
-            {/* First Accordion */}
-            <Accordion defaultActiveKey="0" flush>
-              <Accordion.Item eventKey="0">
-                <Accordion.Header>
-                  As a member, which sessions can I attend?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  All members of Group Sessions have access to all group
-                  sessions.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="1">
-                <Accordion.Header>
-                  How many sessions can I attend in a week?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  Members may attend as many sessions as they prefer. Some
-                  sessions may overlap, so we recommend checking the schedule in
-                  advance to attend the sessions of their interest.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="2">
-                <Accordion.Header>
-                  What are the timings of the sessions?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  Each individual session is 90 minutes, ensuring ample time for
-                  in-depth learning, interactive discussions, and personalized
-                  guidance from our expert mentors. <br/>
-                  Monday to Friday: 8:00 p.m. – 9:30 p.m. IST <br  className="mt-2"/>
-                  Saturday: 12:15 p.m. – 1:45 p.m. IST
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="3">
-                <Accordion.Header>
-                  What if I do not have a team member for a competition?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  No worries! We assist in forming competitive teams for
-                  excellent outcomes for all the competitions. If you don’t have
-                  a team, we will pair you with other participants of your skill
-                  level, ensuring that everyone has a chance to participate and
-                  collaborate effectively.
-                </Accordion.Body>
-              </Accordion.Item>
+      <section id="faq" className="container mx-auto px-8 bg-gray-50">
+        <div className="container mx-auto ">
+          <h2 className="text-3xl font-noto pt-6 font-bold text-center text-red-700 mb-8">
+            FREQUENTLY ASKED QUESTIONS
+          </h2>
+        </div>
+        <div className="p-4">
+          {/* First Accordion */}
+          <Accordion defaultActiveKey="0" flush>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>
+                As a member, which sessions can I attend?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                All members of Group Sessions have access to all group
+                sessions.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>
+                How many sessions can I attend in a week?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Members may attend as many sessions as they prefer. Some
+                sessions may overlap, so we recommend checking the schedule in
+                advance to attend the sessions of their interest.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>
+                What are the timings of the sessions?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Each individual session is 90 minutes, ensuring ample time for
+                in-depth learning, interactive discussions, and personalized
+                guidance from our expert mentors. <br />
+                Monday to Friday: 8:00 p.m. – 9:30 p.m. IST <br className="mt-2" />
+                Saturday: 12:15 p.m. – 1:45 p.m. IST
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>
+                What if I do not have a team member for a competition?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                No worries! We assist in forming competitive teams for
+                excellent outcomes for all the competitions. If you don’t have
+                a team, we will pair you with other participants of your skill
+                level, ensuring that everyone has a chance to participate and
+                collaborate effectively.
+              </Accordion.Body>
+            </Accordion.Item>
 
-              {/* Second Accordion */}
+            {/* Second Accordion */}
 
-              <Accordion.Item eventKey="4">
-                <Accordion.Header>
-                  Can I convert my Group Session package to Individual Sessions?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  No. Group Sessions and Individual Sessions are structured and
-                  priced separately. Since individual sessions provide
-                  personalized mentorship, they require a different payment
-                  model from group-based learning.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="5">
-                <Accordion.Header>
-                  Do you offer trial sessions for students?
-                </Accordion.Header>
-                <Accordion.Body className="bg-[#890C25] text-white">
-                  We offer One-Time Sessions for a fee. These sessions allow
-                  students to discover our teaching style and session structure
-                  before committing to a full package.
-                </Accordion.Body>
-              </Accordion.Item>
-            </Accordion>
-          </div>
-        </section>
+            <Accordion.Item eventKey="4">
+              <Accordion.Header>
+                Can I convert my Group Session package to Individual Sessions?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                No. Group Sessions and Individual Sessions are structured and
+                priced separately. Since individual sessions provide
+                personalized mentorship, they require a different payment
+                model from group-based learning.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="5">
+              <Accordion.Header>
+                Do you offer trial sessions for students?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                We offer One-Time Sessions for a fee. These sessions allow
+                students to discover our teaching style and session structure
+                before committing to a full package.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="6">
+              <Accordion.Header>
+                What if you miss a group session?
+              </Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                If a group session is ever missed, you can simply attend the
+                next one. However, do ensure all sessions are completed within
+                the validity period.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="7">
+              <Accordion.Header>Who can join?</Accordion.Header>
+              <Accordion.Body className="bg-[#890C25] text-white">
+                Learning begins with passion, not experience—and that’s exactly
+                what our sessions are all about. We have categories for students
+                from Grade 4 to adults ,anyone who is eager to explore debate,
+                public speaking, or writing can join us. No prior experience is
+                required; just passion and commitment for learning.
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </div>
+      </section>
       <section>
         <Contact />
       </section>

@@ -443,7 +443,7 @@ function Header() {
       <div className="h-[120px] sm:h-[130px] md:h-[100px]" />
 
       {/* Header container */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-red-800 px-4 py-[30px] flex items-center justify-between sm:justify-center shadow-lg">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-[#a31d1d] px-4 py-[30px] flex items-center justify-between sm:justify-center shadow-lg">
         {/* Logo */}
         <div className="flex items-center w-full sm:justify-center relative">
           <a
@@ -476,7 +476,7 @@ function Header() {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden sm:block fixed left-1/2 transform -translate-x-1/2 z-40 top-[60px] w-full bg-red-800 shadow-md h-[50px]">
+      <div className="hidden sm:block fixed left-1/2 transform -translate-x-1/2 z-40 top-[59px] w-full bg-red-700  h-[50px]">
         <div className="flex justify-center gap-6 w-full max-w-6xl mx-auto px-4">
           {navLinks.map((link) => {
             const isActive = location.pathname === link.href;
@@ -484,35 +484,32 @@ function Header() {
             const isDropdownOpen = desktopDropdown === link.href;
 
             return hasDropdown ? (
-              <div 
-                key={link.href} 
+              <div
+                key={link.href}
                 className="relative dropdown-container"
                 onMouseEnter={() => handleMouseEnter(link.href)}
                 onMouseLeave={handleMouseLeave}
               >
                 <span
-                  className={`flex items-center gap-1 uppercase py-2 px-3 cursor-pointer text-sm sm:text-base font-serif font-medium transition-all duration-200 select-none ${
-                    isActive || isDropdownOpen
-                      ? "text-white border-b-2 border-white"
-                      : "text-white hover:border-b-2 hover:border-gray-300"
-                  }`}
+                  className={`flex items-center gap-1 uppercase py-2 px-3 cursor-pointer text-sm sm:text-base font-serif font-medium transition-all duration-200 select-none ${isActive || isDropdownOpen
+                    ? "text-white  border-white"
+                    : "text-white hover:border-b-2 hover:border-gray-300"
+                    }`}
                 >
                   {link.label}
                   <ChevronDown
                     size={16}
-                    className={`transition-transform duration-200 ${
-                      isDropdownOpen ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""
+                      }`}
                   />
                 </span>
-                
+
                 {/* Dropdown Menu */}
                 <div
-                  className={`absolute left-0 mt-0 bg-white shadow-xl rounded-lg z-50 min-w-[220px] transition-all duration-300 transform ${
-                    isDropdownOpen
-                      ? "opacity-100 visible translate-y-0"
-                      : "opacity-0 invisible -translate-y-2"
-                  }`}
+                  className={`absolute left-0 mt-0 bg-white shadow-xl rounded-lg z-50 min-w-[220px] transition-all duration-300 transform ${isDropdownOpen
+                    ? "opacity-100 visible translate-y-0"
+                    : "opacity-0 invisible -translate-y-2"
+                    }`}
                   style={{
                     boxShadow: "0 10px 25px rgba(0,0,0,0.1), 0 6px 10px rgba(0,0,0,0.08)"
                   }}
@@ -522,13 +519,10 @@ function Header() {
                       <a
                         key={sub.href}
                         href={sub.href}
-                        className={`block px-4 py-3 text-sm text-red-900 hover:bg-red-800 hover:text-white font-Noto transition-colors duration-150 text-decoration-none ${
-                          index === 0 ? "rounded-t-lg" : ""
-                        } ${
-                          index === link.subLinks.length - 1 ? "rounded-b-lg" : ""
-                        } ${
-                          location.pathname === sub.href ? "bg-red-100 text-red-800 font-medium" : ""
-                        }`}
+                        className={`block px-4 py-3 text-sm text-red-900 hover:bg-red-800 hover:text-white font-Noto transition-colors duration-150 text-decoration-none ${index === 0 ? "rounded-t-lg" : ""
+                          } ${index === link.subLinks.length - 1 ? "rounded-b-lg" : ""
+                          } ${location.pathname === sub.href ? "bg-red-100 text-red-800 font-medium" : ""
+                          }`}
                         onClick={() => setDesktopDropdown(null)}
                       >
                         {sub.label}
@@ -541,11 +535,10 @@ function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`uppercase py-2 px-3 text-sm sm:text-base font-serif font-medium transition-all duration-200 hover:scale-105 text-decoration-none ${
-                  isActive
-                    ? "text-white border-b-2 border-white"
-                    : "text-white hover:border-b-2 hover:border-gray-300"
-                }`}
+                className={`uppercase py-2 px-3 text-sm sm:text-base font-serif font-medium transition-all duration-200 hover:scale-105 text-decoration-none ${isActive
+                  ? "text-white border-b-2 border-white"
+                  : "text-white hover:border-b-2 hover:border-gray-300"
+                  }`}
               >
                 {link.label}
               </a>
@@ -556,7 +549,7 @@ function Header() {
 
       {/* Mobile Navigation Backdrop */}
       {isNavOpen && (
-        <div 
+        <div
           className="sm:hidden fixed inset-0 bg-black bg-opacity-50 z-30 top-[90px]"
           onClick={closeMobileNav}
         />
@@ -564,11 +557,10 @@ function Header() {
 
       {/* Mobile Navigation */}
       <div
-        className={`sm:hidden fixed top-[90px] left-0 right-0 bg-[#6a071a] z-40 shadow-xl border-t transition-all duration-300 transform ${
-          isNavOpen 
-            ? "opacity-100 visible translate-y-0" 
-            : "opacity-0 invisible -translate-y-4"
-        }`}
+        className={`sm:hidden fixed top-[90px] left-0 right-0 bg-[#6a071a] z-40 shadow-xl border-t transition-all duration-300 transform ${isNavOpen
+          ? "opacity-100 visible translate-y-0"
+          : "opacity-0 invisible -translate-y-4"
+          }`}
       >
         <nav className="flex flex-col px-4 py-3 space-y-1 mt-5 max-h-[calc(100vh-200px)] overflow-y-auto">
           {navLinks.map((link) => {
@@ -584,26 +576,23 @@ function Header() {
                       mobileDropdown === link.href ? null : link.href
                     )
                   }
-                  className={`flex justify-between items-center px-4 py-3 font-serif font-medium rounded-md transition-all duration-200 uppercase ${
-                    isActive
-                      ? "bg-white text-red-900 shadow-md"
-                      : "text-white hover:bg-red-700 hover:shadow-sm active:scale-95"
-                  }`}
+                  className={`flex justify-between items-center px-4 py-3 font-serif font-medium rounded-md transition-all duration-200 uppercase ${isActive
+                    ? "bg-white text-red-800 shadow-md"
+                    : "text-white hover:bg-red-700 hover:shadow-sm active:scale-95"
+                    }`}
                 >
                   {link.label}
                   <ChevronDown
                     size={16}
-                    className={`transition-transform duration-200 ${
-                      isDropdownOpen ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
-                
+
                 {/* Mobile Dropdown Content */}
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    isDropdownOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-                  }`}
+                  className={`overflow-hidden transition-all duration-300 ${isDropdownOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                    }`}
                 >
                   <div className="pl-4 mt-1 space-y-1">
                     {link.subLinks.map((sub) => (
@@ -611,11 +600,10 @@ function Header() {
                         key={sub.href}
                         to={sub.href}
                         onClick={closeMobileNav}
-                        className={`block px-4 py-2 text-sm rounded-md transition-all duration-150 ${
-                          location.pathname === sub.href
-                            ? "bg-white text-red-900 font-medium shadow-sm"
-                            : "text-white hover:bg-red-700 hover:translate-x-1"
-                        }`}
+                        className={`block px-4 py-2 text-sm rounded-md transition-all duration-150 ${location.pathname === sub.href
+                          ? "bg-white text-red-900 font-medium shadow-sm"
+                          : "text-white hover:bg-red-700 hover:translate-x-1"
+                          }`}
                       >
                         {sub.label}
                       </Link>
@@ -628,11 +616,10 @@ function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMobileNav}
-                className={`block px-4 py-3 font-serif font-medium rounded-md transition-all duration-200 uppercase text-decoration-none ${
-                  isActive
-                    ? "bg-white text-red-900 shadow-md"
-                    : "text-white hover:bg-red-700 hover:shadow-sm active:scale-95"
-                }`}
+                className={`block px-4 py-3 font-serif font-medium rounded-md transition-all duration-200 uppercase text-decoration-none ${isActive
+                  ? "bg-white text-red-900 shadow-md"
+                  : "text-white hover:bg-red-700 hover:shadow-sm active:scale-95"
+                  }`}
               >
                 {link.label}
               </a>
