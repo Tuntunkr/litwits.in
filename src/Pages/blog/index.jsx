@@ -10,6 +10,8 @@ import Ultimate from "/ultimate.png";
 import Competitions from "/Competitions.jpeg";
 import Book from "/Competitions.jpeg";
 import mun from "/mun.png";
+import pic1 from "/new-blog/1551992107032.jpg";
+
 
 // Sample blog data with 10 entries
 const blogData = [
@@ -70,12 +72,19 @@ const blogData = [
       "Welcome to the world of Model United Nations (MUN) - a space where international politics meets classroom learning, where young people practice the art of diplomacy, and where tomorrow’s changemakers are born.",
     image: mun,
   },
+  {
+    id: 9,
+    title:
+      "Mastering the Art of Research Paper Writing",
+    description:
+      "At LITWITS, we understand that research paper writing is both an art and a science. That’s why we offer personalized research paper guidance sessions to help students navigate the process with clarity and confidence",
+    image: pic1,
+  },
   ...Array.from({ length: 9 }, (_, index) => ({
     id: index + 3, // Start from ID 3 to avoid duplicate IDs
     title: `Advanced Placement Exam 2025`,
-    description: `This is a short description of blog post ${
-      index + 3
-    }. Learn about product management, feature voting, and SaaS tools.`,
+    description: `This is a short description of blog post ${index + 3
+      }. Learn about product management, feature voting, and SaaS tools.`,
     image: Satimg,
   })),
 ];
@@ -90,6 +99,8 @@ const Blog = () => {
   const sixPost = blogData.find((post) => post.id === 6);
   const sevenPost = blogData.find((post) => post.id === 7);
   const EightPost = blogData.find((post) => post.id === 8);
+  const NinePost = blogData.find((post) => post.id === 9);
+
 
   return (
     <div className="">
@@ -340,6 +351,35 @@ const Blog = () => {
                 {EightPost.title}
               </h2>
               <p className="text-gray-600 mb-4">{EightPost.description}</p>
+              <div className="flex items-center text-blue-600 font-medium">
+                <span>Read More</span>
+                <ChevronRight className="ml-1 w-5 h-5" />
+              </div>
+            </div>
+          </Link>
+        )}
+
+        {/* Nine blog */}
+        {NinePost && (
+          <Link
+            to={"/blog/Mastering-the-Art-of-Research-Paper-Writing"}
+            className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+          >
+            <img
+              src={NinePost.image}
+              alt={NinePost.title}
+              loading="lazy"
+              width="600"
+              height="200"
+              decoding="async"
+              className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
+            />
+
+            <div className="md:w-1/2 p-6">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                {NinePost.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{NinePost.description}</p>
               <div className="flex items-center text-blue-600 font-medium">
                 <span>Read More</span>
                 <ChevronRight className="ml-1 w-5 h-5" />

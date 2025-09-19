@@ -594,18 +594,18 @@ const GroupSess = () => {
         </script>
       </Helmet>
 
-    
+
       <section
         className="bg-red-900 h-[20vh] flex items-center justify-center"
-        // id="home"
-        // className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
-        // style={{
-        //   backgroundImage: "url('/assets/individual-session.avif')",
-        //   fontFamily: "'Noto Sans', sans-serif",
-        // }}
-        // role="img"
-        // aria-label="Individual Sessions for focused learning in key academic and leadership areas."
-        // aria-describedby="individual-sessions-description"
+      // id="home"
+      // className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
+      // style={{
+      //   backgroundImage: "url('/assets/individual-session.avif')",
+      //   fontFamily: "'Noto Sans', sans-serif",
+      // }}
+      // role="img"
+      // aria-label="Individual Sessions for focused learning in key academic and leadership areas."
+      // aria-describedby="individual-sessions-description"
       >
         <div className="container mx-auto px-4 text-center p-8 rounded-lg">
           <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2 text-white">
@@ -1043,24 +1043,24 @@ const GroupSess = () => {
         </div>
       </section>
       <div className="container">
-  <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
-        Individual sessions for Adults
-      </h3>
+        <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
+          Individual sessions for Adults
+        </h3>
 
-      <p className=" text-gray-900" style={{ fontSize: "15px" }}>
-        Great ideas deserve to be expressed with power, precision, and clarity.
-        Passion and commitment are the foundation — but guidance and structure
-        transform potential into excellence.
-      </p>
-      <p className=" text-gray-900" style={{ fontSize: "15px" }}>
-        Our individual sessions are tailored to meet each student’s unique
-        needs, whether in public speaking, debating, or academic writing. With a
-        focus on both skill-building and confidence, these one-on-one
-        engagements create a space where students can develop their voice,
-        refine their arguments, and elevate their expression.
-      </p>
+        <p className=" text-gray-900" style={{ fontSize: "15px" }}>
+          Great ideas deserve to be expressed with power, precision, and clarity.
+          Passion and commitment are the foundation — but guidance and structure
+          transform potential into excellence.
+        </p>
+        <p className=" text-gray-900" style={{ fontSize: "15px" }}>
+          Our individual sessions are tailored to meet each student’s unique
+          needs, whether in public speaking, debating, or academic writing. With a
+          focus on both skill-building and confidence, these one-on-one
+          engagements create a space where students can develop their voice,
+          refine their arguments, and elevate their expression.
+        </p>
       </div>
-    
+
 
       {/* Mun section  */}
 
@@ -1233,16 +1233,7 @@ const GroupSess = () => {
                 required; just passion and commitment for learning.
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="13">
-              <Accordion.Header>
-                What if you miss a group session?
-              </Accordion.Header>
-              <Accordion.Body className="bg-[#890C25] text-white">
-                If a group session is ever missed, you can simply attend the
-                next one. However, do ensure all sessions are completed within
-                the validity period.
-              </Accordion.Body>
-            </Accordion.Item>
+
           </Accordion>
         </div>
       </section>

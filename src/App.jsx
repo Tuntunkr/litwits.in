@@ -17,6 +17,7 @@ import TopDebateCompetitionsforSchoolStudents from "./Pages/blog/TopDebateCompet
 import Competition from "./Pages/blog/ Competitions";
 import ChatBot from "./sections/ChatBot";
 import Mun from "./Pages/blog/Mun-blog";
+import Mastering from './Pages/blog/Mastering-the-Art-of-Research-Paper-Writing'
 import Adult from "./Pages/IndividiualAdult";
 // import TypesOfDebate from "./Pages/blog/TypesOfDebate";
 
@@ -221,6 +222,10 @@ const App = () => {
               element={<Competition></Competition>}
             ></Route>
             <Route path="/blog/Mun-blog" element={<Mun></Mun>}></Route>
+             <Route 
+             path="/blog/Mastering-the-Art-of-Research-Paper-Writing" 
+             element={<Mastering/>}>
+             </Route>
 
             <Route path="*" element={<NotFound />} />
           </Routes>
