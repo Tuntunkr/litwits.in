@@ -223,7 +223,7 @@ const App = () => {
             ></Route>
             <Route path="/blog/Mun-blog" element={<Mun></Mun>}></Route>
              <Route 
-             path="/blog/Mastering-the-Art-of-Research-Paper-Writing" 
+             path="/blog/research-paper-writing-guidance" 
              element={<Mastering/>}>
              </Route>
 

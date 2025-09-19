@@ -362,7 +362,7 @@ const Blog = () => {
         {/* Nine blog */}
         {NinePost && (
           <Link
-            to={"/blog/Mastering-the-Art-of-Research-Paper-Writing"}
+            to={"/blog/research-paper-writing-guidance"}
             className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
           >
             <img

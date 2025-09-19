@@ -289,7 +289,7 @@ const CollegeCounseling = () => {
             navigate the college admissions process with a clear roadmap.
           </p>
         </section> */}
-        <section className="bg-red-900 h-[20vh] flex items-center justify-center">
+        <section className="bg-red-900 h-[15vh] flex items-center justify-center">
           <div className="container mx-auto px-4 text-center p-8 rounded-lg">
             <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-4 text-white">
               COLLEGE COUNSELING
