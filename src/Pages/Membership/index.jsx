@@ -435,7 +435,7 @@ const index = () => {
             {[
               {
                 title: "TED-ED Training Package",
-                price: 25000,
+                price: 20000,
                 sessions: "5 Sessions",
                 features: [
                   "Understanding the Fundamentals",
@@ -448,7 +448,7 @@ const index = () => {
               },
               {
                 title: "MUN Guidance Package",
-                price: 25000,
+                price: 20000,
                 sessions: "5 Sessions",
                 features: [
                   "Research Material",
@@ -461,7 +461,7 @@ const index = () => {
               },
               {
                 title: "Research Paper Guidance",
-                price: 25000,
+                price: 20000,
                 sessions: "5 Sessions",
                 features: [
                   "Introduction to Research",
