@@ -151,7 +151,6 @@ MUN & TED-Ed prep"
         </script>
       </Helmet>
 
-
       <section>
         <Individual />
       </section>

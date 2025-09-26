@@ -7,7 +7,6 @@ import Satimg from "/Satimage.jpeg";
 import blogimage1 from "/debate.png";
 import Explore from "/WomanSpeaking.jpeg";
 import Ultimate from "/ultimate.png";
-import Competitions from "/Competitions.jpeg";
 import Book from "/Competitions.jpeg";
 import mun from "/mun.png";
 import pic1 from "/new-blog/1551992107032.jpg";
@@ -104,9 +103,9 @@ const Blog = () => {
 
   return (
     <div className="">
-      <section className="bg-red-900 h-[20vh] flex items-center justify-center">
+      <section className="bg-[#857558] h-[15vh] flex items-center justify-center">
         <div className="container mx-auto px-4 text-center p-8 rounded-lg">
-          <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-4 text-white">
+          <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2 text-white">
             BLOG
           </h1>
         </div>
@@ -394,70 +393,127 @@ const Blog = () => {
 
 export default Blog;
 
-{
-  /* Remaining Blog Posts in Grid Layout */
-  // {fourthPost && (
-  //   <Link
-  //     to={'/blog/learn-all-about-different-types-of-debate'}
-  //     className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
-  //   >
-  //     <img
-  //       src={fourthPost.image}
-  //       alt={fourthPost.title}
-  //       loading="lazy"
-  //       width="600"
-  //       height="200"
-  //       decoding="async"
-  //       className="aspect-eightbyfive md:aspect-twobyone scale-100 group-hover:scale-105 duration-500 object-center object-contain"
-  //     />
-  //     <div className="md:w-1/2 p-6">
-  //       <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-  //         {fourthPost.title}
-  //       </h2>
-  //       <p className="text-gray-600 mb-4">{fourthPost.description}</p>
-  //       <div className="flex items-center text-blue-600 font-medium">
-  //         <span>Read More</span>
-  //         <ChevronRight className="ml-1 w-5 h-5" />
-  //       </div>
-  //     </div>
-  //   </Link>
-  // )}
-}
-{
-  /* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {otherPosts.map((blog) => (
-          <Link
-            to={`/BlogDetails/${blog.id}`}
-            key={blog.id}
-            className="block group bg-white shadow-xs rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300"
-          >
-            <div className="relative w-full h-56 overflow-hidden">
-              <img
-                src={blog.image}
-                alt={blog.title}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-4">
-              <div className="flex items-center space-x-2 text-sm text-gray-500 mb-1">
-                <span>{blog.category}</span>
-                <span className="text-gray-300">|</span>
-                <span>{blog.date}</span>
-              </div>
-              <h3 className="text-lg font-semibold mt-1 text-gray-800 group-hover:underline line-clamp-2">
-                {blog.title}
-              </h3>
-              <p className="text-gray-600 mt-2 text-sm line-clamp-3">
-                {blog.description}
-              </p>
-            </div>
-            <div className="flex items-center justify-end p-4 border-t border-gray-200">
-              <span className="text-sm text-blue-600 font-medium mr-2">
-                Read More
-              </span>
-              <ChevronRight className="w-5 h-5 text-blue-600" />
-            </div>
-          </Link>
-        ))}
-      </div> */
-}
+
+
+// import React from "react";
+// import { ChevronRight } from "lucide-react";
+// import { Link } from "react-router-dom";
+// import APLogo from "/AP-Logo.jpg";
+// import world from "/worlds.jpeg";
+// import Satimg from "/Satimage.jpeg";
+// import blogimage1 from "/debate.png";
+// import Explore from "/WomanSpeaking.jpeg";
+// import Ultimate from "/ultimate.png";
+// import Book from "/Competitions.jpeg";
+// import mun from "/mun.png";
+// import pic1 from "/new-blog/1551992107032.jpg";
+
+
+// // Sample blog data
+// const blogData = [
+//   { id: 1, title: "Advanced Placement Exam 2025", 
+//     description: "Prepare effectively for the AP Exam 2025...", 
+//     image: APLogo },
+//   { id: 2, title: "Introduction to the World Scholar's Cup 2025 Tournament", description: "Every year, students from all over the world gather...", image: world },
+//   { id: 3, title: "SAT Exam Preparation 2025: How to Prepare for SAT Exam?", description: "If you’re planning to study abroad, the SAT Exam 2025...", image: Satimg },
+//   { id: 4, title: "Learn All About Different Types of Debate", description: "Have you ever watched a passionate exchange of thoughts...", image: blogimage1 },
+//   { id: 5, title: "Explore Different Types Of Writing Formats And How To Master Them", description: "Writing is a powerful tool...", image: Explore },
+//   { id: 6, title: "Ultimate Guide to Debate Training: Courses, Tips & Competitions", description: "Debate training is a powerful way to foster confidence...", image: Ultimate },
+//   { id: 7, title: "Top Debate Competitions for School Students", description: "Debate competitions are more than just verbal sparring matches...", image: Book },
+//   { id: 8, title: "The Ultimate Guide to Model United Nations (MUN) for Students and Parents", description: "Welcome to the world of Model United Nations...", image: mun },
+//   { id: 9, title: "Mastering the Art of Research Paper Writing", description: "At LITWITS, we understand that research paper writing...", image: pic1 },
+// ];
+
+// // Founder’s Articles dummy data
+// const founderArticles = [
+//   {
+//     id: 1,
+//     title: "Advanced Placement Exam 2025",
+//     description: "Prepare effectively for the AP Exam 2025...",
+//     link: "/blog/founder-journey",
+//   },
+
+// ];
+
+// const Blog = () => {
+//   return (
+//     <div className="">
+//       {/* Blog Header */}
+//       <section className="bg-[#857558] h-[15vh] flex items-center justify-center">
+//         <div className="container mx-auto px-4 text-center p-8 rounded-lg">
+//           <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2 text-white">
+//             BLOG
+//           </h1>
+//         </div>
+//       </section>
+
+//       {/* Blog Layout (2/3 blogs + 1/3 founder sidebar) */}
+//       <div className="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+//         {/* LEFT SIDE → Blogs */}
+//         <div className="lg:col-span-2">
+//           {blogData.map((post) => (
+//             <Link
+//               key={post.id}
+//               to={`/blog/${post.title.replace(/\s+/g, "-").replace(/[^a-zA-Z0-9-]/g, "").toLowerCase()}`}
+//               className="block mb-8 md:flex no-underline items-center gap-6 bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+//             >
+//               <img
+//                 src={post.image}
+//                 alt={post.title}
+//                 loading="lazy"
+//                 width="600"
+//                 height="200"
+//                 decoding="async"
+//                 className="aspect-video md:w-1/3 object-cover"
+//               />
+//               <div className="p-6">
+//                 <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+//                   {post.title}
+//                 </h2>
+//                 <p className="text-gray-600 mb-4">{post.description}</p>
+//                 <div className="flex items-center text-blue-600 font-medium">
+//                   <span>Read More</span>
+//                   <ChevronRight className="ml-1 w-5 h-5" />
+//                 </div>
+//               </div>
+//             </Link>
+//           ))}
+//         </div>
+
+//         {/* RIGHT SIDE → Founder’s Articles */}
+//         <aside className="lg:col-span-1">
+//           <div className="space-y-6">
+//             {founderArticles.map((article) => (
+//               <Link
+//                 key={article.id}
+//                 to={article.link}
+//                 className="block no-underline bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+//               >
+//                 {/* <img
+//                   src={article.image}
+//                   alt={article.title}
+//                   className="w-full h-40 object-cover"
+//                 /> */}
+//                 <div className="p-4">
+//                   <h3 className="text-lg font-semibold text-gray-800 mb-2">
+//                     {article.title}
+//                   </h3>
+//                   <p className="text-gray-600 text-sm mb-2">
+//                     {article.description}
+//                   </p>
+//                   <div className="flex items-center text-blue-600 font-medium">
+//                     <span>Read More</span>
+//                     <ChevronRight className="ml-1 w-4 h-4" />
+//                   </div>
+//                 </div>
+//               </Link>
+//             ))}
+//           </div>
+//         </aside>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Blog;

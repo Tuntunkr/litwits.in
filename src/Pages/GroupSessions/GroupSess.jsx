@@ -808,7 +808,7 @@ const GroupSess = () => {
 
         {/* SEO Meta Tags */}
 
-        <section className="bg-red-900 h-[15vh] flex items-center justify-center">
+        <section className="bg-[#857558] h-[15vh] flex items-center justify-center">
           <div className="container mx-auto px-4 text-center p-8 rounded-lg">
             <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-4 text-white">
               GROUP SESSIONS
@@ -828,19 +828,39 @@ const GroupSess = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
                 <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-start  text-red-700 uppercase mb-2">
-                  WRITING
+                  Writing Sessions
                 </h2>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
                   Writing is a transformative journey of self-expression and
-                  creativity to find your unique voice. Our sessions encompass
-                  all genres, from essays, fiction, and poetry, guiding students
-                  on fundamental skills to advanced techniques, enriching their
-                  appreciation for literature and sparking their imagination.
-                  Through meticulously exploring key elements such as
-                  originality, clarity, structure, tone, tenor, we empower
-                  students to master the art of writing and develop enduring
-                  proficiency to craft captivating narratives.
+                  creativity, where students discover their unique voice. Our
+                  sessions span essays, fiction, and poetry - guiding students
+                  from fundamental skills to advanced techniques, while
+                  enriching their appreciation for literature and sparking
+                  imagination.
                 </p>
+
+                <p className="text-gray-700 font-bold">
+                  What Our Writing Sessions Provide:
+                </p>
+
+                <ul className="list-disc">
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Exploration of all genres: essays, fiction, poetry
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Development of clarity, originality, structure, and tone
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Personalized feedback to refine each student's unique style
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Advanced techniques for crafting captivating narratives
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Creative exercises to spark imagination
+                  </li>
+                </ul>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full  mx-auto no-underline">
                   <Link
                     to="https://wa.me/9811701747?text=Hi! I’m interested in your Academic Writing Course. Please share details about the program and I request a free consultation."
@@ -958,22 +978,50 @@ const GroupSess = () => {
                   DEBATE AND PUBLIC SPEAKING
                 </h2>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                  Effective Communication is a critical skill, not a soft skill.
-                  The hallmark of impactful leadership is the ability to
-                  communicate one-on-one and address an audience authentically
-                  and powerfully.
+                  Effective communication is not a soft skill—it’s a critical
+                  skill and the hallmark of impactful leadership. At LITWITS, we
+                  cultivate both{" "}
+                  <span className="font-bold text-gray-700">
+                    intellectual growth (IQ)
+                  </span>{" "}
+                  and{" "}
+                  <span className="font-bold text-gray-700">
+                    intelligence (EQ),
+                  </span>
+                  emotional empowering students to communicate authentically and
+                  powerfully, whether one-on-one or before an audience.
                 </p>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                  Leaders are forged through a balance of IQ and EQ. At LITWITS,
-                  we foster intellectual growth alongside emotional
-                  intelligence. Through multiple debating formats centred around
-                  thought-provoking themes, our students delve into complex
-                  subjects, critically analyzing global issues with diverse
-                  perspectives, presenting compelling arguments, creating
-                  meaningful solutions with their learning to leave a definitive
-                  mark in the world.
+                  Our Debate Program introduces students to diverse debating
+                  formats and thought-provoking themes, encouraging them to
+                  critically analyze global issues, present compelling
+                  arguments, and craft meaningful solutions.
                 </p>
-                <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                <p className="text-gray-700 font-bold">
+                  What Our Debate Sessions Provide:
+                </p>
+
+                <ul className="list-disc">
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Training in multiple debating formats
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Development of critical thinking and constructive
+                    argumentation
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Strengthening authentic and impactful communication skills
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Exploration of diverse themes: environment, social issues,
+                    politics, technology, science, literature, art, and more
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    A well-rounded learning experience that balances logic with
+                    empathy
+                  </li>
+                </ul>
+                {/* <p className="text-gray-700" style={{ fontSize: "15px" }}>
                   Our Debate program encompasses various debating formats,
                   fostering critical thinking, constructive argumentation, and
                   effective communication skills, providing students with a
@@ -983,7 +1031,7 @@ const GroupSess = () => {
                   Each session revolves around specific themes, exploring the
                   environment, social issues, politics, technology, science,
                   literature, art, music and more.
-                </p>
+                </p> */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full   mx-auto">
                   <Link
                     to="https://wa.me/9811701747?text=Hi! I’m interested in your Debate and Public Speaking course. Please share details about the program and I request a free consultation."
@@ -1023,17 +1071,37 @@ const GroupSess = () => {
                   ENTREPRENEURSHIP SESSION
                 </h2>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                  The LITWITS Entrepreneurship Program introduces students to
-                  the exciting world of business and innovation in an engaging,
-                  and age-appropriate way. Through interactive sessions and
-                  hands-on activities, participants explore the basics of
-                  entrepreneurship—from brainstorming creative ideas and
-                  analyzing markets to designing products and presenting their
-                  vision. Real-world examples and relatable case studies bring
-                  concepts to life, making every session both educational and
-                  enjoyable.
+                  The LITWITS Entrepreneurship Sessions introduce students to
+                  the world of business and innovation in an engaging,
+                  age-appropriate way. Through interactive engagement and
+                  hands-on activities, participants learn the essentials of
+                  entrepreneurship - from generating ideas and analyzing markets
+                  to designing products and presenting their vision.
                 </p>
-                <p className="text-gray-700" style={{ fontSize: "15px" }}>
+                <p className="text-gray-700 font-bold">
+                  What Our Entrepreneurship Sessions Provide:
+                </p>
+
+                <ul className="list-disc">
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Exploration of entrepreneurship basics with real-world case
+                    studies
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Creative problem-solving and critical thinking exercises
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Collaborative projects to build teamwork and confidence
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Development of leadership, resilience, and adaptability
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Focus on responsibility, ethics, and socially impactful
+                    solutions
+                  </li>
+                </ul>
+                {/* <p className="text-gray-700" style={{ fontSize: "15px" }}>
                   Our curriculum encourages students to think critically, solve
                   problems creatively, and understand the value of money through
                   financial literacy activities. Collaborative projects inspire
@@ -1048,7 +1116,7 @@ const GroupSess = () => {
                   By tackling real-world challenges and exploring socially
                   impactful solutions, students learn how to make a difference
                   through their entrepreneurial ventures.
-                </p>
+                </p> */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                   <Link
                     to="https://wa.me/9811701747?text=Hi! I’m interested in your Entrepreneurship Session. Please share details about the program and I request a free consultation."
@@ -1077,7 +1145,7 @@ const GroupSess = () => {
                 title="Entrepreneurship Session at Litwits"
                 aria-label="Entrepreneurship Session at Litwits"
                 aria-describedby="Interactive sessions that introduce students to business fundamentals, innovation, and financial literacy, fostering creativity and strategic thinking."
-                style={{ height: "570px" }}
+                style={{ height: "450px" }}
                 className="rounded-lg shadow-lg w-full object-cover object-top"
               />
             </div>
@@ -1097,7 +1165,7 @@ const GroupSess = () => {
                 title="Debate and Public Speaking with Litwits"
                 aria-label="Debate and Public Speaking with Litwits"
                 aria-describedby="Empowering students to develop impactful communication skills through thought-provoking themes and global issues, fostering leadership and confident expression."
-                style={{ height: "530px" }}
+                style={{ height: "450px" }}
                 className="rounded-lg shadow-lg w-full object-cover object-top p-0 m-0"
               />
               <div>
@@ -1108,13 +1176,39 @@ const GroupSess = () => {
                   className="font-noto   text-gray-700"
                   style={{ fontSize: "15px" }}
                 >
-                  The LITWITS Financial Literacy Program is designed to equip
-                  students with essential money management skills that will
-                  serve them for a lifetime. Through interactive and practical
-                  sessions, students learn the fundamentals of earning, saving,
-                  budgeting, and investing in a real and approachable way.
+                  The LITWITS Financial Literacy Sessions equip students with
+                  lifelong money management skills through interactive,
+                  practical, and engaging activities. Students learn to approach
+                  earning, saving, budgeting, and investing with confidence and
+                  clarity.
                 </p>
-                <p
+                <p className="text-gray-700 font-bold">
+                  What Our Financial Literacy Sessions Provide:
+                </p>
+
+                <ul className="list-disc">
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Fundamentals of income, expenses, and financial goal-setting
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Budget creation, expense tracking, and smart money decisions
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Hands-on activities, role-playing, and real-life simulations
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Introduction to banking, investments, and compound interest
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Awareness of debt management and responsible financial
+                    habits
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Differentiating between needs and wants to build
+                    accountability
+                  </li>
+                </ul>
+                {/* <p
                   className="font-noto text-gray-700"
                   style={{ fontSize: "15px" }}
                 >
@@ -1135,7 +1229,7 @@ const GroupSess = () => {
                   interest, debt management, and smart shopping habits, and how
                   to differentiate between needs and wants, instilling a sense
                   of accountability and responsibility in the students.
-                </p>
+                </p> */}
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full   mx-auto">
                   <Link
@@ -1268,21 +1362,48 @@ const GroupSess = () => {
                 </h2>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
                   We specialize in preparing students for high-stakes
-                  competitions, including prestigious events such as the Harvard
-                  and Yale Invitationals, John Locke Essay Competition, Queen's
-                  Commonwealth Essay Competition, and the Ayn Rand Essay
+                  competitions, including prestigious platforms such as the
+                  Harvard and Yale Invitationals, John Locke Essay Competition,
+                  Queen’s Commonwealth Essay Competition, and the Ayn Rand Essay
                   Contest.
                 </p>
                 <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                  Through a structured and supportive framework, students gain
-                  the rigor and confidence needed to excel under pressure. These
-                  sessions go beyond academic enhancement, fostering resilience
-                  and offering invaluable networking opportunities with peers
-                  and professionals worldwide. Covering a wide spectrum of
-                  regional, national, and international competitions, we equip
-                  students with the skills to succeed at every level, ensuring
-                  they stand out in competitive environments.
+                  Through a structured and supportive framework, students build
+                  the rigor, confidence, and resilience needed to excel under
+                  pressure. Beyond academic preparation, our program fosters
+                  critical thinking, communication, and global exposure.
                 </p>
+                <p className="text-gray-700 font-bold">
+                  What Our Competitive Excellence Sessions Provide:
+                </p>
+
+                <ul className="list-disc">
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Preparation for top-tier Ivy League competitions
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Training to think critically, argue persuasively, and write
+                    with impact
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Strategies to perform with confidence under high-pressure
+                    settings
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Guidance in presenting ideas with clarity and authenticity
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Exposure to regional, national, and international platforms
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Networking opportunities with peers and professionals
+                    worldwide
+                  </li>
+                  <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                    Development of resilience, adaptability, and leadership in
+                    competitive contexts
+                  </li>
+                </ul>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                   <Link
                     to="https://wa.me/9811701747?text=Hi! I'm interested in your Ivy League & Prestigious Competitions program. Could you please share the details? I would also like to request a free consultation."
@@ -1331,8 +1452,7 @@ const GroupSess = () => {
                 As a member, which sessions can I attend?
               </Accordion.Header>
               <Accordion.Body className="bg-[#890C25] text-white">
-                All members of Group Sessions have access to all group
-                sessions.
+                All members of Group Sessions have access to all group sessions.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
@@ -1353,7 +1473,8 @@ const GroupSess = () => {
                 Each individual session is 90 minutes, ensuring ample time for
                 in-depth learning, interactive discussions, and personalized
                 guidance from our expert mentors. <br />
-                Monday to Friday: 8:00 p.m. – 9:30 p.m. IST <br className="mt-2" />
+                Monday to Friday: 8:00 p.m. – 9:30 p.m. IST{" "}
+                <br className="mt-2" />
                 Saturday: 12:15 p.m. – 1:45 p.m. IST
               </Accordion.Body>
             </Accordion.Item>
@@ -1362,10 +1483,10 @@ const GroupSess = () => {
                 What if I do not have a team member for a competition?
               </Accordion.Header>
               <Accordion.Body className="bg-[#890C25] text-white">
-                No worries! We assist in forming competitive teams for
-                excellent outcomes for all the competitions. If you don’t have
-                a team, we will pair you with other participants of your skill
-                level, ensuring that everyone has a chance to participate and
+                No worries! We assist in forming competitive teams for excellent
+                outcomes for all the competitions. If you don’t have a team, we
+                will pair you with other participants of your skill level,
+                ensuring that everyone has a chance to participate and
                 collaborate effectively.
               </Accordion.Body>
             </Accordion.Item>
@@ -1379,8 +1500,8 @@ const GroupSess = () => {
               <Accordion.Body className="bg-[#890C25] text-white">
                 No. Group Sessions and Individual Sessions are structured and
                 priced separately. Since individual sessions provide
-                personalized mentorship, they require a different payment
-                model from group-based learning.
+                personalized mentorship, they require a different payment model
+                from group-based learning.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="5">

@@ -185,7 +185,23 @@ const Glide3DSlider = () => {
   return (
     <div className="w-full bg-gray-50 mt-3">
       <div className="max-w-[1440px] mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-red-700 mb-2 text-center">
+        <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-red-700  uppercase mb-3 text-center ">
+          Competitive Edge for College Admissions
+        </h2>
+        <p
+          className=" md:text-xl text-black leading-relaxed  max-w-[1075px] mx-auto"
+          style={{ fontSize: "15px" }}
+        >
+          Our team of seasoned experts in academia, consulting, writing,
+          research, and the arts provides personalized, one-on-one mentorship
+          tailored to each student's unique needs. From test preparation for
+          SAT, AP exams, IELTS, ACT, LNAT, and other standardized assessments to
+          crafting compelling Common App and supplementary essays; and building
+          powerful profiles beyond academics, we ensure our students have the
+          competitive edge to meet the expectations of leading institutions in
+          the US, UK, Europe, Australia, and Singapore.
+        </p>
+        {/* <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-red-700 mb-2 text-center">
           BUILDING A GLOBAL COMMUNITY OF LEADERS
         </h2>
 
@@ -196,24 +212,24 @@ const Glide3DSlider = () => {
             compelling direction to collaborate, exchange <br />
             perspectives, and forge lasting partnerships that enrich their
             academic and college journeys.
-          </p>
-        </div>
+          </p> */}
+      </div>
 
-        <div className="relative overflow-hidden py-8">
-          <div
-            className={`flex ${
-              isTransitioning
-                ? "transition-transform duration-1000 ease-in-out"
-                : ""
-            }`}
-            style={{
-              transform: `translateX(${calculateTranslateX()}%)`,
-            }}
-          >
-            {tripleItems.map((item, index) => (
-              <div
-                key={`${item.id}-${index}`}
-                className={`shrink-0 px-2 transition-all duration-500 ease-in-out
+      <div className="relative overflow-hidden py-8">
+        <div
+          className={`flex ${
+            isTransitioning
+              ? "transition-transform duration-1000 ease-in-out"
+              : ""
+          }`}
+          style={{
+            transform: `translateX(${calculateTranslateX()}%)`,
+          }}
+        >
+          {tripleItems.map((item, index) => (
+            <div
+              key={`${item.id}-${index}`}
+              className={`shrink-0 px-2 transition-all duration-500 ease-in-out
                   ${index === activeIndex ? "scale-100" : "scale-95"}
                   ${
                     itemsPerSlide === 1
@@ -224,10 +240,10 @@ const Glide3DSlider = () => {
                       ? "w-1/3"
                       : "w-1/4"
                   }`}
-              >
-                <div className="relative group">
-                  <div
-                    className={`
+            >
+              <div className="relative group">
+                <div
+                  className={`
       rounded-xl overflow-hidden h-[300px] bg-white p-4 transition-all duration-500
       ${
         index === activeIndex
@@ -235,42 +251,57 @@ const Glide3DSlider = () => {
           : "shadow-md hover:shadow-lg"
       }
     `}
-                  >
-                    <img
-                      src={item.image}
-                      alt={item.alt}
-                      title={item.title}
-                      aria-label={item.ariaLabel}
-                      aria-describedby={item.ariaDescribedBy}
-                      className="w-full h-full object-contain transform transition-transform duration-500 group-hover:scale-105"
-                    />
-                    {index !== activeIndex && (
-                      <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-300" />
-                    )}
-                  </div>
+                >
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    title={item.title}
+                    aria-label={item.ariaLabel}
+                    aria-describedby={item.ariaDescribedBy}
+                    className="w-full h-full object-contain transform transition-transform duration-500 group-hover:scale-105"
+                  />
+                  {index !== activeIndex && (
+                    <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-300" />
+                  )}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
 
-          <div className="flex justify-center gap-3 mt-8">
-            {items.map((_, index) => (
-              <button
-                key={index}
-                className={`w-3 h-3 rounded-full transition-all duration-300 transform
+        <div className="flex justify-center gap-3 mt-8">
+          {items.map((_, index) => (
+            <button
+              key={index}
+              className={`w-3 h-3 rounded-full transition-all duration-300 transform
                   ${
                     index === activeIndex % items.length
                       ? "bg-[#890C25] scale-125 ring-2 ring-[#890C25]/20"
                       : "bg-gray-300 hover:bg-gray-400"
                   }`}
-                onClick={() => setActiveIndex(index + items.length)}
-              />
-            ))}
-          </div>
+              onClick={() => setActiveIndex(index + items.length)}
+            />
+          ))}
         </div>
+      </div>
 
-        <div className="mt-10  mx-auto">
-          <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-red-700  uppercase mb-3 text-center">
+      <div className="mt-10  mx-auto ">
+        <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-red-700 mb-2 text-center">
+          BUILDING A GLOBAL COMMUNITY OF LEADERS
+        </h2>
+
+        <div className="mb-6 flex justify-center">
+          <p
+            className="text-start md:text-lg text-black text-base leading-8 mb-4"
+            style={{ fontSize: "15px" }}
+          >
+            <span className="uppercase font-semibold text-l">LITWITS</span>{" "}
+            fosters a vibrant global community of students providing them with a
+            compelling direction to collaborate, exchange <br />
+            perspectives, and forge lasting partnerships that enrich their
+            academic and college journeys.
+          </p>
+          {/* <h2 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug text-red-700  uppercase mb-3 text-center">
             Competitive Edge for College Admissions
           </h2>
           <p className=" md:text-xl text-black leading-relaxed  max-w-[1075px] mx-auto"style={{ fontSize: "15px" }}>
@@ -282,7 +313,7 @@ const Glide3DSlider = () => {
             building powerful profiles beyond academics, we ensure our students
             have the competitive edge to meet the expectations of leading
             institutions in the US, UK, Europe, Australia, and Singapore.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

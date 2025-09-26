@@ -249,7 +249,7 @@ const index = () => {
       <section className="p-7">
         <div>
           <h1
-            className="font-noto mt-4 mb-2 font-bold text-center  "
+            className="font-noto mt-2 mb-2 font-bold text-center  "
             style={{ fontSize: "22px" }}
           >
             GROUP SESSIONS
