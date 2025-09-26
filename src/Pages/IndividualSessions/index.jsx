@@ -594,18 +594,17 @@ const GroupSess = () => {
         </script>
       </Helmet>
 
-
       <section
-        className="bg-red-900 h-[20vh] flex items-center justify-center"
-      // id="home"
-      // className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
-      // style={{
-      //   backgroundImage: "url('/assets/individual-session.avif')",
-      //   fontFamily: "'Noto Sans', sans-serif",
-      // }}
-      // role="img"
-      // aria-label="Individual Sessions for focused learning in key academic and leadership areas."
-      // aria-describedby="individual-sessions-description"
+        className="bg-[#857558] h-[15vh] flex items-center justify-center"
+        // id="home"
+        // className="bg-cover bg-center h-[25vh] flex items-center justify-center text-white"
+        // style={{
+        //   backgroundImage: "url('/assets/individual-session.avif')",
+        //   fontFamily: "'Noto Sans', sans-serif",
+        // }}
+        // role="img"
+        // aria-label="Individual Sessions for focused learning in key academic and leadership areas."
+        // aria-describedby="individual-sessions-description"
       >
         <div className="container mx-auto px-4 text-center p-8 rounded-lg">
           <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-2 text-white">
@@ -637,7 +636,7 @@ const GroupSess = () => {
             <img
               src={mdl}
               alt="Model United Nations training for diplomacy, negotiation, and leadership skills."
-              style={{ height: "350px" }}
+              style={{ height: "450px" }}
               className="rounded-lg shadow-lg w-full object-cover"
               title="Model United Nations (MUN) at Litwits"
               aria-label="Model United Nations (MUN) at Litwits"
@@ -650,15 +649,39 @@ const GroupSess = () => {
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
                 Model United Nations offers students an immersive experience in
                 global diplomacy and international relations. Through
-                personalised coaching, students understand the dynamics of real
-                UN committees and hone their diplomacy, negotiation, and public
-                policy skills through simulations of the workings of the United
-                Nations. These sessions prepare students to navigate complex
-                global issues, draft impactful position papers and resolutions
-                offering students the opportunity to engage in conflict
-                resolution and building effective strategies to tackle pressing
-                global issues.
+                personalized coaching and realistic simulations of UN
+                committees, students strengthen their diplomacy, negotiation,
+                and public policy skills while engaging with complex global
+                issues.
               </p>
+              <p className="text-gray-700 font-bold">
+                What Our MUN Sessions Provide:
+              </p>
+
+              <ul className="list-disc">
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Personalized coaching to understand UN structures and
+                  processes
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Training in diplomacy, negotiation, and conflict resolution
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Guidance in drafting impactful position papers and resolutions
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Exposure to pressing global issues and international
+                  perspectives
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Development of public speaking, research, and
+                  strategy-building skills
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Opportunities to think critically, collaborate, and lead in
+                  simulations
+                </li>
+              </ul>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                 <Link
                   to="https://wa.me/9811701747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
@@ -698,12 +721,32 @@ const GroupSess = () => {
                 TED-ED STUDENT TALKS
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                Shaping passion for social responsibility through a thoughtfully
-                designed program, students embark on an enriching journey
-                exploring diverse perspectives and refining their critical
-                thinking abilities.
+                The TED-Ed Student Talks program empowers students to explore
+                meaningful issues, think critically, and craft powerful
+                narratives that inspire change. Guided by mentors, students
+                identify themes like social justice, education, gender, or
+                healthcare, develop sustainable solutions, and present their
+                ideas on the global TED-Ed platform.
               </p>
-              <p className="text-gray-700" style={{ fontSize: "15px" }}>
+              <p className="text-gray-700 font-bold">
+                What Our Sessions Provide:
+              </p>
+
+              <ul className="list-disc">
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Mentorship in critical thinking and problem-solving
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Exploration of real-world issues and sustainable solutions
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Training in impactful storytelling and public speaking
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  A culminating video presentation featured on TED-Ed
+                </li>
+              </ul>
+              {/* <p className="text-gray-700" style={{ fontSize: "15px" }}>
                 Shaping passion for social responsibility and guided by
                 experienced mentors, our students embark on an enriching journey
                 exploring diverse perspectives, thinking critically about issues
@@ -716,7 +759,7 @@ const GroupSess = () => {
                 the 'TED-Ed Student Talk Program' platform. The platform helps
                 students gain recognition through the prestigious TED-Ed
                 platform, and leave a lasting impact on global audiences.
-              </p>
+              </p> */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                 <Link
                   to="https://wa.me/9811701747?text=Hi! I’m interested in your Model United Nations (MUN) Program. Please share details about the program and I request a free consultation."
@@ -746,7 +789,7 @@ const GroupSess = () => {
               title="Model United Nations (MUN) at Litwits"
               aria-label="Model United Nations (MUN) at Litwits"
               aria-describedby="Immersive MUN training that prepares students for global diplomacy, impactful position papers, and confident public speaking at prestigious conferences."
-              style={{ width: "100%", height: "500px" }}
+              style={{ width: "100%", height: "400px" }}
             />
           </div>
         </div>
@@ -773,13 +816,36 @@ const GroupSess = () => {
                 SOCIAL IMPACT
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                The Social Impact Program at LITWITS is committed to cultivating
-                students' sense of purpose and global awareness. Guided by
-                experienced mentors, students align their personal values with
-                broader global initiatives, establish strong ethical
-                foundations, and lead projects that drive lasting change.
+                The Social Impact Program at LITWITS helps students align
+                personal values with global initiatives, build ethical
+                foundations, and lead projects that create lasting change. With
+                guidance from mentors experienced in government and NGO work,
+                students gain hands-on exposure to real-world challenges and
+                sustainable solutions.
               </p>
-              <p className="text-gray-700" style={{ fontSize: "15px" }}>
+              <p className="text-gray-700 font-bold">
+                What Our Sessions Provide:
+              </p>
+
+              <ul className="list-disc">
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Mentorship from experts in social impact and NGOs
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Training to design and lead community-driven projects
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Hands-on experience tackling real-world challenges
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Blend of entrepreneurship and social responsibility
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Development of ethical leadership and global awareness
+                </li>
+              </ul>
+
+              {/* <p className="text-gray-700" style={{ fontSize: "15px" }}>
                 With mentors who bring expertise from local government
                 initiatives and extensive collaboration with NGOs, students gain
                 invaluable real-world experience through hands-on engagement.
@@ -789,7 +855,7 @@ const GroupSess = () => {
                 students to identify and address critical social issues,
                 transforming them into changemakers who turn ideas into
                 actionable, impactful solutions.
-              </p>
+              </p> */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                 <Link
                   to="https://wa.me/9811701747?text=Hi! I’m interested in your Social Impact Program. Please share details about the program and I request a free consultation."
@@ -829,20 +895,41 @@ const GroupSess = () => {
                 RESEARCH PAPER GUIDANCE
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                Our Research Paper Writing sessions support students throughout
-                the entire process— from developing engaging research questions
-                in fields of their interest to identifying gaps in their chosen
-                field. We lay the groundwork for a coherent narrative that
-                guides them through the literature review, thesis development,
-                citation styles, and ethical research practices.
+                Our Research Paper Writing sessions guide students through every
+                stage of the process—from developing strong research questions
+                and identifying gaps in their field to building a coherent
+                narrative with proper structure and citations.
               </p>
-              <p className="text-gray-700" style={{ fontSize: "15px" }}>
+              <p className="text-gray-700 font-bold">
+                What Our Sessions Provide:
+              </p>
+
+              <ul className="list-disc">
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Guidance in forming engaging research questions
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Support in literature review, thesis development, and
+                  structuring
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Training in citation styles and ethical research practices
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Development of analytical and academic writing skills
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Mentorship to produce high-quality, publishable research
+                  papers
+                </li>
+              </ul>
+              {/* <p className="text-gray-700" style={{ fontSize: "15px" }}>
                 In an information-rich world, mastering research and effective
                 presentation is crucial. Our program empowers students to
                 produce high-quality papers while developing essential
                 analytical and writing skills, transforming their ideas into
                 compelling research works.
-              </p>
+              </p> */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                 <Link
                   to="https://wa.me/9811701747?text=Hi! I’m interested in your Research Paper Guidance Program. Please share details about the program and I request a free consultation."
@@ -884,7 +971,7 @@ const GroupSess = () => {
             <img
               src={APLogo}
               alt="Advanced Placement Prep Session for comprehensive subject mastery and university readiness."
-              style={{ height: "280px" }}
+              style={{ height: "450px" }}
               className="rounded-lg shadow-lg w-full"
               title="Advanced Placement (AP) Program at Litwits"
               aria-label="Advanced Placement (AP) Program at Litwits"
@@ -895,15 +982,35 @@ const GroupSess = () => {
                 ADVANCED PLACEMENT PREP SESSION
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                LITWITS' Advanced Placement (AP) Program offers high school
-                students the chance to excel in college-level coursework and
-                earn credits that strengthen university applications. Our expert
-                subject mentors provide personalised coaching across AP
-                subjects, including Calculus, Economics, English, History, and
-                Psychology. Through tailored lessons and in-depth feedback, we
-                ensure students are well-prepared and ready to achieve to score
-                a 5 and set the foundation for college success.
+                LITWITS’ Advanced Placement (AP) Prep Program helps high school
+                students excel in college-level coursework and earn credits that
+                strengthen university applications. With personalized coaching
+                from expert subject mentors, students are equipped to aim for
+                top scores and build a strong foundation for college success.
               </p>
+              <p className="text-gray-700 font-bold">
+                What Our AP Sessions Provide:
+              </p>
+
+              <ul className="list-disc">
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Personalized coaching across AP subjects: Calculus, Economics,
+                  English, History, Psychology, and more
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Tailored lessons designed to strengthen conceptual
+                  understanding
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  In-depth feedback and exam strategies to maximize performance
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Preparation to achieve top scores and earn college credits
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  A strong academic foundation for university applications
+                </li>
+              </ul>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                 <Link
                   to="https://wa.me/9811701747?text=Hi! I’m interested in your Advanced Placement (AP) Prep Session. Please share details about the program and I request a free consultation."
@@ -941,13 +1048,33 @@ const GroupSess = () => {
                 SAT PREP SESSION
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                Through expert instruction and targeted strategies, we focus on
-                all SAT sections: Evidence-Based Reading, Writing and Language,
-                and Math.By understanding the test format, mastering timing, and
-                honing question-handling techniques, students are equipped to
-                approach each section with precision, confidence, accuracy, and
-                test-taking speed, giving students the needed edge.
+                Through expert instruction and targeted strategies, we prepare
+                students for all SAT sections—Evidence-Based Reading, Writing
+                and Language, and Math. By mastering the test format, timing,
+                and question-handling techniques, students gain the precision,
+                confidence, and speed needed to excel.
               </p>
+              <p className="text-gray-700 font-bold">
+                What Our SAT Sessions Provide:
+              </p>
+
+              <ul className="list-disc">
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Comprehensive coverage of all SAT sections
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Strategies for mastering timing and test-taking speed
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Techniques to approach different question types with accuracy
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Personalized feedback to strengthen weak areas
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Confidence-building for peak performance on test day
+                </li>
+              </ul>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                 <Link
                   to="https://wa.me/9811701747?text=Hi! I’m interested in your SAT Prep Session. Please share details about the program and I request a free consultation."
@@ -973,7 +1100,7 @@ const GroupSess = () => {
             <img
               src={Sat}
               alt="Model United Nations training for diplomacy, negotiation, and leadership skills."
-              style={{ height: "350px" }}
+              style={{ height: "450px" }}
               className="rounded-lg shadow-lg w-full object-cover"
               title="Model United Nations (MUN) at Litwits"
               aria-label="Model United Nations (MUN) at Litwits"
@@ -992,7 +1119,7 @@ const GroupSess = () => {
             <img
               src={actsession}
               alt="ACT Prep Session for focused skill enhancement and test readiness."
-              style={{ height: "380px" }}
+              style={{ height: "450px" }}
               className="rounded-lg shadow-lg w-full"
               title="ACT Prep Session with Litwits"
               aria-label="ACT Prep Session with Litwits"
@@ -1003,20 +1130,36 @@ const GroupSess = () => {
                 ACT PREP SESSION
               </h2>
               <p className="text-gray-700" style={{ fontSize: "15px" }}>
-                Our ACT mentors, with expertise in English, Mathematics,
-                Science, and Reading, craft personalised lesson plans tailored
-                to address each student’s strengths and areas for growth.
-                Covering all key sections of the ACT — English, Math, Reading,
-                Science, and Writing (optional) — we focus on enhancing core
-                academic skills, teaching time management, and building
-                confidence to tackle complex questions under timed conditions.
-                From interpreting data in science passages to solving advanced
-                math problems, students gain the tools needed to excel in every
-                aspect of the test. Through practice tests, targeted
-                assessments, and comprehensive feedback, we track students'
-                progress and implement continual enhancements to ensure the
-                pursuit of excellence.
+                Our ACT mentors provide personalized lesson plans tailored to
+                each student’s strengths and growth areas. Covering all key
+                sections—English, Math, Reading, Science, and the optional
+                Writing test - we equip students with the skills and strategies
+                needed to perform confidently under timed conditions.
               </p>
+              <p className="text-gray-700 font-bold">
+                What Our ACT Prep Sessions Provide:
+              </p>
+
+              <ul className="list-disc">
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Comprehensive coverage of all ACT sections
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Tailored lesson plans based on individual needs
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Training in time management and test-taking strategies
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Practice tests, targeted assessments, and in-depth feedback
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Strengthening of core academic skills across subjects
+                </li>
+                <li className="text-gray-700" style={{ fontSize: "15px" }}>
+                  Tools to tackle complex questions with confidence and accuracy
+                </li>
+              </ul>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto mt-6">
                 <Link
                   to="https://wa.me/9811701747?text=Hi! I’m interested in your ACT Prep Session. Please share details about the program and I request a free consultation."
@@ -1048,19 +1191,18 @@ const GroupSess = () => {
         </h3>
 
         <p className=" text-gray-900" style={{ fontSize: "15px" }}>
-          Great ideas deserve to be expressed with power, precision, and clarity.
-          Passion and commitment are the foundation — but guidance and structure
-          transform potential into excellence.
+          Great ideas deserve to be expressed with power, precision, and
+          clarity. Passion and commitment are the foundation — but guidance and
+          structure transform potential into excellence.
         </p>
         <p className=" text-gray-900" style={{ fontSize: "15px" }}>
           Our individual sessions are tailored to meet each student’s unique
-          needs, whether in public speaking, debating, or academic writing. With a
-          focus on both skill-building and confidence, these one-on-one
+          needs, whether in public speaking, debating, or academic writing. With
+          a focus on both skill-building and confidence, these one-on-one
           engagements create a space where students can develop their voice,
           refine their arguments, and elevate their expression.
         </p>
       </div>
-
 
       {/* Mun section  */}
 
@@ -1233,7 +1375,6 @@ const GroupSess = () => {
                 required; just passion and commitment for learning.
               </Accordion.Body>
             </Accordion.Item>
-
           </Accordion>
         </div>
       </section>

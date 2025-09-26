@@ -58,7 +58,7 @@ const GroupSess = () => {
           </h2>
         </div>
       </section> */}
-      <section className="bg-red-900 h-[15vh] flex items-center justify-center">
+      <section className="bg-[#857558] h-[15vh] flex items-center justify-center">
         <div className="container mx-auto px-4 text-center p-8 rounded-lg">
           <h1 className="text-[4vw] lg:text-2xl font-bold leading-tight mt-4 text-white">
             WORLD SCHOLAR’S CUP TRAINING
@@ -159,18 +159,19 @@ const GroupSess = () => {
           <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 text-center uppercase">
             World Scholar's Cup Awards
           </h3>
+            <p className="fw-semibold text-[18px] md:text-[1.2rem] leading-snug mb-3 mt-2 text-center ">
+            Learn more about our achievements in WSC:
+            <a href="/WSCimages/LITWITSACHIEVEMENTS.pdf" download>
+              <span className="text-blue-500 "> click here </span>
+            </a>
+          </p>
           {/* <p className=" text-gray-900 mb-0" style={{ fontSize: "15px" }}>
             Let’s just say our trophy shelves are crowded. A few highlights:
           </p> */}
           <section className="container-fluid p-0 mb-2 mt-2">
             <PrizeSlider />
           </section>
-          <p className=" text-gray-900" style={{ fontSize: "15px" }}>
-            Learn more about our achievements in WSC:
-            <a href="/WSCimages/LITWITSACHIEVEMENTS.pdf" download>
-              <span className="text-blue-500 "> click here </span>
-            </a>
-          </p>
+        
         </div>
         <div className="">
           <h3 className="fw-semibold text-[18px] md:text-[1.5rem] leading-snug mb-3 mt-5 text-red-700 uppercase">
