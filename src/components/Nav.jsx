@@ -383,7 +383,7 @@ const navLinks = [
     subLinks: [
       { href: "/group-sessions", label: "Group Sessions" },
       { href: "/individual-sessions", label: "Individual Sessions" },
-      { href: "/individual-adult", label: "Individual for Adult" },
+      { href: "/individual-sessions-adult", label: "Individual Sessions for Adult" },
     ],
   },
   { href: "/world-scholars-cup", label: "World Scholars Cup" },

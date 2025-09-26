@@ -181,7 +181,7 @@ const App = () => {
               path="/individual-sessions"
               element={<IndividualSessions />}
             />
-            <Route path="/individual-adult" element={<Adult />} />
+            <Route path="/individual-sessions-adult" element={<Adult />} />
 
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />

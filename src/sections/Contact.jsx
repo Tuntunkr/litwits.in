@@ -3,6 +3,7 @@ import heroimage from "/assets/contact-us.avif";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../App.css";
+import { FiPhone, FiMail } from "react-icons/fi";
 
 const Co = () => {
   const [formData, setFormData] = useState({
@@ -69,6 +70,20 @@ const Co = () => {
         <h2 className="text-2xl font-bold text-center uppercase font-noto contact mb-6 text-red-800">
           Contact Us
         </h2>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+          <div className="flex items-center gap-2 text-red-800 text-lg font-semibold">
+            <FiPhone className="text-2xl" />
+            <a href="tel:+919811701747" className="hover:underline">
+              +91 98117 01747
+            </a>
+          </div>
+          <div className="flex items-center gap-2 text-red-800 text-lg font-semibold">
+            <FiMail className="text-2xl" />
+            <a href="mailto:Teamlitwits.in" className="hover:underline">
+              Teamlitwits.in
+            </a>
+          </div>
+        </div>
         <form className="contact space-y-6" onSubmit={handleSubmit}>
           {/* Hidden honeypot field for spam protection */}
           <input type="text" name="_gotcha" style={{ display: "none" }} />
