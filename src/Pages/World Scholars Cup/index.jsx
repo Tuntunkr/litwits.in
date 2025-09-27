@@ -115,15 +115,14 @@ const GroupSess = () => {
                 </div>
               </div>
 
-              <div className="rounded-lg shadow-lg w-full overflow-hidden">
-                <iframe
-                  src="https://www.instagram.com/p/DLo_dbPJ6Gn/embed"
-                  className="w-full h-[500px] rounded-lg"
-                  frameBorder="0"
-                  scrolling="no"
-                  allowTransparency="true"
-                  allowFullScreen={true}
-                ></iframe>
+            <div className="overflow-hidden w-full max-w-[900px] mx-auto">
+                <video
+                  className="w-full h-auto  block rounded-t-lg"
+                  controls
+                >
+                  <source src="/public/insta.mp4" type="video/mp4" />
+                  video
+                </video>
               </div>
             </div>
           </div>
