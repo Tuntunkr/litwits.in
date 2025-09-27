@@ -116,14 +116,12 @@ const GroupSess = () => {
               </div>
 
               <div className="rounded-lg shadow-lg w-full overflow-hidden">
-                <iframe
-                  src="https://www.instagram.com/p/DLo_dbPJ6Gn/embed"
+                <div
                   className="w-full h-[500px] rounded-lg"
-                  frameBorder="0"
-                  scrolling="no"
-                  allowTransparency="true"
-                  allowFullScreen={true}
-                ></iframe>
+                  dangerouslySetInnerHTML={{
+                    __html: `<iframe src="https://www.instagram.com/p/DLo_dbPJ6Gn/embed" width="100%" height="500" frameborder="0" allowfullscreen></iframe>`,
+                  }}
+                />
               </div>
             </div>
           </div>

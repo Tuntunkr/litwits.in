@@ -71,13 +71,13 @@ const Co = () => {
           Contact Us
         </h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-          <div className="flex items-center gap-2 text-red-800 text-lg font-semibold">
+          <div className="flex items-center gap-2 text-black text-lg font-semibold">
             <FiPhone className="text-2xl" />
             <a href="tel:+919811701747" className="hover:underline">
               +91 98117 01747
             </a>
           </div>
-          <div className="flex items-center gap-2 text-red-800 text-lg font-semibold">
+          <div className="flex items-center gap-2 text-black text-lg font-semibold">
             <FiMail className="text-2xl" />
             <a href="mailto:Teamlitwits.in" className="hover:underline">
               Teamlitwits.in
